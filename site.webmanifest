@@ -1,0 +1,19 @@
+{
+  "name": "HSC Notes — Bangla & English",
+  "short_name": "HSC Notes",
+  "description": "Chapter-wise HSC Physics, Chemistry and Higher Math notes in Bangla and English.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#080b12",
+  "theme_color": "#080b12",
+  "lang": "bn",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
