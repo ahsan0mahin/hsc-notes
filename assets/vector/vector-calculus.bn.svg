@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" font-family="Noto Sans Bengali, system-ui, sans-serif">
+  <defs><marker id="g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#f59e0b" /></marker><marker id="c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#22d3ee" /></marker></defs>
+  <rect x="1" y="1" width="638" height="338" rx="22" fill="#ffffff" fill-opacity="0.02" stroke="#94a3b8" stroke-opacity="0.25" />
+  <g stroke="#94a3b8" stroke-opacity="0.2"><line x1="215" y1="20" x2="215" y2="320" /><line x1="430" y1="20" x2="430" y2="320" /></g>
+  <g fill="#cbd5e1" font-size="12" font-weight="700"><text x="24" y="36">∇φ · গ্রেডিয়েন্ট</text><text x="232" y="36">∇ · V⃗ · ডাইভারজেন্স</text><text x="447" y="36">∇ × V⃗ · কার্ল</text></g>
+  <g fill="none" stroke="#8b5cf6" stroke-opacity="0.5" stroke-width="2">
+    <path d="M25 100 Q110 55 195 100" /><path d="M20 140 Q110 90 200 140" /><path d="M25 180 Q110 130 195 180" /><path d="M20 220 Q110 170 200 220" />
+  </g>
+  <line x1="60" y1="235" x2="165" y2="85" stroke="#f59e0b" stroke-width="4" marker-end="url(#g)" />
+  <text x="92" y="265" fill="#fbbf24" font-size="13">সর্বোচ্চ বৃদ্ধির দিক</text>
+  <g fill="none" stroke="#22d3ee" stroke-width="2.5" marker-end="url(#c)">
+    <line x1="255" y1="170" x2="310" y2="120" /><line x1="395" y1="170" x2="340" y2="120" /><line x1="255" y1="220" x2="310" y2="270" /><line x1="395" y1="220" x2="340" y2="270" />
+    <line x1="325" y1="90" x2="325" y2="140" /><line x1="325" y1="250" x2="325" y2="300" />
+  </g>
+  <circle cx="325" cy="195" r="10" fill="#f59e0b" />
+  <text x="278" y="198" fill="#94a3b8" font-size="12">উৎস</text>
+  <g fill="none" stroke="#22d3ee" stroke-width="3" marker-end="url(#c)">
+    <path d="M535 110 A70 70 0 0 1 600 190" /><path d="M600 190 A70 70 0 0 1 535 270" /><path d="M535 270 A70 70 0 0 1 470 190" /><path d="M470 190 A70 70 0 0 1 535 110" />
+  </g>
+  <circle cx="535" cy="190" r="8" fill="#8b5cf6" />
+  <text x="495" y="188" fill="#94a3b8" font-size="12">ঘূর্ণন</text>
+  <g fill="#64748b" font-size="11">
+    <text x="24" y="310">স্কেলার ক্ষেত্র → ভেক্টর ক্ষেত্র</text><text x="232" y="310">ধনাত্মক = উৎস, ঋণাত্মক = সিঙ্ক</text><text x="447" y="310">∇ × v⃗ = 2ω⃗</text>
+  </g>
+  <g fill="#cbd5e1" font-size="13"><text x="24" y="62">∇ = î∂/∂x + ĵ∂/∂y + k̂∂/∂z</text><text x="232" y="62">∂Vₓ/∂x + ∂Vᵧ/∂y + ∂Vᶻ/∂z</text><text x="447" y="62">নির্ণায়ক রূপ</text></g>
+</svg>

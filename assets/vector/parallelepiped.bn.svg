@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" font-family="Noto Sans Bengali, system-ui, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#8b5cf6" /></marker>
+    <marker id="b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#22d3ee" /></marker>
+    <marker id="c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#f59e0b" /></marker>
+  </defs>
+  <rect x="1" y="1" width="638" height="338" rx="22" fill="#ffffff" fill-opacity="0.02" stroke="#94a3b8" stroke-opacity="0.25" />
+  <path d="M100 250 L340 250 L430 170 L190 170 Z" fill="#8b5cf6" fill-opacity="0.10" stroke="#64748b" stroke-width="2" />
+  <path d="M100 250 L100 110 L190 30 L190 170 Z" fill="#22d3ee" fill-opacity="0.07" stroke="#64748b" stroke-width="2" />
+  <path d="M340 250 L430 170 L430 30 L340 110 Z" fill="#f59e0b" fill-opacity="0.07" stroke="#64748b" stroke-width="2" />
+  <path d="M100 110 L340 110 L430 30 L190 30 Z" fill="#ffffff" fill-opacity="0.03" stroke="#64748b" stroke-width="2" />
+  <path d="M190 30 L190 170 M340 110 L340 250 M430 30 L430 170 M100 110 L340 110 M190 170 L430 170" fill="none" stroke="#94a3b8" stroke-opacity="0.35" stroke-dasharray="6 6" />
+  <g fill="none" stroke-width="4" stroke-linecap="round">
+    <line x1="100" y1="250" x2="340" y2="250" stroke="#8b5cf6" marker-end="url(#a)" />
+    <line x1="100" y1="250" x2="190" y2="170" stroke="#22d3ee" marker-end="url(#b)" />
+    <line x1="100" y1="250" x2="100" y2="110" stroke="#f59e0b" marker-end="url(#c)" />
+  </g>
+  <g fill="#94a3b8" font-size="13" font-weight="700">
+    <text x="84" y="270">O</text>
+    <text x="344" y="268">A</text>
+    <text x="184" y="162">B</text>
+    <text x="88" y="102">C</text>
+    <text x="224" y="268" fill="#c4b5fd">A⃗</text>
+    <text x="132" y="205" fill="#67e8f9">B⃗</text>
+    <text x="58" y="178" fill="#fbbf24">C⃗</text>
+  </g>
+  <g fill="#cbd5e1" font-size="14">
+    <text x="24" y="36">B⃗ × C⃗ = ভূমির ক্ষেত্রফলের ভেক্টর</text>
+    <text x="430" y="36">A⃗ · (B⃗ × C⃗) = আয়তন</text>
+  </g>
+  <g fill="#64748b" font-size="11.5">
+    <text x="24" y="318">স্কেলার ত্রিগুণফল প্যারালেলেপাইপডের আয়তন দেয়</text>
+    <text x="430" y="318">মান 0 হলে তিন ভেক্টর সমতলীয়</text>
+  </g>
+</svg>

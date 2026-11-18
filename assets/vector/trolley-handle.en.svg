@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" font-family="Noto Sans Bengali, system-ui, sans-serif">
+  <defs><marker id="f" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#8b5cf6" /></marker><marker id="x" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#22d3ee" /></marker></defs>
+  <rect x="1" y="1" width="638" height="338" rx="22" fill="#ffffff" fill-opacity="0.02" stroke="#94a3b8" stroke-opacity="0.25" />
+  <line x1="320" y1="20" x2="320" y2="320" stroke="#94a3b8" stroke-opacity="0.22" />
+  <g fill="#cbd5e1" font-size="13" font-weight="700">
+    <text x="32" y="38">short handle / larger angle</text>
+    <text x="350" y="38">long handle / smaller angle</text>
+  </g>
+  <g stroke="#64748b" stroke-width="2" fill="none">
+    <line x1="30" y1="270" x2="300" y2="270" /><line x1="340" y1="270" x2="610" y2="270" />
+    <rect x="92" y="170" width="110" height="100" rx="12" fill="#8b5cf6" fill-opacity="0.08" />
+    <rect x="402" y="170" width="110" height="100" rx="12" fill="#8b5cf6" fill-opacity="0.08" />
+    <line x1="147" y1="170" x2="190" y2="110" /><line x1="457" y1="170" x2="560" y2="92" />
+    <circle cx="96" cy="270" r="9" /><circle cx="198" cy="270" r="9" /><circle cx="406" cy="270" r="9" /><circle cx="508" cy="270" r="9" />
+  </g>
+  <g fill="none" stroke-width="4" stroke-linecap="round">
+    <line x1="190" y1="110" x2="260" y2="80" stroke="#8b5cf6" marker-end="url(#f)" />
+    <line x1="190" y1="110" x2="270" y2="110" stroke="#22d3ee" marker-end="url(#x)" />
+    <line x1="560" y1="92" x2="600" y2="80" stroke="#8b5cf6" marker-end="url(#f)" />
+    <line x1="560" y1="92" x2="610" y2="92" stroke="#22d3ee" marker-end="url(#x)" />
+  </g>
+  <g fill="none" stroke="#f59e0b" stroke-width="2">
+    <path d="M190 110 A48 48 0 0 0 226 96" /><path d="M560 92 A48 48 0 0 0 594 85" />
+  </g>
+  <g fill="#94a3b8" font-size="12" font-weight="700">
+    <text x="248" y="70">F⃗</text>
+    <text x="238" y="128" fill="#67e8f9">Fₓ = F cos θ₁</text>
+    <text x="204" y="100" fill="#fbbf24">θ₁ large</text>
+    <text x="588" y="68">F⃗</text>
+    <text x="548" y="112" fill="#67e8f9">Fₓ = F cos θ₂</text>
+    <text x="572" y="84" fill="#fbbf24">θ₂ small</text>
+  </g>
+  <g fill="#64748b" font-size="11.5">
+    <text x="32" y="312">θ₁ &gt; θ₂, so cos θ₁ &lt; cos θ₂</text>
+    <text x="350" y="312">longer handle gives larger Fₓ → easier pulling</text>
+  </g>
+</svg>

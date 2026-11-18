@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" font-family="Noto Sans Bengali, system-ui, sans-serif">
+  <defs><marker id="f" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#8b5cf6" /></marker><marker id="x" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#22d3ee" /></marker><marker id="y" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#f59e0b" /></marker></defs>
+  <rect x="1" y="1" width="638" height="318" rx="22" fill="#ffffff" fill-opacity="0.02" stroke="#94a3b8" stroke-opacity="0.25" />
+  <path d="M40 70 Q320 90 600 70" fill="none" stroke="#22d3ee" stroke-width="3" stroke-opacity="0.45" />
+  <path d="M40 100 Q320 120 600 100" fill="none" stroke="#22d3ee" stroke-width="2" stroke-opacity="0.25" />
+  <line x1="60" y1="220" x2="590" y2="220" stroke="#64748b" stroke-width="2" />
+  <text x="66" y="212" fill="#94a3b8" font-size="13">shore · OA</text>
+  <path d="M220 220 Q320 190 420 220 L400 255 Q320 275 240 255 Z" fill="#8b5cf6" fill-opacity="0.12" stroke="#94a3b8" stroke-width="2" />
+  <text x="300" y="245" fill="#cbd5e1" font-size="13" font-weight="700">boat</text>
+  <line x1="320" y1="220" x2="520" y2="120" stroke="#8b5cf6" stroke-width="4" stroke-linecap="round" marker-end="url(#f)" />
+  <line x1="320" y1="220" x2="520" y2="220" stroke="#22d3ee" stroke-width="3" marker-end="url(#x)" />
+  <line x1="520" y1="220" x2="520" y2="120" stroke="#f59e0b" stroke-width="3" marker-end="url(#y)" />
+  <line x1="320" y1="220" x2="520" y2="120" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 6" />
+  <path d="M320 220 A52 52 0 0 1 366 196" fill="none" stroke="#f59e0b" stroke-width="2" />
+  <g fill="#94a3b8" font-size="14" font-weight="700">
+    <text x="305" y="240">O</text><text x="520" y="238">A / B</text><text x="526" y="112">R</text>
+    <text x="430" y="158" fill="#c4b5fd">F⃗</text><text x="410" y="238" fill="#67e8f9">Fₓ = F cos θ</text><text x="528" y="175" fill="#fbbf24">Fᵧ = F sin θ</text><text x="350" y="205">θ</text>
+  </g>
+  <g fill="#cbd5e1" font-size="14"><text x="32" y="38">longer rope → smaller θ → larger Fₓ</text><text x="410" y="38">Fᵧ is balanced by the rudder / water</text></g>
+  <g fill="#64748b" font-size="12"><text x="32" y="298">Long rope → smaller θ → larger forward component → easier towing.</text></g>
+</svg>

@@ -4,9 +4,11 @@ import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+// Load order matters: registry → subject → chapter add-ons → app is last in index.html.
 const dataFiles = [
   'data/registry.js',
   'data/physics.js',
+  'data/physics-vectors.js',
   'data/chemistry.js',
   'data/higher-math.js'
 ];
@@ -20,13 +22,17 @@ for (const file of dataFiles) {
 
 const notes = context.window.HSC_NOTES;
 const errors = [];
-const allowedBlocks = new Set(['p', 'list', 'steps', 'formula', 'callout', 'example', 'table', 'qa']);
-const allowedTones = new Set(['tip', 'warning', 'info']);
+const allowedBlocks = new Set([
+  'p', 'list', 'steps', 'formula', 'callout', 'example', 'table', 'qa',
+  'figure', 'glossary', 'outcomes', 'formulaGrid'
+]);
+const allowedTones = new Set(['tip', 'warning', 'info', 'activity']);
 
 const fail = (where, message) => errors.push(`${where}: ${message}`);
 const isObject = value => value && typeof value === 'object' && !Array.isArray(value);
 const isBi = value => isObject(value) && typeof value.bn === 'string' && value.bn.trim() && typeof value.en === 'string' && value.en.trim();
 const isText = value => typeof value === 'string' && value.trim();
+const isLabel = value => (typeof value === 'string' || typeof value === 'number') && String(value).trim();
 
 function checkBiDeep(value, where) {
   if (Array.isArray(value)) {
@@ -43,6 +49,39 @@ function checkBiDeep(value, where) {
 
 function requireBi(value, where) {
   if (!isBi(value)) fail(where, 'must be t("বাংলা", "English")');
+}
+
+function checkFigure(block, where) {
+  requireBi(block.caption, `${where}.caption`);
+  requireBi(block.alt, `${where}.alt`);
+  if (!isText(block.src) || !/^assets\/[a-z0-9/_-]+\.svg$/i.test(block.src) || block.src.includes('..')) {
+    fail(`${where}.src`, 'must be an existing local assets/*.svg path');
+    return;
+  }
+  const base = path.join(root, block.src);
+  const bn = base.replace(/\.svg$/, '.bn.svg');
+  const en = base.replace(/\.svg$/, '.en.svg');
+  if (!fs.existsSync(base) || !fs.existsSync(bn) || !fs.existsSync(en)) {
+    fail(`${where}.src`, 'base SVG plus .bn.svg and .en.svg variants must all exist');
+    return;
+  }
+  if (!fs.readFileSync(base, 'utf8').includes('data-bn=') || !fs.readFileSync(base, 'utf8').includes('data-en=')) {
+    fail(`${where}.src`, 'base SVG must carry data-bn / data-en labels for live language switching');
+  }
+}
+
+function validateOutcome(item, where) {
+  if (!isObject(item)) { fail(where, 'must be an object'); return; }
+  if (!isLabel(item.no)) fail(`${where}.no`, 'must be a non-empty label');
+  requireBi(item.text, `${where}.text`);
+  if (item.section !== undefined) requireBi(item.section, `${where}.section`);
+}
+
+function validateEquation(item, where) {
+  if (!isObject(item)) { fail(where, 'must be an object'); return; }
+  if (!isLabel(item.no)) fail(`${where}.no`, 'must be a non-empty label');
+  if (!isText(item.math)) fail(`${where}.math`, 'must be a non-empty string');
+  if (item.note !== undefined) requireBi(item.note, `${where}.note`);
 }
 
 function validateBlock(block, where, depth = 0) {
@@ -69,7 +108,7 @@ function validateBlock(block, where, depth = 0) {
       if (block.caption !== undefined) requireBi(block.caption, `${where}.caption`);
       break;
     case 'callout':
-      if (!allowedTones.has(block.tone)) fail(`${where}.tone`, 'must be tip, warning or info');
+      if (!allowedTones.has(block.tone)) fail(`${where}.tone`, 'must be tip, warning, info or activity');
       requireBi(block.title, `${where}.title`);
       requireBi(block.text, `${where}.text`);
       break;
@@ -91,7 +130,42 @@ function validateBlock(block, where, depth = 0) {
       requireBi(block.question, `${where}.question`);
       requireBi(block.answer, `${where}.answer`);
       break;
+    case 'figure':
+      checkFigure(block, where);
+      break;
+    case 'glossary':
+      if (!Array.isArray(block.items) || !block.items.length) fail(where, 'items must be a non-empty array');
+      else block.items.forEach((item, i) => {
+        requireBi(item?.term, `${where}.items[${i}].term`);
+        requireBi(item?.meaning, `${where}.items[${i}].meaning`);
+      });
+      break;
+    case 'outcomes':
+      if (!Array.isArray(block.items) || !block.items.length) fail(where, 'items must be a non-empty array');
+      else block.items.forEach((item, i) => validateOutcome(item, `${where}.items[${i}]`));
+      break;
+    case 'formulaGrid':
+      if (!Array.isArray(block.items) || !block.items.length) fail(where, 'items must be a non-empty array');
+      else block.items.forEach((item, i) => validateEquation(item, `${where}.items[${i}]`));
+      break;
   }
+}
+
+function validateChapterMeta(meta, where) {
+  if (!isObject(meta)) { fail(where, 'must be an object'); return; }
+  requireBi(meta.bookChapter, `${where}.bookChapter`);
+  requireBi(meta.bookTitle, `${where}.bookTitle`);
+  requireBi(meta.intro, `${where}.intro`);
+  requireBi(meta.bigIdea, `${where}.bigIdea`);
+  requireBi(meta.sourceNote, `${where}.sourceNote`);
+  if (!Array.isArray(meta.keyTerms) || !meta.keyTerms.length) fail(`${where}.keyTerms`, 'must be a non-empty array');
+  else meta.keyTerms.forEach((term, i) => requireBi(term, `${where}.keyTerms[${i}]`));
+  if (!Array.isArray(meta.outcomes) || !meta.outcomes.length) fail(`${where}.outcomes`, 'must be a non-empty array');
+  else meta.outcomes.forEach((item, i) => validateOutcome(item, `${where}.outcomes[${i}]`));
+  if (!Array.isArray(meta.quickFormulas) || !meta.quickFormulas.length) fail(`${where}.quickFormulas`, 'must be a non-empty array');
+  else meta.quickFormulas.forEach((item, i) => validateEquation(item, `${where}.quickFormulas[${i}]`));
+  checkFigure(meta.figure, `${where}.figure`);
+  checkBiDeep(meta, where);
 }
 
 if (!notes || !Array.isArray(notes.subjects) || !notes.subjects.length) {
@@ -122,9 +196,11 @@ if (!notes || !Array.isArray(notes.subjects) || !notes.subjects.length) {
       if (chapterIds.has(chapter.id)) fail(cw, 'duplicate chapter id in this subject');
       chapterIds.add(chapter.id);
       if (!Number.isFinite(chapter.order)) fail(cw, 'order must be a number');
+      if (chapter.featured !== undefined && typeof chapter.featured !== 'boolean') fail(cw, 'featured must be true or false');
       requireBi(chapter.title, `${cw}.title`);
       requireBi(chapter.description, `${cw}.description`);
       if (!Array.isArray(chapter.topics)) fail(cw, 'topics must be an array');
+      if (chapter.meta !== undefined) validateChapterMeta(chapter.meta, `${cw}.meta`);
 
       const topicIds = new Set();
       for (const topic of chapter.topics || []) {
@@ -140,6 +216,7 @@ if (!notes || !Array.isArray(notes.subjects) || !notes.subjects.length) {
         if (!Number.isFinite(topic.order)) fail(tw, 'order must be a number');
         if (!Number.isFinite(topic.readingTime) || topic.readingTime <= 0) fail(tw, 'readingTime must be a positive number');
         if (!/^\d{4}-\d{2}-\d{2}$/.test(topic.updated || '') || Number.isNaN(Date.parse(`${topic.updated}T00:00:00Z`))) fail(tw, 'updated must be a valid YYYY-MM-DD date');
+        if (topic.sectionNo !== undefined) requireBi(topic.sectionNo, `${tw}.sectionNo`);
         if (!Array.isArray(topic.tags)) fail(tw, 'tags must be an array');
         else topic.tags.forEach((tag, i) => { if (!isText(tag)) fail(`${tw}.tags[${i}]`, 'must be a non-empty string'); });
         requireBi(topic.title, `${tw}.title`);
