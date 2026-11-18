@@ -103,6 +103,23 @@
       tip: "টিপস",
       warning: "সাবধান",
       info: "মনে রাখুন",
+      activity: "নিজে করো",
+      glossary: "শব্দকোষ",
+      outcomes: "শিখনফল",
+      formulaSheet: "সূত্রতালিকা",
+      chapterGuide: "অধ্যায় গাইড",
+      featuredChapter: "বিশেষ অধ্যায়",
+      bookSource: "মূল পাঠ্যবই ভিত্তিক",
+      keyTerms: "প্রধান শব্দসমূহ",
+      learningOutcomes: "এই অধ্যায়ে যা শিখবেন",
+      quickFormulas: "দ্রুত সূত্রতালিকা",
+      chapterMap: "পাঠ-রোডম্যাপ",
+      startChapter: "অধ্যায় শুরু করুন",
+      equation: "সমীকরণ",
+      figure: "চিত্র",
+      sourceNote: "উৎস-নোট",
+      exploreChapter: "অধ্যায়ের নোট দেখুন",
+      sectionNo: "ধারা",
       question: "প্রশ্ন",
       answer: "উত্তর",
       draft: "ড্রাফট",
@@ -209,6 +226,23 @@
       tip: "Tip",
       warning: "Careful",
       info: "Remember",
+      activity: "Try it",
+      glossary: "Glossary",
+      outcomes: "Outcomes",
+      formulaSheet: "Formula sheet",
+      chapterGuide: "Chapter guide",
+      featuredChapter: "Featured chapter",
+      bookSource: "Based on the main textbook",
+      keyTerms: "Key terms",
+      learningOutcomes: "What you'll learn",
+      quickFormulas: "Quick formula sheet",
+      chapterMap: "Reading roadmap",
+      startChapter: "Start chapter",
+      equation: "Equation",
+      figure: "Figure",
+      sourceNote: "Source note",
+      exploreChapter: "Browse chapter notes",
+      sectionNo: "Section",
       question: "Question",
       answer: "Answer",
       draft: "Draft",
@@ -326,6 +360,80 @@
     const out = [];
     collectText(value, out);
     return out.join(' ');
+  }
+
+  /* ---------- language-aware SVG diagrams ---------- */
+  const figureCache = new Map();
+  function variantFigureSrc(src) {
+    return String(src || '').replace(/\.svg$/, `.${state.lang}.svg`);
+  }
+  function figureAlt(block) {
+    return pick(block.alt || block.caption) || tr('figure');
+  }
+  function renderFigure(block, extraClass = '') {
+    const src = String(block.src || '');
+    if (!src) return '';
+    const alt = figureAlt(block);
+    return `<figure class="figure-frame ${extraClass}" data-figure-src="${escapeAttr(src)}" data-figure-alt="${escapeAttr(alt)}">
+      <div class="figure-canvas">
+        <img src="${escapeAttr(variantFigureSrc(src))}" alt="${escapeAttr(alt)}" loading="lazy" decoding="async">
+      </div>
+      ${block.caption ? `<figcaption><span class="figure-label">${icon('image')} ${tr('figure')}</span>${inline(block.caption)}</figcaption>` : ''}
+    </figure>`;
+  }
+  function applyFigureLanguage(svg, lang) {
+    svg.querySelectorAll('text[data-bn], text[data-en]').forEach(node => {
+      const value = node.getAttribute(`data-${lang}`) || node.getAttribute('data-en') || node.getAttribute('data-bn');
+      if (value != null) node.textContent = value;
+    });
+  }
+  function sanitizeFigureSvg(svg) {
+    svg.querySelectorAll('script, foreignObject, image, iframe, object, embed').forEach(node => node.remove());
+    svg.querySelectorAll('*').forEach(node => {
+      [...node.attributes].forEach(attr => {
+        const name = attr.name.toLowerCase();
+        const unsafeUrl = (name === 'href' || name === 'xlink:href') && /^(javascript|data):/i.test(attr.value);
+        if (name.startsWith('on') || unsafeUrl) node.removeAttribute(attr.name);
+      });
+    });
+    svg.setAttribute('class', 'inline-figure');
+    svg.setAttribute('role', 'img');
+    svg.setAttribute('focusable', 'false');
+    svg.removeAttribute('width');
+    svg.removeAttribute('height');
+    return svg;
+  }
+  function loadFigureSvg(src) {
+    if (!figureCache.has(src)) {
+      figureCache.set(src, window.fetch(new URL(src, document.baseURI).href)
+        .then(response => {
+          if (!response.ok) throw new Error(`Could not load ${src}`);
+          return response.text();
+        }));
+    }
+    return figureCache.get(src);
+  }
+  function hydrateFigures() {
+    if (typeof window.fetch !== 'function' || typeof DOMParser === 'undefined') return;
+    main.querySelectorAll('.figure-frame[data-figure-src]:not([data-figure-hydrated])').forEach(figure => {
+      const src = figure.dataset.figureSrc;
+      const canvas = figure.querySelector('.figure-canvas');
+      if (!src || !canvas) return;
+      loadFigureSvg(src).then(raw => {
+        if (!figure.isConnected) return;
+        const parsed = new DOMParser().parseFromString(raw, 'image/svg+xml');
+        const root = parsed.documentElement;
+        if (!root || root.localName !== 'svg') throw new Error(`Invalid SVG: ${src}`);
+        const svg = sanitizeFigureSvg(document.importNode(root, true));
+        svg.setAttribute('aria-label', figure.dataset.figureAlt || '');
+        applyFigureLanguage(svg, state.lang);
+        canvas.replaceChildren(svg);
+        canvas.classList.add('is-hydrated');
+        figure.dataset.figureHydrated = 'true';
+      }).catch(() => {
+        /* Keep the language-specific <img> fallback. */
+      });
+    });
   }
 
   /* ---------- data ---------- */
@@ -503,6 +611,27 @@
       </div>
     </details>`;
   }
+  function featuredChapters() {
+    const found = [];
+    getSubjects().forEach(subject => {
+      getChapters(subject).forEach(chapter => {
+        if (chapter.featured) found.push({ subject, chapter });
+      });
+    });
+    return found;
+  }
+  function renderFeaturedShortcut() {
+    const items = featuredChapters();
+    if (!items.length) return '';
+    return `<div class="featured-nav">
+      <p class="side-label">${tr('featuredChapter')}</p>
+      ${items.map(({ subject, chapter }) => `<a class="featured-link" href="${chapterUrl(subject, chapter)}">
+        <span class="featured-link-icon">${icon('sparkles')}</span>
+        <span><strong>${escapeHtml(pick(chapter.title))}</strong><small>${getTopics(subject, chapter).length} ${tr('topics')}</small></span>
+        ${icon('arrow-right')}
+      </a>`).join('')}
+    </div>`;
+  }
   function renderSidebar() {
     const subjects = getSubjects();
     const topics = allTopics();
@@ -518,6 +647,7 @@
         <a class="side-link ${route.view === 'notes' ? 'active' : ''}" href="${notesUrl()}">${icon('layers')}<span>${tr('allNotes')}</span><span class="side-count">${topics.length}</span></a>
       </div>
       ${last ? renderContinueCard(last) : ''}
+      ${renderFeaturedShortcut()}
       <p class="side-label">${tr('subjects')}</p>
       <div class="side-section">
         ${subjects.map((subject, index) => renderSidebarSubject(subject, index, route, activeSubjectId)).join('')}
@@ -661,6 +791,7 @@
         <span class="continue-text"><small>${tr('continueReading')}</small><strong>${escapeHtml(pick(last.topic.title))}</strong></span>
         ${icon('arrow-right')}
       </a>` : ''}
+      ${renderFeaturedSpotlight()}
       <section class="section-block">
         <div class="section-head">
           <div><h2 class="section-title">${tr('subjects')}</h2><p class="section-subtitle">${tr('librarySubtitle')}</p></div>
@@ -751,7 +882,109 @@
       ${renderFooter()}
     </div>`;
   }
+  function renderFeaturedSpotlight() {
+    const item = featuredChapters()[0];
+    if (!item) return '';
+    const { subject, chapter } = item;
+    const meta = chapter.meta || {};
+    const terms = (meta.keyTerms || []).slice(0, 6);
+    return `<section class="vector-spotlight" style="--accent:${safeAccent(subject.accent)}">
+      <div class="vector-spotlight-copy">
+        <span class="spotlight-kicker">${icon('sparkles')} ${tr('featuredChapter')} · ${escapeHtml(pick(meta.bookChapter))}</span>
+        <h2>${escapeHtml(pick(chapter.title))} <span>VECTOR</span></h2>
+        <p>${escapeHtml(pick(chapter.description))}</p>
+        <div class="spotlight-terms">${terms.map(term => `<span>${escapeHtml(pick(term))}</span>`).join('')}</div>
+        <div class="spotlight-actions">
+          <a class="btn btn-primary" href="${chapterUrl(subject, chapter)}">${icon('book')} ${tr('exploreChapter')}</a>
+          <span class="spotlight-meta">${icon('layers')} ${getTopics(subject, chapter).length} ${tr('topics')}</span>
+        </div>
+      </div>
+      ${meta.figure ? renderFigure({ src: meta.figure.src, alt: meta.figure.alt }, 'vector-spotlight-figure') : ''}
+    </section>`;
+  }
+  function renderRoadmapCard(entry, index) {
+    const { subject, chapter, topic } = entry;
+    const read = state.read.has(entryKey(entry));
+    const no = topic.sectionNo ? pick(topic.sectionNo) : String(index + 1).padStart(2, '0');
+    return `<a class="roadmap-card ${read ? 'is-read' : ''}" href="${topicUrl(subject, chapter, topic)}" style="--accent:${safeAccent(subject.accent)}">
+      <div class="roadmap-top"><span class="roadmap-no">${escapeHtml(no)}</span><span class="roadmap-min">${icon('clock')} ${tr('minRead', { count: topic.readingTime })}</span></div>
+      <h3>${escapeHtml(pick(topic.title))}</h3>
+      <p>${escapeHtml(pick(topic.summary))}</p>
+      <span class="roadmap-cta">${read ? icon('check') : icon('book')} ${read ? tr('markedRead') : tr('readTopic')} ${icon('arrow-right')}</span>
+    </a>`;
+  }
+  function renderRichChapterView(subject, chapter) {
+    const meta = chapter.meta || {};
+    const topics = getTopics(subject, chapter).map(topic => ({ subject, chapter, topic }));
+    const first = topics[0];
+    const figureSet = new Set();
+    if (meta.figure && meta.figure.src) figureSet.add(meta.figure.src);
+    topics.forEach(({ topic }) => (topic.sections || []).forEach(section => {
+      (section.blocks || []).forEach(block => {
+        if (block.type === 'figure' && block.src) figureSet.add(block.src);
+      });
+    }));
+    const terms = meta.keyTerms || [];
+    const outcomeItems = meta.outcomes || [];
+    const formulas = meta.quickFormulas || [];
+    return `<div class="content-wrap vector-chapter">
+      ${renderBreadcrumb([
+        { label: tr('home'), href: homeUrl() },
+        { label: pick(subject.title), href: subjectUrl(subject) }
+      ], pick(chapter.title))}
+      <section class="vector-hero" style="--accent:${safeAccent(subject.accent)}">
+        <div class="vector-hero-grid">
+          <div class="vector-hero-copy">
+            <div class="vector-hero-badge"><span>${icon('book')} ${escapeHtml(pick(meta.bookChapter))}</span><span>${escapeHtml(pick(meta.bookTitle))}</span></div>
+            <h1>${escapeHtml(pick(chapter.title))}<span>VECTOR</span></h1>
+            <p class="vector-lead">${inline(meta.intro)}</p>
+            <div class="vector-big-idea">${icon('sparkles')}<span>${inline(meta.bigIdea)}</span></div>
+            <div class="vector-hero-actions">
+              ${first ? `<a class="btn btn-primary" href="${topicUrl(first.subject, first.chapter, first.topic)}">${icon('book')} ${tr('startChapter')}</a>` : ''}
+              <button class="btn btn-soft" type="button" data-open-search>${icon('search')} ${tr('searchCta')}</button>
+            </div>
+            <div class="vector-stats">
+              <div><strong>${topics.length}</strong><span>${tr('topics')}</span></div>
+              <div><strong>${outcomeItems.length}</strong><span>${tr('outcomes')}</span></div>
+              <div><strong>${figureSet.size}</strong><span>${tr('figure')}</span></div>
+              <div><strong>${formulas.length}</strong><span>${tr('quickFormulas')}</span></div>
+            </div>
+          </div>
+          ${meta.figure ? renderFigure(meta.figure, 'vector-hero-figure') : ''}
+        </div>
+        ${meta.sourceNote ? `<p class="vector-source-note">${icon('info')} ${inline(meta.sourceNote)}</p>` : ''}
+      </section>
+      <section class="vector-panel vector-terms">
+        <div class="vector-panel-head"><span>${icon('globe')}</span><div><p class="vector-eyebrow">${tr('bookSource')}</p><h2>${tr('keyTerms')}</h2></div></div>
+        <div class="term-cloud">${terms.map(term => `<span class="term-chip">${escapeHtml(pick(term))}</span>`).join('')}</div>
+      </section>
+      <div class="vector-split">
+        <section class="vector-panel outcomes-panel">
+          <div class="vector-panel-head"><span>${icon('target')}</span><div><p class="vector-eyebrow">${tr('sectionNo')} ২.১–২.১২</p><h2>${tr('learningOutcomes')}</h2></div></div>
+          <ol class="outcome-list">${outcomeItems.map(item => `<li>
+            <span class="outcome-no">${escapeHtml(item.no)}</span>
+            <span class="outcome-text">${inline(item.text)}</span>
+            <span class="outcome-section">§ ${inline(item.section)}</span>
+          </li>`).join('')}</ol>
+        </section>
+        <section class="vector-panel formula-panel">
+          <div class="vector-panel-head"><span>${icon('sparkles')}</span><div><p class="vector-eyebrow">${tr('formulaSheet')}</p><h2>${tr('quickFormulas')}</h2></div></div>
+          <div class="quick-formula-list">${formulas.map(item => `<div class="quick-formula">
+            <span class="equation-no">${tr('equation')} ${escapeHtml(item.no)}</span>
+            <code>${escapeHtml(item.math)}</code>
+            <p>${inline(item.note)}</p>
+          </div>`).join('')}</div>
+        </section>
+      </div>
+      <section class="section-block">
+        <div class="section-head"><div><h2 class="section-title">${tr('chapterMap')}</h2><p class="section-subtitle">${escapeHtml(pick(chapter.description))}</p></div></div>
+        <div class="roadmap-grid">${topics.map(renderRoadmapCard).join('') || renderEmpty(tr('comingSoon'), tr('emptyChapter'))}</div>
+      </section>
+      ${renderFooter()}
+    </div>`;
+  }
   function renderChapterView(subject, chapter) {
+    if (chapter.meta) return renderRichChapterView(subject, chapter);
     const topics = getTopics(subject, chapter).map(topic => ({ subject, chapter, topic }));
     return `<div class="content-wrap">
       ${renderBreadcrumb([
@@ -789,8 +1022,8 @@
           ${block.caption ? `<p>${inline(block.caption)}</p>` : ''}
         </div>`;
       case 'callout': {
-        const tone = ['tip', 'warning', 'info'].includes(block.tone) ? block.tone : 'info';
-        const meta = { tip: ['sparkles', tr('tip')], warning: ['alert', tr('warning')], info: ['info', tr('info')] }[tone];
+        const tone = ['tip', 'warning', 'info', 'activity'].includes(block.tone) ? block.tone : 'info';
+        const meta = { tip: ['sparkles', tr('tip')], warning: ['alert', tr('warning')], info: ['info', tr('info')], activity: ['flask', tr('activity')] }[tone];
         return `<div class="callout callout-${tone}" aria-label="${escapeAttr(meta[1])}">
           <span class="callout-icon">${icon(meta[0])}</span>
           <div><strong>${inline(block.title)}</strong><p>${inline(block.text)}</p></div>
@@ -811,6 +1044,33 @@
           <summary>${inline(block.question)}</summary>
           <div class="qa-body"><p><strong>${tr('answer')}:</strong> ${inline(block.answer)}</p></div>
         </details>`;
+      case 'figure':
+        return renderFigure(block);
+      case 'glossary':
+        return `<div class="glossary-block">
+          <p class="block-label">${icon('globe')} ${tr('glossary')}</p>
+          <dl class="glossary-list">${(block.items || []).map(item => `<div class="glossary-item">
+            <dt>${inline(item.term)}</dt><dd>${inline(item.meaning)}</dd>
+          </div>`).join('')}</dl>
+        </div>`;
+      case 'outcomes':
+        return `<div class="outcomes-block">
+          <p class="block-label">${icon('target')} ${tr('outcomes')}</p>
+          <ol class="compact-outcomes">${(block.items || []).map(item => `<li>
+            <span class="outcome-no">${escapeHtml(item.no)}</span>
+            <span class="outcome-text">${inline(item.text)}</span>
+            ${item.section ? `<span class="outcome-section">§ ${inline(item.section)}</span>` : ''}
+          </li>`).join('')}</ol>
+        </div>`;
+      case 'formulaGrid':
+        return `<div class="formula-sheet">
+          <p class="block-label">${icon('sparkles')} ${tr('formulaSheet')}</p>
+          <div class="formula-grid">${(block.items || []).map(item => `<article class="formula-card">
+            <span class="equation-no">${tr('equation')} ${escapeHtml(item.no)}</span>
+            <code>${escapeHtml(item.math)}</code>
+            ${item.note ? `<p>${inline(item.note)}</p>` : ''}
+          </article>`).join('')}</div>
+        </div>`;
       default:
         return `<p>${inline(block.text || '')}</p>`;
     }
@@ -851,10 +1111,11 @@
         { label: pick(subject.title), href: subjectUrl(subject) },
         { label: pick(chapter.title), href: chapterUrl(subject, chapter) }
       ], pick(topic.title))}
+      ${chapter.meta ? `<a class="chapter-ribbon" href="${chapterUrl(subject, chapter)}">${icon('book')}<span>${tr('chapterGuide')} · ${escapeHtml(pick(chapter.title))}</span>${icon('arrow-right')}</a>` : ''}
       <div class="article-layout">
         <article class="article">
           <header class="article-header" style="--accent:${safeAccent(subject.accent)}">
-            <div class="article-kicker">${escapeHtml(subject.icon)} ${escapeHtml(pick(subject.title))} · ${escapeHtml(pick(chapter.title))}</div>
+            <div class="article-kicker">${escapeHtml(subject.icon)} ${escapeHtml(pick(subject.title))} · ${escapeHtml(pick(chapter.title))}${topic.sectionNo ? `<span class="section-chip">${escapeHtml(pick(topic.sectionNo))}</span>` : ''}</div>
             <h1>${escapeHtml(pick(topic.title))}</h1>
             <p class="lead">${escapeHtml(pick(topic.summary))}</p>
             <div class="article-meta">
@@ -946,6 +1207,7 @@
     document.title = title;
     metaDescription.setAttribute('content', description);
     renderSidebar();
+    hydrateFigures();
     if (resetScroll) window.scrollTo(0, 0);
     requestAnimationFrame(() => { updateReadingProgress(); updateTocActive(); });
   }
@@ -953,12 +1215,16 @@
   /* ---------- search ---------- */
   function buildSearchIndex() {
     state.searchIndex = allTopics().map(entry => {
+      const meta = entry.chapter.meta || {};
       const fields = {
-        title: normalize(flattenText([entry.topic.title, entry.topic.tags])),
+        title: normalize(flattenText([entry.topic.title, entry.topic.tags, entry.topic.sectionNo])),
         subject: normalize(flattenText([entry.subject.title, entry.subject.description])),
-        chapter: normalize(flattenText([entry.chapter.title, entry.chapter.description])),
+        chapter: normalize(flattenText([
+          entry.chapter.title, entry.chapter.description, meta.bookChapter, meta.bookTitle,
+          meta.intro, meta.bigIdea, meta.sourceNote, meta.keyTerms, meta.outcomes, meta.quickFormulas
+        ])),
         summary: normalize(flattenText(entry.topic.summary)),
-        body: normalize(flattenText(entry.topic.sections))
+        body: normalize(flattenText([entry.topic.sections, entry.topic.sectionNo]))
       };
       return { entry, fields, haystack: Object.values(fields).join(' ') };
     });

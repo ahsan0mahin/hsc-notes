@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" font-family="Noto Sans Bengali, system-ui, sans-serif">
+  <defs>
+    <marker id="p" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#8b5cf6" /></marker>
+    <marker id="c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#22d3ee" /></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#f59e0b" /></marker>
+  </defs>
+  <rect x="1" y="1" width="638" height="328" rx="22" fill="#ffffff" fill-opacity="0.02" stroke="#94a3b8" stroke-opacity="0.25" />
+  <line x1="320" y1="20" x2="320" y2="310" stroke="#94a3b8" stroke-opacity="0.22" />
+  <g fill="#cbd5e1" font-size="13" font-weight="700"><text x="32" y="38">Triangle law</text><text x="350" y="38">Polygon law</text></g>
+  <g fill="none" stroke-width="4" stroke-linecap="round">
+    <line x1="55" y1="245" x2="185" y2="110" stroke="#8b5cf6" marker-end="url(#p)" />
+    <line x1="185" y1="110" x2="285" y2="190" stroke="#22d3ee" marker-end="url(#c)" />
+    <line x1="55" y1="245" x2="285" y2="190" stroke="#f59e0b" stroke-width="5" marker-end="url(#r)" />
+    <line x1="355" y1="245" x2="415" y2="175" stroke="#8b5cf6" marker-end="url(#p)" />
+    <line x1="415" y1="175" x2="485" y2="205" stroke="#22d3ee" marker-end="url(#c)" />
+    <line x1="485" y1="205" x2="540" y2="125" stroke="#8b5cf6" marker-end="url(#p)" />
+    <line x1="540" y1="125" x2="600" y2="170" stroke="#22d3ee" marker-end="url(#c)" />
+    <line x1="355" y1="245" x2="600" y2="170" stroke="#f59e0b" stroke-width="5" stroke-dasharray="9 7" marker-end="url(#r)" />
+  </g>
+  <g fill="#94a3b8" font-size="14" font-weight="700">
+    <text x="42" y="265">O</text><text x="188" y="100">P</text><text x="290" y="200">R</text>
+    <text x="105" y="168">A⃗</text><text x="232" y="140">B⃗</text><text x="150" y="235" fill="#fbbf24">C⃗ = A⃗ + B⃗</text>
+    <text x="344" y="265">P</text><text x="410" y="165">Q</text><text x="482" y="220">R</text><text x="538" y="115">S</text><text x="602" y="180">T</text>
+    <text x="372" y="205">A⃗</text><text x="442" y="180">B⃗</text><text x="505" y="158">C⃗</text><text x="565" y="140">D⃗</text>
+    <text x="435" y="270" fill="#fbbf24">R⃗ = A⃗ + B⃗ + C⃗ + D⃗</text>
+  </g>
+  <g fill="#64748b" font-size="12"><text x="32" y="298">OP⃗ + PR⃗ = OR⃗  ·  first tail → last head</text><text x="350" y="298">order does not change the sum  ·  associative law</text></g>
+</svg>

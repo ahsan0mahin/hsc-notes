@@ -39,6 +39,19 @@ const dom = new JSDOM(html, {
     window.scrollTo = () => {};
     window.HTMLElement.prototype.scrollIntoView = () => {};
     window.navigator.clipboard = { writeText: async () => {} };
+    // The app uses fetch() to inline language-aware SVG diagrams.
+    window.fetch = url => {
+      try {
+        const parsed = new URL(String(url), window.location.href);
+        const file = path.resolve(root, `.${decodeURIComponent(parsed.pathname)}`);
+        if (!file.startsWith(root) || !fs.existsSync(file)) {
+          return Promise.resolve({ ok: false, text: async () => '' });
+        }
+        return Promise.resolve({ ok: true, text: async () => fs.readFileSync(file, 'utf8') });
+      } catch {
+        return Promise.resolve({ ok: false, text: async () => '' });
+      }
+    };
     window.addEventListener('error', event => errors.push(event.message || 'window error'));
     window.addEventListener('unhandledrejection', event => errors.push(String(event.reason)));
   }
@@ -59,26 +72,33 @@ function go(hash) {
   window.history.replaceState(null, '', hash);
   window.dispatchEvent(new window.Event('hashchange'));
 }
+const settle = () => new Promise(resolve => setTimeout(resolve, 90));
 
 await new Promise(resolve => {
   if (document.readyState === 'complete') resolve();
   else window.addEventListener('load', resolve, { once: true });
   setTimeout(resolve, 1500);
 });
-await new Promise(resolve => setTimeout(resolve, 120));
+await settle();
 
 try {
   assert(document.querySelector('.hero'), 'home hero renders');
   assert(document.querySelectorAll('.subject-card').length === 3, '3 subject cards render');
-  assert(document.querySelectorAll('.topic-link').length === 9, 'sidebar lists 9 published topics');
+  assert(document.querySelectorAll('.topic-link').length === 21, 'sidebar lists 21 published topics');
   assert(document.querySelectorAll('.note-card').length === 6, 'home shows 6 latest notes');
+  assert(document.querySelector('.vector-spotlight'), 'Vector spotlight appears on home');
+  assert(document.querySelectorAll('.featured-link').length === 1, 'featured chapter shortcut appears in menu');
+  assert(document.querySelector('.vector-spotlight-figure svg.inline-figure'), 'home SVG diagram is inlined for live theming and language');
   assert(document.documentElement.dataset.theme === 'dark', 'dark theme is default');
   assert(document.documentElement.lang === 'bn', 'Bangla is default');
 
   click(document.querySelector('[data-lang="en"]'), 'EN language button');
+  await settle();
   assert(document.documentElement.lang === 'en', 'language switches to English');
   assert(window.localStorage.getItem('hsc:lang') === 'en', 'language choice persists');
   assert(/Every HSC note/.test(document.querySelector('.hero h1').textContent), 'hero copy translates');
+  assert(/VECTOR/.test(document.querySelector('.vector-spotlight h2').textContent), 'Vector spotlight remains visible in English');
+  assert(/Projection on the XY-plane/.test(document.querySelector('.vector-spotlight-figure svg').textContent), 'inline diagram labels switch to English');
 
   click(document.querySelector('#themeBtn'), 'theme button');
   assert(document.documentElement.dataset.theme === 'light', 'theme switches to light');
@@ -88,16 +108,50 @@ try {
   assert(document.querySelector('.page-hero h1').textContent.trim() === 'Physics', 'subject route renders Physics');
   assert(document.querySelectorAll('.chapter-card').length === 2, 'Physics shows 2 chapters');
 
+  go('#/chapter/physics/vectors');
+  await settle();
+  assert(document.querySelector('.vector-hero'), 'rich Vector chapter landing page renders');
+  assert(document.querySelectorAll('.term-chip').length === 18, 'chapter key-term cloud renders 18 terms');
+  assert(document.querySelectorAll('.outcome-list li').length === 10, 'chapter renders 10 learning outcomes');
+  assert(document.querySelectorAll('.quick-formula').length === 8, 'chapter renders 8 quick formulas');
+  assert(document.querySelectorAll('.roadmap-card').length === 15, 'chapter roadmap renders 15 section-wise notes');
+  assert(document.querySelector('.vector-stats > div:nth-child(3) strong').textContent.trim() === '15', 'chapter counts 15 unique diagrams');
+  assert(document.querySelector('.vector-hero-figure svg.inline-figure'), 'chapter hero SVG is inlined');
+
+  click(document.querySelector('[data-lang="bn"]'), 'BN language button');
+  await settle();
+  assert(document.documentElement.lang === 'bn', 'language switches back to Bangla');
+  assert(/XY-তলে অভিক্ষেপ/.test(document.querySelector('.vector-hero-figure svg').textContent), 'inline diagram labels switch back to Bangla');
+  click(document.querySelector('[data-lang="en"]'), 'EN language button again');
+  await settle();
+  assert(document.documentElement.lang === 'en', 'language returns to English');
+
   go('#/topic/physics/vectors/scalars-and-vectors');
-  assert(/Scalars and vectors/.test(document.querySelector('.article-header h1').textContent), 'topic route renders note');
+  await settle();
+  assert(/Vector and scalar quantities/.test(document.querySelector('.article-header h1').textContent), 'topic route renders book-faithful note');
   assert(document.querySelectorAll('.content-section').length === 4, 'topic renders 4 sections');
   assert(document.querySelectorAll('.formula-box').length >= 2, 'formula blocks render');
   assert(document.querySelectorAll('.toc-link').length === 4, 'table of contents renders');
+  assert(document.querySelectorAll('.figure-frame').length >= 1, 'figure blocks render');
+  assert(document.querySelector('.chapter-ribbon'), 'topic links back to the chapter guide');
   assert(window.localStorage.getItem('hsc:lastTopic') === 'physics/vectors/scalars-and-vectors', 'continue-reading state persists');
 
   click(document.querySelector('[data-action="mark-read"]'), 'mark read button');
   assert(document.querySelector('[data-action="mark-read"]').getAttribute('aria-pressed') === 'true', 'mark-read toggles pressed state');
   assert(/physics\/vectors\/scalars-and-vectors/.test(window.localStorage.getItem('hsc:read') || ''), 'read progress persists');
+
+  go('#/topic/physics/vectors/chapter-orientation');
+  await settle();
+  assert(document.querySelector('.glossary-block'), 'glossary block renders');
+  assert(document.querySelectorAll('.compact-outcomes li').length === 10, 'outcomes block renders 10 goals');
+
+  go('#/topic/physics/vectors/summary-and-equations');
+  await settle();
+  assert(document.querySelectorAll('.formula-card').length === 15, 'formula sheet renders 15 equations');
+
+  go('#/topic/physics/vectors/calculus-in-physics');
+  await settle();
+  assert(document.querySelector('.figure-frame[data-figure-src*="velocity-time-graph.svg"]'), 'v–t integration diagram renders');
 
   click(document.querySelector('#searchTrigger'), 'search trigger');
   assert(document.querySelector('#searchModal').hidden === false, 'search modal opens');
@@ -105,6 +159,9 @@ try {
   input.value = 'dot product';
   input.dispatchEvent(new window.Event('input', { bubbles: true }));
   assert(document.querySelectorAll('.search-result').length > 0, 'search returns results for "dot product"');
+  input.value = 'gradient';
+  input.dispatchEvent(new window.Event('input', { bubbles: true }));
+  assert(document.querySelectorAll('.search-result').length > 0, 'chapter metadata and vector calculus are searchable');
   document.dispatchEvent(new window.KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
   assert(document.querySelector('#searchModal').hidden === true, 'Escape closes search');
 
@@ -116,9 +173,9 @@ try {
 
   go('#/notes');
   assert(document.querySelectorAll('.filter-chip').length === 4, 'library filter chips render');
-  assert(document.querySelectorAll('.note-card').length === 9, 'library shows 9 notes');
+  assert(document.querySelectorAll('.note-card').length === 21, 'library shows 21 notes');
   click(document.querySelector('[data-filter="physics"]'), 'physics filter chip');
-  assert(document.querySelectorAll('.note-card').length === 4, 'subject filter narrows library to 4 Physics notes');
+  assert(document.querySelectorAll('.note-card').length === 16, 'subject filter narrows library to 16 Physics notes');
 
   go('#/does-not-exist');
   assert(document.querySelector('.not-found'), 'unknown hash shows not-found view');
