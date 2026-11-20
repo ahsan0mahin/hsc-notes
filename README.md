@@ -136,3 +136,7 @@ Saved in `localStorage`: `hsc:lang`, `hsc:theme`, `hsc:read`, `hsc:lastTopic`।
 > `CONTENT_GUIDE.md` আর `data/physics-vectors.js` পড়ে, Physics → Vectors chapter-এ `id: "vector-applications"` নামে একটা নতুন HSC-level topic যোগ করো। বাংলা + English দুটোই পূর্ণ লিখো, registry helpers ব্যবহার করো, figure দিলে `.svg + .bn.svg + .en.svg` তিনটি asset দাও, ID unique রাখো, তারপর `npm run validate` আর `npm test` চালিয়ে দাও।
 
 Made for HSC students · Static, fast, editable by humans and agents alike.
+
+### Vector board practice
+
+Open **ভেক্টর → বোর্ড প্রশ্ন** for Batch 1. `board/batch-1.md` is the supplied source. `npm run board:build` regenerates the static practice pages, typesetting LaTeX as native MathML; no CDN, font download or runtime Markdown parser is needed. The teaching diagrams are in `scripts/board-scenes.mjs`. Run `node scripts/test-board.mjs` to check the question index, solutions and diagram controls.

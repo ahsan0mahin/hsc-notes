@@ -944,6 +944,7 @@
             <p class="vector-lead">${inline(meta.intro)}</p>
             <div class="vector-big-idea">${icon('sparkles')}<span>${inline(meta.bigIdea)}</span></div>
             <div class="vector-hero-actions">
+              <a class="btn btn-soft" href="board/index.html">${icon("book")} ${state.lang === "bn" ? "বোর্ড প্রশ্ন" : "Board questions"}</a>
               ${first ? `<a class="btn btn-primary" href="${topicUrl(first.subject, first.chapter, first.topic)}">${icon('book')} ${tr('startChapter')}</a>` : ''}
               <button class="btn btn-soft" type="button" data-open-search>${icon('search')} ${tr('searchCta')}</button>
             </div>
