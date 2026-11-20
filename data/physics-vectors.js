@@ -259,45 +259,137 @@
         id: 'types-of-vectors',
         order: 5,
         sectionNo: t('২.৪', '2.4'),
-        readingTime: 10,
-        updated: '2026-11-16',
-        tags: ['free vector', 'null vector', 'unit vector', 'position vector', '2.4'],
+        readingTime: 16,
+        updated: '2026-11-19',
+        tags: ['vector types', 'unit vector', 'polar vector', 'axial vector', '2.4'],
         title: t('কতিপয় ভেক্টর', 'Special types of vectors'),
-        summary: t('স্বাধীন থেকে বিপ্রতীপ পর্যন্ত বইয়ের ১৪ ধরনের ভেক্টর—সংজ্ঞা, চিত্র ও উদাহরণসহ।', 'The book’s 14 vector types from free to reciprocal—definitions, diagram and examples.'),
+        summary: t('১৬ ধরনের ভেক্টর: সহজ সংজ্ঞা, তীরচিত্র, উদাহরণ ও পরীক্ষার রিভিশন।', 'Sixteen vector types with illustrated definitions, worked examples and exam revision.'),
         sections: [
-          section(t('অবস্থানভেদে ভেক্টর', 'Vectors by position'), [
-            figure('assets/vector/types.svg', t('চিত্র ২.২–২.৯-এর ধাঁচে: সমান, ঋণাত্মক, সমরেখ ও সমতলীয় ভেক্টর।', 'After Figs. 2.2–2.9: equal, negative, collinear and coplanar vectors.'), t('চারটি প্যানেলে একই দিকের সমান্তরাল তীর, বিপরীতমুখী তীর, সমান্তরাল তীরসমূহ ও একই সমতলে তীরসমূহ।', 'Four panels showing parallel equal arrows, opposite arrows, collinear arrows and coplanar arrows.')),
-            glossary([
-              term(t('স্বাধীন ভেক্টর', 'Free vector'), t('পাদবিন্দু ইচ্ছেমতো বেছে নেওয়া যায়; যেমন 5 N পূর্বমুখী বল।', 'Its tail can be chosen freely; e.g. a 5 N eastward force.')),
-              term(t('সীমাবদ্ধ ভেক্টর', 'Localized vector'), t('পাদবিন্দু নির্দিষ্ট; যেমন মূলবিন্দু থেকে আঁকা অবস্থান ভেক্টর বা লন রোলারের হাতলের টান।', 'Its tail is fixed; e.g. a position vector from the origin or a pull at a roller handle.')),
-              term(t('সদৃশ ভেক্টর', 'Like vectors'), t('সমজাতীয় ও একই দিকে ক্রিয়াশীল।', 'Same kind, acting in the same direction.')),
-              term(t('বিসদৃশ ভেক্টর', 'Unlike vectors'), t('সমজাতীয় কিন্তু বিপরীত দিকে।', 'Same kind but opposite directions.')),
-              term(t('সমরেখ ভেক্টর', 'Collinear vectors'), t('একই রেখায় বা পরস্পর সমান্তরালে ক্রিয়া করে।', 'Act along the same line or parallel lines.')),
-              term(t('সমতলীয় ভেক্টর', 'Coplanar vectors'), t('একই সমতলে অবস্থিত।', 'Lie in the same plane.'))
+          section(t("শুরুর আগে: তীরটি কী বলে?", "Before you start: reading an arrow"), [
+            p(t("বল, বেগ ও সরণের মতো ভেক্টর রাশির মান ও দিক আছে। তীরের গোড়া পাদবিন্দু, আর অগ্রভাগ শীর্ষবিন্দু। নির্দিষ্ট স্কেলে দৈর্ঘ্য মান দেখায়; তীরমুখ দেখায় দিক।", "Force, velocity and displacement have magnitude and direction. The tail is the starting point and the head is the tip. At a given scale the length shows magnitude; the tip shows direction.")),
+            figure("assets/vector/representation.svg", t("পাদবিন্দু থেকে শীর্ষবিন্দু পর্যন্ত তীরটি পড়ো।", "Read the arrow from tail to head."), t("পাদবিন্দু থেকে শীর্ষবিন্দু পর্যন্ত তীরটি পড়ো।", "Read the arrow from tail to head."))
+          ]),
+          section(t("১. স্বাধীন ভেক্টর", "1. Free vector"), [
+            p(t("মান ও দিক ঠিক রেখে পাদবিন্দু সরানো যায়।", "Move the tail without changing magnitude or direction.")),
+            figure("assets/vector/kind-1.svg", t("মান ও দিক ঠিক রেখে পাদবিন্দু সরানো যায়।", "Move the tail without changing magnitude or direction."), t("মান ও দিক ঠিক রেখে পাদবিন্দু সরানো যায়।", "Move the tail without changing magnitude or direction.")),
+            example(t("উদাহরণ", "Example"), [p(t("দুটি গাড়ি ভিন্ন শহরে 60 km/h বেগে উত্তরে চলছে। তাদের বেগ একই তীর দিয়ে বোঝানো যায়।", "Two cars travelling north at 60 km/h in different cities have the same velocity."))]),
+            formula("A⃗ = B⃗", t("স্বাধীন ভেক্টর", "Free vector"))
+          ]),
+          section(t("২. সীমাবদ্ধ ভেক্টর", "2. Localized vector"), [
+            p(t("পাদবিন্দু একটি নির্দিষ্ট বিন্দুতে বাঁধা।", "The tail is fixed to a point.")),
+            figure("assets/vector/kind-2.svg", t("পাদবিন্দু একটি নির্দিষ্ট বিন্দুতে বাঁধা।", "The tail is fixed to a point."), t("পাদবিন্দু একটি নির্দিষ্ট বিন্দুতে বাঁধা।", "The tail is fixed to a point.")),
+            example(t("উদাহরণ", "Example"), [p(t("দরজার হাতলে ও কব্জার কাছে একই বল দিলে ঘোরানোর প্রভাব আলাদা। তাই প্রয়োগবিন্দু না দেখালে তথ্য হারায়।", "Pushing a door at its handle or near the hinge produces different turning effects; the application point matters."))]),
+            formula("r⃗ = OP⃗", t("সীমাবদ্ধ ভেক্টর", "Localized vector"))
+          ]),
+          section(t("৩. সদৃশ ভেক্টর", "3. Like vectors"), [
+            p(t("একই জাতের ভেক্টরের দিক একই; মান ভিন্ন হতে পারে।", "Vectors of the same kind point the same way; their lengths may differ.")),
+            figure("assets/vector/kind-3.svg", t("একই জাতের ভেক্টরের দিক একই; মান ভিন্ন হতে পারে।", "Vectors of the same kind point the same way; their lengths may differ."), t("একই জাতের ভেক্টরের দিক একই; মান ভিন্ন হতে পারে।", "Vectors of the same kind point the same way; their lengths may differ.")),
+            example(t("উদাহরণ", "Example"), [p(t("দুজন একই দিকে গাড়ি ঠেলছে, একজন 50 N আর অন্যজন 80 N বলে।", "Two people push a car forward with forces of 50 N and 80 N."))]),
+            formula("A⃗ = 3î, B⃗ = 7î", t("সদৃশ ভেক্টর", "Like vectors"))
+          ]),
+          section(t("৪. বিসদৃশ ভেক্টর", "4. Unlike vectors"), [
+            p(t("একই জাতের ভেক্টর ঠিক বিপরীতমুখী।", "Vectors of the same kind point in opposite directions.")),
+            figure("assets/vector/kind-4.svg", t("একই জাতের ভেক্টর ঠিক বিপরীতমুখী।", "Vectors of the same kind point in opposite directions."), t("একই জাতের ভেক্টর ঠিক বিপরীতমুখী।", "Vectors of the same kind point in opposite directions.")),
+            example(t("উদাহরণ", "Example"), [p(t("দড়ি টানাটানিতে দুই দল দড়ির দুই প্রান্তে বিপরীত দিকে টানে।", "In tug-of-war the teams pull opposite ends of the rope in opposite directions."))]),
+            formula("A⃗ = 5î, B⃗ = −3î", t("বিসদৃশ ভেক্টর", "Unlike vectors"))
+          ]),
+          section(t("৫. সমান ভেক্টর", "5. Equal vectors"), [
+            p(t("মান ও দিক দুটোই একই।", "Both magnitude and direction agree.")),
+            figure("assets/vector/kind-5.svg", t("মান ও দিক দুটোই একই।", "Both magnitude and direction agree."), t("মান ও দিক দুটোই একই।", "Both magnitude and direction agree.")),
+            example(t("উদাহরণ", "Example"), [p(t("সমান্তরাল দুই রাস্তায় দুটি গাড়ির বেগ 60 km/h উত্তর দিকে হলে তাদের বেগ সমান।", "Cars on parallel roads both moving north at 60 km/h have equal velocities."))]),
+            formula("A⃗ = B⃗ = 2î + 3ĵ", t("সমান ভেক্টর", "Equal vectors"))
+          ]),
+          section(t("৬. ঋণাত্মক বা বিপরীত ভেক্টর", "6. Negative vector"), [
+            p(t("মান অপরিবর্তিত রেখে দিক উল্টাও।", "Reverse direction but keep the length.")),
+            figure("assets/vector/kind-6.svg", t("মান অপরিবর্তিত রেখে দিক উল্টাও।", "Reverse direction but keep the length."), t("মান অপরিবর্তিত রেখে দিক উল্টাও।", "Reverse direction but keep the length.")),
+            example(t("উদাহরণ", "Example"), [p(t("বাসা থেকে 5 m পূর্বে গিয়ে ঠিক একই পথে ফিরলে ফেরার সরণটি যাওয়ার সরণের ঋণাত্মক।", "Walk 5 m east and retrace your steps: the return displacement is the negative of the outward one."))]),
+            formula("PQ⃗ = −QP⃗", t("ঋণাত্মক বা বিপরীত ভেক্টর", "Negative vector"))
+          ]),
+          section(t("৭. সমরেখ ভেক্টর", "7. Collinear vectors"), [
+            p(t("একই রেখা বা সমান্তরাল রেখা বরাবর থাকে।", "They lie along the same line or parallel lines.")),
+            figure("assets/vector/kind-7.svg", t("একই রেখা বা সমান্তরাল রেখা বরাবর থাকে।", "They lie along the same line or parallel lines."), t("একই রেখা বা সমান্তরাল রেখা বরাবর থাকে।", "They lie along the same line or parallel lines.")),
+            example(t("উদাহরণ", "Example"), [p(t("সোজা রেললাইনে ট্রেন ব্রেক করলে বেগ ও ত্বরণ সমরেখ, কিন্তু বিপরীতমুখী।", "A train braking on straight track has collinear but opposite velocity and acceleration."))]),
+            formula("A⃗ = 2î, B⃗ = 5î, C⃗ = −3î", t("সমরেখ ভেক্টর", "Collinear vectors"))
+          ]),
+          section(t("৮. সমতলীয় ভেক্টর", "8. Coplanar vectors"), [
+            p(t("সব তীর একই সমতলে থাকে; সমান্তরাল হওয়া জরুরি নয়।", "All arrows lie in one plane; they need not be parallel.")),
+            figure("assets/vector/kind-8.svg", t("সব তীর একই সমতলে থাকে; সমান্তরাল হওয়া জরুরি নয়।", "All arrows lie in one plane; they need not be parallel."), t("সব তীর একই সমতলে থাকে; সমান্তরাল হওয়া জরুরি নয়।", "All arrows lie in one plane; they need not be parallel.")),
+            example(t("উদাহরণ", "Example"), [p(t("ক্যারম বোর্ডে স্ট্রাইকার ও গুটির বেগ বিভিন্ন দিকে হলেও সবই বোর্ডের তলে।", "The striker and coins on a carrom board can move in different directions within its plane."))]),
+            formula("A⃗ = 2î + 3ĵ, B⃗ = −î + 4ĵ", t("সমতলীয় ভেক্টর", "Coplanar vectors"))
+          ]),
+          section(t("৯. সঠিক ভেক্টর", "9. Proper vector"), [
+            p(t("মান শূন্য নয়।", "The magnitude is nonzero.")),
+            figure("assets/vector/kind-9.svg", t("মান শূন্য নয়।", "The magnitude is nonzero."), t("মান শূন্য নয়।", "The magnitude is nonzero.")),
+            example(t("উদাহরণ", "Example"), [p(t("পূর্বদিকে 3 m সরণ বা উত্তরে 10 m/s বেগ—দুটিরই দৈর্ঘ্য ও নির্দিষ্ট দিক আছে।", "A displacement of 3 m east and a velocity of 10 m/s north both have length and direction."))]),
+            formula("A⃗ = 3î + 4ĵ ⇒ ∣A⃗∣ = 5", t("সঠিক ভেক্টর", "Proper vector"))
+          ]),
+          section(t("১০. নাল বা শূন্য ভেক্টর", "10. Null vector"), [
+            p(t("মান শূন্য; পাদবিন্দু ও শীর্ষবিন্দু মিলে যায়। কোনো নির্দিষ্ট দিক নেই।", "Magnitude is zero, head and tail coincide, and direction is undefined.")),
+            figure("assets/vector/kind-10.svg", t("মান শূন্য; পাদবিন্দু ও শীর্ষবিন্দু মিলে যায়। কোনো নির্দিষ্ট দিক নেই।", "Magnitude is zero, head and tail coincide, and direction is undefined."), t("মান শূন্য; পাদবিন্দু ও শীর্ষবিন্দু মিলে যায়। কোনো নির্দিষ্ট দিক নেই।", "Magnitude is zero, head and tail coincide, and direction is undefined.")),
+            example(t("উদাহরণ", "Example"), [p(t("মাঠে এক চক্কর দিয়ে শুরুতে ফিরলে দূরত্ব শূন্য নয়, কিন্তু মোট সরণ শূন্য।", "Complete a lap: the distance is nonzero but the total displacement is zero."))]),
+            formula("A⃗ + (−A⃗) = 0⃗", t("নাল বা শূন্য ভেক্টর", "Null vector"))
+          ]),
+          section(t("১১. একক ভেক্টর", "11. Unit vector"), [
+            p(t("মান 1; ভেক্টরের দিক নির্দেশ করে।", "Its magnitude is one; it specifies direction.")),
+            figure("assets/vector/kind-11.svg", t("মান 1; ভেক্টরের দিক নির্দেশ করে।", "Its magnitude is one; it specifies direction."), t("মান 1; ভেক্টরের দিক নির্দেশ করে।", "Its magnitude is one; it specifies direction.")),
+            example(t("উদাহরণ", "Example"), [p(t("3î + 4ĵ এর মান 5। তাই 5 দিয়ে ভাগ করলে পাই 0.6î + 0.8ĵ। যাচাই: √(0.6² + 0.8²) = 1।", "The length of 3î + 4ĵ is 5. Divide by 5 to get 0.6î + 0.8ĵ; its length is √(0.6² + 0.8²) = 1."))]),
+            formula("â = A⃗ / ∣A⃗∣,  A⃗ ≠ 0⃗", t("একক ভেক্টর", "Unit vector"))
+          ]),
+          section(t("১২. অবস্থান ভেক্টর", "12. Position vector"), [
+            p(t("নির্বাচিত মূলবিন্দু থেকে বিন্দুটির দিকে আঁকা তীর। অন্য নাম ব্যাসার্ধ ভেক্টর।", "An arrow from the chosen origin to the point; also called a radius vector.")),
+            figure("assets/vector/kind-12.svg", t("নির্বাচিত মূলবিন্দু থেকে বিন্দুটির দিকে আঁকা তীর। অন্য নাম ব্যাসার্ধ ভেক্টর।", "An arrow from the chosen origin to the point; also called a radius vector."), t("নির্বাচিত মূলবিন্দু থেকে বিন্দুটির দিকে আঁকা তীর। অন্য নাম ব্যাসার্ধ ভেক্টর।", "An arrow from the chosen origin to the point; also called a radius vector.")),
+            example(t("উদাহরণ", "Example"), [p(t("স্কুল মূলবিন্দু হলে 2 km পূর্বে থাকা বাসার অবস্থান ভেক্টর 2 km পূর্বমুখী। P(3,4) হলে মূলবিন্দু থেকে তার দূরত্ব 5 একক।", "With school as origin, a home 2 km east has an eastward position vector of length 2 km. Point P(3,4) is 5 units from the origin."))]),
+            formula("OP⃗ = 3î + 4ĵ", t("অবস্থান ভেক্টর", "Position vector"))
+          ]),
+          section(t("১৩. সরণ ভেক্টর", "13. Displacement vector"), [
+            p(t("শেষ অবস্থান থেকে আদি অবস্থান বিয়োগ করো।", "Subtract initial position from final position.")),
+            figure("assets/vector/kind-13.svg", t("শেষ অবস্থান থেকে আদি অবস্থান বিয়োগ করো।", "Subtract initial position from final position."), t("শেষ অবস্থান থেকে আদি অবস্থান বিয়োগ করো।", "Subtract initial position from final position.")),
+            example(t("উদাহরণ", "Example"), [p(t("(2,3) থেকে (5,7) গেলে সরণ (3,4), মান 5। ঘুরপথে গেলেও সরণের তীর শুরু থেকে সরাসরি শেষে যায়।", "From (2,3) to (5,7) the displacement is (3,4), of length 5. Even on a detour the arrow runs directly from start to finish."))]),
+            formula("Δr⃗ = r⃗𝒻 − r⃗ᵢ", t("সরণ ভেক্টর", "Displacement vector"))
+          ]),
+          section(t("১৪. বিপ্রতীপ বা ব্যতিহার ভেক্টর", "14. Reciprocal vector"), [
+            p(t("দিক একই, মান পরস্পরের ব্যস্তানুপাতিক—মানের গুণফল 1।", "Same direction, reciprocal magnitudes: the lengths multiply to one.")),
+            figure("assets/vector/kind-14.svg", t("দিক একই, মান পরস্পরের ব্যস্তানুপাতিক—মানের গুণফল 1।", "Same direction, reciprocal magnitudes: the lengths multiply to one."), t("দিক একই, মান পরস্পরের ব্যস্তানুপাতিক—মানের গুণফল 1।", "Same direction, reciprocal magnitudes: the lengths multiply to one.")),
+            example(t("উদাহরণ", "Example"), [p(t("7 ও 1/7 গুণ করলে 1। এখানে ব্যস্ত মানে 1/7, ঋণাত্মক −7 নয়।", "Seven times one seventh is one. Reciprocal means 1/7, not −7."))]),
+            formula("A⃗ = 7î, B⃗ = (1/7)î", t("বিপ্রতীপ বা ব্যতিহার ভেক্টর", "Reciprocal vector"))
+          ]),
+          section(t("১৫. পোলার ভেক্টর", "15. Polar vector"), [
+            p(t("স্থানিক অক্ষগুলোর দিক একসঙ্গে উল্টালে এর উপাংশগুলোর চিহ্ন বদলায়।", "Its components reverse sign under spatial inversion.")),
+            figure("assets/vector/kind-15.svg", t("স্থানিক অক্ষগুলোর দিক একসঙ্গে উল্টালে এর উপাংশগুলোর চিহ্ন বদলায়।", "Its components reverse sign under spatial inversion."), t("স্থানিক অক্ষগুলোর দিক একসঙ্গে উল্টালে এর উপাংশগুলোর চিহ্ন বদলায়।", "Its components reverse sign under spatial inversion.")),
+            example(t("উদাহরণ", "Example"), [p(t("সরণ, বেগ, ত্বরণ, বল ও ভরবেগ পোলার। বাঁক নেওয়া গাড়ির বেগও পোলার; ব্রেকের বল বেগের উল্টো হতে পারে।", "Displacement, velocity, acceleration, force and momentum are polar. A turning car still has polar velocity; braking force can oppose it."))]),
+            formula("p⃗ = mv⃗", t("পোলার ভেক্টর", "Polar vector"))
+          ]),
+          section(t("১৬. অক্ষীয় ভেক্টর", "16. Axial vector"), [
+            p(t("ঘূর্ণনের ক্ষেত্রে দিক অক্ষ বরাবর। ডান হাতের চার আঙুল ঘূর্ণনের দিকে মুড়লে বুড়ো আঙুল অক্ষের দিক দেখায়।", "For rotation it points along the axis. Curl the fingers of the right hand with the rotation; the thumb gives the axial direction.")),
+            figure("assets/vector/kind-16.svg", t("ঘূর্ণনের ক্ষেত্রে দিক অক্ষ বরাবর। ডান হাতের চার আঙুল ঘূর্ণনের দিকে মুড়লে বুড়ো আঙুল অক্ষের দিক দেখায়।", "For rotation it points along the axis. Curl the fingers of the right hand with the rotation; the thumb gives the axial direction."), t("ঘূর্ণনের ক্ষেত্রে দিক অক্ষ বরাবর। ডান হাতের চার আঙুল ঘূর্ণনের দিকে মুড়লে বুড়ো আঙুল অক্ষের দিক দেখায়।", "For rotation it points along the axis. Curl the fingers of the right hand with the rotation; the thumb gives the axial direction.")),
+            example(t("উদাহরণ", "Example"), [p(t("নিচ থেকে ফ্যানকে ঘড়ির কাঁটার বিপরীতে ঘুরতে দেখলে কৌণিক বেগ তোমার দিকে। কৌণিক ত্বরণ, টর্ক ও কৌণিক ভরবেগও অক্ষীয়।", "If a fan looks counterclockwise from below, its angular velocity points toward you. Angular acceleration, torque and angular momentum are axial too."))]),
+            formula("τ⃗ = r⃗ × F⃗,  L⃗ = r⃗ × p⃗", t("অক্ষীয় ভেক্টর", "Axial vector"))
+          ]),
+          section(t("এক নজরে ১৬টি ভেক্টর", "All sixteen at a glance"), [
+            figure('assets/vector/types.svg', t('চারটি ধরন পাশাপাশি দেখো।', 'Compare four types.'), t('সমান, ঋণাত্মক, সমরেখ ও সমতলীয় তীর।', 'Equal, negative, collinear and coplanar arrows.')),
+            table([t("নাম", "Name"), t("মূল কথা", "Key idea"), t("উদাহরণ", "Example")], [
+              [t("স্বাধীন ভেক্টর", "Free vector"), t("মান ও দিক ঠিক রেখে পাদবিন্দু সরানো যায়।", "Move the tail without changing magnitude or direction."), t("`A⃗ = B⃗`", "`A⃗ = B⃗`")],
+              [t("সীমাবদ্ধ ভেক্টর", "Localized vector"), t("পাদবিন্দু একটি নির্দিষ্ট বিন্দুতে বাঁধা।", "The tail is fixed to a point."), t("`r⃗ = OP⃗`", "`r⃗ = OP⃗`")],
+              [t("সদৃশ ভেক্টর", "Like vectors"), t("একই জাতের ভেক্টরের দিক একই; মান ভিন্ন হতে পারে।", "Vectors of the same kind point the same way; their lengths may differ."), t("`A⃗ = 3î, B⃗ = 7î`", "`A⃗ = 3î, B⃗ = 7î`")],
+              [t("বিসদৃশ ভেক্টর", "Unlike vectors"), t("একই জাতের ভেক্টর ঠিক বিপরীতমুখী।", "Vectors of the same kind point in opposite directions."), t("`A⃗ = 5î, B⃗ = −3î`", "`A⃗ = 5î, B⃗ = −3î`")],
+              [t("সমান ভেক্টর", "Equal vectors"), t("মান ও দিক দুটোই একই।", "Both magnitude and direction agree."), t("`A⃗ = B⃗ = 2î + 3ĵ`", "`A⃗ = B⃗ = 2î + 3ĵ`")],
+              [t("ঋণাত্মক বা বিপরীত ভেক্টর", "Negative vector"), t("মান অপরিবর্তিত রেখে দিক উল্টাও।", "Reverse direction but keep the length."), t("`PQ⃗ = −QP⃗`", "`PQ⃗ = −QP⃗`")],
+              [t("সমরেখ ভেক্টর", "Collinear vectors"), t("একই রেখা বা সমান্তরাল রেখা বরাবর থাকে।", "They lie along the same line or parallel lines."), t("`A⃗ = 2î, B⃗ = 5î, C⃗ = −3î`", "`A⃗ = 2î, B⃗ = 5î, C⃗ = −3î`")],
+              [t("সমতলীয় ভেক্টর", "Coplanar vectors"), t("সব তীর একই সমতলে থাকে; সমান্তরাল হওয়া জরুরি নয়।", "All arrows lie in one plane; they need not be parallel."), t("`A⃗ = 2î + 3ĵ, B⃗ = −î + 4ĵ`", "`A⃗ = 2î + 3ĵ, B⃗ = −î + 4ĵ`")],
+              [t("সঠিক ভেক্টর", "Proper vector"), t("মান শূন্য নয়।", "The magnitude is nonzero."), t("`A⃗ = 3î + 4ĵ ⇒ ∣A⃗∣ = 5`", "`A⃗ = 3î + 4ĵ ⇒ ∣A⃗∣ = 5`")],
+              [t("নাল বা শূন্য ভেক্টর", "Null vector"), t("মান শূন্য; পাদবিন্দু ও শীর্ষবিন্দু মিলে যায়। কোনো নির্দিষ্ট দিক নেই।", "Magnitude is zero, head and tail coincide, and direction is undefined."), t("`A⃗ + (−A⃗) = 0⃗`", "`A⃗ + (−A⃗) = 0⃗`")],
+              [t("একক ভেক্টর", "Unit vector"), t("মান 1; ভেক্টরের দিক নির্দেশ করে।", "Its magnitude is one; it specifies direction."), t("`â = A⃗ / ∣A⃗∣,  A⃗ ≠ 0⃗`", "`â = A⃗ / ∣A⃗∣,  A⃗ ≠ 0⃗`")],
+              [t("অবস্থান ভেক্টর", "Position vector"), t("নির্বাচিত মূলবিন্দু থেকে বিন্দুটির দিকে আঁকা তীর। অন্য নাম ব্যাসার্ধ ভেক্টর।", "An arrow from the chosen origin to the point; also called a radius vector."), t("`OP⃗ = 3î + 4ĵ`", "`OP⃗ = 3î + 4ĵ`")],
+              [t("সরণ ভেক্টর", "Displacement vector"), t("শেষ অবস্থান থেকে আদি অবস্থান বিয়োগ করো।", "Subtract initial position from final position."), t("`Δr⃗ = r⃗𝒻 − r⃗ᵢ`", "`Δr⃗ = r⃗𝒻 − r⃗ᵢ`")],
+              [t("বিপ্রতীপ বা ব্যতিহার ভেক্টর", "Reciprocal vector"), t("দিক একই, মান পরস্পরের ব্যস্তানুপাতিক—মানের গুণফল 1।", "Same direction, reciprocal magnitudes: the lengths multiply to one."), t("`A⃗ = 7î, B⃗ = (1/7)î`", "`A⃗ = 7î, B⃗ = (1/7)î`")],
+              [t("পোলার ভেক্টর", "Polar vector"), t("স্থানিক অক্ষগুলোর দিক একসঙ্গে উল্টালে এর উপাংশগুলোর চিহ্ন বদলায়।", "Its components reverse sign under spatial inversion."), t("`p⃗ = mv⃗`", "`p⃗ = mv⃗`")],
+              [t("অক্ষীয় ভেক্টর", "Axial vector"), t("ঘূর্ণনের ক্ষেত্রে দিক অক্ষ বরাবর। ডান হাতের চার আঙুল ঘূর্ণনের দিকে মুড়লে বুড়ো আঙুল অক্ষের দিক দেখায়।", "For rotation it points along the axis. Curl the fingers of the right hand with the rotation; the thumb gives the axial direction."), t("`τ⃗ = r⃗ × F⃗,  L⃗ = r⃗ × p⃗`", "`τ⃗ = r⃗ × F⃗,  L⃗ = r⃗ × p⃗`")]
             ])
           ]),
-          section(t('মান ও দিকভেদে', 'By magnitude and direction'), [
-            table(
-              [t('নাম', 'Name'), t('শর্ত', 'Condition'), t('প্রকাশ', 'Notation / example')],
-              [
-                [t('সমান ভেক্টর', 'Equal vectors'), t('সমান মান + একই দিক; পাদবিন্দু নির্ভর নয়।', 'Equal magnitude + same direction; tail irrelevant.'), t('`A⃗ = B⃗`', '`A⃗ = B⃗`')],
-                [t('ঋণাত্মক ভেক্টর', 'Negative vector'), t('সমমান, ঠিক বিপরীত দিক।', 'Same magnitude, exactly opposite direction.'), t('`PQ⃗ = A⃗`, `QP⃗ = −A⃗`', '`PQ⃗ = A⃗`, `QP⃗ = −A⃗`')],
-                [t('সঠিক ভেক্টর', 'Proper vector'), t('মান শূন্য নয়।', 'Non-zero magnitude.'), t('`A ≠ 0`', '`A ≠ 0`')],
-                [t('নাল ভেক্টর', 'Null vector'), t('মান শূন্য; পাদবিন্দু ও শীর্ষবিন্দু একই; নির্দিষ্ট দিক নেই।', 'Zero magnitude; tail = head; no definite direction.'), t('`0⃗ = A⃗ + (−A⃗)`', '`0⃗ = A⃗ + (−A⃗)`')],
-                [t('একক ভেক্টর', 'Unit vector'), t('মান 1; `â = A⃗/A`।', 'Magnitude 1; `â = A⃗/A`.'), t('`A⃗ = 5â`', '`A⃗ = 5â`')],
-                [t('বিপ্রতীপ ভেক্টর', 'Reciprocal vector'), t('সমান্তরাল; একটির মান অন্যটির বিপরীত সংখ্যা।', 'Parallel; one magnitude is the reciprocal of the other.'), t('`A⃗ = 7î`, `B⃗ = (1/7)î`', '`A⃗ = 7î`, `B⃗ = (1/7)î`')]
-              ]
-            ),
-            formula('â = A⃗/A   |   |â| = 1', t('কোনো অশূন্য ভেক্টরকে তার মান দিয়ে ভাগ করলে তার দিকে একক ভেক্টর পাওয়া যায়।', 'Dividing a non-zero vector by its magnitude gives a unit vector along it.'))
-          ]),
-          section(t('অবস্থান ও সরণ', 'Position and displacement'), [
-            glossary([
-              term(t('অবস্থান ভেক্টর', 'Position vector'), t('মূলবিন্দুর সাপেক্ষে কোনো বিন্দুর অবস্থান; `OP⃗ = r⃗`।', 'Position of a point relative to the origin; `OP⃗ = r⃗`.')),
-              term(t('ব্যাসার্ধ ভেক্টর', 'Radius vector'), t('অবস্থান ভেক্টরেরই আরেক নাম `r⃗`।', 'Another name for the position vector `r⃗`.')),
-              term(t('সরণ ভেক্টর', 'Displacement vector'), t('শেষ ও আদি অবস্থান ভেক্টরের পার্থক্য।', 'Difference between final and initial position vectors.'))
-            ]),
-            formula('Δr⃗ = r⃗𝒻 − r⃗ᵢ', t('চিত্র ২.১২-এ দেখানো সরণ ভেক্টর।', 'Displacement vector shown in Fig. 2.12.')),
-            qa(t('নাল ভেক্টরের দিক কী?', 'What is the direction of a null vector?'), t('নাল ভেক্টরের কোনো সুনির্দিষ্ট দিক নেই; পাদবিন্দু ও শীর্ষবিন্দু একই বিন্দুতে হয়।', 'A null vector has no definite direction; its tail and head coincide.'))
+          section(t("পরীক্ষার আগে: পার্থক্য ও ছড়া", "Exam revision: contrasts and rhyme"), [
+            p(t("সদৃশে দিক মেলে; সমানে মানও মেলে। বিসদৃশে দিক উল্টো; ঋণাত্মকে মানও সমান। সমরেখে একটি রেখার দিকই যথেষ্ট; সমতলীয়তে তীরগুলো একই তলে নানা দিকে থাকতে পারে।", "Like vectors share a direction; equal vectors also share a length. Unlike vectors oppose; negative pairs also match in length. Collinear arrows share one line direction; coplanar arrows may span a plane.")),
+            p(t("এককের মান 1, নালের মান 0। ঋণাত্মকে দিক উল্টায়, বিপ্রতীপে মানের ব্যস্ত নেওয়া হয়। পূর্ণ চক্করে দূরত্ব জমে, সরণ শূন্য। দুটি পোলার ভেক্টরের ক্রস গুণফল অক্ষীয়।", "Unit length is one; null length is zero. Negation reverses direction; reciprocation inverts length. A lap adds distance but no net displacement. Crossing two polar vectors gives an axial vector.")),
+            tip(t("ঝটপট রিভিশন ছড়া", "Quick memory verse"), t("স্বাধীন ঘোরে যেথা খুশি, সীমাবদ্ধ বাঁধা,\nসদৃশ চলে এক দিকে, বিসদৃশে বাধা।\nসমান হলে মান ও দিক, দুটোই হবে এক,\nঋণাত্মক উল্টো দিকে, মানটা একই দেখ।\nনাল মানে শূন্য মান, একক মানে এক,\nঘূর্ণনের অক্ষ পেতে ডান হাতটি দেখ!", "Free can shift, bound must stay; like arrows point one way.\nEqual lengths and bearings match; negatives point back.\nZero has no length, units measure one; curl your right hand as the wheel is spun."))
           ])
         ]
       },

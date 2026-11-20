@@ -15,7 +15,7 @@
 - **Instant search** — `Ctrl/⌘ + K` বা `/`; বাংলা ও English দুটোতেই খোঁজে, title/summary/tags/formula/section text মিলিয়ে।
 - **Efficient menu** — collapsible subject/chapter tree, All notes library, subject filter, continue reading, read progress।
 - **Reader-friendly notes** — formula box, callout, example, table, step list, glossary, outcomes, formula sheet, Q&A, table of contents, prev/next topic, copy link, mark as read।
-- **Rich Vector chapter** — মূল পাঠ্যবইয়ের ২ নম্বর অধ্যায় অনুসরণ করে ১৫টি section-wise topic, ১৮টি keyword, ১০টি learning outcome, ১৫টি equation ও ১৫টি শিক্ষামূলক diagram।
+- **Rich Vector chapter** — মূল পাঠ্যবইয়ের ২ নম্বর অধ্যায় অনুসরণ করে ১৫টি section-wise topic, ১৮টি keyword, ১০টি learning outcome, ১৫টি equation ও ৩১টি শিক্ষামূলক diagram।
 - **ভাষা-সচেতন SVG diagram** — বাংলা/English toggle-এ চিত্রের label-ও বদলায়; dark/light theme-এ SVG রং CSS variable থেকে নেয়।
 - **No dependencies at runtime** — শুধু `index.html + styles.css + app.js + data/*.js + assets/vector/*.svg`।
 - **Content validator + smoke test** — ভুল bilingual field বা duplicate id ধরে দেয়।
@@ -34,7 +34,7 @@
 | `data/physics-vectors.js` | বই-ভিত্তিক সম্পূর্ণ Vector chapter (`registerChapter('physics', …)`) |
 | `data/chemistry.js` | Chemistry chapters/topics |
 | `data/higher-math.js` | Higher Math chapters/topics |
-| `assets/vector/*.svg` | ১৫টি base diagram + প্রতিটির `.bn.svg` / `.en.svg` fallback |
+| `assets/vector/*.svg` | ৩১টি base diagram + প্রতিটির `.bn.svg` / `.en.svg` fallback |
 | `scripts/validate-notes.mjs` | Content schema check |
 | `scripts/smoke-test.mjs` | Headless DOM runtime check |
 | `scripts/serve.mjs` | Tiny local static server |

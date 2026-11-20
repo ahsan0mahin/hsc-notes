@@ -325,8 +325,12 @@
   function escapeRegExp(value) { return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
   function safeAccent(value) { return /^#([0-9a-f]{3}|[0-9a-f]{6})$/i.test(value || '') ? value : '#8b5cf6'; }
   function icon(name) { return `<svg class="icon" aria-hidden="true"><use href="#i-${name}"></use></svg>`; }
+  // Draw one continuous arrow across the whole symbol (including point pairs like OP).
+  function vectorNotation(escaped) {
+    return escaped.replace(/([A-Z]{2}|[A-Za-z0ωτα])⃗/gu, '<span class="vector-symbol">$1<span class="vector-mark">⃗</span></span>');
+  }
   function inline(value) {
-    return escapeHtml(pick(value))
+    return vectorNotation(escapeHtml(pick(value)))
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
       .replace(/`([^`]+)`/g, '<code>$1</code>')
       .replace(/\n/g, '<br>');
@@ -971,7 +975,7 @@
           <div class="vector-panel-head"><span>${icon('sparkles')}</span><div><p class="vector-eyebrow">${tr('formulaSheet')}</p><h2>${tr('quickFormulas')}</h2></div></div>
           <div class="quick-formula-list">${formulas.map(item => `<div class="quick-formula">
             <span class="equation-no">${tr('equation')} ${escapeHtml(item.no)}</span>
-            <code>${escapeHtml(item.math)}</code>
+            <code>${vectorNotation(escapeHtml(item.math))}</code>
             <p>${inline(item.note)}</p>
           </div>`).join('')}</div>
         </section>
@@ -1018,7 +1022,7 @@
       case 'formula':
         return `<div class="formula-box">
           <div class="formula-label">${icon('sparkles')} ${tr('formula')}</div>
-          <code>${escapeHtml(block.math)}</code>
+          <code>${vectorNotation(escapeHtml(block.math))}</code>
           ${block.caption ? `<p>${inline(block.caption)}</p>` : ''}
         </div>`;
       case 'callout': {
@@ -1067,7 +1071,7 @@
           <p class="block-label">${icon('sparkles')} ${tr('formulaSheet')}</p>
           <div class="formula-grid">${(block.items || []).map(item => `<article class="formula-card">
             <span class="equation-no">${tr('equation')} ${escapeHtml(item.no)}</span>
-            <code>${escapeHtml(item.math)}</code>
+            <code>${vectorNotation(escapeHtml(item.math))}</code>
             ${item.note ? `<p>${inline(item.note)}</p>` : ''}
           </article>`).join('')}</div>
         </div>`;
