@@ -115,7 +115,7 @@ try {
   assert(document.querySelectorAll('.outcome-list li').length === 10, 'chapter renders 10 learning outcomes');
   assert(document.querySelectorAll('.quick-formula').length === 8, 'chapter renders 8 quick formulas');
   assert(document.querySelectorAll('.roadmap-card').length === 15, 'chapter roadmap renders 15 section-wise notes');
-  assert(document.querySelector('.vector-stats > div:nth-child(3) strong').textContent.trim() === '15', 'chapter counts 15 unique diagrams');
+  assert(document.querySelector('.vector-stats > div:nth-child(3) strong').textContent.trim() === '31', 'chapter counts 31 unique diagrams');
   assert(document.querySelector('.vector-hero-figure svg.inline-figure'), 'chapter hero SVG is inlined');
 
   click(document.querySelector('[data-lang="bn"]'), 'BN language button');
@@ -139,6 +139,11 @@ try {
   click(document.querySelector('[data-action="mark-read"]'), 'mark read button');
   assert(document.querySelector('[data-action="mark-read"]').getAttribute('aria-pressed') === 'true', 'mark-read toggles pressed state');
   assert(/physics\/vectors\/scalars-and-vectors/.test(window.localStorage.getItem('hsc:read') || ''), 'read progress persists');
+
+  go('#/topic/physics/vectors/types-of-vectors');
+  await settle();
+  assert(document.querySelectorAll('.figure-frame[data-figure-src*="kind-"]').length === 16, 'all sixteen vector types have diagrams');
+  assert([...document.querySelectorAll('.formula-box .vector-symbol')].some(el => el.textContent === 'OP⃗'), 'one arrow spans the point pair OP');
 
   go('#/topic/physics/vectors/chapter-orientation');
   await settle();
