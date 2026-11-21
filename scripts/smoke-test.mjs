@@ -211,7 +211,7 @@ try {
   assert(document.querySelector('.board-reader a[href="#/type-math/physics/vectors/72"]'), 'type index preserves stable question IDs');
   go('#/type-math/physics/vectors/1');
   await settle();
-  assert(document.querySelector('.board-reader .paper img') && document.querySelectorAll('.board-reader .part details').length===4 && !document.querySelector('.board-reader details[open]'), 'type question shows its drawing before independent c/d disclosures');
+  assert(document.querySelector('.board-reader .type-stem svg') && document.querySelectorAll('.board-reader .part details').length===4 && !document.querySelector('.board-reader details[open]'), 'type question shows its drawing before independent c/d disclosures');
   document.querySelector('.board-reader .hint').open=true;
   click(document.querySelector('[data-lang="bn"]'), 'switch type question to Bengali');
   await settle();

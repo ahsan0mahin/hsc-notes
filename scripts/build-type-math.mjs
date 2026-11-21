@@ -1,3 +1,4 @@
+import {typeLabFigure} from './type-lab-figure.mjs';
 import {projected} from './type-vector-sketch.mjs';
 // Build reader fragments from the supplied bilingual collection. Stable IDs let
 // us reuse the corresponding board lab and verified solution for each subpart.
@@ -18,12 +19,12 @@ for(const lang of ['bn','en']) {
     index+=`<section class="paper"><h2>${esc(title)} · ${number(questions.length)}</h2><ol>`;
     for(const {id,source,stem,figure,parts} of questions) {
       const heading=`${bn?'প্রশ্ন':'Question'} ${number(id)}`;
-      index+=`<li><a href="q${id}.html">${heading} — ${esc(source)}</a></li>`;
+      index+=`<li><a href="q${id}.html">${heading} — ${esc(source.replace(/\s*·\s*(?:book p\.|বই পৃ).*$/i,''))}</a></li>`;
       const dom=new JSDOM(fs.readFileSync(`board/${bn?'':'en/'}q${id}.html`));
       const doc=dom.window.document;
       const panels=['গ','ঘ'].map(c=>doc.getElementById(`part-${c}`));
       const sketch=projected(id,bn) || panels[0].querySelector('.hint svg').outerHTML.replaceAll('head-','stem-head-');
-      const graphic=figure?`<img src="${folder}/figures/q${id}.svg" alt="${heading} · ${esc(title)}" style="display:block;width:100%;max-width:640px;height:auto">`:`<figure class="lab guide">${sketch}<figcaption>${bn?'ধারণাচিত্র':'Concept sketch'}</figcaption></figure>`;
+      const graphic=figure?typeLabFigure(doc,folder,id,esc):`<figure class="lab guide">${sketch}<figcaption>${bn?'ধারণাচিত্র':'Concept sketch'}</figcaption></figure>`;
       let body=`<nav><a href="index.html">← ${label}</a></nav><header><small>${esc(title)}</small><h1>${heading}</h1><p>${esc(source)}</p></header><section class="paper">${render(stem.replace(/^\*(?:This question has no figure|এই প্রশ্নে চিত্র নেই).*\*$/gm,''))}${graphic}</section>`;
       panels.forEach((panel,i)=>{
         const {prompt,answer}=parts[i];

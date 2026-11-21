@@ -60,3 +60,8 @@
 .board-reader .lab small {color:#7ce0ce}
 .board-reader .card small {color:var(--primary-2)}
 .board-reader header {background:linear-gradient(115deg,var(--glow-a),var(--surface-solid),var(--glow-b));color:var(--text)}
+/* Type-wise stimulus diagrams use the hint lab canvas and reflowable givens. */
+.board-reader .type-stem svg { display:block; height:auto; max-height:none; margin-block:12px; }
+.board-reader .type-stem svg text { font-family:inherit; font-size:13px; }
+.board-reader .type-stem figcaption { border-top:1px solid #355267; padding-top:12px; color:#dcebf6; }
+.board-reader .type-stem ul { padding-inline-start:1.3em; margin-bottom:0; }
