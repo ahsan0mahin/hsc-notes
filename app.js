@@ -479,6 +479,8 @@
   function topicUrl(subject, chapter, topic) {
     return `#/topic/${encodeURIComponent(subject.id)}/${encodeURIComponent(chapter.id)}/${encodeURIComponent(topic.id)}`;
   }
+  const typePath = '#/type-math/physics/vectors';
+  const typeLabel = () => state.lang === 'bn' ? 'ধরনভিত্তিক গণিত' : 'Type Wise Math';
   const boardPath = '#/board/physics/vectors';
   const boardLabel = () => state.lang === 'bn' ? 'বোর্ড প্রশ্ন' : 'Board questions';
   function byUpdated(a, b) { return String(b.topic.updated || '').localeCompare(String(a.topic.updated || '')); }
@@ -488,6 +490,11 @@
     const decode = part => { try { return decodeURIComponent(part); } catch (error) { return part; } };
     const parts = raw.split('/').filter(Boolean).map(decode);
     if (!parts.length) return { view: 'home' };
+    if (parts.slice(0,3).join('/') === 'type-math/physics/vectors') {
+      const id = parts[3] || '';
+      return parts.length <= 4 && (!id || /^[1-9]\d?$/.test(id) && Number(id) <= 85)
+        ? {view:'typeMath', subjectId:'physics', chapterId:'vectors', id} : {view:'notFound'};
+    }
     if (parts.slice(0,3).join('/') === 'board/physics/vectors') {
       const [, , , id, section] = parts;
       const numbered = /^[1-9]\d?$/.test(id) && Number(id) <= 85;
@@ -625,7 +632,7 @@
                 </a>`;
               }).join('') || `<span class="empty-chapter">${tr('comingSoon')}</span>`}
             </div>
-            ${vector ? `</details><a class="chapter-summary board-branch ${route.view==='board'?'active':''}" href="${boardPath}" ${route.view==='board'?'aria-current="location"':''}>${icon('layers')} ${boardLabel()}</a>`:''}
+            ${vector ? `</details><a class="chapter-summary board-branch ${route.view==='board'?'active':''}" href="${boardPath}" ${route.view==='board'?'aria-current="location"':''}>${icon('layers')} ${boardLabel()}</a><a class="chapter-summary board-branch ${route.view==='typeMath'?'active':''}" href="${typePath}">${icon('layers')} ${typeLabel()}</a>`:''}
           </details>`;
         }).join('')}
       </div>
@@ -1185,7 +1192,9 @@
   async function loadBoard(route, reading) {
     const root = main.querySelector('.board-reader');
     try {
-      const res = await fetch(`board/${state.lang==='en'?'en/':''}${route.id ? 'q'+route.id : 'index'}.html`);
+      const path = route.view === 'typeMath' ? typePath : boardPath;
+      const folder = route.view === 'typeMath' ? `type-math/${state.lang}/` : `board/${state.lang==='en'?'en/':''}`;
+      const res = await fetch(`${folder}${route.id ? 'q'+route.id : 'index'}.html`);
       if (!res.ok) throw Error('Page unavailable');
       const doc = new DOMParser().parseFromString(await res.text(),'text/html');
       const body = doc.querySelector('main');
@@ -1194,9 +1203,9 @@
       for (const a of body.querySelectorAll('a[href]')) {
         const href = a.getAttribute('href');
         const q = /^q(\d+)\.html(?:#(.+))?$/.exec(href);
-        if (q) a.href = boardPath+'/'+q[1]+(q[2]?'/'+q[2]:'');
-        else if (href==='index.html') a.href=boardPath;
-        else if (href.startsWith('#')) a.href=boardPath+'/'+href.slice(1);
+        if (q) a.href = path+'/'+q[1]+(q[2]?'/'+q[2]:'');
+        else if (href==='index.html') a.href=path;
+        else if (href.startsWith('#')) a.href=path+'/'+href.slice(1);
         else if (href.startsWith('../index.html#')) a.href=href.slice(href.indexOf('#'));
       }
       root.lang=state.lang;
@@ -1222,14 +1231,16 @@
     state.route = route;
     // The old standalone board stylesheet styled nav, header and main globally.
     // Use a distinct asset URL and keep even the scoped sheet off non-board routes.
+    const practice = route.view === 'board' || route.view === 'typeMath';
+    const practiceLabel = route.view === 'typeMath' ? typeLabel : boardLabel;
     const boardStyle = document.getElementById('board-reader-style');
-    if (route.view === 'board' && !boardStyle) {
+    if (practice && !boardStyle) {
       const link = document.createElement('link');
       link.id = 'board-reader-style';
       link.rel = 'stylesheet';
       link.href = 'board/reader-scoped.css';
       document.head.append(link);
-    } else if (route.view !== 'board') {
+    } else if (!practice) {
       boardStyle?.remove();
     }
     let html = '';
@@ -1239,9 +1250,9 @@
     if (route.view === 'home') {
       html = renderHome();
       title = `HSC Notes · ${tr('siteTagline')}`;
-    } else if (route.view === 'board') {
-      title = `${boardLabel()}${route.id?' · '+route.id:''} · HSC Notes`;
-      html = `<div class="content-wrap">${renderBreadcrumb([{label:tr('home'),href:homeUrl()},{label:pick(findChapter(findSubject('physics'),'vectors').title),href:'#/chapter/physics/vectors'}],boardLabel())}<div class="board-reader" aria-busy="true">${state.lang==='bn'?'লোড হচ্ছে…':'Loading…'}</div>${renderFooter()}</div>`;
+    } else if (practice) {
+      title = `${practiceLabel()}${route.id?' · '+route.id:''} · HSC Notes`;
+      html = `<div class="content-wrap">${renderBreadcrumb([{label:tr('home'),href:homeUrl()},{label:pick(findChapter(findSubject('physics'),'vectors').title),href:'#/chapter/physics/vectors'}],practiceLabel())}<div class="board-reader" aria-busy="true">${state.lang==='bn'?'লোড হচ্ছে…':'Loading…'}</div>${renderFooter()}</div>`;
     } else if (route.view === 'notes') {
       html = renderLibrary();
       title = `${tr('allNotes')} · HSC Notes`;
@@ -1276,7 +1287,7 @@
     }
 
     main.innerHTML = html;
-    if (route.view === 'board') loadBoard(route, reading);
+    if (practice) loadBoard(route, reading);
     document.title = title;
     metaDescription.setAttribute('content', description);
     renderSidebar();
