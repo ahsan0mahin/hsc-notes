@@ -479,6 +479,8 @@
   function topicUrl(subject, chapter, topic) {
     return `#/topic/${encodeURIComponent(subject.id)}/${encodeURIComponent(chapter.id)}/${encodeURIComponent(topic.id)}`;
   }
+  const boardPath = '#/board/physics/vectors';
+  const boardLabel = () => state.lang === 'bn' ? 'বোর্ড প্রশ্ন' : 'Board questions';
   function byUpdated(a, b) { return String(b.topic.updated || '').localeCompare(String(a.topic.updated || '')); }
 
   function parseHash() {
@@ -486,6 +488,15 @@
     const decode = part => { try { return decodeURIComponent(part); } catch (error) { return part; } };
     const parts = raw.split('/').filter(Boolean).map(decode);
     if (!parts.length) return { view: 'home' };
+    if (parts.slice(0,3).join('/') === 'board/physics/vectors') {
+      const [, , , id, section] = parts;
+      const numbered = /^[1-9]\d?$/.test(id) && Number(id) <= 85;
+      const indexSection = id === 'board' || id === 'college';
+      if (parts.length <= 5 && ((!id || indexSection) && !section || numbered && (!section || /^part-[কখগঘ]$/.test(section)))) {
+        return {view:'board', subjectId:'physics', chapterId:'vectors', id:numbered?id:'', section:indexSection?id:section};
+      }
+      return {view:'notFound'};
+    }
     if (parts[0] === 'notes') return { view: 'notes' };
     if (parts[0] === 'subject' && parts[1]) return { view: 'subject', subjectId: parts[1] };
     if (parts[0] === 'chapter' && parts[1] && parts[2]) return { view: 'chapter', subjectId: parts[1], chapterId: parts[2] };
@@ -594,6 +605,7 @@
       <div class="chapter-list">
         ${chapters.map(chapter => {
           const topics = getTopics(subject, chapter);
+          const vector = subject.id === 'physics' && chapter.id === 'vectors';
           const chapterOpen = route.subjectId === subject.id && route.chapterId === chapter.id ? 'open' : '';
           return `<details class="chapter-group" data-chapter="${escapeAttr(chapter.id)}" ${chapterOpen}>
             <summary class="chapter-summary">
@@ -601,6 +613,7 @@
               <span class="subject-name">${escapeHtml(pick(chapter.title))}</span>
               <span class="chapter-count">${topics.length}</span>
             </summary>
+            ${vector ? `<details class="vector-book" ${route.view==='topic' && chapterOpen?'open':''}><summary class="chapter-summary">${icon('book')} ${state.lang==='bn'?'মূল বই':'Main book'}</summary>`:''}
             <div class="topic-list">
               ${topics.map(topic => {
                 const active = route.view === 'topic' && route.subjectId === subject.id && route.chapterId === chapter.id && route.topicId === topic.id;
@@ -610,6 +623,7 @@
                 </a>`;
               }).join('') || `<span class="empty-chapter">${tr('comingSoon')}</span>`}
             </div>
+            ${vector ? `</details><a class="chapter-summary board-branch ${route.view==='board'?'active':''}" href="${boardPath}" ${route.view==='board'?'aria-current="location"':''}>${icon('layers')} ${boardLabel()}</a>`:''}
           </details>`;
         }).join('')}
       </div>
@@ -944,7 +958,7 @@
             <p class="vector-lead">${inline(meta.intro)}</p>
             <div class="vector-big-idea">${icon('sparkles')}<span>${inline(meta.bigIdea)}</span></div>
             <div class="vector-hero-actions">
-              <a class="btn btn-soft" href="board/index.html">${icon("book")} ${state.lang === "bn" ? "বোর্ড প্রশ্ন" : "Board questions"}</a>
+              <a class="btn btn-soft" href="${boardPath}">${icon("book")} ${state.lang === "bn" ? "বোর্ড প্রশ্ন" : "Board questions"}</a>
               ${first ? `<a class="btn btn-primary" href="${topicUrl(first.subject, first.chapter, first.topic)}">${icon('book')} ${tr('startChapter')}</a>` : ''}
               <button class="btn btn-soft" type="button" data-open-search>${icon('search')} ${tr('searchCta')}</button>
             </div>
@@ -1165,6 +1179,47 @@
   }
 
   /* ---------- router ---------- */
+  // The generator pre-typesets MathML. Mount only its reading content, not a second site shell.
+  async function loadBoard(route) {
+    const root = main.querySelector('.board-reader');
+    try {
+      const res = await fetch(`board/${route.id ? 'q'+route.id : 'index'}.html`);
+      if (!res.ok) throw Error('Page unavailable');
+      const doc = new DOMParser().parseFromString(await res.text(),'text/html');
+      const body = doc.querySelector('main');
+      if (!body) throw Error('Missing board content');
+      if (!root.isConnected) return;
+      for (const a of body.querySelectorAll('a[href]')) {
+        const href = a.getAttribute('href');
+        const q = /^q(\d+)\.html(?:#(.+))?$/.exec(href);
+        if (q) a.href = boardPath+'/'+q[1]+(q[2]?'/'+q[2]:'');
+        else if (href==='index.html') a.href=boardPath;
+        else if (href.startsWith('#')) a.href=boardPath+'/'+href.slice(1);
+        else if (href.startsWith('../index.html#')) a.href=href.slice(href.indexOf('#'));
+      }
+      if (state.lang==='en') {
+        const labels={'← ভেক্টর অধ্যায়':'← Vector chapter','প্রশ্নসূচি':'Question index','ভেক্টর বোর্ড প্রশ্ন':'Vector board questions','প্রশ্ন ও উদ্দীপক':'Question and stimulus','চিত্রটি কীভাবে পড়বে':'Reading the diagram','নিজে সমাধান করো':'Try it yourself','পূর্ণ উত্তর':'Full solution','হিন্ট':'Hint','আগে নিজে চেষ্টা করো':'Try it first','চিত্র ও সমাধান':'Diagram and solution','← আগের প্রশ্ন':'← Previous question','পরের প্রশ্ন →':'Next question →','প্রশ্নসূচি →':'Question index →','উৎস যাচাই ও সংশোধনী':'Source notes and corrections','বোর্ড প্রশ্ন':'Board questions','কলেজের প্রশ্ন':'College questions','বোর্ড প্রশ্ন (৪৩)':'Board questions (43)','কলেজের প্রশ্ন (৪২)':'College questions (42)','৮৫টি সৃজনশীল প্রশ্ন · ৩৪০টি উপপ্রশ্ন':'85 questions · 340 subquestions','উৎস বেছে প্রশ্ন খোলো। আটকে গেলে হিন্ট দেখো; হিসাব শেষ করে পূর্ণ উত্তরের সঙ্গে মেলাও।':'Choose a source and try a question. Open a hint if needed, then check the solution.'};
+        const walker=doc.createTreeWalker(body,NodeFilter.SHOW_TEXT);
+        while(walker.nextNode()) {
+          const node=walker.currentNode, key=node.textContent.trim();
+          if(Object.hasOwn(labels,key)) node.textContent=node.textContent.replace(key,labels[key]);
+        }
+        const note=doc.createElement('p'); note.lang='en'; note.className='section-subtitle';
+        note.textContent='Questions and worked solutions are provided in Bengali.';
+        body.querySelector('header')?.after(note);
+      }
+      root.lang='bn';
+      root.replaceChildren(...body.childNodes);
+      root.removeAttribute('aria-busy');
+      initializeBoardLabs(root);
+      if(route.section) root.querySelector('#'+route.section)?.scrollIntoView();
+    } catch {
+      if (!root.isConnected) return;
+      root.removeAttribute('aria-busy');
+      root.innerHTML=`<p>${state.lang==='bn'?'প্রশ্নটি লোড করা যায়নি।':'Unable to load board practice.'}</p><button class="btn btn-soft">${state.lang==='bn'?'আবার চেষ্টা করুন':'Retry'}</button>`;
+      root.querySelector('button').onclick=()=>loadBoard(route);
+    }
+  }
   function renderRoute(resetScroll = true) {
     const route = parseHash();
     state.route = route;
@@ -1175,6 +1230,9 @@
     if (route.view === 'home') {
       html = renderHome();
       title = `HSC Notes · ${tr('siteTagline')}`;
+    } else if (route.view === 'board') {
+      title = `${boardLabel()}${route.id?' · '+route.id:''} · HSC Notes`;
+      html = `<div class="content-wrap">${renderBreadcrumb([{label:tr('home'),href:homeUrl()},{label:pick(findChapter(findSubject('physics'),'vectors').title),href:'#/chapter/physics/vectors'}],boardLabel())}<div class="board-reader" aria-busy="true">${state.lang==='bn'?'লোড হচ্ছে…':'Loading…'}</div>${renderFooter()}</div>`;
     } else if (route.view === 'notes') {
       html = renderLibrary();
       title = `${tr('allNotes')} · HSC Notes`;
@@ -1209,6 +1267,7 @@
     }
 
     main.innerHTML = html;
+    if (route.view === 'board') loadBoard(route);
     document.title = title;
     metaDescription.setAttribute('content', description);
     renderSidebar();
