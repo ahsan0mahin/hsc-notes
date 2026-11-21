@@ -1223,6 +1223,18 @@
   function renderRoute(resetScroll = true) {
     const route = parseHash();
     state.route = route;
+    // The old standalone board stylesheet styled nav, header and main globally.
+    // Use a distinct asset URL and keep even the scoped sheet off non-board routes.
+    const boardStyle = document.getElementById('board-reader-style');
+    if (route.view === 'board' && !boardStyle) {
+      const link = document.createElement('link');
+      link.id = 'board-reader-style';
+      link.rel = 'stylesheet';
+      link.href = 'board/reader-scoped.css';
+      document.head.append(link);
+    } else if (route.view !== 'board') {
+      boardStyle?.remove();
+    }
     let html = '';
     let title = '';
     let description = tr('metaDescription');
