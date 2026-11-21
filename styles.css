@@ -919,3 +919,5 @@ mark { padding: 0 2px; border-radius: 4px; background: var(--mark-bg); color: va
 .vector-symbol { display: inline-block; position: relative; padding: .22em .04em 0; line-height: 1.1; }
 .vector-mark { position: absolute; top: .14em; left: 0; right: 0; height: 0; border-top: 1px solid currentColor; color: inherit; font-size: inherit; text-indent: -999em; }
 .vector-mark::after { content: ''; position: absolute; right: 0; top: -.16em; width: .24em; height: .24em; border-top: 1px solid; border-right: 1px solid; transform: rotate(45deg); }
+.vector-book, .board-branch { margin-inline-start: .75rem; }
+.board-branch.active { color: var(--primary-2); background: var(--surface-2); }

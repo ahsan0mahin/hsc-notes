@@ -18,7 +18,7 @@ for(const card of cards){
  }
  assert.equal(doc.querySelector('.katex-error'),null);
  assert.ok(doc.querySelector('math'));
- dom.window.eval(read('lab.js'));
+ dom.window.eval(read('lab.js')+';initializeBoardLabs(document)');
  for(const lab of doc.querySelectorAll('.lab:has(button)')){
   lab.querySelector('[data-step="2"]').click();
   assert.equal(lab.querySelector('[data-note="2"]').hidden,false);

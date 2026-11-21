@@ -13,7 +13,7 @@ const firstBatch=fs.readFileSync('board/batch-1.md','utf8').replace(/^## পৃ�
 const bn=n=>Number(n).toLocaleString('bn-BD');
 const esc=md.utils.escapeHtml;
 function render(s){const math=[];s=(s??'').trim().replace(/(`[^`\n]*`)|\$\$([\s\S]*?)\$\$|\$([^$\n]+)\$/g,(all,code,block,inline)=>{if(code)return code;const html=katex.renderToString(block??inline,{displayMode:block!==undefined,output:'mathml',strict:'ignore',throwOnError:false});return `MATHPLACE${math.push(html)-1}END`});return md.render(s).replace(/MATHPLACE(\d+)END/g,(_,i)=>math[i]);}
-const shell=(title,body)=>`<!doctype html><html lang="bn"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} · HSC Notes</title><link rel="stylesheet" href="board.css"><script defer src="lab.js"></script><main><nav><a href="../index.html#/chapter/physics/vectors">← ভেক্টর অধ্যায়</a><a href="index.html">প্রশ্নসূচি</a></nav>${body}</main></html>`;
+const shell=(title,body)=>`<!doctype html><html lang="bn"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} · HSC Notes</title><link rel="stylesheet" href="board.css"><script defer src="legacy.js"></script><main><nav><a href="../index.html#/chapter/physics/vectors">← ভেক্টর অধ্যায়</a><a href="index.html">প্রশ্নসূচি</a></nav>${body}</main></html>`;
 function initialAnswer(n,label){const src=firstBatch[n]?.split(/^#### .+ নং প্রশ্নের উত্তর\s*$/m)[1];return src?.match(new RegExp(`^\\*\\*${label}\\.\\*\\*([\\s\\S]*?)(?=^\\*\\*[কখগঘ]\\.\\*\\*|(?![\\s\\S]))`,'m'))?.[1]?.replace(/^---$/gm,'').trim();}
 const cards=[[],[]];
 for(const q of questions){const n=q.id;const board=q.source_title;const group=n<=43?0:1;

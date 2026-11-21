@@ -182,6 +182,17 @@ try {
   click(document.querySelector('[data-filter="physics"]'), 'physics filter chip');
   assert(document.querySelectorAll('.note-card').length === 16, 'subject filter narrows library to 16 Physics notes');
 
+  go('#/board/physics/vectors');
+  await settle();
+  assert(document.querySelectorAll('.board-reader .card').length === 85, 'board index renders all questions inside the shell');
+  assert(document.querySelector('.board-reader a[href="#/board/physics/vectors/4"]'), 'board cards use app routes');
+  go('#/board/physics/vectors/4');
+  await settle();
+  assert(document.querySelectorAll('.board-reader .part').length === 4, 'question renders in shared reading pane');
+  assert(document.querySelector('.board-branch.active') && document.querySelector('.vector-book .topic-link'), 'board and main-book branches stay accessible');
+  assert(document.querySelector('.board-reader .answer summary').textContent.includes('Full solution'), 'English reading controls follow site language');
+  click(document.querySelector('.board-reader [data-step="2"]'), 'board diagram step');
+  assert(document.querySelector('.board-reader [data-step="2"]').getAttribute('aria-pressed') === 'true', 'mounted board diagram responds');
   go('#/does-not-exist');
   assert(document.querySelector('.not-found'), 'unknown hash shows not-found view');
 
