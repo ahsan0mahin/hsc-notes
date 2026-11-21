@@ -1,0 +1,1392 @@
+{
+ "river": {
+  "title": "River–boat and current",
+  "questions": [
+   {
+    "id": 1,
+    "source": "Mymensingh Board · 2025 · Board question no. 1 · book p. 29",
+    "stem": "In a boat-racing competition, Karim set off from point $O$ along $OA$ and reached point $B$ with a velocity of $5.3\\text{ kmh}^{-1}$. But Rahim set off along $OB$ and, crossing the river in the stipulated time, reached point $R$. During the race, rain suddenly began to fall with a velocity of $10\\text{ kmh}^{-1}$. In both cases the speed of the boat was $5\\text{ kmh}^{-1}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine in how much time Rahim crossed the river.",
+      "answer": "We know, If the boat is rowed along the width of the river\n$$\\text{time, } t = \\frac{d}{v\\sin\\alpha}$$\n$$\\frac{2}{5\\sin 90^\\circ}$$\n$$\\text{time, } t = 0.4\\text{ h}$$\n$$\\text{time, } t = 24\\text{ min Ans.}$$"
+     },
+     {
+      "prompt": "According to the stem, at what angle must Karim hold the umbrella to be saved from the rain? Explain mathematically.",
+      "answer": "If the actual velocity of the rain is inclined at an angle $\\theta$ with the vertical,\n$$\\tan\\theta = \\frac{u}{w}$$\n$$\\therefore \\theta = \\tan^{-1}\\frac{u}{w}$$\n\n$$\\theta = \\tan^{-1}\\left(\\frac{5.3}{10}\\right)$$\n$$\\theta = 27.92^\\circ \\text{ (with the vertical direction)}$$\n\n$\\therefore$ Karim must hold the umbrella at an angle $27.92^\\circ$ with the vertical to be saved from the rain."
+     }
+    ]
+   },
+   {
+    "id": 4,
+    "source": "Cumilla Board · 2025 · Board question no. 1 · book p. 31",
+    "stem": "The velocity of an engine-powered boat with the current is $15\\text{ kmh}^{-1}$ and against the current is $5\\text{ kmh}^{-1}$. In a river of width $5\\text{ km}$, a boatman starts from point $A$ in order to reach point $B$ straight across on the other bank. From point $C$, at a distance $5\\text{ km}$ from point $B$, another person starts moving at the same time with a velocity of $4\\text{ kmh}^{-1}$ towards point $B$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "At what angle had the boatman set off in order to reach point $B$?",
+      "answer": "velocity of the boat with the current = $15\\text{ kmh}^{-1}$\n$$\\therefore v + u = 15 \\dots\\dots\\ (i)$$ Similarly, the velocity of the boat against the current = $5\\text{ kmh}^{-1}$\n$$\\therefore v - u = 5 \\dots\\dots\\ (ii)$$\n From $\\ (i) +\\ (ii)$ we get, $2v = 20$\n$$\\therefore v = \\frac{20}{2}$$\n\n$$v = 10\\text{ kmh}^{-1}$$ Again, from $\\ (i)$ we get, $u = 15 - v = 15 - 10 = 5\\text{ kmh}^{-1}$ reaching point $B$ straight across on the other bank from $A$ `[reaching]`, the resultant angle will be $\\theta = 90^\\circ$. Let the boatman set off at an angle $\\alpha$ with the current in order to reach point $B$.\n$\\therefore$ direction of the resultant velocity of the boat, $\\tan\\theta = \\frac{v\\sin\\alpha}{u + v\\cos\\alpha}$ or, $\\tan 90^\\circ = \\frac{10\\sin\\alpha}{5 + 10\\cos\\alpha}$ or, $\\frac{1}{\\tan 90^\\circ} = \\frac{5 + 10\\cos\\alpha}{10\\sin\\alpha}$ or, $5 + 10\\cos\\alpha = 0 \\left[\\because \\frac{1}{\\tan 90^\\circ} = 0\\right]$\n$\\therefore \\alpha = \\cos^{-1}\\left(\\frac{-5}{10}\\right) = 120^\\circ\\text{ Ans.}$"
+     },
+     {
+      "prompt": "Analyse mathematically whether the boatman met the other person when he reached point $B$.",
+      "answer": "From (c) we get, in order to go from point $A$ to point $B$ on the other bank, the boatman had rowed the boat at an angle $120^\\circ$ with the current.\n$\\therefore$ the time required by the boatman to reach point $B$ on the other bank,\n$$t = \\frac{d}{v\\sin\\alpha}$$\n\n$$t = \\frac{5}{10\\sin 120^\\circ}$$\n\n$$t = 0.577\\text{ hr}$$\n Now, if the other person can reach point $B$ in that time from point $C$, a distance $5\\text{ km}$ from point $B$, then it is possible for them to meet. If the time required for the other person to reach point $B$ is $t'$, then\n$$t' = \\frac{s}{v'}$$\n\n$$t' = \\frac{5}{4}$$\n\n$$t' = 1.25\\text{ hr}$$\n Thus, it is seen that $t' > t$ That is, the boatman had already reached point $B$ before the other person arrived at point $B$. In that case, if the boatman waits a further $(1.25 - 0.577) = 0.67\\text{ hr}$ or $(0.67 \\times 60) = 40$ minutes after reaching point $B$, he will meet the other person. But if the boatman sets off for some other destination before $40$ minutes have passed, he will not meet the other person."
+     }
+    ]
+   },
+   {
+    "id": 13,
+    "source": "Dhaka Board · 2024 · Board question no. 2 · book p. 36",
+    "stem": "In the figure above, Tamal is rowing a boat from point 'P' towards the other bank of the river. Rowing along $PS$ with a velocity of $5\\text{ kmh}^{-1}$, he reaches point $M$ on the opposite bank. [width of the river $PQ = 2\\text{ km}$]",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the distance of $QM$.",
+      "answer": "Let the resultant velocity make an angle $\\theta$ with the velocity of the current.\n$$\\therefore \\tan\\theta = \\frac{v\\sin\\alpha}{u + v\\cos\\alpha}$$\n$$\\text{or, } \\tan\\theta = \\frac{5\\sin 100^\\circ}{3 + 5\\cos 100^\\circ}$$\n$$\\text{or, } \\tan\\theta = 2.31$$\n$$\\text{or, } \\theta = \\tan^{-1}(2.31)$$\n$$\\therefore \\theta = 66.59^\\circ$$"
+     },
+     {
+      "prompt": "Determine, with mathematical analysis, the difference between the time taken to reach point 'M' by rowing the boat along $PS$ and the time taken to reach $Q$ by rowing the boat directly from $P$ in the absence of a current.",
+      "answer": "reaching point $M$ by rowing the boat along $PS$\n$$\\text{required time, } t_1 = \\frac{d}{v\\sin\\alpha}$$\n\n$$\\text{required time, } t_1 = \\frac{2}{5\\sin 100^\\circ}$$\n\n$$\\text{required time, } t_1 = 0.406\\text{ h}$$\n\n$$\\text{required time, } t_1 = 24.35\\text{ min}$$\n Time to reach $Q$ by rowing the boat from $P$ in the absence of a current: In this case the velocity of the boat will be along $PQ$ Therefore, $\\alpha = 90^\\circ$\n$$\\therefore \\text{required time, } t_2 = \\frac{2}{5\\sin 90^\\circ}$$\n\n$$\\text{required time, } t_2 = 0.4\\text{ h}$$\n\n$$\\text{required time, } t_2 = 24\\text{ min}$$\n$$\\therefore t_2 < t_1$$\n$$\\text{difference in time} = t_1 - t_2$$\n\n$$\\text{difference in time} = 24.35 - 24$$\n\n$$\\text{difference in time} = 0.35\\text{ min}$$\n\n$$\\text{difference in time} = 21\\text{ s}$$ Therefore, the difference between the time taken to reach point 'M' by rowing the boat along $PS$ and the time taken to reach $Q$ by rowing the boat directly from $P$ in the absence of a current is $21\\text{ s}$."
+     }
+    ]
+   },
+   {
+    "id": 16,
+    "source": "Rajshahi Board · 2024 · Board question no. 1 · book p. 38",
+    "stem": "In the figure, in a river whose current flows with velocity $4\\text{ kmh}^{-1}$, Sohel starts rowing a boat with velocity $8\\text{ kmh}^{-1}$ along $AB$. In $10$ minutes he reaches point $D$ along the width $AD$ of the river. But Rohan starts rowing along $AD$ with velocity $10\\text{ kmh}^{-1}$ and reaches point $C$ along $AC$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the magnitude of the resultant of the boat's velocity and the current's velocity in Sohel's case.",
+      "answer": "Since the angle between the resultant and the current is $\\theta = 90^\\circ$ Therefore the direction of the resultant velocity,\n$$\\tan\\theta = \\frac{v\\sin\\alpha}{u + v\\cos\\alpha}$$\n$$\\text{or, } \\tan 90^\\circ = \\frac{8\\sin\\alpha}{4 + 8\\cos\\alpha}$$\n$$\\text{or, } 4 + 8\\cos\\alpha = 0$$\n$$\\text{or, } \\alpha = \\cos^{-1}\\left(-\\frac{4}{8}\\right)$$\n$$\\therefore \\alpha = 120^\\circ$$\n$$\\text{resultant velocity, } R = \\sqrt{u^2 + v^2 + 2uv\\cos\\alpha}$$\n$$\\sqrt{4^2 + 8^2 + 2 \\times 4 \\times 8 \\times \\cos 120^\\circ}$$\n$$\\text{resultant velocity, } R = 4\\sqrt{3}\\text{ kmh}^{-1}\\text{ Ans.}$$"
+     },
+     {
+      "prompt": "Give your opinion, with mathematical analysis, on whether the width of the river $AD$ and the distance travelled along Rohan's length $DC$ will be equal.",
+      "answer": "Obtained from (c), the angle between the velocity of the current and Sohel's boat velocity, $\\alpha_s = 120^\\circ$ Sohel's requirement for crossing the river\n$$\\text{time, } t = \\frac{d}{v_s\\sin\\alpha_s}$$\n$$\\text{or, } 600 = \\frac{d}{\\frac{20}{9}\\sin 120^\\circ}$$\n$$\\therefore d = 1154.7\\text{ m}$$\n\n$$d = AD$$\n Now, Rohan's resultant velocity is along $AC$, which makes an angle $\\theta_R$ with the direction of the current (assumed).\n$$\\tan\\theta_R = \\frac{v_R\\sin\\alpha_R}{u + v_R\\cos\\alpha_R}$$\n$$\\text{or, } \\tan\\theta_R = \\frac{\\frac{25}{9}\\sin 90^\\circ}{\\frac{10}{9} + \\frac{25}{9}\\cos 90^\\circ}$$\n$$\\therefore \\theta_R = \\tan^{-1}\\left(\\frac{25}{10}\\right)$$\n\n$$\\theta_R = 68.20^\\circ$$"
+     }
+    ]
+   },
+   {
+    "id": 18,
+    "source": "Dinajpur Board · 2024 · Board question no. 1 · book p. 39",
+    "stem": "The velocity of the boat with the current is $20\\text{ kmh}^{-1}$ and against the current is $10\\text{ kmh}^{-1}$. The breadth of the river is $2\\text{ km}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "In which direction must the boat be rowed in order to reach point $B$ straight across on the other bank from $A$?",
+      "answer": "velocity of the boat with the current = $20\\text{ kmh}^{-1}$\n$$\\therefore v + u = 20 \\dots\\dots\\ (i)$$ Similarly, against the current, Velocity of the boat = $10\\text{ kmh}^{-1}$\n$$\\therefore v - u = 10 \\dots\\dots\\ (ii)$$\n or, Here Velocity of the boat = $v$ Velocity of the current = $u$\n Total time, $\\ (i) +\\ (ii)$\n$$2v = 30$$\n\n$$2v = 15\\text{ kmh}^{-1}$$ Again, from $\\ (i)$ we get,\n$$u = 20 - v$$\n\n$$u = 20 - 15$$\n\n$$u = 5\\text{ km h}^{-1}$$ To reach point $B$ straight across on the other bank from $A$, the resultant angle $\\theta = 90^\\circ$ must be Let the boat have to be rowed at an angle $\\alpha$ with the current in order to reach point $B$.\n$\\therefore$ direction of the resultant velocity of the boat,\n$$\\tan\\theta = \\frac{v\\sin\\alpha}{u + v\\cos\\alpha}$$\n$$\\text{or, } \\tan 90^\\circ = \\frac{15\\sin\\alpha}{5 + 15\\cos\\alpha}$$\n$$\\text{or, } 5 + 15\\cos\\alpha = 0 \\left[\\because \\frac{1}{\\tan 90^\\circ} = 0\\right]$$\n$$\\therefore \\alpha = \\cos^{-1}\\left(\\frac{-5}{15}\\right)$$\n\n$$\\alpha = 109.47^\\circ$$ Therefore, to reach point $B$ straight across on the other bank from $A$, the boat must be rowed at an angle $109.47^\\circ$ with the current. Ans."
+     },
+     {
+      "prompt": "If the boat had set off straight across from point $A$ to cross the river, would the time taken to cross have been less or more than before? Give your opinion with mathematical analysis.",
+      "answer": "1st case: the time required to go straight to point $B$,\n$$t_1 = \\frac{d}{v\\sin\\alpha}$$\n$$\\text{or, } t_1 = \\frac{2}{15\\sin 109.47^\\circ}$$\n$$\\text{or, } t_1 = 0.141\\text{ h (approx.)}$$\n$$\\therefore t_1 = 8.46\\text{ min (approx.)}$$\n or, Here\n- $d = 2\\text{ km}$\n- $v = 15\\text{ kmh}^{-1}$\n$\\alpha = 109.47^\\circ$ [obtained from part c]\n 2nd case: if one sets off towards point $B$, required time,\n$$t_2 = \\frac{d}{v\\sin\\alpha}$$\n$$\\text{or, } t_2 = \\frac{2}{15\\sin 90^\\circ}$$\n$$\\text{or, } t_2 = 0.133\\text{ h}$$\n$$\\therefore t_2 = 8\\text{ min}$$\n or, Here\n$\\alpha = 90^\\circ$\n That is, $t_2 < t_1$ Therefore, if the boat had set off straight across from point $A$ to cross the river, crossing would have taken less time than before."
+     }
+    ]
+   },
+   {
+    "id": 21,
+    "source": "Cumilla Board · 2024 · Board question no. 5 · book p. 41",
+    "stem": "A bus is moving with velocity $4\\text{ms}^{-1}$ along the bank of a river of width $1\\text{ km}$. Seeing the bus straight across from the other bank, a person sets off by boat with velocity $6\\text{ ms}^{-1}$ at an angle $70^\\circ$ with the current in order to catch the bus. The velocity of the current in the river is $2\\text{ms}^{-1}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "What was the resultant velocity of the boat?",
+      "answer": "We know, Similarly,\n$$R = \\sqrt{u^2 + v^2 + 2uv\\cos\\alpha}$$\n$$\\sqrt{2^2 + 6^2 + 2 \\times 2 \\times 6 \\times \\cos 70^\\circ}$$\n$$R = 6.94\\text{ ms}^{-1}$$ Again,\n$$\\tan\\theta = \\frac{v\\sin\\alpha}{u + v\\cos\\alpha}$$\n$$\\text{or, } \\theta = \\tan^{-1}\\frac{v\\sin\\alpha}{u + v\\cos\\alpha}$$\n$$\\text{or, } \\theta = \\tan^{-1}\\frac{6\\sin 70^\\circ}{2 + 6\\cos 70^\\circ}$$\n$$\\therefore \\theta = 54.29^\\circ$$\n$\\therefore$ the magnitude of the resultant velocity is $6.94\\text{ ms}^{-1}$ and it makes an angle $54.29^\\circ$ with the direction of the current. Ans."
+     },
+     {
+      "prompt": "Analyse mathematically whether it will be possible for the man to catch the bus.",
+      "answer": "Let that person set off along $AC$ and reach point $D$ along $AD$. Time required to reach the other bank,\n$$t = \\frac{d}{v\\sin\\alpha}$$\n\n$$t = \\frac{1000}{6\\sin 70^\\circ}$$\n\n$$t = 177.36\\text{ s}$$\n\n*(box and figure on the right-hand side: 1)* Here, Width of the river, $d = 1\\text{ km} = 1000\\text{ m}$ Velocity of the boat, $v = 6\\text{ ms}^{-1}$ Angle of the boat with the current, $\\alpha = 70^\\circ$\n**Figure: 1:** Two parallel river banks; point $A$ on the lower bank and the velocity of the current $u$ to the right. On the upper bank $B$ (straight opposite), $C$ and $D$. The boat's velocity $v$ (at an angle $\\alpha$ with the current) is shown by a solid arrow from $A$ towards $C$, and the resultant path by a dashed line from $A$ towards $D$ (at an angle $\\theta$ with the current).\n The resultant velocity of the boat makes an angle $\\theta = 54.3^\\circ$ with the direction of the current. [from (c)]\n\n**Description of Figure: 2:** Right-angled triangle $\\Delta ABD$ and the river banks: $A$ on the lower bank, $B$ directly opposite on the upper bank, and $D$ to the right of $B$.\n$AB$ straight up, $AD$ on the dashed line towards the upper right. The angle between the lower bank (right-hand side) and $AD$ is $\\theta = 54.30^\\circ$, and the angle between $AB$ and $AD$ is $\\phi$.\n From Figure-2, $\\phi = 90^\\circ - \\theta = 90^\\circ - 54.30^\\circ = 35.70^\\circ$ at $\\Delta ABD$, $\\tan\\phi = \\frac{BD}{AB}$ or, $\\tan 35.70^\\circ = \\frac{BD}{1000}$\n$\\therefore BD = 718.57\\text{ m}$ that is, if at $177.36\\text{ s}$ the bus covers a distance equal to or less than $718.57\\text{ m}$, then it will be possible for the man to catch the bus. Now, the distance covered by the bus,\n$$s = v_B \\times t$$\n\n$$s = (4 \\times 177.36)\\text{ m}$$\n\n$$s = 709.44\\text{ m}$$\n That is, $s < BD$ Therefore it will be possible for the man to catch the bus."
+     }
+    ]
+   },
+   {
+    "id": 22,
+    "source": "Chattogram Board · 2024 · Board question no. 1 · book p. 41",
+    "stem": "The velocity of Sujan's boat along $AB$ is = $6\\text{ ms}^{-1}$\nThe velocity of Kuber's boat along $AC$ is = $5.5\\text{ ms}^{-1}$\nThe velocity of the current along $CB$ is = $1.2\\text{ ms}^{-1}$\nWidth of the river, $AB = 400\\text{ m}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "At what magnitude of velocity did Kuber's boat actually reach the other bank? Determine.",
+      "answer": "Similar to the answer of creative question 21((c)). Answer: $5.01\\text{ ms}^{-1}$."
+     },
+     {
+      "prompt": "Between Sujan and Kuber, who will reach the other bank first? Give your opinion with mathematical analysis.",
+      "answer": "If the time required for Kuber to cross the river is $t_1$, then\n$$t_1 = \\frac{d}{u_1\\sin\\alpha_1}$$\n\n$$t_1 = \\frac{400}{5.5\\sin 120^\\circ}$$\n\n$$t_1 = 83.98\\text{ s}$$ Now, if the time required for Sujan to cross the river is $t_2$, then\n$$t_2 = \\frac{d}{u_2\\sin\\alpha_2}$$\n\n$$t_2 = \\frac{400}{6\\sin 90^\\circ}$$\n\n$$t_2 = 66.67\\text{ s}$$\n or, The angle of Kuber's moving boat with the direction of the current while crossing the river, $\\alpha_1 = 120^\\circ$ Width of the river, $d = 400\\text{ m}$ Velocity of Kuber's boat, $u_1 = 5.5\\text{ ms}^{-1}$ Velocity of Sujan's boat, $u_2 = 6\\text{ ms}^{-1}$ Angle of Sujan's boat velocity with the direction of the current, $\\alpha_2 = 90^\\circ$\n It is seen that $t_2 < t_1$ Therefore it can be said that between Sujan and Kuber, Sujan will reach the other bank first.\n\n**Full solution (added):**\n\n$R=\\sqrt{5.5^2+1.2^2+2\\times5.5\\times1.2\\cos120^\\circ}=\\sqrt{25.09}\\approx5.01\\ \\mathrm{m\\,s^{-1}}$.\n\n*The answer to (d) is on the next page.*"
+     }
+    ]
+   },
+   {
+    "id": 26,
+    "source": "Barishal Board · 2024 · Board question no. 1 · book p. 43",
+    "stem": "One swimmer starts swimming with velocity $16\\text{ kmh}^{-1}$ at an angle $10^\\circ$ with $AB$. The velocity of the current in the river is $8\\text{ kmh}^{-1}$. Another swimmer starts swimming in the same river with the same speed at an angle $60^\\circ$ with the current.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "The first swimmer set off along $AC$ in order to reach point $B$ and reached point $D$; determine the distance $BD$.",
+      "answer": "Similar to the answer of creative question 13((c)). Answer: $6.63\\text{ km}$."
+     },
+     {
+      "prompt": "Between the two swimmers, which swimmer will reach the other bank first? Analyse mathematically.",
+      "answer": "Similar to the answer of creative question 13((d)) (d).\n Answer: for the swimmer swimming at an angle of (90° + 10°) = 100°, the time to reach the other side is $t_1=1.27\\ \\mathrm h$, and for the swimmer swimming at an angle of 60°, the time to reach the other side is $t_2=1.44\\ \\mathrm h$.\n Therefore the first swimmer will reach the other bank first.\n The first swimmer's angle with the current is 100°. $t_1=20/(16\\sin100^\\circ)\\approx1.269\\ \\mathrm h$; $BD=(8+16\\cos100^\\circ)t_1\\approx6.629\\ \\mathrm{km}$. The second person's $t_2=20/(16\\sin60^\\circ)\\approx1.443\\ \\mathrm h$. The original result is correct.\n\n**Full solution (added):**\n\nThe first swimmer's angle with the current is 100°. $t_1=20/(16\\sin100^\\circ)\\approx1.269\\ \\mathrm h$; $BD=(8+16\\cos100^\\circ)t_1\\approx6.629\\ \\mathrm{km}$. The second person's $t_2=20/(16\\sin60^\\circ)\\approx1.443\\ \\mathrm h$. The original result is correct."
+     }
+    ]
+   },
+   {
+    "id": 27,
+    "source": "Dhaka Board · 2023 · Board question no. 1 · book p. 44",
+    "stem": "To cross a river of width $1\\text{ km}$, two swimmers take part in a swimming competition. The first swimmer swims with velocity $6\\text{ kmh}^{-1}$ at an angle $60^\\circ$ with the upstream direction, and the second swimmer swims with velocity $6\\text{ kmh}^{-1}$ straight across. The velocity of the current in the river is $3\\text{ kmh}^{-1}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the resultant velocity of the first swimmer.",
+      "answer": "Here, the velocity of the first swimmer $v=6\\ \\mathrm{km\\,h^{-1}}$; the velocity of the current $u=3\\ \\mathrm{km\\,h^{-1}}$; the angle between the swimmer and the current $\\alpha=180^\\circ-60^\\circ=120^\\circ$; the resultant velocity of the first swimmer $R=?$.\n\n**[Description of Figure 27.1]** A rightward current $u=3\\ \\mathrm{km\\,h^{-1}}$ between parallel river banks. The swimmer's velocity $v=6\\ \\mathrm{km\\,h^{-1}}$ from the lower bank towards the upper left. The angle with the upstream horizontal is 60° and with the downstream current $\\alpha=120^\\circ$. A vertical line along the width of the river is shown.\n We know, the magnitude of the resultant velocity,\n\n<div class=\"math\">$$\\begin{aligned} R&=\\sqrt{u^2+v^2+2uv\\cos\\theta}\\\\ &=\\sqrt{3^2+6^2+2\\times3\\times6\\cos120^\\circ}\\\\ &=\\sqrt{9+36-18}=3\\sqrt3\\ \\mathrm{km\\,h^{-1}}. \\end{aligned}$$</div>\n Direction of the resultant,\n\n$$\\tan\\theta=\\frac{v\\sin\\alpha}{u+v\\cos\\alpha}$$\n or,\n\n$$\\theta=\\tan^{-1}\\left(\\frac{6\\sin120^\\circ}{3+6\\cos120^\\circ}\\right)$$\n\n$$\\theta = 90^\\circ.$$\n ∴ the resultant velocity of the swimmer $3\\sqrt3\\ \\mathrm{km\\,h^{-1}}$ at an angle of 90° with the direction of the current. Ans."
+     },
+     {
+      "prompt": "Which swimmer will be able to cross the river first in the said competition? Analyse mathematically.",
+      "answer": "In the case of the first swimmer, required time,\n$$t_1 = \\frac{d}{v_1\\sin 120^\\circ}$$\n\n$$t_1 = \\frac{1}{6\\frac{\\sqrt{3}}{2}}$$\n\n$$t_1 = 0.19\\text{ hr}$$\n In the case of the second swimmer, required time,\n$$t_2 = \\frac{d}{v\\sin 90^\\circ}$$\n\n$$t_2 = \\frac{1}{6}$$\n\n$$t_2 = 0.17\\text{ hr}$$\n Since $t_1 > t_2$. Therefore, the second swimmer will be able to cross the river first."
+     }
+    ]
+   },
+   {
+    "id": 31,
+    "source": "Dinajpur Board · 2023 · Board question no. 4 · book p. 45",
+    "stem": "In the figure, one boatman is rowing a boat from point $A$ with velocity $16\\text{ kmh}^{-1}$ at an angle $30^\\circ$ with $AB$, and another boatman from the same point with the same speed is rowing at an angle $60^\\circ$ with $AB$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the resultant velocity of the first boatman.",
+      "answer": "We know, resultant velocity,\n\n$$\\begin{aligned} w&=\\sqrt{u_1^2+v^2+2u_1v\\cos\\alpha}\\\\ &=\\sqrt{16^2+8^2+2\\times16\\times8\\cos120^\\circ}\\\\ &=8\\sqrt3\\ \\mathrm{km\\,h^{-1}}. \\end{aligned}$$\n Here, the velocity of the 1st boatman's boat $u_1=16\\ \\mathrm{km\\,h^{-1}}$; the velocity of the current $v=8\\ \\mathrm{km\\,h^{-1}}$; the angle between the boat and the current $\\alpha=90^\\circ+30^\\circ=120^\\circ$; the resultant velocity of the first boatman $w=?$.\n Again,\n\n$$\\tan\\theta=\\frac{u_1\\sin\\alpha}{v+u_1\\cos\\alpha}$$\n or,\n\n$$\\theta=\\tan^{-1}\\frac{u_1\\sin\\alpha}{v+u_1\\cos\\alpha}$$\n or,\n\n$$\\theta=\\tan^{-1}\\frac{16\\sin120^\\circ}{8+16\\cos120^\\circ}$$\n\n$$\\therefore\\theta=90^\\circ.$$\n ∴ the magnitude of the resultant velocity is 8 m s⁻¹ and it makes an angle of 90° with the direction of the current. Ans. **[the value and unit of the last sentence are as printed in the original]**"
+     },
+     {
+      "prompt": "Which boatman will cover the shorter distance — verify mathematically.",
+      "answer": "In the case of the 1st boatman, the required time,\n\n$$t_1=\\frac{d}{u_1\\sin120^\\circ}$$\n\n$$t_1 = \\frac2{16\\times\\frac{\\sqrt3}{2}}$$\n\n$$t_1 = \\frac2{8\\sqrt3}\\ \\mathrm h.$$\n From (c) we get, the resultant velocity of the first boatman $W_1=8\\sqrt3\\ \\mathrm{km\\,h^{-1}}$; the velocity of the boatman $u_1=16\\ \\mathrm{km\\,h^{-1}}$; the angle between them $\\alpha=90^\\circ+30^\\circ=120^\\circ$; the required time $t_1=?$; the distance covered $d_1=?$; the width of the river $d=2\\ \\mathrm{km}$.\n distance travelled,\n\n$$d_1=W_1t_1$$\n\n$$d_1 = 8\\sqrt3\\times\\frac2{8\\sqrt3}\\ \\mathrm h$$\n\n$$d_1 = 2\\ \\mathrm{km}.$$\n In the case of the 2nd boatman, resultant velocity,\n\n$$\\begin{aligned} w_2&=\\sqrt{u_2^2+v^2+2u_2v\\cos\\alpha}\\\\ &=\\sqrt{16^2+8^2+2\\times16\\times8\\cos150^\\circ}\\\\ &=9.91\\ \\mathrm{km\\,h^{-1}}. \\end{aligned}$$\n required time,\n\n$$t_2=\\frac{d}{u_2\\sin150^\\circ}$$\n\n$$t_2 = \\frac2{16\\times\\frac12}$$\n\n$$t_2 = \\frac14\\ \\mathrm h.$$\n Here, the velocity of the boatman $u_2=16\\ \\mathrm{km\\,h^{-1}}$; the velocity of the current $v=8\\ \\mathrm{km\\,h^{-1}}$; the angle between them $\\alpha=90^\\circ+60^\\circ=150^\\circ$; the resultant velocity $w_2=?$; the required time $t_2=?$; the distance covered $d_2=?$; the width of the river $d=2\\ \\mathrm{km}$.\n distance travelled,\n\n$$d_2=w_2t_2$$\n\n$$d_2 = 9.91\\times\\frac14$$\n\n$$d_2 = 2.47\\ \\mathrm{km}.$$\n Since $d_2>d_1$, therefore the 1st boatman will cover the shorter distance to cross the river.\n In the first calculation of (c) $8\\sqrt3\\ \\mathrm{km\\,h^{-1}}$ is correct; the `8 m s⁻¹` in the last sentence is wrong. The correct value is about 13.86 km h⁻¹ or 3.85 m s⁻¹. In (d) the `h` unit in the product of $d_1$ has been placed loosely without writing the full units of velocity and time; the result 2 km is correct. The second resultant is more precisely 9.9145 km h⁻¹ and the path 2.4786 km (2.48 km to two decimals); the original's 2.47 is rounded prematurely."
+     }
+    ]
+   },
+   {
+    "id": 33,
+    "source": "Chattogram Board · 2023 · Board question no. 1 · book p. 46",
+    "stem": "In the figure, $AB$ is a road running along the bank of the river $BC$. The velocity of the current in the river is $2\\text{ ms}^{-1}$ and a boatman is rowing a boat with velocity $4\\text{ ms}^{-1}$. The velocity of a car on the road is $15\\text{ ms}^{-1}$. The car makes a stop of $40\\text{ s}$ at station $B$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "In the minimum time, how long can the boatman cross the river?",
+      "answer": "To cross the river in the minimum time, the boatman must set off at right angles to the current, towards the point exactly opposite on the other bank.\n$$t = \\frac{d}{v\\sin\\theta}$$\n$$\\text{or, } t = \\frac{0.5 \\times 1000}{4\\sin 90^\\circ}$$\n$$\\text{or, } t = \\frac{500}{4}$$\n$$\\text{or, } t = 125\\text{ s}$$\n$$\\therefore t = 2\\text{ minutes } 5\\text{ seconds}$$\n$\\therefore$ the boatman will be able to cross the river in the least time of $2$ minutes $5$ seconds. Ans.\n\n*(The answer to the '(d)' part of Question 33 is below on page 19 / page 47 of the book)*"
+     },
+     {
+      "prompt": "When the car is at position $A$, will the passengers of the boat travelling from position $C$ towards position $B$ be able to get on the car? Analyse.",
+      "answer": "Let the resultant velocity be w if the boat is to go straight to position B.\n\n$$\\therefore v^2=u^2+w^2$$\n or, $w^2=v^2-u^2$   or, $w=\\sqrt{4^2-2^2}$\n\n$$\\therefore w=2\\sqrt3\\ \\mathrm{m\\,s^{-1}}.$$\n Here, the velocity of the current $u=2\\ \\mathrm{m\\,s^{-1}}$; the velocity of the boat $v=4\\ \\mathrm{m\\,s^{-1}}$; the resultant velocity $w=?$.\n ∴ if the time required to go to point B is $t'$, then\n\n$$t'=\\frac{BC}{w}$$\n\n$$t' = \\frac{500}{2\\sqrt3}$$\n\n$$t' = 144.34\\ \\mathrm s.$$\n Here, the width of the river $BC=0.5\\ \\mathrm{km}=500\\ \\mathrm m$; time $t'=?$.\n\n**[Description of Figure 33.2]** The two banks of the river are parallel horizontal lines. The boat starts from the lower bank; B is directly opposite on the upper bank. In the printed figure v is placed beside the vertical line and w beside the diagonal line on the right; but in the solution beside it, v is called the velocity of the boat and w the resultant along the width. The velocity of the current u is to the right; a parallel diagonal line shows the velocity triangle/parallelogram. A and B are on the upper bank, C near the lower line, and u is marked. The original figure is attached so that the correct position of the labels can be seen.\n Again, if the time required for the car to go from position A to B is $t''$, then\n\n$$t''=\\frac{AB}{15}$$\n or,\n\n$$t''=\\frac{1200}{15}$$\n\n$$\\therefore t''=80\\ \\mathrm s.$$\n Here, the velocity of the car = $15\\ \\mathrm{m\\,s^{-1}}$; the distance covered $AB=1.2\\ \\mathrm{km}=1200\\ \\mathrm m$.\n If the total time required to reach position B from position A, including the stop, is $t_{\\mathrm{total}}$, then\n\n$$t_{\\mathrm{total}}=t''+40$$\n\n$$t_{\\mathrm{total}} = 80+40$$\n\n$$t_{\\mathrm{total}} = 120\\ \\mathrm s.$$\n\n$t_{\\mathrm{total}}<t'$ that is, the car will leave point B before the boat arrives at position B. So, when the car is at position A, the passengers of the boat travelling from position C towards position B will not be able to get on the car.\n This answer, missing in the previous batch, has now been added from the original image. $t'\\approx144.34$ s and the car leaves at 120 s — the conclusion is correct. The simplified velocity labels in the figure and the geographical A, B, C labels of the original stem must be read together."
+     }
+    ]
+   },
+   {
+    "id": 39,
+    "source": "Rajshahi Board · 2021 · Board question no. 6 · book p. 49",
+    "stem": "*(the book has no separate stem — the figure below is the stem)*",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the resultant velocity $R$ from figure ‘(a)’.",
+      "answer": "From figure-(a) of the stem we get,"
+     },
+     {
+      "prompt": "According to which figure will crossing the river take less time? Analyse mathematically.",
+      "answer": "Similar to the answer of creative question 26((d)). Answer: Figure-b takes less time."
+     }
+    ]
+   },
+   {
+    "id": 40,
+    "source": "Chattogram Board · 2021 · Board question no. 2 · book p. 50",
+    "stem": "Shanta is a college student. A river $1\\text{ km}$ wide flows past his house. His college is straight across on the other bank. One morning, $5$ minutes before class was to begin, he set off for college in a boat with velocity $12\\text{ kmh}^{-1}$ at an angle $120^\\circ$ with the direction of the current.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the velocity of the current in the river.",
+      "answer": "We know,\n$$\\tan\\theta = \\frac{v\\sin\\alpha}{u + v\\cos\\alpha}$$\n$$\\text{or, } \\tan 90^\\circ = \\frac{12\\sin 120^\\circ}{u + 12\\cos 120^\\circ}$$\n$$\\text{or, } u + 12\\cos 120^\\circ = 0$$\n$$\\text{or, } u = -12\\cos 120^\\circ$$\n$$\\therefore u = 6\\text{ kmh}^{-1}\\text{ Ans.}$$\n\n*(box and figure on the right-hand side)*\n**Description of the figure:** A river with two parallel banks, width $1\\text{ km}$. $A$ on the lower bank and $B$ directly opposite on the upper bank. On the lower bank, the current $u$ to the right, and from $A$ the boat's velocity $v$ towards the upper left. The angle between $v$ and $u$ is $\\alpha$ and the angle between $AB$ and $u$ is $\\theta$ (a right angle). Here, Velocity of the boat, $v = 12\\text{ kmh}^{-1}$ Angle between them, $\\alpha = 120^\\circ$ Direction of the resultant, $\\theta = 90^\\circ$ Velocity of the current, $u = ?$"
+     },
+     {
+      "prompt": "Will Shanta be able to attend class on time? Analyse mathematically.",
+      "answer": "Let, Shanta will be able to cross the river in a time $t$.\n$\\therefore$ component of the boat's velocity along the width of the river = $v\\sin\\alpha = 12 \\times \\sin 120^\\circ = 6\\sqrt{3}\\text{ kmh}^{-1}$\n Therefore, the time required to cross the river,\n$$t = \\frac{d}{v\\sin\\alpha}$$\n\n$$t = \\frac{1\\text{ km}}{6\\sqrt{3}\\text{ kmh}^{-1}}$$\n\n$$t = \\frac{1}{6\\sqrt{3}} \\times 60\\text{ min}$$\n$$\\therefore t = 5.774\\text{ min} > 5\\text{ min}$$ Therefore, if Shanta sets off $5$ minutes before class begins, it will take her $5.774$ minutes to cross the river. That is, she will not be able to attend class on time."
+     }
+    ]
+   },
+   {
+    "id": 41,
+    "source": "Sylhet Board · 2021 · Board question no. 1 · book p. 50",
+    "stem": "From point 'A' on the bank of a river of width $4\\text{ km}$, a boat set off with velocity $12\\text{ km/hr}$ to cross to the other bank. A man waited at point 'B' on the opposite bank for $20$ minutes from the start of the boat and then left. The velocity of the current in the river is $6\\text{ kmh}^{-1}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the magnitude of the resultant velocity of the boat.",
+      "answer": "We know, resultant velocity,\n\n$$R=\\sqrt{P^2+Q^2+2PQ\\cos\\alpha}$$\n\n$$\\sqrt{6^2+12^2+2\\cdot6\\cdot12\\cos90^\\circ}$$\n\n$$\\sqrt{6^2+12^2}$$\n\n$$R = 6\\sqrt5\\ \\mathrm{km\\,h^{-1}}.$$\n Here, the velocity of the current $P=6\\ \\mathrm{km\\,h^{-1}}$; the velocity of the boat $Q=12\\ \\mathrm{km\\,h^{-1}}$; the angle between them $\\alpha=90^\\circ$; the resultant velocity $R=?$.\n Therefore, the resultant velocity of the boat = $6\\sqrt5\\ \\mathrm{km\\,h^{-1}}$. Ans."
+     },
+     {
+      "prompt": "Will the boat meet the waiting man in the stem? Verify mathematically.",
+      "answer": "If the boat, setting off from point A, reaches point B on the other bank within 20 minutes, it will meet the waiting man. For this, if the boat is rowed along the width of the river, then instead of reaching point B it will reach the other bank to the right of B. Let the boat, rowed at an angle $\\alpha$ with the current, reach point B, and let the direction of the resultant be along the width of the river, i.e. at an angle of 90° with the velocity of the current.\n Here,\n\n\n\n\n The angle between $\\vec P$ and $\\vec Q$ is $\\alpha$ and the angle between $\\vec R$ and $\\vec P$, $\\theta=90^\\circ$.\n We know,\n\n$$\\tan\\theta=\\frac{Q\\sin\\alpha}{P+Q\\cos\\alpha}$$\n or,\n\n$$\\tan90^\\circ=\\frac10$$\n\n$$\\tan90^\\circ = \\frac{Q\\sin\\alpha}{P+Q\\cos\\alpha}$$\n or, $P+Q\\cos\\alpha=0$ or, $\\cos\\alpha=-P/Q$\n or,\n\n$$\\alpha=\\cos^{-1}\\left(-\\frac6{12}\\right)$$\n\n$$\\alpha = \\cos^{-1}\\left(-\\frac12\\right)$$\n\n$$\\alpha = 120^\\circ.$$\n ∴ resultant,\n\n<div class=\"math\">$$\\begin{aligned} R&=\\sqrt{P^2+Q^2+2PQ\\cos\\alpha}\\\\ &=\\sqrt{6^2+12^2+2\\times6\\times12\\times\\left(-\\frac12\\right)}\\\\ &=\\sqrt{180-72}=6\\sqrt3\\ \\mathrm{km\\,h^{-1}}. \\end{aligned}$$</div>\n Here, if the boat takes time t hour to go to point B on the other bank,\n\n$$t=\\frac dR$$\n\n$$t = \\frac4{6\\sqrt3}\\ \\mathrm h$$\n\n$$t = 0.385\\ \\mathrm h$$\n\n$$t = 23.1\\ \\mathrm{min}>20\\ \\mathrm{min}.$$\n Mathematical analysis shows that the man waiting at point B will leave long before the time the boat takes to reach the other bank, so the boat will not meet him.\n\n**[Description of Figure 41.2]** A at the bottom between the two banks, B directly above. From A, Q towards the upper left, R vertically along the width AB, and the current P to the right. The angle between the resultant and the current is shown as 90° and the boat–current angle as $\\alpha$.\n\n$\\tan90^\\circ=1/0$ the symbolic short step of the original; 1/0 is not a defined number. Setting the horizontal resultant component to zero directly gives $P+Q\\cos\\alpha=0$. The original's conclusion and 23.1 minutes are correct."
+     }
+    ]
+   },
+   {
+    "id": 43,
+    "source": "Dhaka Board · 2015 · Board question no. 1 · book p. 52",
+    "stem": "In the figure, the breadth of the flowing river is $1.5\\text{ km}$ and the velocity of the current is $4\\text{ kmh}^{-1}$. Boatman Rahmat rows along $AB$ and reaches the opposite bank along $AC$. The velocity of the boat is $3\\text{ kmh}^{-1}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the distance travelled by the boat along $AC$.",
+      "answer": "**Alternative method,** Velocity of the current, $u = 4\\text{ km}\\cdot\\text{h}^{-1}$ Velocity of the boat, $v = 3\\text{ km}\\cdot\\text{h}^{-1}$ Time required for the boat to cross, $t = \\frac{AB}{v} = \\frac{1.5\\text{ km}}{3\\text{ km}\\cdot\\text{h}^{-1}} = 0.5\\text{ h}$ At this time the boat will cover a distance $BC$ in the direction of the current, so\n$\\therefore BC = u \\times t = 4\\text{ km}\\cdot\\text{h}^{-1} \\times 0.5\\text{ h} = 2\\text{ km}$ Therefore $AC^2 = AB^2 + BC^2 = (1.5\\text{ km})^2 + (2\\text{ km})^2 = 6.25\\text{ km}^2$\n$\\therefore AC = 2.5\\text{ km}$\n*(Two different values of $AC$ are obtained by the two methods. Hence the given information is erroneous.)*"
+     },
+     {
+      "prompt": "Can boatman Rahmat reach point $B$ by rowing the boat along $AD$? Give your opinion with mathematical analysis.",
+      "answer": "If the boat is rowed along $AD$, according to the figure the angle between the velocity of the current $u$ and the velocity of the boat $v$ is $\\alpha = 180^\\circ - 30^\\circ = 150^\\circ$. Therefore, if the angle between the velocity of the current and the resultant velocity is $\\theta$, then\n$$\\tan\\theta = \\frac{v\\sin\\alpha}{u + v\\cos\\alpha}$$\n\n$$\\tan\\theta = \\frac{3\\sin 150^\\circ}{4 + 3\\cos 150^\\circ}$$\n\n$$\\tan\\theta = \\frac{3 \\times 0.5}{4 + 3 \\times (-0.866025)}$$\n\n$$\\tan\\theta = \\frac{1.5}{4 - 2.598}$$\n\n$$\\tan\\theta = 1.07$$\n$$\\therefore \\theta = 46.91^\\circ$$ Here, $\\theta < 90^\\circ$. Therefore the boat will not be able to cross the river along $AB$.\n\n**Alternative answer:** according to the figure, the angle between the velocity of the current $u$ and the velocity of the boat $v$ is $\\alpha = 180^\\circ - 30^\\circ = 150^\\circ$. Therefore, if the angle between the velocity of the current and the resultant velocity is $\\theta$, then\n$$\\tan\\theta = \\frac{v\\sin\\alpha}{u + v\\cos\\alpha}$$ Now, for $\\theta = 90^\\circ$ to happen $u + v\\cos\\alpha = 0$ must hold. But\n$$u + v\\cos\\alpha = 4 + 3\\cos 150^\\circ$$\n\n$$u + v\\cos\\alpha = 4 + 3 \\times (-0.866025)$$\n\n$$u + v\\cos\\alpha = 4 - 2.598$$\n\n$$u + v\\cos\\alpha = 1.402 \\neq 0$$ Therefore the boat will not be able to cross the river along $AB$."
+     }
+    ]
+   },
+   {
+    "id": 45,
+    "source": "Mymensingh Girls' Cadet College · Board question no. 1 · book p. 53",
+    "stem": "In a river $400$ metres wide, the velocity of the current is $2\\text{ ms}^{-1}$. A boat is moving perpendicular to the river with velocity $10\\text{ ms}^{-1}$ relative to the water.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine how much time the boat will take to reach the other bank.",
+      "answer": "We know,\n$$t = \\frac{d}{u\\sin\\alpha}$$\n$$\\text{or, } t = \\frac{400}{10\\sin 90^\\circ}$$\n$$\\text{or, } t = \\frac{400}{10 \\times 1}$$\n$$\\text{or, } t = 40$$\n$$\\therefore t = 40\\text{ s Ans.}$$"
+     },
+     {
+      "prompt": "Two vectors $A$ and $AC$ respectively, and a vector field $\\theta$.",
+      "answer": "Even though the boat set off along the width of the river, because of the current it will drift some distance away and reach point $C$. Displacement along the bank of the river,\n$$x = v \\times t$$\n$$\\text{or, } x = 2 \\times 40$$\n$$\\therefore x = 80\\text{ m}$$\n Total displacement of the boat ($AC$), $s$: Since the width of the river ($d$) and the horizontal displacement ($x$) are mutually perpendicular, According to Pythagoras' theorem, $s = \\sqrt{d^2 + x^2}$\n$$\\text{or, } s = \\sqrt{(400)^2 + (80)^2}$$\n$$\\therefore s = 407.921\\text{ m}$$\n$$\\tan\\theta = \\frac{\\text{width of the river}}{\\text{horizontal displacement}}$$\n\n$$\\tan\\theta = \\frac{d}{x}$$\n$$\\text{or, } \\tan\\theta = \\frac{400}{80}$$\n$$\\text{or, } \\tan\\theta = 5$$\n$$\\text{or, } \\theta = \\tan^{-1}(5)$$ \n$$\\therefore \\theta = 78.690^\\circ$$\n or, Direction of displacement ($\\theta$): let the resultant displacement $s$ make an angle $\\theta$ with the bank of the river.\n Therefore, the boat will reach the other bank at a distance $407.921\\text{ m}$ from the starting point ($A$) and at an angle $78.690^\\circ$ with the river bank.\n\n> [book printing error: (s) has been printed in place of (5)]"
+     }
+    ]
+   },
+   {
+    "id": 52,
+    "source": "RAJUK Uttara Model College, Dhaka · Board question no. 1 · book p. 56",
+    "stem": "In a river of width $1.5\\text{ km}$ the velocity of the current is $9\\text{ ms}^{-1}$. A boatman set off at an angle $\\alpha$ with the current and crossed straight across with velocity $12\\text{ ms}^{-1}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the value of the angle $\\alpha$.",
+      "answer": "We know, Resultant velocity in the case of crossing diagonally,\n$$W = \\sqrt{v^2 - u^2}$$\n$$\\text{or, } w^2 = v^2 - u^2$$\n$$\\text{or, } 12^2 = v^2 - 9^2$$\n$$\\text{or, } 144^2 = v^2 - 81$$ \n$$\\text{or, } v^2 = 144 + 81$$\n$$\\text{or, } v^2 = 225$$\n$$\\therefore v = 15\\text{ ms}^{-1}$$\n or, Here,\n\n\n\n\n\n Again, if the direction of the resultant velocity is $\\theta = 90^\\circ$, then\n$$u + v\\cos\\alpha = 0$$\n$$\\text{or, } 9 + 15\\cos\\alpha = 0$$\n$$\\text{or, } 15\\cos\\alpha = -9$$\n$$\\text{or, } \\cos\\alpha = -\\frac{9}{15}$$\n\n$$\\text{or, } \\cos\\alpha = -0.6$$\n$$\\text{or, } \\alpha = \\cos^{-1}(-0.6)$$\n$$\\therefore \\alpha = 126.87^\\circ\\text{ Ans.}$$\n\n> [book printing error: here it should be 144, not 144²; the next line is correct]"
+     },
+     {
+      "prompt": "Determine with mathematical values whether crossing the river will take less or more time if one sets off diagonally than before.",
+      "answer": "We know,\n\n$$t=\\frac dw$$\n or, $t_1=1500/12$\n\n$$\\therefore t_1=125\\ \\mathrm s.$$\n Resultant velocity,\n\n$$t_2=\\frac d{v\\sin\\alpha'}$$\n or,\n\n$$t_2=\\frac{1500}{15\\sin90^\\circ}$$\n or, $t_2=1500/(15\\times1)$\n\n$$\\therefore t_2=100\\ \\mathrm s.$$\n Here, the width of the river $d=1.5\\ \\mathrm{km}=1500\\ \\mathrm m$; the velocity of the current $u=9\\ \\mathrm{m\\,s^{-1}}$; the velocity of the boat $v=15\\ \\mathrm{m\\,s^{-1}}$ (obtained from '(c)'). In the first case (crossing diagonally) the resultant velocity $w=12\\ \\mathrm{m\\,s^{-1}}$; the time required to cross the river $t_1=?$. In the second case (setting off diagonally) the angle of the boat with the current $\\alpha'=90^\\circ$; the time required to cross the river $t_2=?$.\n Mathematical analysis shows that $t_2<t_1$. Therefore, if one sets off diagonally, crossing the river will take less time than before.\n 'Crossing straight over' and 'rowing the boat straight across' are two different situations. In the first, the current is cancelled by rowing at an upstream angle; in the second, the boat is rowed along the width and drifts downstream. The correct form of the statement in (b): it is the **work done** by a conservative force that is independent of the path."
+     }
+    ]
+   },
+   {
+    "id": 55,
+    "source": "Dhaka College · Board question no. 1 · book p. 58",
+    "stem": "A boat is moving with velocity $10\\text{ms}^{-1}$ in a river $360\\text{ m}$ wide. Crossing the river, the boat reached point $C$ on the opposite bank. The velocity of the current in the river is $3\\text{ms}^{-1}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the distance $BC$ on the opposite bank of the river.",
+      "answer": "Similar to the answer of creative question 23((c)). Answer: $657.2\\text{ m}$"
+     },
+     {
+      "prompt": "What arrangement `[measure]` must the boatman make in order to reach the boat at point $B$? Give your opinion with mathematical analysis.",
+      "answer": "Here Answer: to reach point $B$ the boatman must row the boat at an angle $107.46^\\circ$ with the arrow along the current."
+     }
+    ]
+   },
+   {
+    "id": 56,
+    "source": "Adamjee Cantonment College, Dhaka · Board question no. 1 · book p. 58",
+    "stem": "Class begins in $25\\text{ min}$, so $O$ has to be reached from $B$. Three students set off after requesting three boatmen. With the 1st student the boatman sets off along $OB$ and reaches $C$. After that the student walks with velocity $1.6\\text{ ms}^{-1}$ and reaches point $B$. With the 2nd student the boatman sets off along $OB$ and reaches $C$. Then, rowing the boat again, he comes from $C$ to point $B$ . With the 3rd student the boatman sets off along $OA$ and reaches point $B$ directly. The velocities of the boat with the current and against the current are $15\\text{ kmh}^{-1}$ and $5\\text{ kmh}^{-1}$.\n\n> [printed as 'is' in the book]",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the distance of point $C$ from $B$.",
+      "answer": "Adding equations (i) and (ii) we get,\n$$(u + v) + (u - v) = 15 + 5$$\n\n$$(u + v) + (u - v) = 20$$\n\n$$(u + v) + (u - v) = 10\\text{ kmh}^{-1}$$ Putting the value of $u$ from equation (i) we get,\n$$10 + v = 15$$\n\n$$10 + v = 5\\text{ kmh}^{-1}$$\n or, Let, the velocity of the boat $u$; the velocity of the current $v$ Here, Velocity of the boat with the current, $u + v = 15\\text{ kmh}^{-1}$ (i) Velocity of the boat against the current, $u - v = 5\\text{ kmh}^{-1}$ (ii) Width of the river, $d = OB = 2\\text{ km}$\n In the case of the 1st student, the boatman sets off along $OB$ and reaches point $C$. (That is, the boat sets off perpendicular to the current.) So, the time required for the 1st student to cross the river,\n$$t_{OC} = \\frac{\\text{width of the river}}{\\text{velocity of the boat}}$$\n\n$$t_{OC} = \\frac{d}{u}$$\n\n$$t_{OC} = \\frac{2}{10}\\text{ h}$$\n\n$$t_{OC} = 0.2\\text{ h}$$ The distance the boat covers due to the current during this time is the distance $BC$.\n$$BC = \\text{velocity of the current} \\times \\text{time}$$\n\n$$BC = v \\times t_{OC}$$\n\n$$BC = 5 \\times 0.2\\text{ km}$$\n\n$$BC = 1\\text{ km Ans.}$$"
+     },
+     {
+      "prompt": "Will the three students be able to reach class on time? Discuss mathematically.",
+      "answer": "**In the case of the 1st student (by boat $O \\to C$, on foot $C \\to B$):** time to go from $O$ to $C$, $t_{OC} = 0.2\\text{ h}$ (obtained in part c) Time to walk from $C$ to $B$,\n$$t_{CB,\\,\\text{walking}} = \\frac{BC}{v_w}$$\n\n$$t_{CB,\\,\\text{walking}} = \\frac{1\\text{ km}}{5.76\\text{ kmh}^{-1}}$$\n\n$$t_{CB,\\,\\text{walking}} = 0.1736\\text{ h}$$\n total time, $t_1 = t_{OC} + t_{CB,\\,\\text{walking}}$\n$$\\text{or, } t_1 = 0.2 + 0.1736\\text{ h}$$\n\n$$\\text{or, } t_1 = 0.3736\\text{ h}$$\n\n$$\\text{or, } t_1 = 0.3736 \\times 60\\text{ min}$$\n\n$$\\text{or, } t_1 = 22.42\\text{ min}$$ Since $t_1 < 25\\text{ min}$, therefore the 1st student will be able to arrive on time.\n\n**In the case of the 2nd student (by boat $O \\to C$, by boat $C \\to B$):** time to go from $O$ to $C$, $t_{OC} = 0.2\\text{ h}$ (obtained in part c) time to go by boat from $C$ to $B$ upstream against the current and from $C$ to $B$,\n$$t_{CB,\\,\\text{boat}} = \\frac{BC}{u - v}$$\n\n$$t_{CB,\\,\\text{boat}} = \\frac{1\\text{ km}}{5\\text{ kmh}^{-1}}$$\n\n$$t_{CB,\\,\\text{boat}} = 0.2\\text{ h}$$\n\n*(upper box)* distance $BC$, $BC = 1\\text{ km}$ (obtained from part c) Velocity of the boat against the current, $u - v = 5\\text{ kmh}^{-1}$\n total time, $t_2 = t_{OC} + t_{CB,\\,\\text{boat}}$\n$$\\text{or, } t_2 = 0.2 + 0.2\\text{ h}$$\n\n$$\\text{or, } t_2 = 0.4\\text{ h}$$\n\n$$\\text{or, } t_2 = 0.4 \\times 60\\text{ min}$$\n\n$$\\text{or, } t_2 = 24\\text{ min}$$ Since $t_2 < 25\\text{ min}$, therefore the 2nd student will be able to arrive on time.\n\n**In the case of the 3rd student ($O \\to B$ directly):** For the 3rd student to reach point $B$ directly, the boat must travel against the current (along $OA$). In this case the resultant velocity $R$ will act along the width of the river. Similarly,\n$$R = \\sqrt{u^2 - v^2}$$\n\n$$R = \\sqrt{10^2 - 5^2}$$\n\n$$R = \\sqrt{100 - 25}$$\n\n$$R = \\sqrt{75}$$\n\n$$R = 8.660\\text{ kmh}^{-1}$$ required time to cross the river,\n$$t_3 = \\frac{d}{R}$$\n\n$$t_3 = \\frac{2}{8.660}\\text{ h}$$\n\n$$t_3 = 0.2309\\text{ h}$$\n\n$$t_3 = 0.2309 \\times 60\\text{ min}$$\n\n$$t_3 = 13.85\\text{ min}$$ Since $t_3 < 25\\text{ min}$, therefore the 3rd student will be able to arrive on time. It is seen that the time for the 1st student is $22.42\\text{ min}$, for the 2nd student $24\\text{ min}$ and for the 3rd student $13.85\\text{ min}$. Since in all three cases the required time is less than $25\\text{ min}$, therefore the three students will be able to reach class on time."
+     }
+    ]
+   },
+   {
+    "id": 57,
+    "source": "Bangladesh Air Force Shaheen College, Tejgaon, Dhaka · Board question no. 1 · book p. 59",
+    "stem": "A boatman sets off by boat at an angle $120^\\circ$ with the current from this bank and reaches the opposite bank $722\\text{ m}$ earlier. The velocity of the current is $3\\text{kmh}^{-1}$. The width of the river is $5\\text{ km}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "How long will the boatman take if he wants to reach exactly the opposite bank?",
+      "answer": "required time to cross the river,\n$$t = \\frac{d}{u\\sin\\alpha}$$\n$$\\text{lateral displacement, } x = (v + u\\cos\\alpha)t$$\n\n$$\\text{lateral displacement, } x = (v + u\\cos\\alpha)\\frac{d}{u\\sin\\alpha}$$\n$$\\text{or, } 0.722 = (3 + u\\cos 120^\\circ)\\frac{5}{u\\sin 120^\\circ}$$\n$$\\text{or, } 0.722 = (3 - 0.5u)\\frac{5}{0.866u}$$\n$$\\text{or, } 0.722 \\times 0.866u = 5(3 - 0.5u)$$\n$$\\text{or, } 0.62525u = 15 - 2.5u$$\n$$\\text{or, } 0.62525u + 2.5u = 15$$\n$$\\text{or, } 3.125u = 15$$\n\n$$\\text{or, } 3.125u = \\frac{15}{3.125}$$\n\n$$\\text{or, } 3.125u = 4.8\\text{ kmh}^{-1}$$\n or, Here,\n If the boatman wants to reach exactly the opposite bank, the resultant velocity will act perpendicular to the width of the river. If the resultant velocity is $w$, then\n$$w = \\sqrt{u^2 - v^2}$$\n\n$$w = \\sqrt{(4.8)^2 - (3)^2}$$\n\n$$w = \\sqrt{64 - 9}$$ \n$$\\therefore w = 3.747\\text{ kmh}^{-1}$$ Time required to reach exactly the opposite bank,\n$$t = \\frac{d}{w}$$\n\n$$t = \\frac{5}{3.747}$$\n\n$$t = 1.3344\\text{ h Ans.}$$\n\n> [book printing error: (4.8)² - (3)² = 23.04 - 9 = 14.04, but √(64-9) has been mistakenly printed in the book; the later value 3.747 is of course correct (= √14.04)]"
+     },
+     {
+      "prompt": "What must the velocity of the boat be for the information in the stem to be true? Analyse mathematically.",
+      "answer": "According to the information in the stem, the magnitude of the boat's velocity obtained through mathematical analysis from (c) is 4.8 km h⁻¹.\n Some separate errors in the original: (1) the resultant velocity must be **along the width of the river**, i.e. perpendicular to the current — not 'perpendicular to the width'. (2) $4.8^2=23.04$, so the printed $\\sqrt{64-9}$ will be $\\sqrt{23.04-9}$; the book's later value 3.747 is close to this correct calculation. (3) The phrase '722 m earlier' in the question is unclear as a description of position; the book has solved it by taking the downstream lateral displacement as $x=+0.722$ km. On that assumption $u=15/(2.5+0.722\\sin120^\\circ)\\approx4.7996$ km h⁻¹ and the time to cross directly about 1.3346 h."
+     }
+    ]
+   },
+   {
+    "id": 58,
+    "source": "Milestone College, Dhaka · Board question no. 1 · book p. 60",
+    "stem": "Boatman Kuber fishes in the river; he sets off from point $O$ in a boat along $OA$ with velocity $12\\text{ kmh}^{-1}$. After $10$ minutes he hears on Bangladesh Betar that he must reach the bank at a safe place within $30$ minutes. The boatman immediately hoists the sail, so that $40\\%$ of the wind's velocity is added to the boat's velocity along $OA$ and the boat speeds up. The velocity of the wind along $OA$ is $20\\text{kmh}^{-1}$, and before the sail was hoisted the effect of the wind on the boat was negligible.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine at what angle the boat would have reached the other bank if the sail had not been hoisted.",
+      "answer": "If the resultant velocity $v$ makes an angle $\\theta$ with the direction of the river's width ($OA$), then\n$$\\text{or, } \\tan\\theta = \\frac{v_c}{v_b}$$\n$$\\text{or, } \\tan\\theta = \\frac{4\\text{ kmh}^{-1}}{12\\text{ kmh}^{-1}}$$\n\n$$\\text{or, } \\tan\\theta = \\frac{1}{3}$$\n$$\\text{or, } \\theta = \\tan^{-1}\\left(\\frac{1}{3}\\right)$$\n\n$$\\text{or, } \\theta = 18.4349^\\circ\\text{ Ans.}$$"
+     },
+     {
+      "prompt": "Will the boatman be able to reach the safe place in time? Give a mathematical explanation.",
+      "answer": "**First step (before hoisting the sail):** Distance covered along the width during this time,\n$$d_{y1} = v_{y1} \\times t_1$$\n\n$$d_{y1} = 12\\text{ kmh}^{-1} \\times \\frac{1}{6}\\text{ hour}$$\n\n$$d_{y1} = 2\\text{ km}$$\n\n**Second step,** Because of hoisting the sail, the new velocity along the width of the river becomes:\n$$v_{y2} = v_{y1} + \\Delta v_b$$\n\n$$v_{y2} = 12\\text{ kmh}^{-1} + 8\\text{ kmh}^{-1}$$\n\n$$v_{y2} = 20\\text{ kmh}^{-1}$$ Time required to cover the remaining distance $D_2$ ($t_2$):\n$$t_2 = \\frac{D_2}{v_{y2}}$$\n\n$$t_2 = \\frac{8\\text{ km}}{20\\text{ kmh}^{-1}}$$\n\n$$t_2 = 0.4\\text{ hour}$$\n Total time for the boat to reach the other bank, $(t_1 + t_2) = \\frac{1}{6}\\text{ hour} + 0.4\\text{ hour} = 0.5667\\text{ hour}$ The boat takes a total time of $0.567\\text{ hour}$ (about $34$ minutes) to reach the other bank. The total time limit for reaching the safe place was $T_{\\text{total}} = 40$ minutes. Since the boat takes $34$ minutes to arrive, which is less than the stipulated $40$ minutes, therefore the boatman will be able to reach the other bank on time."
+     }
+    ]
+   },
+   {
+    "id": 63,
+    "source": "Safiuddin Sarker Academy & College, Gazipur · Board question no. 3 · book p. 63",
+    "stem": "The velocity of the boat with the current is $18\\text{kmh}^{-1}$ and against the current is $8\\text{kmh}^{-1}$. The width of the river is $3\\text{ km}$. The boat is rowed to reach some point straight across on the other bank. Another boat of the same speed is rowed at an angle $100^\\circ$ with the direction opposite to the current.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "In which direction must it be rowed to reach exactly the opposite bank?",
+      "answer": "Similar to the answer of creative question 18((c)). Answer: $\\alpha = 112.62^\\circ$"
+     },
+     {
+      "prompt": "If the river is crossed in the minimum time, analyse mathematically the displacement of the boat in the direction of the current.",
+      "answer": "Let the velocity of the boat be $u$ and the velocity of the current $v$ according to the stem,\n$$u + v = 18 \\dots\\dots\\dots\\ (i)$$\n$$u - v = 8 \\dots\\dots\\dots\\ (ii)$$ Total time, $\\ (i) +\\ (ii)$\n$$2u = 26$$\n$$\\therefore u = 12\\text{ kmh}^{-1}$$  Putting the value of $u$ into (i) we get,\n$$13 + v = 18$$\n\n$$13 + v = 5\\text{ kmh}^{-1}$$ To cross the river in the minimum time the boat must be rowed perpendicular to the direction of the current (at an angle $90^\\circ$). That is, $\\alpha = 90^\\circ$. Minimum time for a river width $d = 3\\text{ km}$, $t_{\\min} = \\frac{d}{u}$\n$$\\text{or, } t_{\\min} = \\frac{3}{13}$$\n\n$$\\text{or, } t_{\\min} = 0.23\\text{ h}$$ Displacement of the boat in the direction of the current, $x = v \\times t_{\\min}$\n$$\\text{or, } x = 5 \\times 0.23$$\n\n$$\\text{or, } x = 1.15\\text{ km}$$ Therefore, if the river is crossed in the minimum time, the displacement of the boat in the direction of the current will be $1.15\\text{ km}$.\n\n> [book printing error: 26/2 = 13, but 12 has been mistakenly printed in the book; however, 13 is placed correctly in the next line]"
+     }
+    ]
+   },
+   {
+    "id": 66,
+    "source": "Notre Dame College, Mymensingh · Board question no. 1 · book p. 64",
+    "stem": "**Description of the figure (Question 66 – stem):**\nTwo parallel horizontal banks of a river, with $BD = 150\\text{ m}$ on the upper bank.\nPoint $A$ on the lower bank; on the upper bank, point $B$ directly opposite $A$, and point $D$ to the right.\nIn the middle of the river, an arrow pointing right: `velocity of the current = 6ms⁻¹`.\n\nIn the figure, $AB$ is the width of the river. Mr. Jamal's house is at point $A$ and his office is at point $D$. On Wednesday morning, in order to reach the office within $5$ minutes, Mr. Jamal started rowing a boat from point $A$ at a velocity of $10\\text{ms}^{-1}$, making an angle $60^\\circ$ with the direction opposite to the current, and reached the office.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "How many metres did Mr. Jamal's boat travel to cross the river in the stem?",
+      "answer": "First part: similar to the first part of the answer of creative question 13((c)). Second part:\n$$\\angle BAD = 6.587^\\circ$$\n$$\\text{now, } \\sin\\angle BAD = \\frac{150}{AD}$$\n$$\\text{or, } AD = \\frac{150}{\\sin\\angle BAD}$$\n\n$$\\text{or, } AD = 1307.63$$\n$$\\therefore AD = 1307.63\\text{ m Ans.}$$"
+     },
+     {
+      "prompt": "Explain mathematically whether Mr. Jamal in the stem can reach the office within $5$ minutes.",
+      "answer": "required time,\n$$t = \\frac{x}{v_x}$$\n\n$$t = \\frac{150}{6 + 10\\cos 120^\\circ}$$\n\n$$t = 150\\text{ s}$$\n$$\\therefore t = 150\\text{ s}$$\n\n$$t = 2.5\\text{ minutes}$$\n From $t = 2.5\\text{ minutes}$ we get,\n**Answer:** $t < t_1$ or, $2.5\\text{ minutes} < 5\\text{ minutes}$ The boat crossed the river $(5 - 2.5) = 2.5$ minutes earlier than the stipulated time. Therefore, from the mathematical analysis it is seen that Mr. Jamal will be able to reach the office within the stipulated time of $5$ minutes."
+     }
+    ]
+   },
+   {
+    "id": 67,
+    "source": "Cantonment Public School & College Momenshahi, Mymensingh · Board question no. 1 · book p. 64",
+    "stem": "In the river of the figure the velocity of the current is $3\\text{kmh}^{-1}$; to cross along the width in that river by rowing a boat at $5\\text{kmh}^{-1}$ takes a time of $6\\text{ min}$.\nA boatman rowed a boat with velocity $6\\text{kmh}^{-1}$ along $AB$ and reached point $C$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the width of the river in the stem.",
+      "answer": "Since the boat crossed along the width, the resultant velocity acts along the width of the river. In this case the resultant velocity,\n\n$$R=\\sqrt{v^2-u^2}$$\n\n$$R = \\sqrt{5^2-3^2}$$\n\n$$\\sqrt{25-9}=\\sqrt{16}$$\n\n$$\\therefore R=4\\ \\mathrm{km\\,h^{-1}}.$$\n We know,\n\n$$d=R\\times t$$\n\n$$d = 4\\times0.1$$\n\n$$\\therefore d=0.4\\ \\mathrm{km}.\\quad(\\mathrm{Ans.})$$\n Here, the velocity of the current $u=3$ km h⁻¹; the velocity of the boat $v=5$ km h⁻¹; the time of crossing $t=6$ min = = $6/60$ h = = $0.1$ h; the width of the river $d=?$."
+     },
+     {
+      "prompt": "Determine the distance $AC$ according to the information in the stem.",
+      "answer": "required time to cross the river,\n\n$$t'=\\frac{d}{v'\\sin\\alpha}$$\n\n$$\\frac{0.4}{6\\sin90^\\circ}=\\frac{0.4}{6}\\ \\mathrm h$$\n\n$$\\therefore t'=0.0667\\ \\mathrm h.$$\n Here, the width of the river $d=AB=0.4$ km (from part c); the velocity of the current $u=3$ km h⁻¹; the velocity of the boat $v'=6$ km h⁻¹. Since the boat set off along AB, the angle of the boat's velocity with the current is $\\alpha=90^\\circ$; the distance covered $AC=?$.\n During this time the displacement of the boat due to the current is $s=BC$.\n\n$$s=u\\times t'$$\n\n$$s = 3\\times0.0667$$\n\n$$s = 0.2\\ \\mathrm{km}.$$\n ∴ according to Pythagoras' theorem,\n\n$$AC=\\sqrt{AB^2+BC^2}$$\n\n$$AC = \\sqrt{d^2+s^2}$$\n\n$$\\sqrt{(0.4)^2+(0.2)^2}=0.447\\ \\mathrm{km}.$$\n ∴ according to the information in the stem, the distance AC is 0.447 km."
+     }
+    ]
+   },
+   {
+    "id": 68,
+    "source": "Rajshahi College · Board question no. 1 · book p. 65",
+    "stem": "A boat set off along the width of the river with velocity $12\\text{ms}^{-1}$. The velocity of the current in the river is $5\\text{ms}^{-1}$, and because of the wind the rain is falling with velocity $8\\text{ms}^{-1}$ at an angle $60^\\circ$ with the resultant of the velocities of the boat and the current.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the velocity of the rain relative to the boatman.",
+      "answer": "Resultant velocity of the boat and the current,\n$$V = \\sqrt{v_n^2 + v_s^2 + 2v_n v_s \\cos\\alpha}$$\n$$\\text{or, } V = \\sqrt{12^2 + 5^2 + 2 \\times 12 \\times 5 \\times \\cos 90^\\circ}$$\n$$\\therefore V = 13\\text{ ms}^{-1}$$ Velocity of the rain relative to the boatman,\n$$u_{rb} = \\sqrt{v_r^2 + V^2 - 2v_r V \\cos\\beta}$$ \n$$\\text{or, } v_{rb} = \\sqrt{8^2 + 13^2 - 2 \\times 8 \\times 13 \\times \\cos 60^\\circ}$$\n$$\\text{or, } v_{rb} = \\sqrt{129}$$\n$$\\text{or, } v_{rb} = 11.358\\text{ ms}^{-1}\\text{ Ans.}$$\n\n> [book printing error: here '+ 2v_r V cosβ' is written and in the next line '- 2 × 8 × 13 × cos60°'; according to the subtraction of relative velocity the '-' sign itself is correct]"
+     },
+     {
+      "prompt": "Verify whether the boatman will be saved from the rain if he holds the umbrella at an angle $45^\\circ$ with the vertical.",
+      "answer": "Obtained from (c), the resultant velocity of the boat and the current, $V = 13\\text{ ms}^{-1}$. This resultant velocity acts parallel to the river or in the horizontal plane. According to the stem, the rain is falling at an angle $60^\\circ$ with this resultant velocity. Let the horizontal component of the velocity of the rain be $v_{rx}$ and the vertical component $v_{ry}$.\n$$v_{rx} = v_r\\cos 60^\\circ$$\n\n$$v_{rx} = 8 \\times 0.5$$\n\n$$v_{rx} = 4\\text{ ms}^{-1}$$\n$$v_{ry} = v_r\\sin 60^\\circ$$\n\n$$v_{ry} = 8 \\times \\sin 60^\\circ$$\n\n$$v_{ry} = 6.928\\text{ ms}^{-1}$$ The components of the velocity of the rain relative to the boatman are: Horizontal component, $V_x = v_{rx} - V = 4 - 13 = -9\\text{ms}^{-1}$ Vertical component, $V_y = v_{ry} = 6.928\\text{ ms}^{-1}$ Let the relative velocity of the rain make an angle $\\theta$ with the vertical. We know,\n$$\\tan\\theta = \\frac{|V_x|}{|V_y|}$$\n\n$$\\tan\\theta = \\frac{9}{6.928}$$\n\n$$\\tan\\theta = 1.299$$\n$$\\text{or, } \\theta = \\tan^{-1}(1.299)$$\n\n$$\\text{or, } \\theta = 52.41^\\circ$$ It is seen that to be saved from the rain the boatman must hold the umbrella at an angle $52.41^\\circ$ with the vertical. But the boatman held the umbrella at an angle $45^\\circ$ with the vertical. Since $52.41^\\circ \\neq 45^\\circ$, therefore it can be said that the boatman will not be saved from the rain if he holds the umbrella at an angle $45^\\circ$ with the vertical."
+     }
+    ]
+   },
+   {
+    "id": 69,
+    "source": "Government Azizul Haque College, Bogura · Board question no. 1 · book p. 65",
+    "stem": "In a river $2\\text{km}$ wide, Anil takes $5\\text{ min } 20\\text{s}$ to cross straight over when there is no current. A current flows in the river with velocity $3\\text{ms}^{-1}$. Anil starts swimming straight across from one bank to the other, towards his friend Dhruba standing directly opposite him.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine at what velocity Anil will actually travel.",
+      "answer": "We know,\n\n$$u=\\frac d{t_0}$$\n\n$$u = \\frac{2000}{320}$$\n\n$$\\therefore u=6.25\\ \\mathrm{m\\,s^{-1}}.$$\n Anil's actual velocity or resultant velocity in the presence of a current,\n\n$$w=\\sqrt{u^2+v^2+2uv\\cos\\alpha}.$$\n Since Anil started swimming straight towards the other bank, therefore $\\alpha=90^\\circ$.\n\n$$w=\\sqrt{u^2+v^2+2uv\\cos90^\\circ}$$\n\n$$\\sqrt{u^2+v^2}$$\n\n$$\\sqrt{(6.25)^2+(3)^2}$$\n\n$$\\therefore w=6.93\\ \\mathrm{m\\,s^{-1}}.\\quad(\\mathrm{Ans.})$$\n Given, the breadth of the river $d=2$ km = = $2000$ m; the time to cross without a current $t_0=5$ min = $20$ s = = $(5\\times60+20)$ s = = $320$ s; the velocity of the current $v=3$ m s⁻¹; Anil's velocity without a current (swimming velocity) $u=?$; the angle between the swimming velocity and the velocity of the current $\\alpha=90^\\circ$; Anil's actual velocity or resultant velocity $w=?$."
+     },
+     {
+      "prompt": "By adopting a special approach, Anil could have reached his friend Dhruv standing on the other bank. In the light of the stem, analyse that approach mathematically.",
+      "answer": "Here\n Answer: by adopting a special approach (swimming at an angle of 118.685° with the current), Anil can reach his friend Dhruv standing on the other bank.\n In (c) the book has read the phrase 'how much velocity in favour of the current' as the total resultant velocity; if only the downstream component is wanted, it is 3 m s⁻¹. In (d) $\\cos\\alpha=-3/6.25=-0.48$ to $\\alpha\\approx118.685^\\circ$ is correct."
+     }
+    ]
+   },
+   {
+    "id": 71,
+    "source": "Dinajpur Government College · Board question no. 1 · book p. 66",
+    "stem": "The 1st boatman crosses the river by rowing along $AE$ and the 2nd boatman along $AC$. The velocity of both boats is $12\\text{km/h}$ and the width of the river is $5\\text{km}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the horizontal distance travelled by the first boatman along the river.",
+      "answer": "Similar to the answer of creative question 13((c)). **Answer:** $x = 9.715\\text{ km}$"
+     },
+     {
+      "prompt": "Was the 2nd boatman able to cross the river along the shortest path? Give your opinion with mathematical analysis.",
+      "answer": "Similar to the answer of creative question 43((d)). Answer: $\\theta<90^\\circ$. Therefore, the 2nd boatman could not cross the river along the shortest path.\n In (c) $t=5/(12\\sin45^\\circ)$ h and $x=(8+12\\cos45^\\circ)t\\approx9.714$ km (9.715 in the book). The second boat's angle with the current is 115°; the horizontal resultant $8+12\\cos115^\\circ>0$, so the resultant is not along the width. The momentum-conservation argument in (b) applies on the assumption that external torque is negligible and that we stay within the mass system; in reality, if the torque of the moving motor/air or the mass detached by the blades is involved, a separate analysis is needed."
+     }
+    ]
+   },
+   {
+    "id": 72,
+    "source": "City Residential Model College, Dinajpur · Board question no. 8 · book p. 67",
+    "stem": "In a river of width $4.5\\text{ km}$ the velocity of the current is $2.5\\text{ kmh}^{-1}$. In a swimming competition to cross the river, the first swimmer swims with velocity $5\\text{ kmh}^{-1}$ at an angle $60^\\circ$ with the upstream direction, and the second swimmer swims with velocity $4.4\\text{ kmh}^{-1}$ at an angle $79.8^\\circ$ with the current.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the resultant velocity of the first swimmer.",
+      "answer": "Similar to the answer of creative question 21((c)). **Answer:** $4.33\\text{ kmh}^{-1}$"
+     },
+     {
+      "prompt": "Discuss the result of the said competition with mathematical analysis.",
+      "answer": "Similar to the answer of creative question 22((d)). **Answer:** the first swimmer takes $t_1 = 1.03922\\text{ h}$ to cross the river and the second swimmer takes $t_2 = 1.03922\\text{ h}$.  It is seen that $t_1 < t_2$. That is, the first swimmer will be able to cross the river in slightly less time than the second swimmer. Therefore, in the said competition the first swimmer will be able to cross the river first.\n\n*(footer of the left column below: HSC Physics Made Easy answer sheet-3g)*\n\n> [book printing error: 1.03922 h is printed for both times, while the next sentence again says t₁ < t₂; in fact t₁ ≈ 1.03923 h and t₂ ≈ 1.03915 h]"
+     }
+    ]
+   },
+   {
+    "id": 73,
+    "source": "Cumilla Government Women's College · Board question no. 1 · book p. 67",
+    "stem": "In a river of width $15\\text{ km}$ the velocity of the current is $5\\text{ km/h}$. The 1st boatman sets off with velocity $10\\text{ km/h}$ at an angle $\\alpha$ with the current, and the 2nd boatman with velocity $10\\text{ km/h}$ at an angle $90^\\circ$ with the current.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "For what value of the angle $\\alpha$ will the 1st boatman reach straight across the other bank?",
+      "answer": "Similar to the answer of creative question 18((c)). **Answer:** $\\alpha = 120^\\circ$"
+     },
+     {
+      "prompt": "Which boatman will reach the other bank first? Explain through mathematical analysis.",
+      "answer": "Similar to the answer of creative question 22((d)).\n**Answer:** $t_2 = 1.5\\text{ h}$ and $t_1 = 1.732\\text{ h}$. Since $t_2 < t_1$, therefore the 2nd boatman will reach the other bank of the river first."
+     }
+    ]
+   },
+   {
+    "id": 75,
+    "source": "Ispahani Cantonment Public School & College, Cumilla · Board question no. 1 · book p. 68",
+    "stem": "Kamal was rowing a boat at an angle $40^\\circ$ with the current in a river. The velocities of his boat and of the current were $10\\text{ms}^{-1}$ and $4\\text{ms}^{-1}$ respectively. The width of the river was $40\\text{m}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "If the river is crossed diagonally, determine the distance covered by Kamal.",
+      "answer": "Similar to the answer of creative question 43((c)).\n**Answer:** $82.84\\text{ m}$"
+     },
+     {
+      "prompt": "Analyse mathematically what measures Kamal must take in order to cross the river straight over.",
+      "answer": "Here\n Answer: to cross the river straight over, Kamal must row the boat at an angle of **113.58°** with the direction of the current.\n In (c) the velocity along the width is $10\\sin40^\\circ$, the velocity along the current $4+10\\cos40^\\circ$; so the path is $40\\sqrt{10^2+4^2+2\\times10\\times4\\cos40^\\circ}/(10\\sin40^\\circ)\\approx82.86$ m; there is a slight rounding difference with the printed 82.84 m. In (d) $\\cos\\alpha=-4/10$, so 113.58° is correct."
+     }
+    ]
+   },
+   {
+    "id": 76,
+    "source": "Chattogram College · Board question no. 1 · book p. 68",
+    "stem": "According to the figure, Dipu rows a boat from point $O$ with velocity $7.2\\text{kmh}^{-1}$ along $OB$ at an angle $120^\\circ$ with the velocity of the current, in order to reach the college situated at point $A$. He reaches the college straight across.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the velocity of the current.",
+      "answer": "Similar to the answer of creative question 40((c)).\n**Answer:** $3.6\\text{ kmh}^{-1}$"
+     },
+     {
+      "prompt": "If he sets off $25$ minutes before class begins, will Dipu be able to attend the class in time? Explain with mathematical reasoning.",
+      "answer": "Similar to the answer of creative question 40((d)).\n**Answer:** the time required for Dipu to cross the river is $t = 24.1$ minutes. The time in hand before class begins is $T = 25$ minutes. Since $t < T$, therefore Dipu will be able to attend class on time."
+     }
+    ]
+   },
+   {
+    "id": 80,
+    "source": "Halishahar Cantonment Public School & College, Chattogram · Board question no. 2 · book p. 69",
+    "stem": "One day Rian went to swim in a river that has a current. The current of the river flows from west to east with velocity $2\\text{ km/h}$. To go straight from the south bank to the north bank of the river, Rian started swimming with velocity $4\\text{ km/h}$ making an angle with the direction of the current.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "In the light of the stem, determine Rian's direction of swimming.",
+      "answer": "Here\n**Answer:** at an angle $120^\\circ$ with the current."
+     },
+     {
+      "prompt": "Explain through mathematical analysis whether the times taken to cross the river along the shortest path and in the shortest time will be equal.",
+      "answer": "Similar to the answer of creative question 11((d)). Answer: the shortest path will take more time.\n The 120° result of (c) applies to the condition of reaching the bank exactly opposite; the stem only says 'to the other bank', in which case the direction is not uniquely fixed. In (d), if the width is D, the time along the shortest path is $D/\\sqrt{4^2-2^2}=D/(2\\sqrt3)$ and the shortest time $D/4$ — the first is greater. For the limitation of the statement about the change of density in (b), see the verification note for number 44; the divergence of a velocity field indicates the local rate of volumetric expansion."
+     }
+    ]
+   },
+   {
+    "id": 83,
+    "source": "Cantonment College, Jashore · Board question no. 1 · book p. 71",
+    "stem": "In the figure, in a river whose current flows with velocity $1.1\\text{ ms}^{-1}$, a boat of velocity $2.3\\text{ ms}^{-1}$ is rowed along $OP$ and reaches position $Q$. While the boat was moving, rain began to fall vertically with velocity $4.2\\text{ ms}^{-1}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine at what angle with the vertical the boatman must hold the umbrella to be saved from the rain.",
+      "answer": "Resultant velocity of the boat (relative to the ground),\n$$\\vec{V_B} = \\vec{u} + \\vec{v}$$\n\n$$\\vec{V_B} = (1.1\\hat{i} + 2.3\\hat{j})\\text{ ms}^{-1}$$ Velocity of the rain relative to the passenger,\n$$\\vec{V_{R/B}} = \\vec{V_R} - \\vec{V_B}$$\n\n$$\\vec{V_{R/B}} = (-4.2\\hat{j}) - (1.1\\hat{i} + 2.3\\hat{j})$$\n$$\\text{or, } \\vec{V_{R/B}} = -1.1\\hat{i} - 6.5\\hat{j}\\text{ ms}^{-1}$$ Horizontal component of the relative velocity, $V_x = 1.1\\text{ ms}^{-1}$ Vertical component of the relative velocity, $V_y = 6.5\\text{ ms}^{-1}$ Let the boatman have to hold the umbrella at an angle $\\theta$ with the vertical to be saved from the rain. We know,\n$$\\tan\\theta = \\frac{\\text{horizontal component}}{\\text{vertical component}}$$\n\n$$\\tan\\theta = \\frac{V_x}{V_y}$$\n\n$$\\tan\\theta = \\frac{1.1}{6.5}$$\n$$\\text{or, } \\theta = \\tan^{-1}\\left(\\frac{1.1}{6.5}\\right)$$\n\n$$\\text{or, } \\theta = 9.59^\\circ\\text{ Ans.}$$"
+     },
+     {
+      "prompt": "Analyse mathematically whether the boat could cross the river in even less time if it were rowed along $OQ$ with the same velocity.",
+      "answer": "In the 1st case, Since the man initially sets off along $OP$, the angle with the current is $\\alpha = 90^\\circ$. In this case, the time required to cross the river,\n$$t_1 = \\frac{d}{u\\sin\\alpha}$$\n\n$$t_1 = \\frac{1400}{2.3\\sin 90^\\circ}$$\n\n$$t_1 = 608.7\\text{ s}$$\n\n$$t_1 = 10.145\\text{ min}$$\n\n*(lower box)* Here, Velocity of the boat, $u = 2.3\\text{ ms}^{-1}$ Velocity of the current, $v = 1.1\\text{ ms}^{-1}$ Width of the river, $d = 1.4\\text{ km} = 1400\\text{m}$ \n The resultant velocity of the boat $W$ is along $OQ$ and it makes an angle $\\theta$ with $OP$.\n$$\\text{now, } \\tan\\theta = \\frac{v}{u}$$\n\n$$\\text{now, } \\tan\\theta = \\frac{1.1}{2.3}$$\n\n$$\\text{now, } \\tan\\theta = 0.4783$$\n$$\\therefore \\theta = \\tan^{-1}(0.4783)$$\n\n$$\\theta = 25.56^\\circ$$\n\n> [printed as 1.41 km in the book, but the calculation used 1400 m]"
+     }
+    ]
+   },
+   {
+    "id": 84,
+    "source": "Government Prafulla Chandra College, Bagerhat · Board question no. 2 · book p. 71",
+    "stem": "A boatman starts from point $A$ on the bank of a river $5\\text{ km}$ wide, rowing a boat with velocity $16\\text{ kmh}^{-1}$, in order to cross to the other bank. A man waited at point $B$ on the opposite bank for $25$ minutes from the start of the boat and then left. The velocity of the current in the river is $8\\text{ kmh}^{-1}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the resultant velocity of the boat.",
+      "answer": "Similar to the answer of creative question 41((c)).\n**Answer:** $17.9\\text{ kmh}^{-1}$, which acts at an angle $63.4^\\circ$ with the direction of the current."
+     },
+     {
+      "prompt": "How must the boat be rowed to reach point $B$ straight across on the other bank? Did the boatman meet the waiting man? Analyse mathematically.",
+      "answer": "Similar to the answer of creative question 41((d)).\n**Answer:** if the boat is rowed at an angle $120^\\circ$ with the current, it is possible to reach point $B$ straight across on the other bank, and the boatman did meet the waiting man.\n\n**Full solution (added):**\n\nAssuming the boat is first rowed along the width, the answer to (c) is $\\sqrt{16^2+8^2}=8\\sqrt5\\approx17.9$ km h⁻¹ and $\\tan^{-1}(16/8)\\approx63.4^\\circ$. In (d) the time to go directly to B is $5/\\sqrt{16^2-8^2}\\times60\\approx21.65$ minutes, which is less than 25 minutes."
+     }
+    ]
+   }
+  ]
+ },
+ "rain": {
+  "title": "Rain and umbrella",
+  "questions": [
+   {
+    "id": 28,
+    "source": "Dhaka Board · 2023 · Board question no. 8 · book p. 44",
+    "stem": "The rear glass of a car is inclined at an angle $30^\\circ$ with the roof. The car was moving along a road with velocity $\\vec{v} = 18\\hat{i}$. Suddenly rain began to fall with velocity $\\vec{u} = -12\\hat{j}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "At what velocity will the rain strike the front glass of the car?",
+      "answer": "* * *"
+     },
+     {
+      "prompt": "Will the rear glass of the car in the stem get wet in the rain — give your opinion with mathematical analysis.",
+      "answer": "Magnitude of the velocity of the rain falling vertically,\n\n$$u=|\\vec u|$$\n\n$$u = 12\\ \\text{unit}$$\n and the magnitude of the velocity of the car,\n\n$$v=|\\vec v|$$\n\n$$v = 18\\ \\text{unit}.$$\n If the resultant velocity of the rain falls at an angle less than 60° with the vertical, the rear glass of the car will get wet. Otherwise it will not.\n If the direction of the resultant velocity of the rain is $\\theta$, then\n\n$$\\tan\\theta=\\frac{v\\sin90^\\circ}{u+v\\cos90^\\circ}$$\n\n$$\\tan\\theta = \\frac{v\\times1}{u+v\\times0}$$\n\n$$\\tan\\theta = \\frac vu$$\n or,\n\n$$\\theta=\\tan^{-1}\\left(\\frac vu\\right)$$\n\n$$\\theta = \\tan^{-1}\\left(\\frac{18}{12}\\right)$$\n\n$$\\theta = 56.31^\\circ<60^\\circ.$$\n Since the direction of the resultant velocity of the rain is less than 60°, therefore the rear glass of the car will get wet in the rain.\n\n**[Description of Figure 28.2]** Side view of a car facing right. The rear glass slopes at an angle of 30° with the horizontal roof. The velocity of the car $\\vec v=18\\hat i$ to the right, the opposite velocity $-\\vec v=-18\\hat i$ to the left, the actual rain $\\vec u=-12\\hat j$ downwards. The arrow of the relative rain points to the lower left; the angle with the vertical is $\\theta$ and the angle of the glass with the vertical is marked as 60°.\n The relative-velocity vector in (c) is $\\vec u-\\vec v=-18\\hat i-12\\hat j$; magnitude $6\\sqrt{13}\\approx21.63$. No unit of velocity is given in the stem, so the original answer also says 'at unit velocity'. The relative-velocity vector is the same on the front and rear glass; the geometry of incidence on the surface is different. The explanation of the 'opposite force' in (b) is the original's; the relevant basic principle is that the torque increases as the perpendicular distance from the axis of rotation (along the hinge) to the point of application of the force increases."
+     }
+    ]
+   },
+   {
+    "id": 49,
+    "source": "Rangpur Cadet College · Board question no. 7 · book p. 55",
+    "stem": "Saumik was standing by the window watching the rain. The vertical velocity of the rain was $6\\text{kmh}^{-1}$. On the road Saumik saw one man walking with velocity $4\\text{kmh}^{-1}$ and another man riding a bicycle with velocity $8\\text{kmh}^{-1}$. Their umbrellas were held at different angles.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "At what angle did the man walking on the road hold his umbrella to save himself from the rain?",
+      "answer": "We know,\n$$\\tan\\theta = \\frac{v_m}{v_r}$$\n$$\\text{or, } \\tan\\theta = \\frac{4}{6}$$\n$$\\text{or, } \\theta = \\tan^{-1}(0.667)$$\n$$\\therefore \\theta = 33.69^\\circ\\text{ Ans.}$$"
+     },
+     {
+      "prompt": "The two persons' umbrellas were not held at the same angle — verify the truth of Saumik's observation through mathematical explanation.",
+      "answer": "In the case of the walking man, We know,\n$$\\tan\\theta_1 = \\frac{v_1}{v_r}$$\n$$\\text{or, } \\tan\\theta_1 = \\frac{4}{6}$$\n$$\\text{or, } \\theta_1 = \\tan^{-1}(0.667)$$\n$$\\therefore \\theta_1 = 33.69^\\circ$$ \n and in the case of the cyclist,\n$$\\tan\\theta_2 = \\frac{v_2}{v_r}$$\n$$\\text{or, } \\tan\\theta_2 = \\frac{8}{6}$$\n$$\\text{or, } \\theta_2 = \\tan^{-1}(1.333)$$\n$$\\therefore \\theta_2 = 53.13^\\circ$$ Mathematical analysis shows that the angle with the vertical in the case of the walking man is $\\neq$ and in the case of the cyclist... that is, both the walking man and the cyclist have to hold their umbrellas at different angles. Therefore Saumik's observation was correct.\n\n> [printed as 33.69 without the degree sign in the book]"
+     }
+    ]
+   },
+   {
+    "id": 60,
+    "source": "BCIC College, Dhaka · Board question no. 1 · book p. 61",
+    "stem": "Three points $4.62\\text{ ms}^{-1}$, $v$ and $u$ lie in a three-dimensional rectangular coordinate system.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "While moving, the front glass of the car got wet but the rear glass did not — explain with a drawing.",
+      "answer": "Velocity of the wind relative to the car,\n$$\\vec{v_{wc}} = \\vec{v_w} - \\vec{v_c}$$\n\n$$\\vec{v_{wc}} = \\vec{v_w} + (-\\vec{v_c})\\text{ (backwards)}$$ Velocity of the rain relative to the car,\n$$\\vec{v_{rc}} = \\vec{v_r} - (\\vec{v_{wc}})$$\n\n$$\\vec{v_{rc}} = \\vec{v_r} - (\\vec{v_w} - \\vec{v_c})$$\n\n*(writing on the right side)* then, Actual velocity of the rain, $\\vec{v_r}$ (vertically downwards) Velocity of the car, $\\vec{v_c}$ (horizontally forwards) Velocity of the wind, $\\vec{v_w}$ (horizontally backwards) Velocity of the rain relative to the car, $\\vec{v_{rc}}$"
+     },
+     {
+      "prompt": "Will a person sitting on the roof of a car be saved from the rain if he holds the umbrella at an angle $40^\\circ$? Explain through mathematical analysis.",
+      "answer": "The person sitting on the roof of the car is moving with the same velocity as the car. So, to be saved from the rain, he must hold the umbrella in the direction of the velocity of the rain relative to the car.\n Resultant velocity of the rain (relative to the ground),\n\n$$\\vec V_{\\mathrm{net}\\,R}=\\vec v_r+\\vec v_w$$\n\n$$\\vec V_{\\mathrm{net}\\,R}=(-2\\hat i-8\\hat j)\\ \\mathrm{m\\,s^{-1}}.$$\n Velocity of the rain relative to the car,\n\n$$\\vec v_{rc}=\\vec V_{\\mathrm{net}\\,R}-\\vec v_C$$\n\n$$\\vec v_{rc}=(-2\\hat i-8\\hat j)-(4.62\\hat i)$$\n\n$$\\vec v_{rc}=(-2-4.62)\\hat i-8\\hat j$$\n\n$$\\vec v_{rc}=-6.62\\hat i-8\\hat j\\ \\mathrm{m\\,s^{-1}}.$$\n Here, the velocity of the car $v_C=4.62\\ \\mathrm{m\\,s^{-1}}$ (towards v); the actual velocity of the rain $v_r=8\\ \\mathrm{m\\,s^{-1}}$ (towards M); the velocity of the wind $v_w=2\\ \\mathrm{m\\,s^{-1}}$ (towards u).\n If the relative velocity of the rain makes an angle $\\theta$ with the vertical:\n\n$$\\tan\\theta=\\frac{\\text{horizontal component}}{\\text{vertical component}}$$\n\n$$\\tan\\theta = \\frac{|v_{rc,x}|}{|v_{rc,y}|}$$\n or, $\\tan\\theta=6.62/8$   or, $\\tan\\theta=0.8275$   or, $\\theta=\\tan^{-1}(0.8275)$\n\n$$\\therefore\\theta=39.62^\\circ.$$\n Therefore, to be saved from the rain, the person sitting on the roof of the car must hold the umbrella tilted forwards at an angle of 39.62° with the vertical.\n Since the man held the umbrella at an angle of 40° and $39.62^\\circ\\approx40^\\circ$, therefore it can be said that the man will be saved from the rain.\n Although the direction of the wind is given in the stem on the previous page, the **2 m s⁻¹** value of its velocity is not found there; that value has been taken in this answer. So the result 39.62° depends on this additional value. The correct addition in this part $\\vec v_r+\\vec v_w-\\vec v_C$ corrects the sign inconsistency in the earlier (c). Without knowing the size of the umbrella and the spread of the rain, certain protection from a nearby angle cannot be proved; the book's conclusion is approximate."
+     }
+    ]
+   },
+   {
+    "id": 85,
+    "source": "Barishal Government Women's College · Board question no. 1 · book p. 72",
+    "stem": "One day Shanta stood watching the rain fall. She observed that the rain is falling from the south at $8\\text{ ms}^{-1}$ at an angle of $40^\\circ$ with the vertical. Afterwards she started walking in the rain from south to north and, to protect herself from the rain, held the umbrella at an angle of $20^\\circ$ with the vertical towards her back.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "What is the actual velocity of the rain?",
+      "answer": "Given, when Shanta was standing, she saw the rain falling at a velocity of $8\\text{ ms}^{-1}$ at an angle $40^\\circ$ with the vertical. Since Shanta was stationary, the velocity of the rain relative to her is the actual velocity of the rain.\n$\\therefore$ the actual velocity of the rain, $v_r = 8\\text{ ms}^{-1}\\text{ Ans.}$"
+     },
+     {
+      "prompt": "Verify mathematically whether the statement “Shanta's walking velocity is less than the actual velocity of the rain” is correct from the point of view of the stem.",
+      "answer": "Let the horizontal direction be the $x$-axis and the vertical direction the $y$-axis. The north direction is taken as positive $x$ and the downward direction as negative $y$.\n* * *"
+     }
+    ]
+   }
+  ]
+ },
+ "algebra": {
+  "title": "Vector algebra",
+  "questions": [
+   {
+    "id": 6,
+    "source": "Chattogram Board · 2025 · Board question no. 1 · book p. 32",
+    "stem": "Look at the figure above.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the unit vector parallel to $\\overrightarrow{PQ}$.",
+      "answer": "$\\overrightarrow{PQ} = (2 - 1)\\hat{i} + (3 - 3)\\hat{j} + (4 - 4)\\hat{k} = \\hat{i}$ that is, $\\overrightarrow{PQ}$ is a unit vector\n$\\therefore$ the unit vector parallel to $\\overrightarrow{PQ}$ is $\\hat{i}$ Ans.\n or, Here, two points\n$P(1, 3, 4)$ and $Q(2, 3, 4)$."
+     },
+     {
+      "prompt": "In the light of the stem, verify with mathematical analysis whether $\\angle POQ$ and $\\angle OPQ$ are equal in magnitude.",
+      "answer": "Here, $\\overrightarrow{OP} = \\hat{i} + 3\\hat{j} + 4\\hat{k}$,\n$\\overrightarrow{OQ} = 2\\hat{i} + 3\\hat{j} + 4\\hat{k}$, Here, $\\overrightarrow{PO} = -\\overrightarrow{OP} = -\\hat{i} - 3\\hat{j} - 4\\hat{k}$ From (c) we get, $\\overrightarrow{PQ} = \\hat{i}$\n If the angle between the two vectors $\\overrightarrow{OP}$ and $\\overrightarrow{OQ}$ is $\\angle POQ$, then\n$$\\cos\\angle POQ = \\frac{\\overrightarrow{OP} \\cdot \\overrightarrow{OQ}}{|\\overrightarrow{OP}||\\overrightarrow{OQ}|}$$"
+     }
+    ]
+   },
+   {
+    "id": 7,
+    "source": "Chattogram Board · 2025 · Board question no. 2 · book p. 33",
+    "stem": "$\\vec{P} = 2\\hat{i} + 2\\hat{j} - \\hat{k}$, $\\vec{Q} = 2\\hat{i} + 2\\hat{j} + a\\hat{k}$.\n\n> [printed as \\hat{Q} in the book]\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the angle between $\\vec{P}$ and the positive $x$-axis.",
+      "answer": "given, $\\vec{P} = 2\\hat{i} + 2\\hat{j} - \\hat{k}$ positive unit vector along the $x$-axis = $\\hat{i}$ Given, $\\vec{A} \\cdot \\vec{B} = AB\\cos\\theta$\n$$\\therefore \\cos\\theta = \\frac{\\vec{A} \\cdot \\vec{B}}{AB}$$ If the angle between $\\vec{P}$ and the positive $x$-axis is $\\theta_x$—\n$$\\cos\\theta_x = \\frac{(2\\hat{i} + 2\\hat{j} - \\hat{k}) \\cdot (\\hat{i})}{\\sqrt{2^2 + 2^2 + (-1)^2} \\times 1}$$\n\n$$\\cos\\theta_x = \\frac{2}{3}$$\n\n$$\\cos\\theta_x = 0.67$$\n$$\\therefore \\theta_x = \\cos^{-1}(0.67)$$\n\n$$\\theta_x = 47.93^\\circ\\text{ Ans.}$$"
+     },
+     {
+      "prompt": "For some possible value of $a$, will the magnitudes of the scalar product and the vector product of the two vectors be equal? Give your opinion with mathematical analysis.",
+      "answer": "Scalar product of the two vectors—\n$$\\vec{P} \\cdot \\vec{Q} = (2\\hat{i} + 2\\hat{j} - \\hat{k}) \\cdot (2\\hat{i} + 2\\hat{j} + a\\hat{k})$$\n\n$$\\vec{P} \\cdot \\vec{Q} = 8 - a$$ Vector product of the two vectors\n$$\\vec{P} \\times \\vec{Q} = \\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 2 & 2 & -1 \\\\ 2 & 2 & a \\end{matrix}\\right|$$\n\n$$\\hat{i}(2a + 2) \\times \\hat{j}(2a - 2) + \\hat{k}(0)$$\n\n$$\\therefore |\\vec{P} \\times \\vec{Q}| = \\sqrt{(2a + 2)^2 + (-2a - 2)^2}$$\n\n$$|\\vec{P} \\times \\vec{Q}| = \\sqrt{2(2a + 2)^2}$$\n\n$$|\\vec{P} \\times \\vec{Q}| = (2a + 2)\\sqrt{2}$$ now, $\\vec{P} \\cdot \\vec{Q} = |\\vec{P} \\times \\vec{Q}|$ or, $8 - a = (2a + 2)\\sqrt{2}$ or, $a(2\\sqrt{2} + 1) = 8 - 2\\sqrt{2}$ or, $a = \\frac{8 - 2\\sqrt{2}}{2\\sqrt{2} + 1}$\n$\\therefore a = 1.351$ that is, if the value of $a$ is $1.351$, the magnitudes of the scalar product and the vector product of the two vectors will be equal.\n\n> [book printing error: here it should have been \\hat{i}(2a + 2) - \\hat{j}(2a + 2) + \\hat{k}(0); but \\times and (2a-2) have been mistakenly printed, although (-2a-2)² has been taken correctly in the next line]"
+     }
+    ]
+   },
+   {
+    "id": 10,
+    "source": "Jashore Board · 2025 · Board question no. 4 · book p. 34",
+    "stem": "$\\vec{A} = 2\\hat{i} - 2\\hat{j} + 2\\hat{k}$ and $\\vec{B} = \\hat{i} - 3\\hat{j} + 6\\hat{k}$",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the perpendicular projection of $\\vec{A}$ along the vector $\\vec{B}$.",
+      "answer": "The perpendicular projection of the vector $\\vec{A}$ along the vector $\\vec{B}$ is—\n$$A\\cos\\theta = \\frac{\\vec{A} \\cdot \\vec{B}}{B}$$\n$$\\frac{(2\\hat{i} - 2\\hat{j} + 2\\hat{k}) \\cdot (\\hat{i} - 3\\hat{j} + 6\\hat{k})}{\\sqrt{1^2 + (-3)^2 + 6^2}}$$\n$$\\frac{20}{\\sqrt{46}} = 2.949\\text{ Ans.}$$\n or, Here,\n$\\vec{A} = 2\\hat{i} - 2\\hat{j} + 2\\hat{k}$\n$\\vec{B} = \\hat{i} - 3\\hat{j} + 6\\hat{k}$"
+     },
+     {
+      "prompt": "In the light of the stem, give your opinion through mathematical analysis on whether $\\theta_1 = \\theta_2$ is possible.",
+      "answer": "In the light of the stem, give your opinion through mathematical analysis on whether $\\theta_1 = \\theta_2$ is possible. (4)\n [Question 39 – stem] Two figures are given, with `width of the river 1.5 km` written between them:\n according to the stem,\n$$\\vec{A} + \\vec{B} = 2\\hat{i} - 2\\hat{j} + 2\\hat{k} + \\hat{i} - 3\\hat{j} + 6\\hat{k}$$\n\n$$\\vec{A} + \\vec{B} = 3\\hat{i} - 5\\hat{j} + 8\\hat{k}$$\n$$\\vec{A} - \\vec{B} = (2\\hat{i} - 2\\hat{j} + 2\\hat{k}) - (\\hat{i} - 3\\hat{j} + 6\\hat{k})$$\n\n$$\\vec{A} - \\vec{B} = \\hat{i} + \\hat{j} - 4\\hat{k}$$\n or, Here,\n$\\vec{A} = 2\\hat{i} - 2\\hat{j} + 2\\hat{k}$\n$\\vec{B} = \\hat{i} - 3\\hat{j} + 6\\hat{k}$\n here, $\\cos\\theta_1 = \\frac{\\vec{A} \\cdot \\vec{B}}{AB}$\n$$\\frac{(2\\hat{i} - 2\\hat{j} + 2\\hat{k}) \\cdot (\\hat{i} - 3\\hat{j} + 6\\hat{k})}{\\sqrt{2^2 + (-2)^2 + 2^2}\\sqrt{1^2 + (-3)^2 + 6^2}}$$\n$$\\frac{20}{2\\sqrt{138}} = 0.851$$\n$$\\therefore \\theta_1 = \\cos^{-1}(0.851)$$\n\n$$\\theta_1 = 31.65^\\circ$$\n Resultant velocity,\n$$\\cos\\theta_2 = \\frac{(\\vec{A} + \\vec{B}) \\cdot (\\vec{A} - \\vec{B})}{|\\vec{A} + \\vec{B}||\\vec{A} - \\vec{B}|}$$\n$$\\frac{(3\\hat{i} - 5\\hat{j} + 8\\hat{k}) \\cdot (\\hat{i} + \\hat{j} - 4\\hat{k})}{\\sqrt{3^2 + (-5)^2 + 8^2}\\sqrt{1^2 + 1^2 + (-4)^2}}$$\n$$\\frac{-34}{42} = -0.809$$\n$$\\therefore \\theta_2 = \\cos^{-1}(-0.809)$$\n\n$$\\theta_2 = 144.049^\\circ$$\n$$\\therefore \\theta_1 \\neq \\theta_2$$ Therefore, in the light of the above mathematical analysis it can be said that $\\theta_1 = \\theta_2$ is not possible.\n* * *"
+     }
+    ]
+   },
+   {
+    "id": 11,
+    "source": "Barishal Board · 2025 · Board question no. 1 · book p. 35",
+    "stem": "Two vectors $\\vec{A} = 3\\hat{i} + 4\\hat{j} - \\hat{k}$ and $\\vec{B} = \\hat{i} - \\hat{j} + 6\\hat{k}$ respectively, and a vector field $\\vec{C} = 2x^2yz\\hat{i} + y^2z\\hat{j} + x^2y^2z^2\\hat{k}$.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the vector perpendicular to the plane of $\\vec{A}$ and $\\vec{B}$.",
+      "answer": "The vector along the direction perpendicular to the plane of $\\vec{A}$ and $\\vec{B}$ is—\n$$\\vec{A} \\times \\vec{B} = \\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 3 & 4 & -1 \\\\ 1 & -1 & 6 \\end{matrix}\\right|$$\n$$\\hat{i}(24 \\times 1) - \\hat{j}(18 + 1) + \\hat{k}(-3 - 4)$$\n\n$$23\\hat{i} - 19\\hat{j} - 7\\hat{k}\\text{ Ans.}$$\n\n> [book printing error: (24 × 1) is printed in place of (24 - 1), but the answer 23i is written correctly]"
+     },
+     {
+      "prompt": "Will the vector field $\\vec{C}$ at point $(2, -1, 2)$ act as a source of fluid? Explain mathematically.",
+      "answer": "given,\n$$\\vec{C} = 2x^2yz\\hat{i} + y^2z\\hat{j} + x^2y^2z^2\\hat{k}$$\n$$\\text{div}\\,\\vec{C} = \\vec{\\nabla} \\cdot \\vec{C}$$\n\n<div class=\"math\">$$\\text{div}\\,\\vec{C} = \\left(\\hat{i}\\frac{\\delta}{\\delta x} + \\hat{j}\\frac{\\delta}{\\delta y} + \\hat{k}\\frac{\\delta}{\\delta z}\\right) \\cdot \\left(2x^2yz\\hat{i} + y^2z\\hat{j} + x^2y^2\\hat{k}\\right)$$</div>\n\n$$\\frac{\\delta}{\\delta x}(2x^2yz) + \\frac{\\delta}{\\delta y}(y^2z) + \\frac{\\delta}{\\delta z}(x^2y^2z^2)$$\n$$\\text{div}\\,\\vec{C} = 4xyz + 2yz + 2x^2y^2z$$ at point $\\therefore (2, -1, 2)$\n$$\\text{div}\\,\\vec{C} = 4xyz + 2yz + 2x^2y^2z$$\n$$4 \\times 2 \\times (-1) \\times 2 + 2 \\times (-1) \\times 2 + 2 \\times 2^2(-1)^2 \\times 2 = -4$$ the curl of $\\therefore (2, -1, 2)$ $\\text{div}\\,\\vec{C} < 0$ the vector field $\\vec{C}$ at point $\\therefore (2, -1, 2)$ will not act as a source of fluid.\n\n> [book printing error: here z² is missing in the last term; x²y²z² is written correctly in the next line]"
+     }
+    ]
+   },
+   {
+    "id": 14,
+    "source": "Mymensingh Board · 2024 · Board question no. 1 · book p. 36",
+    "stem": "Two vectors $\\vec{v} = 2\\hat{i} + 3\\hat{j} - x\\hat{k}$ and $\\vec{u} = 3\\hat{i} + 2\\hat{j} + 2\\hat{k}$ are mutually perpendicular. If the magnitudes of $\\vec{v}$ and $\\vec{u}$ represent the velocities of a boat and of the current in a river, then the boat takes $4$ minutes to cross the river along the shortest path.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the value of '$x$' in the stem.",
+      "answer": "We know, If two vectors are mutually perpendicular, their scalar product is zero.\n$$\\therefore \\vec{v} \\cdot \\vec{u} = 0$$ or, $(2\\hat{i} + 3\\hat{j} - x\\hat{k}) \\cdot (3\\hat{i} + 2\\hat{j} + 2\\hat{k}) = 0$ or, $6 + 6 - 2x = 0$\n$\\therefore x = 6$ Ans.\n or, Here,\n$\\vec{v} = 2\\hat{i} + 3\\hat{j} - x\\hat{k}$\n$\\vec{u} = 3\\hat{i} + 2\\hat{j} + 2\\hat{k}$\n$x = ?$"
+     },
+     {
+      "prompt": "Verify mathematically whether the boatman has to cover a distance greater than the width of the river in order to cross in the minimum time.",
+      "answer": "To cross the river along the shortest path the resultant velocity must be along the width of the river. That is, at that time the angle between the resultant velocity and the velocity of the current is $\\theta=90^\\circ$.\n\n$$\\therefore\\tan90^\\circ=\\frac{v\\sin\\alpha}{u+v\\cos\\alpha}$$\n or,\n\n$$u+v\\cos\\alpha=0$$\n or,\n\n$$\\alpha=\\cos^{-1}\\left(-\\frac uv\\right)$$\n or,\n\n$$\\alpha=\\cos^{-1}\\left(-\\frac{\\sqrt{17}}7\\right)$$\n\n$$\\therefore\\alpha=126.087^\\circ.$$\n Here,\n\n$$\\vec v=2\\hat i+3\\hat j-6\\hat k\\quad\\text{(from part c)},$$\n$$\\vec u=3\\hat i+2\\hat j+2\\hat k.$$\n Magnitude of the velocity of the current,\n\n$$|\\vec u|=u$$\n\n$$|\\vec u| = \\sqrt{3^2+2^2+2^2}\\ \\mathrm{m\\,s^{-1}}$$\n\n$$|\\vec u| = \\sqrt{17}\\ \\mathrm{m\\,s^{-1}}.$$\n Magnitude of the velocity of the boat,\n\n$$|\\vec v|=v$$\n\n$$|\\vec v| = \\sqrt{2^2+3^2+(-6)^2}\\ \\mathrm{m\\,s^{-1}}$$\n\n$$|\\vec v| = 7\\ \\mathrm{m\\,s^{-1}}.$$\n The angle between $\\vec u$ and $\\vec v$, $\\alpha=?$.\n Time required to cross the river along the shortest path,\n\n$$t_1=4\\ \\mathrm{min}\\quad\\text{(given)}$$\n\n$$t_1 = 240\\ \\mathrm s.$$\n\n$$\\therefore t_1=\\frac{d}{v\\sin\\alpha}$$\n or,\n\n$$240=\\frac{d}{7\\sin126.087^\\circ}$$\n\n$$\\therefore d=1357.648\\ \\mathrm m$$\n\n$$d = AB.$$\n\n**[Description of Figure 14.2 / Figure-1 of the original]** Two horizontal river banks. A at the bottom, B directly opposite on the upper bank. From A, the current $u$ flows to the right, the boat's velocity $v$ points to the upper left, and the resultant velocity is straight up along AB. The angle between the resultant and the current is $\\theta=90^\\circ$. This is the situation of the shortest path.\n Now, to cross the river in the minimum time the boat's velocity must be along the width of the river, i.e. $\\alpha=90^\\circ$.\n ∴ the time required in this case,\n\n$$t_2=\\frac{d}{v\\sin\\alpha}$$\n\n$$t_2 = \\frac{1357.648}{7\\sin90^\\circ}\\ \\mathrm s$$\n\n$$t_2 = 193.950\\ \\mathrm s$$\n which is less than $t_1$.\n and the resultant velocity,\n\n<div class=\"math\">$$\\begin{aligned} w&=\\sqrt{u^2+v^2+2uv\\cos\\alpha}\\\\ &=\\sqrt{(\\sqrt{17})^2+7^2+2\\times\\sqrt{17}\\times7\\times\\cos90^\\circ}\\\\ &=8.124\\ \\mathrm{m\\,s^{-1}}. \\end{aligned}$$</div>\n here, $\\alpha=90^\\circ$; $u=\\sqrt{17}$; $v=7$.\n\n**[Description of Figure 14.3 / Figure-2 of the original]** A on the lower bank; B directly opposite on the upper bank and C to the right. From A, the boat's velocity $v$ along AB, the current's velocity $u$ to the right, and the diagonal resultant $w$ along AC. Between $u$ and $v$ the angle is $\\alpha=90^\\circ$. The path up to C is longer than AB.\n ∴ distance travelled,\n\n$$AC=wt_2$$\n\n$$AC = (8.124\\times193.950)\\ \\mathrm m$$\n\n$$AC = 1575.650\\ \\mathrm m.$$\n it is seen that $AC>AB$.\n Therefore, to cross the river in the minimum time the boatman must cover a distance greater than the width of the river.\n In the original stem the unit of the velocity is absent, but m s⁻¹ has been assumed in the answer; the numerical value of the distance depends on that assumption. From the two mutually perpendicular vectors in the stem only the *magnitude* of the velocity has first been taken; in the case of the shortest path the direction of the boat has been re-chosen."
+     }
+    ]
+   },
+   {
+    "id": 20,
+    "source": "Cumilla Board · 2024 · Board question no. 1 · book p. 40",
+    "stem": "The vector $\\vec{C}$ is perpendicular to the vectors $\\vec{A}$ and $\\vec{B}$.\n$\\vec{A} = -\\hat{i} - 3\\hat{j} + 2\\hat{k}$ and $\\vec{B} = 2\\hat{i} - 2\\hat{j} - 2\\hat{k}$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the unit vector along the vector $\\vec{C}$.",
+      "answer": "Since the vector $\\vec{C}$ is perpendicular to the two vectors $\\vec{A}$ and $\\vec{B}$. unit vector perpendicular to $\\therefore \\vec{A}$ and $\\vec{B}$ ,\n$$\\hat{\\eta} = \\pm \\frac{\\vec{A} \\times \\vec{B}}{|\\vec{A} \\times \\vec{B}|}$$ Here,\n$$\\vec{A} \\times \\vec{B} = \\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ -1 & -3 & 2 \\\\ 2 & -2 & -2 \\end{matrix}\\right|$$\n$$\\hat{i}(6 + 4) - \\hat{j}(2 - 4) + \\hat{k}(2 + 6)$$\n$$10\\hat{i} + 2\\hat{j} + 8\\hat{k}$$\n\n$$\\therefore |\\vec{A} \\times \\vec{B}| = \\sqrt{10^2 + 2^2 + 8^2}$$\n\n$$|\\vec{A} \\times \\vec{B}| = 2\\sqrt{42}$$\n$$\\therefore \\hat{\\eta} = \\pm \\frac{10\\hat{i} + 2\\hat{j} + 8\\hat{k}}{2\\sqrt{42}}$$\n\n$$\\hat{\\eta} = \\pm \\left(\\frac{5}{\\sqrt{42}}\\hat{i} + \\frac{1}{\\sqrt{42}}\\hat{j} + \\frac{4}{\\sqrt{42}}\\hat{k}\\right)$$ According to the figure, the direction of the vector $\\vec{C}$ is along $\\vec{B} \\times \\vec{A}$, or along $-(\\vec{A} \\times \\vec{B})$. Therefore, $\\vec{C} = -\\left(\\frac{5}{\\sqrt{42}}\\hat{i} + \\frac{1}{\\sqrt{42}}\\hat{j} + \\frac{4}{\\sqrt{42}}\\hat{k}\\right)$ Ans. `[i.e. the unit vector along the direction of C]`\n\n> [the word 'along' (along) is printed twice in the book]"
+     },
+     {
+      "prompt": "Verify mathematically, according to the stem, that $\\vec{P} + \\vec{Q} = \\vec{R}$",
+      "answer": "From (c) we get $-(\\vec{A} \\times \\vec{B}) = -(10\\hat{i} + 2\\hat{j} + 8\\hat{k}) = \\vec{C}$ at $\\Delta ONL$, according to the triangle law of vector addition, $\\vec{B} + \\vec{P} = \\vec{A}$\n$$\\therefore \\vec{P} = \\vec{A} - \\vec{B}$$\n$$(-\\hat{i} - 3\\hat{j} + 2\\hat{k}) - (2\\hat{i} - 2\\hat{j} - 2\\hat{k})$$\n$$-3\\hat{i} - \\hat{j} + 4\\hat{k}$$"
+     }
+    ]
+   },
+   {
+    "id": 25,
+    "source": "Jashore Board · 2024 · Board question no. 1 · book p. 43",
+    "stem": "Read the following stem and answer the related questions:",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the vector form of $F_1$.",
+      "answer": "horizontal component of the force $\\vec{F}_1$\n$$|\\vec{F}_1|\\cos\\theta = 15\\cos 150^\\circ$$\n\n$$|\\vec{F}_1|\\cos\\theta = -15 \\cdot \\frac{\\sqrt{3}}{2}$$ vertical component of the force $\\vec{F}_1$ = $|\\vec{F}_1|\\sin\\theta$\n$$15\\sin 150^\\circ = 15 \\times \\frac{1}{2}$$\n\n$$15\\sin 150^\\circ = \\frac{15}{2}$$\n Therefore, the vector form of $F_1$, $\\vec{F}_1 = -\\frac{15\\sqrt{3}}{2}\\hat{i} + \\frac{15}{2}\\hat{j}$ Ans."
+     },
+     {
+      "prompt": "Are $\\vec{F}_1 + \\vec{F}_2$ and $\\vec{F}_1 - \\vec{F}_2$ in the stem mutually perpendicular? Verify.",
+      "answer": "Here, the vector form of $F_2$,\n$$\\vec{F}_2 = 10\\cos 30^\\circ\\hat{i} + 10\\sin 30^\\circ\\hat{j}$$\n\n$$\\vec{F}_2 = \\frac{10\\sqrt{3}}{2}\\hat{i} + 10 \\times \\frac{1}{2}\\hat{j}$$\n\n$$\\vec{F}_2 = 5\\sqrt{3}\\hat{i} + 5\\hat{j}$$\n now, $\\vec{F}_1 + \\vec{F}_2 = -\\frac{15\\sqrt{3}}{2}\\hat{i} + \\frac{15}{2}\\hat{j} + 5\\sqrt{3}\\hat{i} + 5\\hat{j} = -\\frac{5\\sqrt{3}}{2}\\hat{i} + \\frac{25}{2}\\hat{j}$ Here, $\\vec{F}_1 - \\vec{F}_2 = -\\frac{15\\sqrt{3}}{2}\\hat{i} + \\frac{15}{2}\\hat{j} - 5\\sqrt{3}\\hat{i} - 5\\hat{j} = -\\frac{25\\sqrt{3}}{2}\\hat{i} + \\frac{5}{2}\\hat{j}$\n$$(\\vec{F}_1 + \\vec{F}_2) \\cdot (\\vec{F}_1 - \\vec{F}_2) = \\left(-\\frac{5\\sqrt{3}}{2}\\hat{i} + \\frac{25}{2}\\hat{j}\\right) \\cdot \\left(-\\frac{25\\sqrt{3}}{2}\\hat{i} + \\frac{5}{2}\\hat{j}\\right) = \\frac{125 \\times (\\sqrt{3})^2}{4} + \\frac{125}{4} = 125 \\neq 0$$ Since the dot product is not zero, the two vectors $(\\vec{F}_1 + \\vec{F}_2)$ and $(\\vec{F}_1 - \\vec{F}_2)$ are not mutually perpendicular."
+     }
+    ]
+   },
+   {
+    "id": 29,
+    "source": "Mymensingh Board · 2023 · Board question no. 1 · book p. 45",
+    "stem": "$\\vec{P} = 5\\hat{i} + 3\\hat{j} - m\\hat{k}$ and $\\vec{Q} = \\hat{i} + \\hat{j} + 4\\hat{k}$. Here $\\vec{P}$ and $\\vec{Q}$ are mutually perpendicular. If the magnitudes of $\\vec{P}$ and $\\vec{Q}$ represent the speeds of a boat and of the current in a river respectively, then the boat takes $2$ minutes to cross the river along the shortest path.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the value of $m$.",
+      "answer": "Similar to the answer of creative question 14((c)). Answer: $2$."
+     },
+     {
+      "prompt": "If the boatman wants to cross the river in the minimum time, will he cover a distance greater than the width of the river — explain with the help of mathematical values.",
+      "answer": "Similar to the answer of creative question 14((d)). Answer: the width of the river is $8.94$ units and the distance covered in the minimum time is $10.84$ units. Therefore, if the boatman wants to cross the river in the minimum time, he will have to travel a path longer than the width of the river.\n\n**Full solution (added):**\n\n$\\vec P\\cdot\\vec Q=5+3-4m=0\\Rightarrow m=2$. The magnitude of the boat's velocity is $\\sqrt{38}$ and that of the current is $\\sqrt{18}$. The velocity along the width for the shortest path is $\\sqrt{38-18}=\\sqrt{20}$. The lengths in the original have been calculated by directly putting in a time of 2; this requires taking the time unit of the velocity as minutes. If the decimals are not rounded prematurely, the second length is about 10.8579, i.e. 10.86 units (the original 10.84 has a slight deviation). If the unit of velocity is m s⁻¹, then 120 s must be put in and the lengths will be 60 times as large. The unit of velocity is not mentioned in the stem."
+     }
+    ]
+   },
+   {
+    "id": 30,
+    "source": "Rajshahi Board · 2023 · Board question no. 1 · book p. 45",
+    "stem": "$\\vec{P} = 5\\hat{i} + 3\\hat{j} - m\\hat{k}$; $\\vec{Q} = \\hat{i} + \\hat{j} + 4\\hat{k}$; here $\\vec{P}$ and $\\vec{Q}$ are mutually perpendicular. If the magnitudes of $\\vec{P}$ and $\\vec{Q}$ represent the speeds of a boat and of the current in a river respectively, then the boat takes $2$ minutes to cross the river along the shortest path.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Calculate the value of '$m$'.",
+      "answer": "Similar to the answer of creative question 14((c)). Answer: $2$."
+     },
+     {
+      "prompt": "If the boatman wants to cross the river in the minimum time, will he cover a distance greater than the width of the river? Explain with the help of a mathematical method.",
+      "answer": "Similar to the answer of creative question 14((d)). Answer: the width of the river is $8.94$ units and the distance covered in the minimum time is $10.84$ units. Therefore, if the boatman wants to cross the river in the minimum time, he will have to travel a path longer than the width of the river."
+     }
+    ]
+   },
+   {
+    "id": 32,
+    "source": "Cumilla Board · 2023 · Board question no. 1 · book p. 46",
+    "stem": "A scalar field $\\vec{A} = 3\\hat{i} + 2\\hat{j} + \\hat{k}$, a vector field $\\vec{B} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$ and a vector operator $\\vec{C} = \\hat{i} + 2\\hat{j} + 2\\hat{k}$\n\n> [book printing error: in the book the operator is printed with \\vec{V} and a partial-differentiation \\delta sign]\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the perpendicular projection of $\\vec{A}$ along $\\vec{B}$.",
+      "answer": "Similar to the answer of creative question 12((c)). Answer: $2.673$."
+     },
+     {
+      "prompt": "Will the three vectors $\\vec{A}, \\vec{B}$ and $\\vec{C}$ lie in the same plane — analyse mathematically.",
+      "answer": "Similar to the answer of creative question 12((d)). Answer: since $\\vec{A} \\cdot (\\vec{B} \\times \\vec{C}) = -4$ in the stem, therefore the three vectors $\\vec{A}, \\vec{B}$ and $\\vec{C}$ are not coplanar."
+     }
+    ]
+   },
+   {
+    "id": 42,
+    "source": "Dhaka Board · 2019 · Board question no. 1 · book p. 51",
+    "stem": "The driver of a car moving eastwards at $40\\text{ km}$ per hour saw a truck moving northwards at twice his speed per hour. The east direction is taken as the positive $x$-axis and the north direction as the positive $y$-axis.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "In which direction was the truck actually moving?",
+      "answer": "Let the truck have been moving towards the north-east with velocity $v_T$ at an angle $\\theta$ with the north direction."
+     },
+     {
+      "prompt": "Analyse mathematically and show whether it is possible to determine a vector along the direction perpendicular to the plane in which the actual velocities of the truck and the car lie.",
+      "answer": "In this case, taking the east direction as the $X$-axis and the north direction as the $Y$-axis, The actual velocity of the car, from $v_c = 40\\text{ km/h}$ we get, Velocity vector of the car, $\\vec{v}_c = 40\\hat{i}\\text{ km/h}$ Again, the actual velocity of the truck, $v_T = 40\\sqrt{5}\\text{ km/h}$, acting on the east side at an angle $26.57^\\circ$ with the north direction— Velocity vector of the truck, $\\vec{v}_T = (40\\sqrt{5}\\sin 26.57^\\circ)\\hat{i} + (40\\sqrt{5}\\cos 26.57^\\circ)\\hat{j} = (40\\hat{i} + 80\\hat{j})\\text{ km/h}$ Now, $\\vec{v}_c \\times \\vec{v}_T$ is a vector perpendicular to the plane of $\\vec{v}_c$ and $\\vec{v}_T$,\n$$\\therefore \\vec{v}_c \\times \\vec{v}_T = \\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 40 & 0 & 0 \\\\ 40 & 80 & 0 \\end{matrix}\\right| = \\hat{i} \\times 0 - \\hat{j} \\times 0 + \\hat{k}(40 \\times 80 - 0) = 3200\\hat{k}$$ Let the unit vector along the direction perpendicular to the plane in which $\\vec{v}_c$ and $\\vec{v}_T$ lie be = $\\hat{\\eta}$\n$$\\therefore \\hat{\\eta} = \\frac{\\vec{v}_c \\times \\vec{v}_T}{|\\vec{v}_c \\times \\vec{v}_T|}$$\n\n$$\\hat{\\eta} = \\frac{3200\\hat{k}}{\\sqrt{(3200)^2}}$$\n\n$$\\hat{\\eta} = \\hat{k}$$ Therefore it is possible to determine a vector along the direction perpendicular to the plane in which the actual velocities of the truck and the car lie."
+     }
+    ]
+   },
+   {
+    "id": 62,
+    "source": "Dhaka Imperial College · Board question no. 1 · book p. 62",
+    "stem": "$\\vec{P} = 5\\hat{i} + 3\\hat{j} - m\\hat{k}$, $\\vec{Q} = \\hat{i} + \\hat{j} + 4\\hat{k}$, here $\\vec{P}$ and $\\vec{Q}$ are mutually perpendicular. If the magnitudes of $\\vec{P}$ and $\\vec{Q}$ represent the speeds of a boat and of the current in a river respectively, then the boat takes $2$ minutes to cross the river along the shortest path.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the value of '$m$'.",
+      "answer": "Similar to the answer of creative question 14((c)). **Answer:** $m = 2$"
+     },
+     {
+      "prompt": "If the boatman wants to cross the river in the minimum time, will he cover a distance greater than the width of the river? Give your opinion.",
+      "answer": "Similar to the answer of creative question 14((d)). **Answer:** the distance covered by the boatman, $S = 651.484\\text{ m}$; which is greater than the width of the river $D = 536.656\\text{ m}$. Therefore it can be said that to cross the river in the minimum time the boatman must cover a distance greater than the width of the river."
+     }
+    ]
+   },
+   {
+    "id": 64,
+    "source": "Abdul Kadir Mollah City College, Narsingdi · Board question no. 6 · book p. 63",
+    "stem": "$\\vec{A} = 2\\hat{i} + 2\\hat{j} - \\hat{k}$\n$\\vec{B} = 6\\hat{i} - 3\\hat{j} + 2\\hat{k}$ \nThe two vectors represent two sides of a parallelogram.\n\n> [printed as \\bar{A}, \\bar{B} in the book]",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the perpendicular projection of $\\vec{B}$ on $\\vec{A}$ between the two vectors.",
+      "answer": "Similar to the answer of creative question 10((c)). Answer: $1.333$"
+     },
+     {
+      "prompt": "Give your opinion, through mathematical analysis, on whether $\\vec{A}$ and $\\vec{B}$ can be adjacent sides of a parallelogram.",
+      "answer": "For two vectors to be adjacent sides of a parallelogram, the two vectors must be non-zero and non-collinear. Determining the magnitudes of the two vectors\n$$|\\vec{A}| = \\sqrt{2^2 + 2^2 + (-1)^2}$$\n\n$$|\\vec{A}| = 3$$\n$$|\\vec{B}| = \\sqrt{6^2 + (-3)^2 + 2^2}$$\n\n$$|\\vec{B}| = \\sqrt{36 + 9 + 4}$$\n\n$$|\\vec{B}| = \\sqrt{49}$$\n\n$$|\\vec{B}| = 7$$\n or, given,\n$\\vec{A} = 2\\hat{i} + 2\\hat{j} - \\hat{k}$\n$\\vec{B} = 6\\hat{i} - 3\\hat{j} + 2\\hat{k}$\n Since $|\\vec{A}| \\neq 0$ and $|\\vec{B}| \\neq 0$, therefore the two vectors are non-zero. If the two vectors are collinear, then $\\vec{A} = k\\vec{B}$, where $k$ is a scalar quantity. The two vectors will be collinear if the ratios of the components of $\\vec{A}$ and $\\vec{B}$ are equal. Now, the ratio of the $\\hat{i}$ component: $\\frac{2}{6} = \\frac{1}{3}$, ratio of the $\\hat{j}$ component: $\\frac{2}{-3} = -\\frac{2}{3}$, ratio of the $\\hat{k}$ component: $\\frac{-1}{2} = -\\frac{1}{2}$ From $\\frac{2}{6} \\neq \\frac{2}{-3} \\neq \\frac{-1}{2}$ we get, Therefore, the vectors $\\vec{A}$ and $\\vec{B}$ are not collinear. Since the two vectors $\\vec{A}$ and $\\vec{B}$ are non-zero and non-collinear, they can represent two adjacent sides of a parallelogram. Therefore, a parallelogram can be formed with the two vectors $\\vec{A}$ and $\\vec{B}$."
+     }
+    ]
+   },
+   {
+    "id": 65,
+    "source": "Ghatail Cantonment Public School & College, Tangail · Board question no. 1 · book p. 64",
+    "stem": "$$\\vec{P} = 2\\hat{i} + 2\\hat{j} - \\hat{k},\\; \\vec{Q}$$\n\n$$\\vec{P} = 2\\hat{i} + 2\\hat{j} + a\\hat{k}$$\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the angle between $\\vec{P}$ and the positive $x$-axis.",
+      "answer": ""
+     },
+     {
+      "prompt": "For some possible value of $a$, will the magnitudes of the scalar product and the vector product of the two vectors be equal? Give your opinion with mathematical analysis.",
+      "answer": ""
+     }
+    ]
+   },
+   {
+    "id": 77,
+    "source": "Chattogram Government Women's College · Board question no. 1 · book p. 68",
+    "stem": "The angle between the vectors $\\vec{A} = 2\\hat{i} + 3\\hat{j} - 5\\hat{k}$ and $\\vec{B} = m\\hat{i} + 2\\hat{j} - 10\\hat{k}$ is $\\alpha$.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "If $\\alpha = 90^\\circ$, determine the value of $m$ from the two vectors in the stem.",
+      "answer": "Similar to the answer of creative question 14((c)).\n**Answer:** $m = -28$"
+     },
+     {
+      "prompt": "Do the two vectors obey the commutative law of vector multiplication? Analyse mathematically. (4)**",
+      "answer": "Using the value of $m$ obtained from part (c) we get, First vector, $\\vec{A} = 2\\hat{i} + 3\\hat{j} - 5\\hat{k}$ Second vector, $\\vec{B} = -28\\hat{i} + 2\\hat{j} - 10\\hat{k}$ According to the commutative law of vector multiplication, $\\vec{A} \\times \\vec{B} = \\vec{B} \\times \\vec{A}$ `[assumed for verification]`\n$$\\vec{A} \\times \\vec{B} = \\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 2 & 3 & -5 \\\\ -28 & 2 & -10 \\end{matrix}\\right|$$\n$$\\text{or, } \\vec{A} \\times \\vec{B} = \\hat{i}\\{3(-10) - (-5)2\\} - \\hat{j}\\{2(-10) - (-5)(-28)\\} + \\hat{k}\\{2(2) - 3(-28)\\}$$\n$$\\text{or, } \\vec{A} \\times \\vec{B} = \\hat{i}(-30 + 10) - \\hat{j}(-20 - 140) + \\hat{k}(4 + 84)$$\n$$\\therefore \\vec{A} \\times \\vec{B} = -20\\hat{i} + 160\\hat{j} + 88\\hat{k}$$\n$$\\vec{B} \\times \\vec{A} = \\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ -28 & 2 & -10 \\\\ 2 & 3 & -5 \\end{matrix}\\right|$$\n$$\\hat{i}\\{2(-5) - (-10)3\\} - \\hat{j}\\{(-28)(-5) - (-10)2\\} + \\hat{k}\\{(-28)3 - 2(2)\\}$$\n$$\\hat{i}(-10 + 30) - \\hat{j}(140 + 20) + \\hat{k}(-84 - 4)$$\n$$\\therefore \\vec{B} \\times \\vec{A} = 20\\hat{i} - 160\\hat{j} - 88\\hat{k}$$\n$$\\vec{B} \\times \\vec{A} = -(-20\\hat{i} + 160\\hat{j} + 88\\hat{k})$$\n\n$$\\vec{B} \\times \\vec{A} = -(\\vec{A} \\times \\vec{B})$$ it is seen that $\\vec{A} \\times \\vec{B} \\neq \\vec{B} \\times \\vec{A}$. Therefore it can be said that the two vectors do not obey the commutative law of vector multiplication."
+     }
+    ]
+   },
+   {
+    "id": 78,
+    "source": "Ispahani Public School & College, Chattogram · Board question no. 1 · book p. 69",
+    "stem": "Two vectors $\\vec{V} = 2\\hat{i} + 3\\hat{j} - x\\hat{k}$ and $\\vec{B} = 3\\hat{i} + 2\\hat{j} + 2\\hat{k}$ are mutually perpendicular. The magnitudes of the two vectors represent the velocities of a boat and of the current. The boat takes $4$ minutes to cross the river along the shortest path.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the value of '$x$' in the stem.",
+      "answer": "See the answer of creative question 14((c))."
+     },
+     {
+      "prompt": "The distance travelled in crossing the river in the minimum time is greater than the width of the river — verify mathematically.",
+      "answer": "See the answer of creative question 14((d)).\n\n**Full solution (added):**\n\nFrom $\\vec V\\cdot\\vec B=6+6-2x=0$, x = 6. The boat's speed is 7 and the current's speed is $\\sqrt{17}$. Taking the time in seconds and the speed in m s⁻¹, the width is $D=240\\sqrt{49-17}=240\\sqrt{32}\\approx1357.645$ m from the 240 s taken along the shortest path. The distance covered in the minimum time is $S=D\\sqrt{49+17}/7\\approx1575.651$ m, which is greater than D. The unit of velocity is not clearly printed in the stem, so the metre unit for distance rests on this assumption. The definition of an antiparallel vector applies when the original vector is non-zero."
+     }
+    ]
+   },
+   {
+    "id": 79,
+    "source": "Government City College, Chattogram · Board question no. 3 · book p. 69",
+    "stem": "The driver of a car moving eastwards at $40\\text{ km}$ per hour saw a truck moving northwards at twice his speed per hour. The east direction is taken as the positive $x$-axis and the north direction as the positive $y$-axis.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "In which direction was the truck actually moving?",
+      "answer": "See the answer of creative question 42((c))."
+     },
+     {
+      "prompt": "Analyse mathematically whether it is possible to determine a vector along the direction perpendicular to the plane in which the actual velocities of the truck and the car lie.",
+      "answer": "See the answer of creative question 42((d))."
+     }
+    ]
+   }
+  ]
+ },
+ "geometry": {
+  "title": "Position vectors and 3-D geometry",
+  "questions": [
+   {
+    "id": 3,
+    "source": "Dinajpur Board · 2025 · Board question no. 1 · book p. 30",
+    "stem": "Three points $P(4, -2, 3)$, $Q(-2, 4, 5)$ and $R(-1, 2, -2)$ lie in a three-dimensional rectangular coordinate system.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Find the unit vector of $\\overrightarrow{PQ} \\times \\overrightarrow{QR}$.",
+      "answer": "$$\\overrightarrow{PQ}=(-2-4)\\hat i+(4+2)\\hat j+(5-3)\\hat k$$\n\n$$\\overrightarrow{PQ} = -6\\hat i+6\\hat j+2\\hat k$$\n\n$$\\overrightarrow{QR}=(-1+2)\\hat i+(2-4)\\hat j+(-2-5)\\hat k$$\n\n$$\\overrightarrow{QR} = \\hat i-2\\hat j-7\\hat k.$$\n Here, the three points—P(4, −2, 3), Q(−2, 4, 5), R(−1, 2, −2).\n\n<div class=\"math\">$$\\begin{aligned} \\overrightarrow{PQ}\\times\\overrightarrow{QR} &=\\left|\\begin{matrix}\\hat i&\\hat j&\\hat k\\\\-6&6&2\\\\1&-2&-7\\end{matrix}\\right|\\\\ &=\\hat i[\\{6\\times(-7)\\}-\\{2\\times(-2)\\}]-\\hat j[\\{(-6)\\times(-7)\\}-\\{2\\times1\\}]+\\hat k[\\{(-6)\\times(-2)\\}-\\{6\\times1\\}]. \\end{aligned}$$</div>\n\n*The rest of this answer is in Image 03 / page 31.*\n* * * # Image 03 — printed page 31 Source: `split_page32-75-03.png`\n ## Remaining part of the answer to Question 3\n\n**(c). (continuing)**\n\n$$\\overrightarrow{PQ}\\times\\overrightarrow{QR}=-38\\hat i-40\\hat j+6\\hat k$$\n\n$$\\therefore\\left|\\overrightarrow{PQ}\\times\\overrightarrow{QR}\\right|=\\sqrt{(-38)^2+(-40)^2+6^2}=2\\sqrt{770}.$$\n that is, the unit vector of $\\overrightarrow{PQ}\\times\\overrightarrow{QR}$\n\n<div class=\"math\">$$\\frac{\\overrightarrow{PQ}\\times\\overrightarrow{QR}}{|\\overrightarrow{PQ}\\times\\overrightarrow{QR}|}=\\frac{-38\\hat i-40\\hat j+6\\hat k}{2\\sqrt{770}}.\\quad(\\mathrm{Ans.})$$</div>"
+     },
+     {
+      "prompt": "Will the three points in the stem form a right-angled triangle? Analyse mathematically.",
+      "answer": "From (c) we get,\n\n$$\\overrightarrow{PQ}=-6\\hat i+6\\hat j+2\\hat k,$$\n$$\\overrightarrow{QR}=\\hat i-2\\hat j-7\\hat k.$$\n Now,\n\n$$\\overrightarrow{PR}=(-1-4)\\hat i+(2+2)\\hat j+(-2-3)\\hat k$$\n\n$$\\overrightarrow{PR} = -5\\hat i+4\\hat j-\\hat k$$\n\n$$|\\overrightarrow{PQ}|=\\sqrt{(-6)^2+6^2+2^2}$$\n\n$$|\\overrightarrow{PQ}| = 2\\sqrt{19}$$\n$$|\\overrightarrow{QR}|=\\sqrt{1^2+(-2)^2+(-7)^2}$$\n\n$$|\\overrightarrow{QR}| = 3\\sqrt6$$\n$$|\\overrightarrow{PR}|=\\sqrt{(-5)^2+4^2+(-1)^2}$$\n\n$$|\\overrightarrow{PR}| = \\sqrt{42}.$$\n Here, three points: P(4, −2, 3), Q(−2, 4, 5), R(−1, 2, −2).\n Now,\n\n$$|\\overrightarrow{QR}|^2+|\\overrightarrow{PR}|^2=(3\\sqrt6)^2+(\\sqrt{42})^2=96$$\n and\n\n$$|\\overrightarrow{PQ}|^2=(2\\sqrt{19})^2$$\n\n$$|\\overrightarrow{PQ}|^2 = 76.$$\n\n$$\\therefore|\\overrightarrow{PQ}|^2\\ne|\\overrightarrow{QR}|^2+|\\overrightarrow{PR}|^2.$$\n ∴ the three points in the stem do not form a right-angled triangle.\n In the z-component of the original's calculation of $\\overrightarrow{PR}$, `(-2−3)` is written but the result is printed as `−1`. Correct $\\overrightarrow{PR}=-5\\hat i+4\\hat j-5\\hat k$ and $|\\overrightarrow{PR}|=\\sqrt{66}$. The squares of the three sides are 76, 54, 66; no two of them add up to the third. Hence the conclusion 'not right-angled' is correct, but the intermediate calculation is wrong. The original answer also shows only one inequality without checking the longest side."
+     }
+    ]
+   },
+   {
+    "id": 5,
+    "source": "Cumilla Board · 2025 · Board question no. 8 · book p. 32",
+    "stem": "The coordinates of the two points $M$ and $N$ are given in the figure. $\\overrightarrow{OM}$ and $\\overrightarrow{ON}$ indicate the position vectors of the two points.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the perpendicular projection of $\\overrightarrow{OM}$ on $\\overrightarrow{ON}$.",
+      "answer": "We know, The perpendicular projection of $\\vec{B}$ on the vector $\\vec{A}$, $B\\cos\\theta = \\frac{\\vec{A} \\cdot \\vec{B}}{|\\vec{A}|}$ The perpendicular projection of $\\overrightarrow{OM}$ on $\\therefore \\overrightarrow{ON}$,\n$$OM\\cos\\theta = \\frac{\\overrightarrow{ON} \\cdot \\overrightarrow{OM}}{|\\overrightarrow{ON}|}$$\n\n$$OM\\cos\\theta = \\frac{4}{7}\\text{ Ans.}$$"
+     },
+     {
+      "prompt": "Analyse mathematically and give your opinion on whether $\\Delta OMN$ is a right-angled triangle.",
+      "answer": "From (c) we get,\n$\\overrightarrow{OM} = 2\\hat{i} + 2\\hat{j} - \\hat{k}$; $\\overrightarrow{ON} = 6\\hat{i} - 3\\hat{j} + 2\\hat{k}$ Now,\n$$\\overrightarrow{MN} = \\overrightarrow{ON} - \\overrightarrow{OM}$$\n\n$$\\overrightarrow{MN} = (6 - 2)\\hat{i} + (-3 - 2)\\hat{j} + (2 + 1)\\hat{k}$$\n$$\\overrightarrow{MN} = 4\\hat{i} - 5\\hat{j} + 3\\hat{k}$$\n\n$$\\therefore |\\overrightarrow{OM}| = \\sqrt{(2)^2 + 2^2 + (-1)^2}$$\n\n$$|\\overrightarrow{OM}| = 3$$\n$$|\\overrightarrow{ON}| = \\sqrt{6^2 + (-3)^2 + 2^2}$$\n\n$$|\\overrightarrow{ON}| = 7$$ Here, $|\\overrightarrow{MN}| = \\sqrt{4^2 + (-5)^2 + 3^2} = 5\\sqrt{2}$ here, $|\\overrightarrow{OM}|^2 + |\\overrightarrow{ON}|^2 = 3^2 + 7^2 = 58$ Here, $|\\overrightarrow{MN}|^2 = (5\\sqrt{2})^2 = 50$ Therefore, $|\\overrightarrow{MN}|^2 \\neq |\\overrightarrow{OM}|^2 + |\\overrightarrow{ON}|^2$\n$\\therefore$ in the stem, $\\Delta OMN$ will not be a right-angled triangle."
+     }
+    ]
+   },
+   {
+    "id": 12,
+    "source": "Dhaka Board · 2024 · Board question no. 1 · book p. 35",
+    "stem": "$\\vec{A} = 2\\hat{i} + 3\\hat{j} + 5\\hat{k}$, $\\vec{B} = -\\hat{i} + 2\\hat{j} + 7\\hat{k}$ and $\\vec{C} = \\hat{i} + 7\\hat{j} - \\hat{k}$ are three vectors\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the projection of $\\vec{B}$ along $\\vec{A}$.",
+      "answer": "Similar to the answer of creative question 10((c)). Answer: $6.33$."
+     },
+     {
+      "prompt": "Will the three vectors in the stem lie in the same plane — verify mathematically.",
+      "answer": "We know that three vectors will be coplanar if $\\vec{A} \\cdot (\\vec{B} \\times \\vec{C}) = 0$. Now,\n$$\\vec{B} \\times \\vec{C} = (-\\hat{i} + 2\\hat{j} + 7\\hat{k}) \\times (\\hat{i} + 7\\hat{j} - \\hat{k})$$\n$$\\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ -1 & 2 & 7 \\\\ 1 & 7 & -1 \\end{matrix}\\right|$$\n$$\\hat{i}(-2 - 49) - \\hat{j}(1 - 7) + \\hat{k}(-7 - 2)$$\n$$-51\\hat{i} + 6\\hat{j} - 9\\hat{k}$$\n\n$$\\therefore \\vec{B} \\times \\vec{C} = -51\\hat{i} + 6\\hat{j} - 9\\hat{k}$$\n$$\\therefore \\vec{A} \\cdot (\\vec{B} \\times \\vec{C}) = (2\\hat{i} + 3\\hat{j} + 5\\hat{k}) \\cdot (-51\\hat{i} + 6\\hat{j} - 9\\hat{k})$$\n$$-102 + 18 - 45 = -129 \\neq 0$$ Since in the case of the three vectors $\\vec{A}$, $\\vec{B}$ and $\\vec{C}$ of the stem $\\vec{A} \\cdot (\\vec{B} \\times \\vec{C}) = -129$, it can be said that the three vectors $\\vec{A}$, $\\vec{B}$ and $\\vec{C}$ will not lie in the same plane.\n\n**Full solution (added):**\n\nHere the scalar projection of $\\vec B$ along $\\vec A$ is = $(\\vec A\\cdot\\vec B)/|\\vec A|=39/\\sqrt{38}\\approx6.33$.\n\n**(d).** We know that three vectors will be coplanar if $\\vec A\\cdot(\\vec B\\times\\vec C)=0$.\n\nNow,\n\n$$\\begin{aligned}\n\\vec B\\times\\vec C\n&=(-\\hat i+2\\hat j+7\\hat k)\\times(\\hat i+7\\hat j-\\hat k)\\\\\n&=\\left|\\begin{matrix}\\hat i&\\hat j&\\hat k\\\\-1&2&7\\\\1&7&-1\\end{matrix}\\right|\\\\\n&=\\hat i(-2-49)-\\hat j(1-7)+\\hat k(-7-2)\\\\\n&=-51\\hat i+6\\hat j-9\\hat k.\n\\end{aligned}$$\n\nHere,\n\n$$\\vec A=2\\hat i+3\\hat j+5\\hat k,$$\n$$\\vec B=-\\hat i+2\\hat j+7\\hat k,$$\n$$\\vec C=\\hat i+7\\hat j-\\hat k.$$\n\n$$\\therefore\\vec B\\times\\vec C=-51\\hat i+6\\hat j-9\\hat k.$$\n\n$$\\begin{aligned}\n\\therefore\\vec A\\cdot(\\vec B\\times\\vec C)\n&=(2\\hat i+3\\hat j+5\\hat k)\\cdot(-51\\hat i+6\\hat j-9\\hat k)\\\\\n&=-102+18-45=-129\\ne0.\n\\end{aligned}$$\n\nSince in the case of the vectors $\\vec A$, $\\vec B$ and $\\vec C$ of the stem $\\vec A\\cdot(\\vec B\\times\\vec C)=-129$, it can be said that the three vectors $\\vec A$, $\\vec B$ and $\\vec C$ will not lie in the same plane."
+     }
+    ]
+   },
+   {
+    "id": 15,
+    "source": "Mymensingh Board · 2024 · Board question no. 8 · book p. 37",
+    "stem": "The three vectors $\\vec{A} = 2\\hat{i} - 3\\hat{j} + \\hat{k}$, $\\vec{B} = 3\\hat{i} - \\hat{j} + 5\\hat{k}$ and $\\vec{C} = 3\\hat{i} + 2\\hat{j} - 4\\hat{k}$ represent the three sides of a triangle.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the area of the parallelogram taking $\\vec{A}$ and $\\vec{B}$ as adjacent sides.",
+      "answer": "Let the area of the parallelogram formed by the two vectors $\\vec{A}$ and $\\vec{B}$ be $\\Delta$ We know, if $\\vec{A}$ and $\\vec{B}$ represent two adjacent sides of a parallelogram, its area will be $|\\vec{A} \\times \\vec{B}|$ Now,\n$$\\therefore \\vec{A} \\times \\vec{B} = \\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 2 & -3 & 1 \\\\ 3 & -1 & 5 \\end{matrix}\\right|$$\n$$\\hat{i}(-15 + 1) - \\hat{j}(10 - 3) + \\hat{k}(-2 + 9) = -14\\hat{i} - 7\\hat{j} + 7\\hat{k}$$\n The area of the parallelogram $\\therefore$, $\\Delta = |\\vec{A} \\times \\vec{B}|$\n$$\\sqrt{(-14)^2 + (-7)^2 + 7^2} = 7\\sqrt{6}\\text{ square units Ans.}$$"
+     },
+     {
+      "prompt": "Will the triangle in the stem be a right-angled triangle — analyse mathematically.",
+      "answer": "If the triangle in the stem is a right-angled triangle, the sum of the squares of two of its sides will be equal to the square of the other side (the hypotenuse). The angle between them must be a right angle, i.e. the dot product of two of the sides (other than the hypotenuse) must be zero.\n$$\\vec{A} \\cdot \\vec{B} = (2\\hat{i} - 3\\hat{j} + \\hat{k}) \\cdot (3\\hat{i} - \\hat{j} + 5\\hat{k})$$\n\n$$\\vec{A} \\cdot \\vec{B} = 6 + 3 + 5$$\n\n$$\\vec{A} \\cdot \\vec{B} = 14 \\neq 0$$\n$$\\vec{A} \\cdot \\vec{C} = (2\\hat{i} - 3\\hat{j} + \\hat{k}) \\cdot (3\\hat{i} + 2\\hat{j} - 4\\hat{k})$$\n\n$$\\vec{A} \\cdot \\vec{C} = 6 - 6 - 4$$\n\n$$\\vec{A} \\cdot \\vec{C} = -4 \\neq 0$$\n$$\\vec{B} \\cdot \\vec{C} = (3\\hat{i} - \\hat{j} + 5\\hat{k}) \\cdot (3\\hat{i} + 2\\hat{j} - 4\\hat{k})$$\n\n$$\\vec{B} \\cdot \\vec{C} = 9 - 2 - 20$$\n\n$$\\vec{B} \\cdot \\vec{C} = -13 \\neq 0$$\n\n\n$\\therefore$ Therefore it can be said that $\\Delta ABC$ will not be a right-angled triangle.\n\n> [book printing error: in the last line the inequality sign in -13 ≠ 0 is blurred and looks like -13 = 0]"
+     }
+    ]
+   },
+   {
+    "id": 23,
+    "source": "Chattogram Board · 2024 · Board question no. 8 · book p. 42",
+    "stem": "The coordinates of three points $P$, $Q$ and $R$ are $P(2, -1, 3)$, $Q(3, -1, 2)$ and $R(1, -3, 5)$ respectively.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the angle between $\\overrightarrow{PQ}$ and $\\overrightarrow{PR}$.",
+      "answer": "Here, the coordinates of the points $P$, $Q$ and $R$ are $P(2, -1, 3)$, $Q(3, -1, 2)$ and $R(1, -3, 5)$ respectively\n$$\\therefore \\overrightarrow{OP} = 2\\hat{i} - \\hat{j} + 3\\hat{k},\\; \\overrightarrow{OQ}$$\n\n$$\\overrightarrow{OP} = 3\\hat{i} - \\hat{j} + 2\\hat{k}\\text{ and }\\overrightarrow{OR}$$\n\n$$\\overrightarrow{OP} = \\hat{i} - 3\\hat{j} + 5\\hat{k}$$\n**Answer:** $\\overrightarrow{PQ} = \\overrightarrow{OQ} - \\overrightarrow{OP} = (3 - 2)\\hat{i} + \\{-1 - (-1)\\}\\hat{j} + (2 - 3)\\hat{k} = \\hat{i} - \\hat{k}$ Here, $\\overrightarrow{PR} = \\overrightarrow{OR} - \\overrightarrow{OP} = (1 - 2)\\hat{i} + \\{-3 - (-1)\\}\\hat{j} + (5 - 3)\\hat{k} = -\\hat{i} - 2\\hat{j} + 2\\hat{k}$\n$$|\\overrightarrow{PQ}| = \\sqrt{(1)^2 + 0^2 + (-1)^2}$$\n\n$$|\\overrightarrow{PQ}| = \\sqrt{1 + 1}$$\n\n$$|\\overrightarrow{PQ}| = \\sqrt{2}\\text{ unit}$$\n$$|\\overrightarrow{PR}| = \\sqrt{(-1)^2 + (-2)^2 + (2)^2}$$\n\n$$|\\overrightarrow{PR}| = \\sqrt{1 + 4 + 4}$$\n\n$$|\\overrightarrow{PR}| = \\sqrt{9}$$\n\n$$|\\overrightarrow{PR}| = 3\\text{ unit}$$ If the angle between $\\overrightarrow{PQ}$ and $\\overrightarrow{PR}$ is $\\theta$, then $|\\overrightarrow{PQ}|\\,|\\overrightarrow{PR}|\\cos\\theta = \\overrightarrow{PQ} \\cdot \\overrightarrow{PR}$\n$$\\text{or, } \\sqrt{2} \\times 3\\cos\\theta = (\\hat{i} - \\hat{k}) \\cdot (-\\hat{i} - 2\\hat{j} + 2\\hat{k})$$\n$$\\text{or, } 3\\sqrt{2}\\cos\\theta = -1 - 2$$\n\n$$\\text{or, } 3\\sqrt{2}\\cos\\theta = -3$$\n$$\\text{or, } \\cos\\theta = -\\frac{1}{\\sqrt{2}}$$\n$$\\text{or, } \\theta = \\cos^{-1}\\left(-\\frac{1}{\\sqrt{2}}\\right)$$\n\n$$\\text{or, } \\theta = 135^\\circ$$ Therefore the angle $[angle]$ between $\\overrightarrow{PQ}$ and $\\overrightarrow{PR}$ is $135^\\circ$ Ans."
+     },
+     {
+      "prompt": "Analyse mathematically whether “the position vectors formed by the points lie in the same plane”.",
+      "answer": "Here, the coordinates of $P$, $Q$ and $R$ are $P(2, -1, 3)$, $Q(3, -1, 2)$ and $R(1, -3, 5)$ respectively Therefore the position vectors of $P$, $Q$ and $R$ are respectively\n$\\overrightarrow{OP} = \\vec{A} = 2\\hat{i} - \\hat{j} + 3\\hat{k}$,\n$\\overrightarrow{OQ} = \\vec{B} = 3\\hat{i} - \\hat{j} + 2\\hat{k}$ and\n$\\overrightarrow{OR} = \\vec{C} = \\hat{i} - 3\\hat{j} + 5\\hat{k}$ The three vectors $\\vec{A}$, $\\vec{B}$ and $\\vec{C}$ will be coplanar if $\\vec{A} \\cdot (\\vec{B} \\times \\vec{C}) = 0$ Here,\n$$\\vec{B} \\times \\vec{C} = \\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 3 & -1 & 2 \\\\ 1 & -3 & 5 \\end{matrix}\\right|$$\n$$\\hat{i}(-5 + 6) - \\hat{j}(15 - 2) + \\hat{k}(-9 + 1) = \\hat{i} - 13\\hat{j} - 8\\hat{k}$$ now, $\\vec{A} \\cdot (\\vec{B} \\times \\vec{C}) = (2\\hat{i} - \\hat{j} + 3\\hat{k}) \\cdot (\\hat{i} - 13\\hat{j} - 8\\hat{k}) = 2 + 13 - 24 = -9 \\neq 0$ Therefore, $\\vec{A} \\cdot (\\vec{B} \\times \\vec{C}) \\neq 0$ Therefore the position vectors formed by the points do not lie in the same plane."
+     }
+    ]
+   },
+   {
+    "id": 34,
+    "source": "Sylhet Board · 2023 · Board question no. 1 · book p. 47",
+    "stem": "*(the book has no separate stem — the figure below is the stem)*",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine a unit vector parallel to the vector $\\overrightarrow{PQ}$.",
+      "answer": "A position vector and a differential vector operator are denoted by $P$  and $\\overrightarrow{OP}$ respectively.\n$$\\overrightarrow{OP} = 2\\hat{i} - \\hat{j} + 3\\hat{k}\\text{ and }\\overrightarrow{OQ}$$\n\n$$\\overrightarrow{OP} = -2\\hat{i} + 2\\hat{j} + \\hat{k}$$\n$$\\therefore \\overrightarrow{PQ} = \\overrightarrow{OQ} - \\overrightarrow{OP}$$\n\n$$\\overrightarrow{PQ} = (-2\\hat{i} + 2\\hat{j} + \\hat{k}) - (2\\hat{i} - \\hat{j} + 3\\hat{k})$$\n$$-2\\hat{i} + 2\\hat{j} + \\hat{k} - 2\\hat{i} + \\hat{j} - 3\\hat{k} = -4\\hat{i} + 3\\hat{j} - 2\\hat{k}$$ Let a unit vector parallel to the vector $\\overrightarrow{PQ}$ be $\\hat{\\eta}$\n$$\\hat{\\eta} = \\frac{\\overrightarrow{PQ}}{|\\overrightarrow{PQ}|}$$\n\n$$\\hat{\\eta} = \\frac{-4\\hat{i} + 3\\hat{j} - 2\\hat{k}}{\\sqrt{(-4)^2 + 3^2 + (-2)^2}}$$\n\n$$\\hat{\\eta} = \\frac{-4\\hat{i} + 3\\hat{j} - 2\\hat{k}}{\\sqrt{29}}$$\n\n$$\\hat{\\eta} = -\\frac{4}{\\sqrt{29}}\\hat{i} + \\frac{3}{\\sqrt{29}}\\hat{j} - \\frac{2}{\\sqrt{29}}\\hat{k}$$ A unit vector parallel to the vector $\\therefore \\overrightarrow{PQ}$,\n$$-\\frac{4}{\\sqrt{29}}\\hat{i} + \\frac{3}{\\sqrt{29}}\\hat{j} - \\frac{2}{\\sqrt{29}}\\hat{k}\\text{ Ans.}$$\n\n> [printed as r in the book]"
+     },
+     {
+      "prompt": "Check whether $\\Delta OPQ$ is a right-angled triangle.",
+      "answer": "Similar to the answer of creative question 15((d)) (d). Answer: $\\Delta OPQ$ is not a right-angled triangle."
+     }
+    ]
+   },
+   {
+    "id": 35,
+    "source": "Jashore Board · 2023 · Board question no. 1 · book p. 47",
+    "stem": "$\\vec{A} = \\hat{i} + \\hat{j} - \\hat{k}$ and $\\vec{B} = 2\\hat{i} - 2\\hat{j} - 3\\hat{k}$ are two vectors.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the area of the quadrilateral formed by the two vectors described in the stem.",
+      "answer": "Let the area of the quadrilateral formed by the two vectors $\\vec{A}$ and $\\vec{B}$ be $\\Delta$ Given, $\\Delta = |\\vec{A} \\times \\vec{B}|$ Now,\n$$\\vec{A} \\times \\vec{B} = \\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & 1 & -1 \\\\ 2 & -2 & -3 \\end{matrix}\\right|$$\n$$\\text{or, } \\vec{A} \\times \\vec{B} = (-3 - 2)\\hat{i} - (-3 + 2)\\hat{j} + (-2 - 2)\\hat{k}$$\n$$\\text{or, } \\vec{A} \\times \\vec{B} = -5\\hat{i} + \\hat{j} - 4\\hat{k}$$\n$\\therefore$ area of the quadrilateral, $\\Delta = |\\vec{A} \\times \\vec{B}| = \\sqrt{(-5)^2 + 1^2 + (-4)^2} = \\sqrt{42}\\text{ square units Ans.}$\n or, Here,\n$\\vec{A} = \\hat{i} + \\hat{j} - \\hat{k}$\n$\\vec{B} = 2\\hat{i} - 2\\hat{j} - 3\\hat{k}$"
+     },
+     {
+      "prompt": "Verify mathematically whether the two vectors are mutually perpendicular.",
+      "answer": "We know, if two vectors $\\vec A$ and $\\vec B$ are mutually perpendicular, their scalar product will be zero.\n that is, $\\vec A\\cdot\\vec B=0$.\n Now,\n\n<div class=\"math\">$$\\begin{aligned} \\vec A\\cdot\\vec B&=(\\hat i+\\hat j-\\hat k)\\cdot(2\\hat i-2\\hat j-3\\hat k)\\\\ &=(1\\times2)+1\\times(-2)+(-1)\\times(-3)\\\\ &=2-2+3\\\\ &=3. \\end{aligned}$$</div>\n Here, $\\vec A=\\hat i+\\hat j-\\hat k$; $\\vec B=2\\hat i-2\\hat j-3\\hat k$.\n Since $\\vec A\\cdot\\vec B\\ne0$, therefore it can be said that the two vectors are not mutually perpendicular.\n In (c) 'quadrilateral' means the parallelogram formed by taking the two vectors as adjacent sides. In (b) the equality of the *magnitudes* of the vectors is explained; as vectors, if $\\vec A+\\vec B=\\vec A-\\vec B$ then $\\vec B=\\vec0$ must hold."
+     }
+    ]
+   },
+   {
+    "id": 37,
+    "source": "Dhaka Board · 2022 · Board question no. 1 · book p. 48",
+    "stem": "Three points $O(0, 0, 0)$, $P(2, 4, 2)$ and $Q(2, -4, -4)$ in a Cartesian coordinate system.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the value of $\\overrightarrow{PQ}$.",
+      "answer": "Here, the coordinates of point P are P(2, 4, 2); the coordinates of point Q are Q(2, −4, −4).\n Now, the position vector of point P,\n\n$$\\overrightarrow{OP}=2\\hat i+4\\hat j+2\\hat k$$\n and the position vector of point Q,\n\n$$\\overrightarrow{OQ}=2\\hat i-4\\hat j-4\\hat k.$$\n\n$$\\therefore\\overrightarrow{PQ}=\\overrightarrow{OQ}-\\overrightarrow{OP}$$\n\n$$\\overrightarrow{PQ} = 2\\hat i-4\\hat j-4\\hat k-2\\hat i-4\\hat j-2\\hat k$$\n\n$$\\overrightarrow{PQ} = -8\\hat j-6\\hat k$$\n\n$$\\therefore|\\overrightarrow{PQ}|=\\sqrt{(-8)^2+(-6)^2}$$\n\n$$|\\overrightarrow{PQ}| = \\sqrt{64+36}$$\n\n$$|\\overrightarrow{PQ}| = \\sqrt{100}$$\n\n$$|\\overrightarrow{PQ}| = 10.\\quad(\\mathrm{Ans.})$$\n\n**[Description of Figure 37.1]** O is the origin, X to the right, Y upwards, Z towards the lower left. P at the upper right and Q at the lower right. Arrows from O towards P and Q, and a downward connecting line from P to Q."
+     },
+     {
+      "prompt": "Verify whether the position vectors $P$ and $Q$ are mutually perpendicular.",
+      "answer": "Verify whether the position vectors $P$ and $Q$ are mutually perpendicular. (4)\n #### Answer to Question 37\n Similar to the answer of creative question 25((d)). Answer: since $\\overrightarrow{OP} \\cdot \\overrightarrow{OQ} \\neq 0$, the two vectors $\\overrightarrow{OP}$ and $\\overrightarrow{OQ}$ are not mutually perpendicular.\n* * *\n\n**Full solution (added):**\n\n$\\overrightarrow{OP}\\cdot\\overrightarrow{OQ}=2\\times2+4\\times(-4)+2\\times(-4)=-20\\ne0$."
+     }
+    ]
+   },
+   {
+    "id": 44,
+    "source": "Mirzapur Cadet College, Tangail · Board question no. 7 · book p. 52",
+    "stem": "$OACB$ is a parallelogram, with angles $AOB = 30^\\circ$, $\\overrightarrow{OA} = \\vec{P}$, $\\overrightarrow{OB} = \\vec{Q}$. The magnitudes of $\\vec{P}$ and $\\vec{Q}$ are $5$ and $3$ respectively.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the value of $\\vec{P} - \\vec{Q}$.",
+      "answer": "We know,\n$$R = \\sqrt{P^2 + Q^2 - 2PQ\\cos\\alpha}$$\n$$\\sqrt{5^2 + 3^2 - 2 \\times 5 \\times 3 \\times \\cos 30^\\circ}$$\n$$\\sqrt{25 + 9 - 30 \\times 0.866}$$\n$$\\therefore R = 2.83\\text{ Ans.}$$"
+     },
+     {
+      "prompt": "Show mathematically that the area of triangle $AOC$ = the area of triangle $+$ = the area of triangle $BOC$ = the area of parallelogram =  $OACB$.",
+      "answer": "In the case of the parallelogram OACB in the stem, $\\overrightarrow{OA}=\\vec P$, $\\overrightarrow{OB}=\\vec Q$.\n Diagonal of the parallelogram, $\\overrightarrow{OC}=\\vec P+\\vec Q$.\n Area of parallelogram OACB,\n\n$$A=|\\vec P\\times\\vec Q|$$\n or, $A=PQ\\sin\\alpha$ or, $A=5\\times3\\times\\sin30^\\circ$ or, $A=15\\times0.5$\n\n$$\\therefore A=7.5\\ \\text{square units}.$$\n\n**[Description of Figure 44.2]** O at the lower left, A at the lower right, B at the upper left, C at the upper right — the same parallelogram OACB. In the text of the calculation OC has been taken as the diagonal; the diagonal is not drawn in the small sketch.\n Area of ΔAOC,\n\n<div class=\"math\">$$\\begin{aligned} A_1&=\\frac12|\\overrightarrow{OA}\\times\\overrightarrow{OC}|\\\\ &=\\frac12|\\vec P\\times(\\vec P+\\vec Q)|=\\frac12|(\\vec P\\times\\vec P)+\\vec P\\times\\vec Q|\\\\ &=\\frac12|0+(\\vec P+\\vec Q)|\\quad[\\because\\vec P\\times\\vec P=0]\\quad\\text{[in this line of the original a plus sign appears instead of a multiplication sign]}\\\\ &=\\frac12|\\vec P\\times\\vec Q|=\\frac12\\times7.5. \\end{aligned}$$</div>\n\n$$\\therefore A_1=3.75\\ \\text{square units}.$$\n [Figure 34.1] A three-dimensional coordinate system; O(0, 0, 0) is the origin. The X-axis is to the right, Y upwards, Z towards the lower left. Position vectors are drawn from O towards P(2, −1, 3) and Q(−2, 2, 1).\n\n<div class=\"math\">$$\\begin{aligned} A_2&=\\frac12|\\overrightarrow{OB}\\times\\overrightarrow{OC}|\\\\ &=\\frac12|\\vec Q\\times(\\vec P+\\vec Q)|=\\frac12|(\\vec Q\\times\\vec P)+\\vec Q\\times\\vec Q|\\\\ &=\\frac12|(\\vec Q\\times\\vec P)+0|\\quad[\\because\\vec Q\\times\\vec Q=0]\\\\ &=\\frac12|\\vec Q\\times\\vec P|=\\frac12|\\vec P\\times\\vec Q|\\quad\\text{[in terms of magnitude]} &=\\frac12\\times7.5. \\end{aligned}$$</div>\n\n$$\\therefore A_2=3.75\\ \\text{square units}.$$\n Now, area of ΔAOC + area of ΔBOC\n\n$$A_1+A_2=3.75+3.75$$\n\n$$A_1+A_2 = 7.5\\ \\text{square units}.$$\n Mathematical analysis shows that $A_1+A_2=A$, that is, area of ΔAOC + area of ΔBOC = area of parallelogram OACB.\n In the last square-root line of (c) the printed $25-9$ is wrong; it should be $25+9$. The final value 2.83 is correct. In the intermediate line of $A_1$ the original book's $|0+(\\vec P+\\vec Q)|$ is wrong; it should be $|0+(\\vec P\\times\\vec Q)|$. The next step and the final area are correct. In the physical explanation of (b), the divergence of the velocity field of a fluid indicates the local rate of volumetric expansion; the divergence of a general vector field cannot be called directly the rate of change of density. If the mass flux density is meant, a negative sign also appears in the continuity equation."
+     }
+    ]
+   },
+   {
+    "id": 47,
+    "source": "Joypurhat Girls' Cadet College · Board question no. 1 · book p. 54",
+    "stem": "The position vectors of points $A$, $B$ and $C$ are respectively:\n$r_A = \\hat{i} + 2\\hat{j} - \\hat{k} \\qquad r_B = 3\\hat{i} - \\hat{j} + 2\\hat{k} \\qquad r_C = 2\\hat{i} + 5\\hat{j} - 4\\hat{k}$\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the angle between $\\overrightarrow{AB}$ and $\\overrightarrow{AC}$.",
+      "answer": "Similar to the answer of creative question 23((c)). Since, $141.5^\\circ$"
+     },
+     {
+      "prompt": "Are the three points $A$, $B$ and $C$ collinear or coplanar? Verify mathematically.",
+      "answer": "Similar to the answer of creative question 23((d)). Answer: the three points are coplanar but not collinear.\n\n**Full solution (added):**\n\n$$\\overrightarrow{AB}=\\vec r_B-\\vec r_A$$\n\n$$\\overrightarrow{AB} = 2\\hat i-3\\hat j+3\\hat k,\\qquad\\overrightarrow{AC}$$\n\n$$\\overrightarrow{AB} = \\vec r_C-\\vec r_A$$\n\n$$\\overrightarrow{AB} = \\hat i+3\\hat j-3\\hat k.$$\n\n$$\\cos\\theta=\\frac{\\overrightarrow{AB}\\cdot\\overrightarrow{AC}}{|\\overrightarrow{AB}|\\,|\\overrightarrow{AC}|}$$\n\n$$\\cos\\theta = \\frac{-16}{\\sqrt{22}\\sqrt{19}}\\quad$$\n\n$$\\overrightarrow{AB}\\times\\overrightarrow{AC}=0\\hat i+9\\hat j+9\\hat k\\ne\\vec0.$$\n\nTherefore the three points are not collinear; three non-collinear points determine a plane. The instruction for 23((d)) in the original must be read carefully here: there it was checked whether the three **position vectors** drawn from the origin are coplanar, whereas here it is asked whether three **points** are coplanar. The scalar triple product of the position vectors in this stem is 9, so they are not in the same plane together with the origin; but A, B, C are certainly in one plane. Regarding the limitation of the original statement about density in (b), the verification note for number 44 applies."
+     }
+    ]
+   },
+   {
+    "id": 50,
+    "source": "Cumilla Cadet College · Board question no. 1 · book p. 55",
+    "stem": "A farmer has a plot of land in the shape of a parallelogram whose two adjacent sides are $\\vec{P} = 4\\hat{i} - 4\\hat{j} + \\hat{k}$ and $\\vec{Q} = 2\\hat{i} - 2\\hat{j} - \\hat{k}$ respectively. On the other hand, a person planned to build a three-dimensional structure using three vectors $\\vec{A} = 3\\hat{i} - 4\\hat{j} + 5\\hat{k}$, $\\vec{B} = 2\\hat{i} - \\hat{j} + \\hat{k}$ and $\\vec{C} = \\hat{i} + 2\\hat{j} - 3\\hat{k}$ respectively.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the area of the farmer's land with the help of the diagonal.",
+      "answer": "We know, The diagonals of a parallelogram are respectively equal to the sum and the difference of its sides. First diagonal,\n$$\\vec{d_1} = \\vec{P} + \\vec{Q}$$\n$$\\text{or, } \\vec{d_1} = (4 + 2)\\hat{i} + (-4 - 2)\\hat{j} + (1 - 1)\\hat{k}$$\n$$\\therefore \\vec{d_1} = 6\\hat{i} - 6\\hat{j}$$ Second diagonal, $\\vec{d_2} = \\vec{P} - \\vec{Q}$\n$$\\text{or, } \\vec{d_2} = (4 - 2)\\hat{i} + (-4 + 2)\\hat{j} + (1 + 1)\\hat{k}$$\n$$\\therefore \\vec{d_2} = 2\\hat{i} - 2\\hat{j} + 2\\hat{k}$$\n or, Here,\n Vector product of the two diagonals,\n$$\\vec{d_1} \\times \\vec{d_2} = \\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 6 & -6 & 0 \\\\ 2 & -2 & 2 \\end{matrix}\\right|$$\n$$\\text{or, } \\vec{d_1} \\times \\vec{d_2} = \\hat{i}(-12 - 0) - \\hat{j}(12 - 0) + \\hat{k}(-12 + 12)$$\n$$\\therefore \\vec{d_1} \\times \\vec{d_2} = -12\\hat{i} - 12\\hat{j} + 0\\hat{k}$$ Magnitude of the vector product, $|\\vec{d_1} \\times \\vec{d_2}| = \\sqrt{(-12)^2 + (-12)^2 + 0^2}$\n$$\\therefore |\\vec{d_1} \\times \\vec{d_2}| = 16.97$$ Area of the parallelogram with the help of the diagonal, $A = \\frac{1}{2}|\\vec{d_1} \\times \\vec{d_2}|$\n$$\\text{or, } A = \\frac{1}{2} \\times 16.97$$\n$$\\therefore A = 8.485\\text{ square units Ans.}$$"
+     },
+     {
+      "prompt": "Will that person's plan succeed or not — analyse mathematically.",
+      "answer": "The scalar triple product of the three vectors $\\vec{A}$, $\\vec{B}$ and $\\vec{C}$,\n$$\\vec{A} \\cdot (\\vec{B} \\times \\vec{C}) = \\left|\\begin{matrix} 3 & -4 & 5 \\\\ 2 & -1 & 1 \\\\ 1 & 2 & -3 \\end{matrix}\\right|$$\n$$\\text{or, } \\vec{A} \\cdot (\\vec{B} \\times \\vec{C}) = 3((-1)(-3) - (1)(2)) - ((-4)(2)(-3) - (1)(1)) + 5((2)(2) - (-1)(1))$$\n\n$$\\text{or, } \\vec{A} \\cdot (\\vec{B} \\times \\vec{C}) = 3(3 - 2) + 4(-6 - 1) + 5(4 + 1) = 3(1) + 4(-7) + 5(5) = 28 - 28$$\n$$\\therefore \\vec{A} \\cdot (\\vec{B} \\times \\vec{C}) = 0$$\n or, Here,\n$\\vec{A} = 3\\hat{i} - 4\\hat{j} + 5\\hat{k}$\n$\\vec{B} = 2\\hat{i} - \\hat{j} + \\hat{k}$\n$\\vec{C} = \\hat{i} + 2\\hat{j} - 3\\hat{k}$\n Mathematical analysis shows that the value of the scalar triple product of the three vectors is zero. This means that the three vectors lie in the same plane ($\\text{Coplanar}$). Since the three vectors lie in the same plane, no three-dimensional structure (such as a parallelepiped) can be made from them, because the volume of the solid formed by them is zero. Therefore, that person's plan will not succeed.\n\n> [an extra (-4) is written in the second term in the book, and the correct value has been taken as 4(-6-1) in the next line]"
+     }
+    ]
+   },
+   {
+    "id": 51,
+    "source": "Barishal Cadet College · Board question no. 1 · book p. 56",
+    "stem": "A drone delivery company uses drones to deliver packages in a city. The drone starts from a warehouse located at $A(2, 3, 1)$ and has to reach a customer located at $B(8, 7, 5)$. However, because of a multi-storey building in between, the drone first has to pass through a checkpoint $C(5, 5, 3)$ on the roof of the building and then reach the customer.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the angle between the vectors $AC$ and $CB$.",
+      "answer": "Similar to the answer of creative question 23((c)). Since, $0^\\circ$"
+     },
+     {
+      "prompt": "If the drone moves with uniform velocity $10\\text{ m/s}$, analyse mathematically whether the total time to go from $A$ to $B$ via $C$ will be less than the time to go directly from $A$ to $B$.",
+      "answer": "$$\\overrightarrow{AC} = (5 - 2)\\hat{i} + (5 - 3)\\hat{j} + (3 - 1)\\hat{k}$$\n\n$$\\overrightarrow{AC} = 3\\hat{i} + 2\\hat{j} + 2\\hat{k}$$\n$$\\therefore |\\overrightarrow{AC}| = \\sqrt{3^2 + 2^2 + 2^2}$$\n\n$$|\\overrightarrow{AC}| = \\sqrt{17}$$\n$$\\overrightarrow{CB} = (8 - 5)\\hat{i} + (7 - 5)\\hat{j} + (5 - 3)\\hat{k}$$\n\n$$\\overrightarrow{CB} = 3\\hat{i} + 2\\hat{j} + 2\\hat{k}$$ \n$$\\therefore |\\overrightarrow{CB}| = \\sqrt{17}$$\n\n**First path (from $A$ to $B$ via $C$):** Total distance of the path, $S_1 = |\\overrightarrow{AC}| + |\\overrightarrow{CB}|$\n$$\\therefore S_1 = \\sqrt{17} + \\sqrt{17}$$\n\n$$S_1 = 2\\sqrt{17}\\text{ m}$$ Velocity of the boat with the current $t_1$\n$$t_1 = \\frac{S_1}{v}$$\n\n$$t_1 = \\frac{2\\sqrt{17}}{10}$$\n\n$$t_1 = 0.825\\text{ s}$$\n\n**Second path (directly from $A$ to $B$):**\n$$\\overrightarrow{AB} = (8 - 2)\\hat{i} + (7 - 3)\\hat{j} + (5 - 1)\\hat{k}$$\n\n$$\\overrightarrow{AB} = 6\\hat{i} + 4\\hat{j} + 4\\hat{k}$$ Distance along this path, $S_2 = |\\overrightarrow{AB}|$\n$$S_2 = \\sqrt{6^2 + 4^2 + 4^2}$$\n\n$$S_2 = \\sqrt{36 + 16 + 16}$$\n\n$$S_2 = \\sqrt{68}\\text{ m}$$\n\n$$S_2 = 2\\sqrt{17}\\text{ m}$$ Velocity of the boat with the current $t_2$\n$$t_2 = \\frac{S_2}{v}$$\n\n$$t_2 = \\frac{2\\sqrt{17}}{10}$$\n\n$$t_2 = 0.825\\text{ s}$$ It is seen that the time taken is the same in both cases ($t_1 = t_2$). Therefore, the total time to go from $A$ to $B$ via $C$ will not be less than the time to go directly from $A$ to $B$; rather it will be equal.\n\n> [an extra + ∴ is printed at the end in the book]"
+     }
+    ]
+   },
+   {
+    "id": 53,
+    "source": "Notre Dame College, Dhaka · Board question no. 1 · book p. 57",
+    "stem": "The magnitudes of $\\vec{P}, \\vec{Q}$ and $\\vec{R}$ are $3, 4$ and $5$ respectively, and $\\vec{P} + \\vec{Q} + \\vec{R} = 0$.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine $\\vec{Q} \\cdot \\vec{R}$.",
+      "answer": "according to the stem,\n$$\\vec{P} + \\vec{Q} + \\vec{R} = 0$$\n$$\\text{or, } \\vec{P} = -(\\vec{Q} + \\vec{R})$$ Squaring both sides we get,\n$$|\\vec{P}|^2 = |-(\\vec{Q} + \\vec{R})|^2$$\n$$\\text{or, } P^2 = |(\\vec{Q} + \\vec{R})|^2$$\n$$\\text{or, } P^2 = Q^2 + R^2 + 2\\vec{Q} \\cdot \\vec{R}$$\n$$\\text{or, } 3^2 = 4^2 + 5^2 + 2(\\vec{Q} \\cdot \\vec{R})$$\n$$\\text{or, } 9 = 41 + 2(\\vec{Q} \\cdot \\vec{R})$$\n$$\\text{or, } 2(\\vec{Q} \\cdot \\vec{R}) = 9 - 41$$\n\n$$\\text{or, } 2(\\vec{Q} \\cdot \\vec{R}) = -32$$\n$$\\therefore \\vec{Q} \\cdot \\vec{R} = -16\\text{ Ans.}$$"
+     },
+     {
+      "prompt": "Can the value of $\\vec{R} \\times (\\vec{P} \\times \\vec{Q})$ be determined? Analyse mathematically.",
+      "answer": "According to the stem, the magnitudes of the vectors $\\vec{P}, \\vec{Q}$ and $\\vec{R}$ are $3, 4$ and $5$ respectively. Here, $P^2 + Q^2 = 3^2 + 4^2 = 25 = 5^2 = R^2$. Since Pythagoras' theorem is satisfied, the angle between $P$ and $Q$ is $90^\\circ$ (because they form a right-angled triangle in which the resultant is the hypotenuse). We know,\n$$|\\vec{P} \\times \\vec{Q}| = PQ\\sin 90^\\circ$$\n\n$$|\\vec{P} \\times \\vec{Q}| = 3 \\times 4 \\times 1$$\n\n$$|\\vec{P} \\times \\vec{Q}| = 12$$ This new vector will act perpendicular to the plane in which $P$ and $Q$ lie. Again, since $\\vec{P}, \\vec{Q}, \\vec{R}$ lie in the same plane (because their sum is zero), the vector $\\vec{R}$ will remain perpendicular (at an angle $90^\\circ$) to the vector $(\\vec{P} \\times \\vec{Q})$.\n**Answer:** $|\\vec{R} \\times (\\vec{P} \\times \\vec{Q})| = R \\cdot |\\vec{P} \\times \\vec{Q}| \\cdot \\sin 90^\\circ = 5 \\times 12 \\times 1 = 60$ Therefore, through mathematical analysis it is seen that the value of $R \\times (P \\times Q)$ can be determined and its value is $60$."
+     }
+    ]
+   },
+   {
+    "id": 59,
+    "source": "Government Science College, Dhaka · Board question no. 1 · book p. 60",
+    "stem": "Observe the stem and answer the following questions.\n$\\vec{A} = 2\\hat{i} + \\hat{j} + 3\\hat{k},\\; \\vec{B} = \\hat{i} + 2\\hat{j} - \\hat{k},\\; \\vec{C} = \\hat{i} + 3\\hat{j} + 2\\hat{k}$\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the angle between $\\vec{A}$ and $\\vec{B}$.",
+      "answer": "We know,\n$$\\vec{A} \\cdot \\vec{B} = |\\vec{A}|\\,|\\vec{B}|\\cos\\theta$$\n\n$$\\vec{A} \\cdot \\vec{B} = \\frac{\\vec{A} \\cdot \\vec{B}}{|\\vec{A}|\\,|\\vec{B}|}$$\n or, Here,\n\n\n\n here, $\\vec{A} \\cdot \\vec{B} = (2)(1) + (1)(2) + (3)(-1) = 2 + 2 - 3 = 1$\n$$|\\vec{A}| = \\sqrt{4 + 1 + 9}$$\n\n$$|\\vec{A}| = \\sqrt{14}$$\n$$|\\vec{B}| = \\sqrt{1^2 + 2^2 + (-1)^2}$$\n\n$$|\\vec{B}| = \\sqrt{1 + 4 + 1}$$\n\n$$|\\vec{B}| = \\sqrt{6}$$\n$$\\text{therefore, } \\cos\\theta = \\frac{1}{\\sqrt{14} \\times \\sqrt{6}}$$\n\n$$\\text{therefore, } \\cos\\theta = \\frac{1}{\\sqrt{84}}$$\n$$\\text{or, } \\theta = \\cos^{-1}\\left(\\frac{1}{\\sqrt{84}}\\right)$$\n\n$$\\text{or, } \\theta = 83.73^\\circ\\text{ Ans.}$$"
+     },
+     {
+      "prompt": "Can a rectangular solid be made from the three vectors in the stem? Analyse mathematically.",
+      "answer": "A rectangular solid can be made from three vectors only when the three vectors are mutually perpendicular. If the three vectors are mutually perpendicular, the dot product of any two of them will be zero.\n Here,\n\n$$\\vec A=2\\hat i+\\hat j+3\\hat k,\\quad\\vec B$$\n\n$$\\vec A = \\hat i+2\\hat j-\\hat k,\\quad\\vec C$$\n\n$$\\vec A = \\hat i+3\\hat j+2\\hat k.$$\n\n$$\\vec A\\cdot\\vec B=(2)(1)+(1)(2)+(3)(-1)$$\n or, $\\vec A\\cdot\\vec B=2+2-3$\n\n$$\\therefore\\vec A\\cdot\\vec B=1.$$\n since $\\vec A\\cdot\\vec B\\ne0$, therefore $\\vec A$ and $\\vec B$ are not mutually perpendicular.\n\n$$\\vec B\\cdot\\vec C=(1)(1)+(2)(3)+(-1)(2)$$\n or, $\\vec B\\cdot\\vec C=1+6-2$\n\n$$\\therefore\\vec B\\cdot\\vec C=5.$$\n since $\\vec B\\cdot\\vec C\\ne0$, therefore $\\vec B$ and $\\vec C$ are not mutually perpendicular.\n\n$$\\vec A\\cdot\\vec C=(2)(1)+(1)(3)+(3)(2)$$\n or, $\\vec A\\cdot\\vec C=2+3+6$\n\n$$\\therefore\\vec A\\cdot\\vec C=11.$$\n since $\\vec A\\cdot\\vec C\\ne0$, therefore $\\vec A$ and $\\vec C$ are not mutually perpendicular.\n Since no pair of the three vectors is mutually perpendicular, therefore a rectangular solid cannot be made from the three vectors of the stem.\n The formula in (b) gives the **magnitude** of the velocity in a circular orbit; the direction of the velocity depends on the satellite's position/direction of revolution. In (d) a rectangular solid cannot be made by taking the given vectors as adjacent sides — the conclusion is correct. However, a general oblique parallelepiped is possible: $\\vec A\\cdot(\\vec B\\times\\vec C)=14\\ne0$."
+     }
+    ]
+   },
+   {
+    "id": 74,
+    "source": "Cumilla Government Women's College · Board question no. 7 · book p. 67",
+    "stem": "$\\vec{A} = 3\\hat{i} - 2\\hat{j} + \\hat{k}$ `[an unnecessary '-' sign is printed before \\vec{A} in the book]`, $\\vec{B} = \\hat{i} - 3\\hat{j} + 5\\hat{k}$ and $\\vec{C} = 2\\hat{i} + \\hat{j} - 3\\hat{k}$ represent the 3 sides of a triangle. $\\vec{A} = \\vec{B} + \\vec{C}$\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "What is the angle between $\\vec{B}$ and $\\vec{C}$?",
+      "answer": "We know, the dot product of two vectors $\\vec{B}$ and $\\vec{C}$ is, $\\vec{B} \\cdot \\vec{C} = |\\vec{B}|\\,|\\vec{C}|\\cos\\theta$\n$$\\text{or, } \\cos\\theta = \\frac{\\vec{B} \\cdot \\vec{C}}{|\\vec{B}|\\,|\\vec{C}|}$$\n or, Here,\n\n\n\n now, $\\vec{B} \\cdot \\vec{C} = (\\hat{i} - 3\\hat{j} + 5\\hat{k}) \\cdot (2\\hat{i} + \\hat{j} - 3\\hat{k})$\n$$\\text{or, } \\vec{B} \\cdot \\vec{C} = (1 \\times 2) + (-3 \\times 1) + (5 \\times -3)$$\n\n$$\\text{or, } \\vec{B} \\cdot \\vec{C} = 2 - 3 - 15$$\n$$\\therefore \\vec{B} \\cdot \\vec{C} = -16$$\n$$|\\vec{B}| = \\sqrt{1^2 + (-3)^2 + 5^2}$$\n\n$$|\\vec{B}| = \\sqrt{1 + 9 + 25}$$\n\n$$|\\vec{B}| = \\sqrt{35}$$\n$$|\\vec{C}| = \\sqrt{2^2 + 1^2 + (-3)^2}$$\n\n$$|\\vec{C}| = \\sqrt{4 + 1 + 9}$$\n\n$$|\\vec{C}| = \\sqrt{14}$$\n$$\\cos\\theta = \\frac{-16}{\\sqrt{35} \\times \\sqrt{14}}$$\n\n$$\\cos\\theta = \\frac{-16}{\\sqrt{490}}$$\n\n$$\\cos\\theta = \\frac{-16}{22.136}$$\n\n$$\\cos\\theta = -0.7228$$\n$$\\text{or, } \\theta = \\cos^{-1}(-0.7228)$$\n\n$$\\text{or, } \\theta = 136.29^\\circ\\text{ Ans.}$$"
+     },
+     {
+      "prompt": "Show, through mathematical analysis, that the triangle is a right-angled triangle.",
+      "answer": "Similar to the answer of creative question 15((d)).\n Answer: the triangle is not a right-angled triangle.\n The result of (c) is correct. Although (d) asks 'show that it is right-angled', the printed answer is 'not right-angled'. With the given values $|\\vec A|^2=14$, $|\\vec B|^2=35$, $|\\vec C|^2=14$; Pythagoras' condition is not satisfied. Moreover it is inconsistent with the components on the previous page $\\vec A=\\vec B+\\vec C$. The original question and answer have not been changed."
+     }
+    ]
+   }
+  ]
+ },
+ "calculus": {
+  "title": "Gradient–divergence–curl",
+  "questions": [
+   {
+    "id": 2,
+    "source": "Rajshahi Board · 2025 · Board question no. 1 · book p. 30",
+    "stem": "A scalar field $\\phi = \\phi(x, y, z)$, a vector field $\\vec{V} = (V_x\\hat{i} + V_y\\hat{j} + V_z\\hat{k})$ and a vector operator $\\vec{\\nabla} = \\frac{\\partial}{\\partial x}\\hat{i} + \\frac{\\partial}{\\partial y}\\hat{j} + \\frac{\\partial}{\\partial z}\\hat{k}$\n\n> [book printing error: in the book the operator is printed with \\vec{V} and a partial-differentiation \\delta sign]",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the value of $\\vec{\\nabla} \\cdot (\\vec{\\nabla} \\times \\vec{V})$.",
+      "answer": "given, $\\vec{V} = V_x\\hat{i} + V_y\\hat{j} + V_z\\hat{k}$ Now,\n<div class=\"math\">$$\\vec{\\nabla} \\times \\vec{V} = \\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ \\frac{\\delta}{\\delta x} & \\frac{\\delta}{\\delta y} & \\frac{\\delta}{\\delta z} \\\\ V_x & V_y & V_z \\end{matrix}\\right|$$</div>\n$$\\hat{i}\\left(\\frac{\\delta}{\\delta y}V_z - \\frac{\\delta}{\\delta z}V_y\\right) - \\hat{j}\\left(\\frac{\\delta}{\\delta x}V_z - \\frac{\\delta}{\\delta z}V_x\\right) + \\hat{k}\\left(\\frac{\\delta}{\\delta x}V_y - \\frac{\\delta}{\\delta y}V_x\\right)$$ Now,\n<div class=\"math\">$$\\vec{\\nabla} \\cdot (\\vec{\\nabla} \\times \\vec{V}) = \\left(\\hat{i}\\frac{\\delta}{\\delta x} + \\hat{j}\\frac{\\delta}{\\delta y} + \\hat{k}\\frac{\\delta}{\\delta z}\\right) \\cdot \\left\\{\\hat{i}\\left(\\frac{\\delta}{\\delta y}V_z - \\frac{\\delta}{\\delta z}V_y\\right) - \\hat{j}\\left(\\frac{\\delta}{\\delta x}V_z - \\frac{\\delta}{\\delta z}V_x\\right) + \\hat{k}\\left(\\frac{\\delta}{\\delta x}V_y - \\frac{\\delta}{\\delta y}V_x\\right)\\right\\}$$</div>\n<div class=\"math\">$$\\frac{\\delta}{\\delta x}\\left(\\frac{\\delta}{\\delta y}V_z - \\frac{\\delta}{\\delta z}V_y\\right) - \\frac{\\delta}{\\delta y}\\left(\\frac{\\delta}{\\delta x}V_z - \\frac{\\delta}{\\delta z}V_x\\right) + \\frac{\\delta}{\\delta z}\\left(\\frac{\\delta}{\\delta x}V_y - \\frac{\\delta}{\\delta y}V_x\\right)$$</div>\n$$0.\\text{ Ans.}$$\n*(N.B.: in the original book the symbol $\\delta$ has been used in place of $\\partial$)*"
+     },
+     {
+      "prompt": "Will the curl of the gradient of $\\phi$ in the stem be zero? Analyse mathematically.",
+      "answer": "given, $\\phi = \\phi(x, y, z)$ the gradient of $\\phi$ $\\vec{\\nabla}\\phi = \\left(\\hat{i}\\frac{\\delta}{\\delta x} + \\hat{j}\\frac{\\delta}{\\delta y} + \\hat{k}\\frac{\\delta}{\\delta z}\\right)\\phi$\n$$\\hat{i}\\frac{\\delta\\phi}{\\delta x} + \\hat{j}\\frac{\\delta\\phi}{\\delta y} + \\hat{k}\\frac{\\delta\\phi}{\\delta z}$$\n$\\phi$ and $\\vec{\\nabla} \\times (\\vec{\\nabla}\\phi)$ are two vectors.\n<div class=\"math\">$$\\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ \\frac{\\delta}{\\delta x} & \\frac{\\delta}{\\delta y} & \\frac{\\delta}{\\delta z} \\\\ \\frac{\\delta\\phi}{\\delta x} & \\frac{\\delta\\phi}{\\delta y} & \\frac{\\delta\\phi}{\\delta z} \\end{matrix}\\right|$$</div>\n<div class=\"math\">$$\\hat{i}\\left\\{\\frac{\\delta}{\\delta y}\\left(\\frac{\\delta\\phi}{\\delta z}\\right) - \\frac{\\delta}{\\delta z}\\left(\\frac{\\delta\\phi}{\\delta y}\\right)\\right\\} - \\hat{j}\\left\\{\\frac{\\delta}{\\delta x}\\left(\\frac{\\delta\\phi}{\\delta z}\\right) - \\frac{\\delta}{\\delta z}\\left(\\frac{\\delta\\phi}{\\delta x}\\right)\\right\\} + \\hat{k}\\left\\{\\frac{\\delta}{\\delta x}\\left(\\frac{\\delta\\phi}{\\delta y}\\right) - \\frac{\\delta}{\\delta y}\\left(\\frac{\\delta\\phi}{\\delta x}\\right)\\right\\}$$</div>\n$$\\hat{i}\\cdot(0) - \\hat{j}\\cdot(0) + \\hat{k}\\cdot(0) = \\vec{0}$$\n$\\therefore$ the curl of the gradient of $\\phi$ in the stem will be zero."
+     }
+    ]
+   },
+   {
+    "id": 8,
+    "source": "Sylhet Board · 2025 · Board question no. 6 · book p. 33",
+    "stem": "Three vectors $\\vec{A} = 9\\hat{i} + \\hat{j} - 6\\hat{k}$; $\\vec{B} = 4\\hat{i} - 6\\hat{j} + 5\\hat{k}$ and $\\vec{V} = 3xyz^2\\hat{i} + 2xy^2\\hat{j} - x^3y^2z\\hat{k}$ respectively.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the divergence of the vector field $\\vec{V}$ at point $(1, -1, 1)$.",
+      "answer": "given,\n$$\\vec{V} = 3xyz^2\\hat{i} + 2xy^2\\hat{j} - x^3y^2z\\hat{k}$$\n$$\\text{div}\\,\\vec{V} = \\vec{\\nabla} \\cdot \\vec{V}$$\n\n<div class=\"math\">$$\\text{div}\\,\\vec{V} = \\left(\\hat{i}\\frac{\\delta}{\\delta x} + \\hat{j}\\frac{\\delta}{\\delta y} + \\hat{k}\\frac{\\delta}{\\delta z}\\right) \\cdot \\left(3xyz^2\\hat{i} + 2xy^2\\hat{j} - x^3y^2z\\hat{k}\\right)$$</div>\n$$\\frac{\\delta}{\\delta x}(3xyz^2) + \\frac{\\delta}{\\delta y}(2xy^2) + \\frac{\\delta}{\\delta z}(-x^3y^2z)$$\n\n$$\\text{div}\\,\\vec{V} = 3yz^2 + 4xy - x^3y^2$$ the curl of $(1, -1, 1)$ $\\text{div}\\,\\vec{V} = 3 \\times (-1) \\times 1^2 + 4 \\times 1 \\times (-1) - 1^3 \\times (-1)^2 = -8\\text{ Ans.}$\n\n> [book printing error: \\frac{\\delta}{sz} is written in the third term and \\delta is printed instead of \\partial]"
+     },
+     {
+      "prompt": "If $\\vec{A}$ represents the diameter of a circle, will $\\vec{B}$ represent a tangent drawn on the circumference of that circle — give your opinion with mathematical explanation.",
+      "answer": "If $\\vec{A}$ represents the diameter of a circle, will $\\vec{B}$ represent a tangent drawn on the circumference of that circle — give your opinion with mathematical explanation. (4)\n #### Answer to Question 8\n We know that the diameter of a circle is perpendicular to the tangent drawn on the circumference of the circle. If the vectors $\\vec{A}$ and $\\vec{B}$ given in the stem are mutually perpendicular, then the statement given in the question will be correct. Again, we know,\n$$\\vec{A} \\cdot \\vec{B} = AB\\cos\\theta$$\n$$\\text{or, } \\cos\\theta = \\frac{\\vec{A} \\cdot \\vec{B}}{AB}$$\n$$\\text{or, } \\cos\\theta = \\frac{(9\\hat{i} + \\hat{j} - 6\\hat{k}) \\cdot (4\\hat{i} - 6\\hat{j} + 5\\hat{k})}{AB}$$\n\n$$\\text{or, } \\cos\\theta = 0$$\n$$\\therefore \\theta = \\cos^{-1} 0$$\n\n$$\\theta = 90^\\circ$$\n or, Here,\n$\\vec{A} = 9\\hat{i} + \\hat{j} - 6\\hat{k}$\n$\\vec{B} = 4\\hat{i} - 6\\hat{j} + 5\\hat{k}$\n Since the diameter of a circle is perpendicular to the tangent drawn on the circumference of the circle, and $\\vec{A}$ and $\\vec{B}$ are situated perpendicular to each other. If $\\therefore \\vec{A}$ represents the diameter of a circle, $\\vec{B}$ will represent a tangent drawn on the circumference of that circle.\n* * *"
+     }
+    ]
+   },
+   {
+    "id": 9,
+    "source": "Jashore Board · 2025 · Board question no. 1 · book p. 34",
+    "stem": "A vector quantity $\\vec{A} = 4x^3y^2\\hat{i} - 4x^2y^3z\\hat{j} - 6xyz^3\\hat{k}$ and a scalar quantity $\\phi = 3xy^2z + 3xyz^2 + 3y^2z^3$.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the curl of the vector $\\vec{A}$.",
+      "answer": "given,\n$$\\vec{A} = 4x^3y^2\\hat{i} - 4x^2y^3z\\hat{j} - 6xyz^3\\hat{k}$$ the curl of the vector $\\vec{A}$ = $\\vec{\\nabla} \\times \\vec{A}$\n<div class=\"math\">$$\\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ \\frac{\\delta}{\\delta x} & \\frac{\\delta}{\\delta y} & \\frac{\\delta}{\\delta z} \\\\ 4x^3y^2 & -4x^2y^3z & -6xyz^3 \\end{matrix}\\right|$$</div>\n<div class=\"math\">$$\\hat{i}\\left\\{\\frac{\\delta}{\\delta y}(-6xyz^3) - \\frac{\\delta}{\\delta z}(-4x^2y^3z)\\right\\} - \\hat{j}\\left\\{\\frac{\\delta}{\\delta x}(-6xyz^3) - \\frac{\\delta}{\\delta z}(4x^3y^2)\\right\\} + \\hat{k}\\left\\{\\frac{\\delta}{\\delta x}(-4x^2y^3z) - \\frac{\\delta}{\\delta y}(4x^3y^2)\\right\\}$$</div>\n$$\\hat{i}(-6xz^3 + 4x^2y^3) - \\hat{j}(-6yz^3) + \\hat{k}(-8xy^3z - 8x^3y)$$\n$$(4x^2y^3 - 6xz^3)\\hat{i} + 6yz^3\\hat{j} - (8xy^3z + 8x^3y)\\hat{k}\\text{ Ans.}$$"
+     },
+     {
+      "prompt": "In the light of the stem, show that a scalar field can be converted into a vector field and a vector field into a scalar field. — Analyse mathematically.",
+      "answer": "given,\n$\\vec{A} = 4x^3y^2\\hat{i} - 4x^2y^3z\\hat{j} - 6xyz^3\\hat{k}$ is a vector field and $\\phi = 3xy^2z + 3xyz^2 - 3y^2z^3$  now, $\\text{grad}\\,\\phi = \\vec{\\nabla}\\phi$\n$$\\left(\\hat{i}\\frac{\\delta}{\\delta x} + \\hat{j}\\frac{\\delta}{\\delta y} + \\hat{k}\\frac{\\delta}{\\delta z}\\right)(3xy^2z + 3xyz^2 + 3y^2z^3)$$\n$$\\hat{i}(3y^2z + 3yz^2) + \\hat{j}(6xyz + 3xz^2 + 6yz^3) + \\hat{k}(3xy^2 + 6xyz + 9y^2z^2)$$ Here $\\text{grad}\\,\\phi$ is a vector field,\n$\\therefore$ a scalar field can be converted into a vector field. Since $\\text{div}\\,\\vec{A} = \\vec{\\nabla} \\cdot \\vec{A}$\n<div class=\"math\">$$\\left(\\hat{i}\\frac{\\delta}{\\delta x} + \\hat{j}\\frac{\\delta}{\\delta y} + \\hat{k}\\frac{\\delta}{\\delta z}\\right) \\cdot \\left(4x^3y^2\\hat{i} - 4x^2y^3z\\hat{j} - 6xyz^3\\hat{k}\\right)$$</div>\n$$\\frac{\\delta}{\\delta x}(4x^3y^2) + \\frac{\\delta}{\\delta y}(-4x^2y^3z) + \\frac{\\delta}{\\delta z}(-6xyz^3)$$\n$$12x^2y^2 - 12x^2y^2z - 18xyz^2$$ Here $\\text{div}\\,\\vec{A}$ is a scalar field.\n$\\therefore$ a vector field can be converted into a scalar field. That is, a scalar field can be converted into a vector field through the gradient, and a vector field into a scalar field through the divergence.\n\n> [book printing error: here - 3y^2z^3 is written in place of + 3y^2z^3, but + 3y^2z^3 has been used in the next line]"
+     }
+    ]
+   },
+   {
+    "id": 19,
+    "source": "Dinajpur Board · 2024 · Board question no. 6 · book p. 39",
+    "stem": "$\\vec{r} = ax\\hat{i} + y\\hat{j} + 2\\hat{k}$\n$\\vec{P} = 2\\hat{i} + 3\\hat{j} + 4\\hat{k}$\n$\\vec{Q} = 4\\hat{i} + 4\\hat{j} - \\hat{k}$\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine for what value of $a$ the field of the vector $\\vec{r}$ will be solenoidal.",
+      "answer": "If the field is solenoidal, the divergence of the vector $\\vec{r}$ will be zero. that is, $\\vec{\\nabla} \\cdot \\vec{r} = 0$ or, $\\left(\\hat{i}\\frac{\\partial}{\\partial x} + \\hat{j}\\frac{\\partial}{\\partial y} + \\hat{k}\\frac{\\partial}{\\partial z}\\right) \\cdot (ax\\hat{i} + y\\hat{j} + 2\\hat{k}) = 0$ or, $\\frac{\\partial}{\\partial x}(ax) + \\frac{\\partial}{\\partial y}(y) + \\frac{\\partial}{\\partial z}(2) = 0$ or, $a + 1 + 0 = 0$\n$\\therefore a = -1$ Therefore, if the value of $a$ is $-1$, the field of the vector $\\vec{r}$ will be solenoidal. Ans."
+     },
+     {
+      "prompt": "Is the vector field $\\vec{P} \\times \\vec{Q}$ rotational or irrotational — analyse mathematically and give your opinion.",
+      "answer": "The rotational character of a vector field depends on its curl. If the curl of a vector is zero, that vector is irrotational and conservative. Otherwise, the vector will be rotational and non-conservative. Now,\n$$\\vec{P} \\times \\vec{Q} = \\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 2 & 3 & 4 \\\\ 4 & 4 & -1 \\end{matrix}\\right|$$\n$$\\hat{i}(-3 - 16) - \\hat{j}(-2 - 16) + \\hat{k}(8 - 12)$$\n$$-19\\hat{i} + 18\\hat{j} - 4\\hat{k}$$\n Now, the curl of $\\vec{P} \\times \\vec{Q}$,\n<div class=\"math\">$$\\vec{\\nabla} \\times (\\vec{P} \\times \\vec{Q}) = \\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ \\frac{\\partial}{\\partial x} & \\frac{\\partial}{\\partial y} & \\frac{\\partial}{\\partial z} \\\\ -19 & 18 & -4 \\end{matrix}\\right|$$</div>\n<div class=\"math\">$$\\hat{i}\\left[\\frac{\\partial}{\\partial y}(-4) - \\frac{\\partial}{\\partial z}(18)\\right] - \\hat{j}\\left[\\frac{\\partial}{\\partial x}(-4) - \\frac{\\partial}{\\partial z}(-19)\\right] + \\hat{k}\\left[\\frac{\\partial}{\\partial x}(18) - \\frac{\\partial}{\\partial y}(-19)\\right]$$</div>\n$$\\hat{i}.0 - \\hat{j}.0 + \\hat{k}.0 = 0$$ That is, $\\vec{\\nabla} \\times (\\vec{P} \\times \\vec{Q}) = 0$ Therefore, the vector field $\\vec{P} \\times \\vec{Q}$ is irrotational."
+     }
+    ]
+   },
+   {
+    "id": 24,
+    "source": "Sylhet Board · 2024 · Board question no. 1 · book p. 42",
+    "stem": "Vector $\\vec{P} = (9xy^2 + 5z)\\hat{i} + (4y^2 + 2xz)\\hat{j} + (3x^3 + 2y)\\hat{k}$\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the divergence of $\\vec{P}$ at position $(-1, 1, 1)$.",
+      "answer": "Similar to the answer of creative question 8((c)). Answer: $17$."
+     },
+     {
+      "prompt": "Is the vector $\\vec{P}$ irrotational? Analyse mathematically.",
+      "answer": "given,\n$\\vec{P} = (9xy^2 + 5z)\\hat{i} + (4y^2 + 2xz)\\hat{j} + (3x^3 + 2y)\\hat{k}$ Given, $\\vec{\\nabla} = \\frac{\\partial}{\\partial x}\\hat{i} + \\frac{\\partial}{\\partial y}\\hat{j} + \\frac{\\partial}{\\partial z}\\hat{k}$ If the curl of a vector field is zero, that vector field is irrotational. Therefore, the curl of $\\vec{P}$\n\n**Full solution (added):**\n\n$\\nabla\\cdot\\vec P=9y^2+8y$; value at the point (−1, 1, 1) is $9+8=17$.\n\n**(d).** Given,\n\n$$\\vec P=(9xy^2+5z)\\hat i+(4y^2+2xz)\\hat j+(3x^3+2y)\\hat k.$$\n\nWe know,\n\n$$\\vec\\nabla=\\frac{\\partial}{\\partial x}\\hat i+\\frac{\\partial}{\\partial y}\\hat j+\\frac{\\partial}{\\partial z}\\hat k.$$\n\nIf the curl of a vector field is zero, that vector field is irrotational.\n\nTherefore, the curl of $\\vec P$—\n\n*The next step is on the next page.*"
+     }
+    ]
+   },
+   {
+    "id": 38,
+    "source": "Sylhet Board · 2022 · Board question no. 2 · book p. 49",
+    "stem": "$p(x, y, z) = 2xy^4 - x^2z$ is a scalar quantity and $\\vec{A} = (2x + y)\\hat{i} + (3y + z^2)\\hat{j} + (-5z + x)\\hat{k}$ is a vector quantity and $\\vec{B} = (6xy + z^3)\\hat{i} + (3x^2 - z)\\hat{j} + (3xz^2 - y)\\hat{k}$ is another vector quantity.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the gradient of $p$ at point $(2, -1, -2)$.",
+      "answer": "The gradient of $p$\n$$\\text{grad}\\,p = \\vec{\\nabla}p$$\n\n$$\\text{grad}\\,p = \\left(\\frac{\\partial}{\\partial x}\\hat{i} + \\frac{\\partial}{\\partial y}\\hat{j} + \\frac{\\partial}{\\partial z}\\hat{k}\\right)p$$\n$$\\frac{\\partial p}{\\partial x}\\hat{i} + \\frac{\\partial p}{\\partial y}\\hat{j} + \\frac{\\partial p}{\\partial z}\\hat{k}$$\n$$\\frac{\\partial}{\\partial x}(2xy^4 - x^2z)\\hat{i} + \\frac{\\partial}{\\partial y}(2xy^4 - x^2z)\\hat{j} + \\frac{\\partial}{\\partial z}(2xy^4 - x^2z)\\hat{k}$$\n$$(2y^4 - 2xz)\\hat{i} + (8xy^3)\\hat{j} - x^2\\hat{k}$$ the gradient of $p$ at point $\\therefore (2, -1, -2)$\n$$\\{2(-1)^4 - 2.2(-2)\\}\\hat{i} + \\{8.2(-1)^3\\}\\hat{j} - \\{(2)^2\\}\\hat{k}$$\n$$\\text{grad}\\,p = 10\\hat{i} - 16\\hat{j} - 4\\hat{k}\\text{ Ans.}$$"
+     },
+     {
+      "prompt": "Verify, through mathematical analysis, which of the two vectors $\\vec{A}$ and $\\vec{B}$ described in the stem is solenoidal and which is irrotational.",
+      "answer": "given, $\\vec{A} = (2x + y)\\hat{i} + (3y + z^2)\\hat{j} + (-5z + x)\\hat{k}$ the divergence of $\\vec{A}$ $\\text{div}\\,\\vec{A}$\n<div class=\"math\">$$\\vec{\\nabla} \\cdot \\vec{A} = \\left(\\frac{\\partial}{\\partial x}\\hat{i} + \\frac{\\partial}{\\partial y}\\hat{j} + \\frac{\\partial}{\\partial z}\\hat{k}\\right) \\cdot \\{(2x + y)\\hat{i} + (3y + z^2)\\hat{j} + (-5z + x)\\hat{k}\\}$$</div>\n$$\\frac{\\partial}{\\partial x}(2x + y) + \\frac{\\partial}{\\partial y}(3y + z^2) + \\frac{\\partial}{\\partial z}(-5z + x)$$\n$$2 + 3 - 5 = 0$$ Since $\\vec{\\nabla} \\cdot \\vec{A} = 0$, therefore the vector $\\vec{A}$ is solenoidal.\n the curl of $\\vec{A}$ $\\text{curl}\\,\\vec{A} = \\vec{\\nabla} \\times \\vec{A}$\n<div class=\"math\">$$\\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ \\frac{\\partial}{\\partial x} & \\frac{\\partial}{\\partial y} & \\frac{\\partial}{\\partial z} \\\\ 2x + y & 3y + z^2 & -5z + x \\end{matrix}\\right|$$</div>\n<div class=\"math\">$$\\hat{i}\\left\\{\\frac{\\partial}{\\partial y}(-5z + x) - \\frac{\\partial}{\\partial z}(3y + z^2)\\right\\} - \\hat{j}\\left\\{\\frac{\\partial}{\\partial x}(-5z + x) - \\frac{\\partial}{\\partial z}(2x + y)\\right\\} + \\hat{k}\\left\\{\\frac{\\partial}{\\partial x}(3y + z^2) - \\frac{\\partial}{\\partial y}(2x + y)\\right\\}$$</div>\n$$\\hat{i}\\{0 - 2z\\} - \\hat{j}\\{1 - 0\\} + \\hat{k}\\{0 - 1\\} = -2z\\hat{i} - \\hat{j} - \\hat{k}$$ Since $\\vec{\\nabla} \\times \\vec{A} \\neq \\vec{0}$, therefore the vector $\\vec{A}$ is rotational\n Since $\\vec{B} = (6xy + z^3)\\hat{i} + (3x^2 - z)\\hat{j} + (3xz^2 - y)\\hat{k}$ the divergence of $\\vec{B}$ $\\text{div}\\,\\vec{B}$\n<div class=\"math\">$$\\vec{\\nabla} \\cdot \\vec{B} = \\left(\\frac{\\partial}{\\partial x}\\hat{i} + \\frac{\\partial}{\\partial y}\\hat{j} + \\frac{\\partial}{\\partial z}\\hat{k}\\right) \\cdot \\{(6xy + z^3)\\hat{i} + (3x^2 - z)\\hat{j} + (3xz^2 - y)\\hat{k}\\}$$</div>\n$$\\frac{\\partial}{\\partial x}(6xy + z^3) + \\frac{\\partial}{\\partial y}(3x^2 - z) + \\frac{\\partial}{\\partial z}(3xz^2 - y)$$\n$$6y + 0 + 6xz = 6xz + 6y$$ Since $\\vec{\\nabla} \\cdot \\vec{B} \\neq 0$, therefore the vector $\\vec{B}$ is not solenoidal.\n the curl of $\\vec{B}$ $\\text{curl}\\,\\vec{B} = \\vec{\\nabla} \\times \\vec{B}$\n<div class=\"math\">$$\\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ \\frac{\\partial}{\\partial x} & \\frac{\\partial}{\\partial y} & \\frac{\\partial}{\\partial z} \\\\ 6xy + z^3 & 3x^2 - z & 3xz^2 - y \\end{matrix}\\right|$$</div>\n<div class=\"math\">$$\\hat{i}\\left\\{\\frac{\\partial}{\\partial y}(3xz^2 - y) - \\frac{\\partial}{\\partial z}(3x^2 - z)\\right\\} - \\hat{j}\\left\\{\\frac{\\partial}{\\partial x}(3xz^2 - y) - \\frac{\\partial}{\\partial z}(6xy + z^3)\\right\\} + \\hat{k}\\left\\{\\frac{\\partial}{\\partial x}(3x^2 - z) - \\frac{\\partial}{\\partial y}(6xy + z^3)\\right\\}$$</div>\n$$\\hat{i}(-1 + 1) - \\hat{j}(3z^2 - 3z^2) + \\hat{k}(6x - 6x)$$\n$$0\\hat{i} - 0\\hat{j} + 0\\hat{k} = 0$$ Since $\\vec{\\nabla} \\times \\vec{B} = \\vec{0}$, therefore the vector $\\vec{B}$ is irrotational. that is, the vector $\\vec{A}$ is solenoidal and the vector $\\vec{B}$ is irrotational."
+     }
+    ]
+   },
+   {
+    "id": 46,
+    "source": "Rajshahi Cadet College · Board question no. 1 · book p. 54",
+    "stem": "A position vector and a differential vector operator are denoted by $\\vec{r} = x\\hat{i} + y\\hat{j} + z\\hat{k}$  and $\\vec{\\nabla} = \\left(\\frac{\\partial}{\\partial x}\\hat{i} + \\frac{\\partial}{\\partial y}\\hat{j} + \\frac{\\partial}{\\partial z}\\hat{k}\\right)$ respectively.\n\n> [printed as r in the book]\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the value of $\\vec{\\nabla}\\left(\\frac{1}{r}\\right)$.",
+      "answer": "We know,\n\n<div class=\"math\">$$\\vec\\nabla\\left(\\frac1r\\right)=\\left(\\hat i\\frac{\\partial}{\\partial x}+\\hat j\\frac{\\partial}{\\partial y}+\\hat k\\frac{\\partial}{\\partial z}\\right)\\cdot(x^2+y^2+z^2)^{-1/2}.\\quad\\text{[dot symbol of the original]}$$</div>\n Here, the position vector $\\vec r=x\\hat i+y\\hat j+z\\hat k$; the magnitude of the vector $r=\\sqrt{x^2+y^2+z^2}$; the differential operator,\n\n$$\\vec\\nabla=\\hat i\\frac{\\partial}{\\partial x}+\\hat j\\frac{\\partial}{\\partial y}+\\hat k\\frac{\\partial}{\\partial z}.$$\n Now, differentiating with respect to x we get,\n\n$$\\frac{\\partial}{\\partial x}(x^2+y^2+z^2)^{-1/2}=-\\frac12(x^2+y^2+z^2)^{-3/2}\\cdot2x=-\\frac{x}{(x^2+y^2+z^2)^{3/2}}$$\n\n$$\\therefore\\frac{\\partial}{\\partial x}\\left(\\frac1r\\right)=-\\frac{x}{r^3}.$$\n similarly,\n\n$$\\frac{\\partial}{\\partial y}\\left(\\frac1r\\right)=-\\frac{y}{r^3}\\quad\\text{and}\\quad\\frac{\\partial}{\\partial z}\\left(\\frac1r\\right)=-\\frac{z}{r^3}.$$\n Now, putting in the values we get,\n\n$$\\vec\\nabla\\left(\\frac1r\\right)=\\hat i\\left(-\\frac{x}{r^3}\\right)+\\hat j\\left(-\\frac{y}{r^3}\\right)+\\hat k\\left(-\\frac{z}{r^3}\\right)$$\n or,\n\n$$\\vec\\nabla\\left(\\frac1r\\right)=-\\frac1{r^3}(x\\hat i+y\\hat j+z\\hat k)$$\n\n$$\\therefore\\vec\\nabla\\left(\\frac1r\\right)=-\\frac{\\vec r}{r^3}.\\quad(\\mathrm{Ans.})$$"
+     },
+     {
+      "prompt": "Determine the value of $\\vec{\\nabla} \\times \\left(\\frac{\\vec{r}}{r^2}\\right)$ according to the stem. Is it rotational ($\\text{Rotational}$) or irrotational? Explain mathematically.",
+      "answer": "let, $\\vec{V} = \\frac{\\vec{r}}{r^2} = \\frac{x\\hat{i} + y\\hat{j} + z\\hat{k}}{x^2 + y^2 + z^2}$ here, $V_x = \\frac{x}{x^2 + y^2 + z^2}$\n$V_y = \\frac{y}{x^2 + y^2 + z^2}$\n$V_z = \\frac{z}{x^2 + y^2 + z^2}$\n Now,\n$$\\vec{\\nabla} \\times \\vec{V} = \\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ \\frac{\\partial}{\\partial x} & \\frac{\\partial}{\\partial y} & \\frac{\\partial}{\\partial z} \\\\ V_x & V_y & V_z \\end{matrix}\\right|$$ coefficient of $\\hat{i}$ = $\\frac{\\partial V_z}{\\partial y} - \\frac{\\partial V_y}{\\partial z} = \\frac{\\partial}{\\partial y}\\left(\\frac{z}{x^2 + y^2 + z^2}\\right) - \\frac{\\partial}{\\partial z}\\left(\\frac{y}{x^2 + y^2 + z^2}\\right)$ or, $\\frac{\\partial V_z}{\\partial y} - \\frac{\\partial V_y}{\\partial z} = z\\left(-\\frac{2y}{(x^2 + y^2 + z^2)^2}\\right) - y\\left(-\\frac{2z}{(x^2 + y^2 + z^2)^2}\\right)$\n$\\therefore \\frac{\\partial V_z}{\\partial y} - \\frac{\\partial V_y}{\\partial z} = -\\frac{2yz}{r^4} + \\frac{2yz}{r^4} = 0$ Similarly it is seen that the coefficients of $\\hat{j}$ and $\\hat{k}$ will also be zero.\n$$\\frac{\\partial V_x}{\\partial z} - \\frac{\\partial V_z}{\\partial x} = 0$$\n$$\\text{and, } \\frac{\\partial V_y}{\\partial x} - \\frac{\\partial V_x}{\\partial y} = 0$$\n$$\\therefore \\vec{\\nabla} \\times \\left(\\frac{\\vec{r}}{r^2}\\right) = 0\\hat{i} + 0\\hat{j} + 0\\hat{k} = \\vec{0}$$ Since a vector field is irrotational when its curl is zero, and since the value of $\\vec{\\nabla} \\times \\left(\\frac{\\vec{r}}{r^2}\\right)$ in the stem is zero, it is an irrotational vector."
+     }
+    ]
+   },
+   {
+    "id": 48,
+    "source": "Rangpur Cadet College · Board question no. 1 · book p. 55",
+    "stem": "$\\phi$ is a scalar operator `[actually a scalar field]` where, $\\phi = 3x^2yz + 4xyz + 2yz^2$ and $\\vec{A}$  is a vector operator `[actually a vector field]` where $\\vec{A} = 4xy^2z\\hat{i} - 3x^2yz\\hat{j} + 5xyz^2\\hat{k}$.\n\n> [printed as A in the book]\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "In the light of the stem, determine $\\text{Curl}\\,\\vec{A}$ at point $(1, -1, 1)$.",
+      "answer": "Similar to the answer of creative question 9((c)). Answer: curl at point $(1, -1, 1)$, $\\text{Curl}\\,\\vec{A} = 2\\hat{i} + 9\\hat{j} + 14\\hat{k}$"
+     },
+     {
+      "prompt": "How can a scalar field be converted into a vector field, and is it possible to convert a vector field into a scalar field? Analyse mathematically in the light of the stem.",
+      "answer": "Similar to the answer of creative question 9((d)). Answer: by using the gradient a scalar field can be converted into a vector field, and by using the divergence a vector field can be converted into a scalar field. The vector field to be determined, $\\vec{\\nabla}\\phi = (6xyz + 4yz)\\hat{i} + (3x^2z + 4xz + 2z^2)\\hat{j} + (3x^2y + 4xy + 4yz)\\hat{k}$ and the scalar field, $\\vec{\\nabla} \\cdot \\vec{A} = 4y^2z - 3x^2z + 10xyz$"
+     }
+    ]
+   },
+   {
+    "id": 81,
+    "source": "Sylhet Cantonment Public School & College · Board question no. 4 · book p. 70",
+    "stem": "A bus, a jeep and a truck are moving along a road. Their velocities are respectively — $\\vec{v_1} = 2\\hat{i} + \\hat{j} - \\hat{k},\\; \\vec{v_2} = 3\\hat{i} - 2\\hat{j} + 4\\hat{k}$ and $\\vec{v_3} = \\hat{i} - 3\\hat{j} + 5\\hat{k}$. At some instant a collision occurs among the three.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the curl of the velocity of the truck.",
+      "answer": "Given, $\\text{Curl}(\\vec{v_3}) = \\vec{\\nabla} \\times \\vec{v_3}$\n<div class=\"math\">$$\\left(\\frac{\\partial}{\\partial x}\\hat{i} + \\frac{\\partial}{\\partial y}\\hat{j} + \\frac{\\partial}{\\partial z}\\hat{k}\\right) \\times (\\hat{i} - 3\\hat{j} + 5\\hat{k})$$</div>\n<div class=\"math\">$$\\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ \\frac{\\partial}{\\partial x} & \\frac{\\partial}{\\partial y} & \\frac{\\partial}{\\partial z} \\\\ 1 & -3 & 5 \\end{matrix}\\right|$$</div>\n<div class=\"math\">$$\\hat{i}\\left\\{\\frac{\\partial}{\\partial y}(5) - \\frac{\\partial}{\\partial z}(-3)\\right\\} - \\hat{j}\\left\\{\\frac{\\partial}{\\partial z}(5) - \\frac{\\partial}{\\partial x}(1)\\right\\} + \\hat{k}\\left\\{\\frac{\\partial}{\\partial x}(-3) - \\frac{\\partial}{\\partial y}(1)\\right\\}$$</div>\n$$\\hat{i}(0 - 0) - \\hat{j}(0 - 0) + \\hat{k}(0 - 0)$$\n$$\\therefore \\text{Curl}(\\vec{v_3}) = 0\\text{ Ans.}$$"
+     },
+     {
+      "prompt": "Prove mathematically that at the moment of collision the three vehicles were moving in the same plane.",
+      "answer": "The three vectors will lie in the same plane if $(\\vec{v_1} \\times \\vec{v_2}) \\cdot \\vec{v_3} = 0$. here, $(\\vec{v_1} \\times \\vec{v_2}) = (2\\hat{i} + \\hat{j} - \\hat{k}) \\times (3\\hat{i} - 2\\hat{j} + 4\\hat{k})$\n$$\\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 2 & 1 & -1 \\\\ 3 & -2 & 4 \\end{matrix}\\right| = (4 - 2)\\hat{i} - (8 + 3)\\hat{j} + (-4 - 3)\\hat{k} = 2\\hat{i} - 11\\hat{j} - 7\\hat{k}$$ Since $(\\vec{v_1} \\times \\vec{v_2}) \\cdot \\vec{v_3} = (2\\hat{i} - 11\\hat{j} - 7\\hat{k}) \\cdot (\\hat{i} - 3\\hat{j} + 5\\hat{k}) = 2 + 33 - 35 = 0$\n$$\\therefore (\\vec{v_1} \\times \\vec{v_2}) \\cdot \\vec{v_3} = 0$$ Since $(\\vec{v_1} \\times \\vec{v_2}) \\cdot \\vec{v_3} = 0$, therefore the three vectors lie in the same plane. Therefore, at the moment of collision the three vehicles were moving in the same plane."
+     }
+    ]
+   },
+   {
+    "id": 82,
+    "source": "Murari Chand College, Sylhet · Board question no. 8 · book p. 70",
+    "stem": "$\\vec{A} = x^2y\\hat{i} + y^2z\\hat{j} + z^2x\\hat{k}$, $\\vec{B} = (2x + y)\\hat{i} + (3y + z^2)\\hat{j} + (5z - x)\\hat{k}$ and $\\vec{C} = (6xy + z^2)\\hat{i} + (3x^2 - z)\\hat{j} + (3xz^2 - y)\\hat{k}$ are three vector quantities.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the divergence of the curl of the vector $\\vec{A}$.",
+      "answer": "$$\\vec{\\nabla} \\times \\vec{A} = \\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ \\frac{\\partial}{\\partial x} & \\frac{\\partial}{\\partial y} & \\frac{\\partial}{\\partial z} \\\\ x^2y & y^2z & z^2x \\end{matrix}\\right|$$\n<div class=\"math\">$$\\hat{i}\\left(\\frac{\\partial}{\\partial y}(z^2x) - \\frac{\\partial}{\\partial z}(y^2z)\\right) - \\hat{j}\\left(\\frac{\\partial}{\\partial x}(z^2x) - \\frac{\\partial}{\\partial z}(x^2y)\\right) + \\hat{k}\\left(\\frac{\\partial}{\\partial x}(y^2z) - \\frac{\\partial}{\\partial y}(x^2y)\\right)$$</div>\n$$\\hat{i}(0 - y^2) - \\hat{j}(z^2 - 0) + \\hat{k}(0 - x^2)$$\n$$\\therefore \\vec{\\nabla} \\times \\vec{A} = -y^2\\hat{i} - z^2\\hat{j} - x^2\\hat{k}$$ the divergence of $\\vec{\\nabla} \\times \\vec{A}$ $\\vec{\\nabla} \\cdot (\\vec{\\nabla} \\times \\vec{A}) = \\frac{\\partial}{\\partial x}(-y^2) + \\frac{\\partial}{\\partial y}(-z^2) + \\frac{\\partial}{\\partial z}(-x^2)$\n$$\\vec{\\nabla} \\times \\vec{A} = 0 + 0 + 0$$\n$$\\therefore \\vec{\\nabla} \\cdot (\\vec{\\nabla} \\times \\vec{A}) = 0\\text{ Ans.}$$"
+     },
+     {
+      "prompt": "Verify, through mathematical analysis, which of the two vectors $\\vec{B}$ and $\\vec{C}$ in the stem is solenoidal and which is irrotational.",
+      "answer": "Similar to the answer of creative question 38((d))."
+     }
+    ]
+   }
+  ]
+ },
+ "force": {
+  "title": "Force, torque and rotation",
+  "questions": [
+   {
+    "id": 17,
+    "source": "Rajshahi Board · 2024 · Board question no. 4 · book p. 38",
+    "stem": "According to the figure, three forces are applied on a stationary particle at point $O$.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Determine the magnitude of the resultant force acting on the particle along $OX$.",
+      "answer": "Let the resultant force $\\vec{F}$ make an angle $\\theta$ with the direction of $OX$. the angle of $\\vec{F}_1$ with $OX$, $\\theta_1 = 0^\\circ$ the angle of $\\vec{F}_2$ with $OX$, $\\theta_2 = 180^\\circ - 60^\\circ = 120^\\circ$ the angle of $\\vec{F}_3$ with $OX$, $\\theta_3 = 270^\\circ - 30^\\circ = 240^\\circ$\n$\\therefore$ the magnitude of the resultant force acting on the particle along $OX$,\n$$F_x = |\\vec{F}|\\cos\\theta$$\n\n$$F_x = |\\vec{F}_1|\\cos\\theta_1 + |\\vec{F}_2|\\cos\\theta_2 + |\\vec{F}_3|\\cos\\theta_3$$\n$$F_x = 11\\cos 0^\\circ + 22\\cos 120^\\circ + 33\\cos 240^\\circ$$\n$$-16.5\\text{ N Ans.}$$"
+     },
+     {
+      "prompt": "In which direction will the particle move as a result of the applied force? Give your opinion with mathematical analysis.",
+      "answer": "Obtained from (c), $F_x=-16.5\\ \\mathrm N\\quad\\cdots(i)$.\n similarly,\n\n<div class=\"math\">$$\\begin{aligned} F_y&=|\\vec F|\\sin\\theta=|\\vec F_1|\\sin\\theta_1+|\\vec F_2|\\sin\\theta_2+|\\vec F_3|\\sin\\theta_3\\\\ &=11\\sin0^\\circ+22\\sin120^\\circ+33\\sin240^\\circ\\\\ &=-\\frac{11\\sqrt3}{2}\\ \\mathrm N\\quad\\cdots(ii). \\end{aligned}$$</div>\n here, $|\\vec F_1|=11\\ \\mathrm N$; $|\\vec F_2|=22\\ \\mathrm N$; $|\\vec F_3|=33\\ \\mathrm N$.\n Dividing (ii) by (i) we get,\n\n$$\\frac{F_x}{F_y}=\\frac{|\\vec F|\\sin\\theta}{|\\vec F|\\cos\\theta}$$\n\n$$\\frac{F_x}{F_y} = \\frac{-\\frac{11\\sqrt3}{2}}{-16.5}.\\quad\\text{[left-hand side of the original]}$$\n or,\n\n$$\\tan\\theta=\\frac1{\\sqrt3}$$\n\n$$\\therefore\\theta=210^\\circ.$$\n (Since $\\sin\\theta$, both $\\cos\\theta$ are negative, so $\\theta$ lies in the 3rd quadrant.)\n Therefore, as a result of the applied force the particle will move at an angle of 210° with the direction of OX; in other words, at an angle of (210° − 180°) = 30° downwards with the direction of OX′.\n On the division line the left-hand side is printed as $F_x/F_y$, but according to the right-hand side and the division indicated it should be $F_y/F_x$. The angle 210° and the magnitudes of both components are correct. In (c) by 'magnitude' the signed component −16.5 N is meant; the absolute value is 16.5 N, direction OX′."
+     }
+    ]
+   },
+   {
+    "id": 36,
+    "source": "Barishal Board · 2023 · Board question no. 1 · book p. 48",
+    "stem": "Nahin and Jahin were dragging a heavy stationary truck by tying two ropes to it. An angle of '$\\alpha$' is created between the two ropes. The truck was moving towards Nahin. Nahin told Jahin to apply more force.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "Show that if Jahin applies a force equal in magnitude to Nahin's, their resultant force will bisect the angle between them.",
+      "answer": "Let the forces applied by Jahin and Nahin be $P$ and $Q$ respectively, the angle between the two forces $\\alpha$ and the resultant $R$. If the resultant $R$ acts at an angle $\\theta$ with $P$, then\n$$\\tan\\theta = \\frac{Q\\sin\\alpha}{P + Q\\cos\\alpha}$$ If Jahin applies a force equal to Nahin's then $P = Q$\n$$\\therefore \\tan\\theta = \\frac{Q\\sin\\alpha}{Q + Q\\cos\\alpha}$$\n$$\\text{or, } \\tan\\theta = \\frac{Q\\sin\\alpha}{Q(1 + \\cos\\alpha)}$$\n\n$$\\text{or, } \\tan\\theta = \\frac{\\sin\\alpha}{1 + \\cos\\alpha}$$\n\n$$\\text{or, } \\tan\\theta = \\frac{2\\sin\\frac{\\alpha}{2}\\cos\\frac{\\alpha}{2}}{2\\cos^2\\frac{\\alpha}{2}}$$\n\n$$\\text{or, } \\tan\\theta = \\frac{\\sin\\frac{\\alpha}{2}}{\\cos\\frac{\\alpha}{2}}$$\n$$\\therefore \\tan\\theta = \\tan\\frac{\\alpha}{2}$$\n$$\\theta = \\frac{\\alpha}{2}$$ Therefore, their resultant force will bisect the angle between them. (Shown)"
+     },
+     {
+      "prompt": "How should Nahin and Jahin pull the truck so that they can drag it along with the greatest resultant force using the least applied force? Explain with mathematical analysis.",
+      "answer": "* * *"
+     }
+    ]
+   },
+   {
+    "id": 54,
+    "source": "Holy Cross College, Dhaka · Board question no. 1 · book p. 57",
+    "stem": "**Scenario-1:** In the laboratory, a slide calliper was used to measure the diameter of a solid cylinder. The main-scale reading was $4.2\\text{ cm}$ and the vernier coincidence was $8$. The vernier constant of the instrument is $0.01\\text{cm}$. The cylinder is rolling down an inclined plane.\n\n**Scenario-2:** While the cylinder is rotating, its angular velocity vector is $\\vec{\\omega} = 2\\hat{i} - 3\\hat{j} + \\hat{k}\\text{ rad/s}$ and its radius vector is $\\vec{r} = \\hat{i} - 2\\hat{j} + 2\\hat{k}\\text{ m}$.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "Determine the diameter of the cylinder in Scenario-1 and find the relative error in determining the volume (assume the height is error-free $10\\text{ cm}$).",
+      "answer": "We know,\n$$\\text{diameter, } D = M + V \\times VC$$\n\n$$\\text{diameter, } D = 4.2 + 8 \\times 0.01$$\n\n$$\\text{diameter, } D = 4.2 + 0.08$$\n\n$$\\text{diameter, } D = 4.28\\text{ cm}$$\n In the case of a slide calliper the final error in measurement is equal to the vernier constant. Final error in the diameter measurement, $\\Delta D = VC = 0.01\\text{ cm}$ Diameter of the cylinder, $D = 4.28\\text{ cm}$, height of the cylinder, $h = 10\\text{ cm}$ Actual volume of the cylinder,\n$$V = \\frac{\\pi}{4} D^2 h$$\n\n$$V = \\frac{\\pi}{4} \\times (4.28)^2 \\times 10$$\n\n$$V = 143.87\\text{ cm}^3$$ Maximum value in the diameter measurement, $D_{\\max} = D + \\Delta D = 4.28 + 0.01 = 4.29\\text{ cm}$ Maximum volume of the cylinder,\n$$V_{\\max} = \\frac{\\pi}{4} D_{\\max}^2 h$$\n\n$$V_{\\max} = \\frac{\\pi}{4} \\times (4.29)^2 \\times 10$$\n\n$$V_{\\max} = 144.54\\text{ cm}^3$$ Minimum value in the diameter measurement, $D_{\\min} = D - \\Delta D = 4.28 - 0.01 = 4.27\\text{ cm}$ Minimum volume of the cylinder,\n$$V_{\\min} = \\frac{\\pi}{4} D_{\\min}^2 h$$\n\n$$V_{\\min} = \\frac{\\pi}{4} \\times (4.27)^2 \\times 10$$\n\n$$V_{\\min} = 143.2\\text{ cm}^3$$ Final error for the maximum volume, $\\Delta V_1 = |V_{\\max} - V| = |144.54 - 143.87| = 0.67\\text{ cm}^3$ Final error for the minimum volume, $\\Delta V_2 = |V_{\\min} - V| = |143.2 - 143.87| = 0.67\\text{ cm}^3$ Final error in measuring the volume of the cube `[cylinder]`, $\\Delta V = 0.67\\text{ cm}^3$ Relative error in determining the volume of the cube `[cylinder]`, $\\frac{\\Delta V}{V} = \\frac{0.67}{143.87} = 0.00465$ Percentage relative error = $0.00465 \\times 100\\% = 0.465\\%$ Ans."
+     },
+     {
+      "prompt": "In the light of the information in Scenario-2, determine the linear velocity vector of the cylinder and show that the linear velocity is perpendicular to the radius vector.",
+      "answer": "We know, Linear velocity vector,\n$$\\vec{v} = \\vec{\\omega} \\times \\vec{r}$$\n\n$$\\vec{v} = (2\\hat{i} - 3\\hat{j} + \\hat{k}) \\times (\\hat{i} - 2\\hat{j} + 2\\hat{k})$$\n$$\\left|\\begin{matrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 2 & -3 & 1 \\\\ 1 & -2 & 2 \\end{matrix}\\right| = (-6 + 2)\\hat{i} - (4 - 1)\\hat{j} + (-4 + 3)\\hat{k}$$\n$$\\therefore \\vec{v} = -4\\hat{i} - 3\\hat{j} - \\hat{k}\\text{ ms}^{-1}$$\n Again, two vectors will be mutually perpendicular if their dot product is zero. Here, for $\\vec{v} = -4\\hat{i} - 3\\hat{j} - \\hat{k}$ and $\\vec{r} = \\hat{i} - 2\\hat{j} + 2\\hat{k}$, now, $\\vec{v} \\cdot \\vec{r} = (-4\\hat{i} - 3\\hat{j} - \\hat{k}) \\cdot (\\hat{i} - 2\\hat{j} + 2\\hat{k}) = -4 + 6 - 2 = 0$ Since the dot product of the linear velocity vector $\\vec{v}$ and the radius vector $\\vec{r}$ is zero, therefore the linear velocity vector is perpendicular to the radius vector."
+     }
+    ]
+   },
+   {
+    "id": 61,
+    "source": "BCIC College, Dhaka · Board question no. 5 · book p. 62",
+    "stem": "Three marbles — black, blue and red — on a flat table are set moving with velocities $\\vec{v_1} = 2\\hat{i} + \\hat{j} - \\hat{k}$, $\\vec{v_2} = 3\\hat{i} - 2\\hat{j} - 4\\hat{k}$ and $\\vec{v_3} = \\hat{i} - 3\\hat{j} + 5\\hat{k}$ respectively, and a collision occurs between them.\n\n*This question has no figure (quantity/definition based only).*",
+    "figure": false,
+    "parts": [
+     {
+      "prompt": "After the collision the red marble was at rest. Explain according to the stem.",
+      "answer": "We know that the impulse of a force applied on a body ($\\vec{j}$) is equal to the change in the momentum of the body. impulse of the force,\n$$\\vec{j} = \\Delta\\vec{P_3}$$\n\n$$\\vec{j} = \\vec{P_3}' - \\vec{P_3}$$\n$$\\text{or, } \\vec{j} = m_3\\vec{v_3}' - m_3\\vec{v_3}$$\n$$\\text{or, } \\vec{j} = m_3(0) - m_3(\\hat{i} - 3\\hat{j} + 5\\hat{k})$$\n$$\\text{or, } \\vec{j} = -m_3\\hat{i} + 3m_3\\hat{j} - 5m_3\\hat{k}$$ \n After the collision the red marble was at rest, i.e. its final velocity is zero ($\\vec{v_3}' = 0$). This means that the impulse ($\\vec{j}$) applied to the red marble by the other two marbles (black and blue) during the collision was equal in magnitude to the red marble's initial momentum ($\\vec{P_3}$) and opposite in direction to that initial momentum. Initial momentum, $\\vec{P_3} = m_3(\\hat{i} - 3\\hat{j} + 5\\hat{k})$. Then the impulse of the force, $\\vec{j} = -\\vec{P_3}$. Therefore, as a result of the collision the red marble receives an impulse equal and opposite to its initial momentum, so that the velocity of the marble becomes zero and it comes to rest.\n\n> [book printing error: -5m₃ĵ is printed at the end, which should be -5m₃k̂]"
+     },
+     {
+      "prompt": "Is there a possibility that the marbles stay on the flat table after the collision? Explain with analysis.",
+      "answer": "Whether the marbles were moving on the flat table depends on whether their velocity vectors lie in the same plane. If the three velocity vectors ($\\vec{v_1}, \\vec{v_2}, \\vec{v_3}$) are coplanar, their scalar triple product will be zero. Given, the velocity of the black marble $\\vec{v_1} = 2\\hat{i} + \\hat{j} - \\hat{k}$, the velocity of the blue marble $\\vec{v_2} = 3\\hat{i} - 2\\hat{j} - 4\\hat{k}$ and the velocity of the red marble $\\vec{v_3} = \\hat{i} - 3\\hat{j} + 5\\hat{k}$ then,\n$$\\text{here, } (\\vec{v_1} \\times \\vec{v_2}) \\cdot \\vec{v_3} = \\left|\\begin{matrix} 2 & 1 & -1 \\\\ 3 & -2 & -4 \\\\ 1 & -3 & 5 \\end{matrix}\\right|$$\n$$2(-10 - 12) - 1(15 + 4) - 1(-9 + 2) = -44 - 19 + 7$$\n\n$$2(-10 - 12) - 1(15 + 4) - 1(-9 + 2) = -56$$ Since the scalar triple product is not zero, i.e. $(\\vec{v_1} \\times \\vec{v_2}) \\cdot \\vec{v_3} = -56 \\neq 0$, therefore the initial velocity vectors of the three marbles are not coplanar. Since the initial velocity vectors are not coplanar, their motion is three-dimensional. Even after the collision, according to the law of conservation of momentum, their motion will remain three-dimensional. Therefore, there is no possibility that the marbles will stay on the flat table after the collision."
+     }
+    ]
+   },
+   {
+    "id": 70,
+    "source": "Rashidazzoha Government Women's College, Sirajganj · Board question no. 1 · book p. 66",
+    "stem": "Three forces act simultaneously on a body of mass $m = 5\\text{kg}$, as shown in Figure 1.",
+    "figure": true,
+    "parts": [
+     {
+      "prompt": "What is the magnitude of the net force acting on the body in Figure 1?",
+      "answer": "Net force in the horizontal direction, $R_x = 3\\text{N}$ Net force in the vertical direction, $R_y = F_{y1} - F_{y2} \\implies \\text{or, } R_y = 8 - 4 = 4\\text{N}$ Magnitude of the net force,\n$$R = \\sqrt{R_x^2 + R_y^2}$$ \n$$\\sqrt{3^2 + 4^2} = \\sqrt{25}$$\n$$\\therefore R = 5\\text{N Ans.}$$\n\n> [book printing error: R_x² + R_x² is printed, which should be R_x² + R_y²]"
+     },
+     {
+      "prompt": "In the light of Figure-1, verify the correctness of Figure-2.",
+      "answer": "Acceleration produced by the net force,\n$$a = \\frac{R}{m}$$\n\n$$a = \\frac{5\\text{ N}}{5\\text{ kg}}$$\n\n$$a = 1\\text{ ms}^{-2}$$ Let the acceleration make an angle $\\theta$ with the horizontal (east).\n$$\\tan\\theta = \\frac{R_y}{R_x}$$\n\n$$\\tan\\theta = \\frac{4}{3}$$\n\n$$\\tan\\theta = \\tan^{-1}\\left(\\frac{4}{3}\\right)$$\n\n$$\\tan\\theta = 53.13^\\circ$$\n Figure-2 shows the acceleration $a = 1\\text{ ms}^{-2}$ and its direction upwards at an angle $53.13^\\circ$ with the horizontal (east). The magnitude of the acceleration we calculated is $a = 1\\text{ ms}^{-2}$ and the direction $\\theta = 53.13^\\circ$ (upwards). Therefore, the information in Figure-2 is completely correct in the light of Figure-1."
+     }
+    ]
+   }
+  ]
+ }
+}
