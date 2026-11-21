@@ -544,11 +544,13 @@
   function setLanguage(lang) {
     if ((lang !== 'bn' && lang !== 'en') || lang === state.lang) return;
     const y = window.scrollY;
+    const board = main.querySelector('.board-reader');
+    const reading = board && { y, open: [...board.querySelectorAll('.part details[open]')].map(el => [el.closest('.part').id, el.classList.contains('hint') ? 'hint' : 'answer']) };
     state.lang = lang;
     applyLanguage();
-    renderRoute(false);
+    renderRoute(false, reading);
     if (state.searchOpen) renderSearchResults(state.searchQuery);
-    requestAnimationFrame(() => window.scrollTo(0, y));
+    if (!reading) requestAnimationFrame(() => window.scrollTo(0, y));
   }
   function toggleTheme() {
     state.theme = state.theme === 'dark' ? 'light' : 'dark';
@@ -1180,10 +1182,10 @@
 
   /* ---------- router ---------- */
   // The generator pre-typesets MathML. Mount only its reading content, not a second site shell.
-  async function loadBoard(route) {
+  async function loadBoard(route, reading) {
     const root = main.querySelector('.board-reader');
     try {
-      const res = await fetch(`board/${route.id ? 'q'+route.id : 'index'}.html`);
+      const res = await fetch(`board/${state.lang==='en'?'en/':''}${route.id ? 'q'+route.id : 'index'}.html`);
       if (!res.ok) throw Error('Page unavailable');
       const doc = new DOMParser().parseFromString(await res.text(),'text/html');
       const body = doc.querySelector('main');
@@ -1197,22 +1199,17 @@
         else if (href.startsWith('#')) a.href=boardPath+'/'+href.slice(1);
         else if (href.startsWith('../index.html#')) a.href=href.slice(href.indexOf('#'));
       }
-      if (state.lang==='en') {
-        const labels={'← ভেক্টর অধ্যায়':'← Vector chapter','প্রশ্নসূচি':'Question index','ভেক্টর বোর্ড প্রশ্ন':'Vector board questions','প্রশ্ন ও উদ্দীপক':'Question and stimulus','চিত্রটি কীভাবে পড়বে':'Reading the diagram','নিজে সমাধান করো':'Try it yourself','পূর্ণ উত্তর':'Full solution','হিন্ট':'Hint','আগে নিজে চেষ্টা করো':'Try it first','চিত্র ও সমাধান':'Diagram and solution','← আগের প্রশ্ন':'← Previous question','পরের প্রশ্ন →':'Next question →','প্রশ্নসূচি →':'Question index →','উৎস যাচাই ও সংশোধনী':'Source notes and corrections','বোর্ড প্রশ্ন':'Board questions','কলেজের প্রশ্ন':'College questions','বোর্ড প্রশ্ন (৪৩)':'Board questions (43)','কলেজের প্রশ্ন (৪২)':'College questions (42)','৮৫টি সৃজনশীল প্রশ্ন · ৩৪০টি উপপ্রশ্ন':'85 questions · 340 subquestions','উৎস বেছে প্রশ্ন খোলো। আটকে গেলে হিন্ট দেখো; হিসাব শেষ করে পূর্ণ উত্তরের সঙ্গে মেলাও।':'Choose a source and try a question. Open a hint if needed, then check the solution.'};
-        const walker=doc.createTreeWalker(body,NodeFilter.SHOW_TEXT);
-        while(walker.nextNode()) {
-          const node=walker.currentNode, key=node.textContent.trim();
-          if(Object.hasOwn(labels,key)) node.textContent=node.textContent.replace(key,labels[key]);
-        }
-        const note=doc.createElement('p'); note.lang='en'; note.className='section-subtitle';
-        note.textContent='Questions and worked solutions are provided in Bengali.';
-        body.querySelector('header')?.after(note);
-      }
-      root.lang='bn';
+      root.lang=state.lang;
       root.replaceChildren(...body.childNodes);
       root.removeAttribute('aria-busy');
       initializeBoardLabs(root);
-      if(route.section) root.querySelector('#'+route.section)?.scrollIntoView();
+      if (reading) {
+        for (const [id, kind] of reading.open) {
+          const panel = root.querySelector(`#${id} details.${kind}`);
+          if (panel) panel.open = true;
+        }
+        window.scrollTo(0, reading.y);
+      } else if(route.section) root.querySelector('#'+route.section)?.scrollIntoView();
     } catch {
       if (!root.isConnected) return;
       root.removeAttribute('aria-busy');
@@ -1220,7 +1217,7 @@
       root.querySelector('button').onclick=()=>loadBoard(route);
     }
   }
-  function renderRoute(resetScroll = true) {
+  function renderRoute(resetScroll = true, reading = null) {
     const route = parseHash();
     state.route = route;
     // The old standalone board stylesheet styled nav, header and main globally.
@@ -1279,7 +1276,7 @@
     }
 
     main.innerHTML = html;
-    if (route.view === 'board') loadBoard(route);
+    if (route.view === 'board') loadBoard(route, reading);
     document.title = title;
     metaDescription.setAttribute('content', description);
     renderSidebar();

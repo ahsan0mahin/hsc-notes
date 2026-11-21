@@ -1,0 +1,1641 @@
+{
+  "1": {
+    "stem": "In a boat race, Karim aims along OA and reaches B at a ground speed of 5.3 km/h. Rahim aims along OB and lands at R. The river is 2 km wide, the current is 2 km/h and both boats travel at 5 km/h relative to the water. Rain starts falling at 10 km/h.",
+    "a": "div",
+    "b": "sand",
+    "c": {
+      "question": "How long does Rahim take to cross?",
+      "math": "t=\\frac{d}{v\\sin\\alpha}=\\frac{2}{5\\sin90^\\circ}\\,\\mathrm h=24\\,\\mathrm{min}",
+      "solution": "Only the across-river component covers the width: $t=2/(5\\sin90^\\circ)=0.4$ h, or 24 min.",
+      "hint": "Use the component along OB, not the length of OR. Divide the width by this component and convert hours to minutes."
+    },
+    "d": {
+      "question": "At what angle should Karim hold his umbrella? Justify your answer.",
+      "math": "\\tan\\theta=\\frac{v_{\\rm boat}}{v_{\\rm rain}}=\\frac{5.3}{10}",
+      "solution": "Assuming vertical rain, its velocity relative to Karim has a backward component of 5.3 and a downward component of 10 km/h. Tilt the umbrella forwards from the vertical by $\\tan^{-1}(5.3/10)=27.92^\\circ$.",
+      "hint": "Draw the vertical rain velocity and subtract Karim’s horizontal ground velocity. Which angle is measured from vertical?"
+    },
+    "figure": "O is the departure point. OA points upstream of the perpendicular OB; OR points downstream. The current runs to the right. Do not confuse the direction in which a boat is pointed with its actual track.",
+    "note": "The boat speed is in km/h. Vertical rainfall is an assumption of the printed solution; the stem gives the rain speed but does not explicitly state its direction.",
+    "source": "Mymensingh Board"
+  },
+  "2": {
+    "stem": "Consider a scalar field $\\phi(x,y,z)$, a vector field $\\vec V=(V_x,V_y,V_z)$ and the Cartesian differential operator $\\nabla$.",
+    "a": "lap",
+    "b": "windshield",
+    "c": {
+      "question": "Evaluate $\\nabla\\cdot(\\nabla\\times\\vec V)$.",
+      "math": "\\partial_x(\\partial_yV_z-\\partial_zV_y)+\\partial_y(\\partial_zV_x-\\partial_xV_z)+\\partial_z(\\partial_xV_y-\\partial_yV_x)=0",
+      "solution": "Expanding the divergence of the curl gives six mixed second derivatives. For continuous second derivatives they cancel in opposite pairs, leaving zero.",
+      "hint": "Expand the three terms of the divergence after taking the curl. Pair mixed derivatives in opposite orders."
+    },
+    "d": {
+      "question": "Is the curl of the gradient of $\\phi$ zero? Show why.",
+      "math": "(\\nabla\\times\\nabla\\phi)_x=\\partial_y\\partial_z\\phi-\\partial_z\\partial_y\\phi=0",
+      "solution": "For example, the x component is $\\partial_y\\partial_z\\phi-\\partial_z\\partial_y\\phi=0$. Cyclic permutation gives zero for the other two components as well.",
+      "hint": "Take the gradient first. Examine the two mixed derivatives in each component of its curl."
+    },
+    "note": "Both identities require sufficient smoothness to interchange the mixed second partial derivatives.",
+    "source": "Rajshahi Board"
+  },
+  "3": {
+    "stem": "In Cartesian space take P(4,−2,3), Q(−2,4,5) and R(−1,2,−2).",
+    "a": "unit",
+    "b": "divscalar",
+    "c": {
+      "question": "Find the unit vector along $\\overrightarrow{PQ}\\times\\overrightarrow{QR}$.",
+      "math": "\\hat n=\\frac{\\overrightarrow{PQ}\\times\\overrightarrow{QR}}{|\\overrightarrow{PQ}\\times\\overrightarrow{QR}|}=\\frac{-19\\hat i-20\\hat j+3\\hat k}{\\sqrt{770}}",
+      "solution": "PQ=(−6,6,2), QR=(1,−2,−7). Their cross product is (−38,−40,6); divide by its length to get $(−19,−20,3)/\\sqrt{770}$.",
+      "hint": "Form Q−P and R−Q before crossing them. What must you divide the result by?"
+    },
+    "d": {
+      "question": "Do the points form a right triangle? Show your calculation.",
+      "math": "54+66\\ne76",
+      "solution": "The squared lengths PQ², QR² and PR² are 76, 54 and 66. No two add to the third, so the triangle is not right-angled.",
+      "hint": "Compare the largest squared side with the sum of the other two."
+    },
+    "note": "The printed z component of PR is inconsistent with its subtraction. PR=(−5,4,−5) and its length is √66.",
+    "source": "Dinajpur Board"
+  },
+  "4": {
+    "stem": "A motorboat travels at 15 km/h downstream and 5 km/h upstream. It starts at A to reach B directly opposite on a 5 km wide river. At the same instant a person starts walking towards B from C, 5 km away, at 4 km/h.",
+    "a": "pos",
+    "b": "jsign",
+    "c": {
+      "question": "At what angle to the current must the boat start?",
+      "math": "u=\\frac{15+5}{2},\\quad v=\\frac{15-5}{2},\\quad u\\cos\\alpha+v=0",
+      "solution": "Still-water speed is (15+5)/2=10 km/h; current speed is 5 km/h. To cancel drift, $10\\cos\\alpha+5=0$, giving 120°.",
+      "hint": "Add and subtract the two speeds to separate the boat and current. Which component must vanish for a direct landing?"
+    },
+    "d": {
+      "question": "Will the boatman meet the walker on reaching B? Calculate their arrival times.",
+      "math": "t_B=\\frac{5}{10\\sin120^\\circ}\\,\\mathrm h,\\quad t_C=\\frac54\\,\\mathrm h",
+      "solution": "Crossing speed is $10\\sin120^\\circ=5\\sqrt3$ km/h. The boat takes about 34.6 min; the walker takes 75 min. They do not arrive together. The walker arrives about 40.36 minutes later.",
+      "hint": "Compare time across the width using the remaining component with the time to walk CB."
+    },
+    "figure": "A and B are on opposite banks. The walker moves from C towards B along the far bank; the boat must arrive at B, not merely somewhere on that bank.",
+    "note": "Use zero horizontal resultant rather than treating tan 90° as a number. The boat arrives about 40.36 minutes before the walker.",
+    "source": "Cumilla Board"
+  },
+  "5": {
+    "stem": "The figure gives M(2,2,−1) and N(6,−3,2). OM and ON are their position vectors.",
+    "a": "curl",
+    "b": "divscalar",
+    "c": {
+      "question": "Find the scalar projection of OM on ON.",
+      "math": "\\frac{\\overrightarrow{OM}\\cdot\\overrightarrow{ON}}{|\\overrightarrow{ON}|}=\\frac{12-6-2}{\\sqrt{36+9+4}}",
+      "solution": "OM·ON=12−6−2=4 and ON has length 7. The signed projection is 4/7.",
+      "hint": "Find a unit vector along ON. Take its dot product with OM."
+    },
+    "d": {
+      "question": "Is OMN a right triangle? Verify.",
+      "math": "OM^2+ON^2=58\\ne MN^2",
+      "solution": "OM²=9, ON²=49 and MN²=50. Since 9+49 is not 50, no right angle exists.",
+      "hint": "Checking the angle at O alone is insufficient. Test the longest side using all three squared lengths."
+    },
+    "figure": "Follow the arrows from O to M and N. The arrow NM runs from N to M. For projection onto ON, use ON as the reference direction.",
+    "note": "Testing just the angle at O would not exclude a right angle at M or N. Comparing the longest side squared with the other two squares tests the whole triangle.",
+    "source": "Cumilla Board"
+  },
+  "6": {
+    "stem": "The arrows in the figure run from O to P(1,3,4) and Q(2,3,4).",
+    "a": "pos",
+    "b": "trolley",
+    "c": {
+      "question": "Find a unit vector parallel to PQ in the direction P to Q.",
+      "math": "\\hat u_{PQ}=\\frac{(2-1,3-3,4-4)}{|(1,0,0)|}=\\hat i",
+      "solution": "Q−P=(1,0,0), already of unit length.",
+      "hint": "Which coordinate changes when you travel from P to Q? Normalize that displacement."
+    },
+    "d": {
+      "question": "Are angles POQ and OPQ equal? Justify.",
+      "math": "\\cos\\angle POQ=\\frac{27}{\\sqrt{26\\cdot29}},\\quad\\cos\\angle OPQ=-\\frac{1}{\\sqrt{26}}",
+      "solution": "Equal angles would face equal sides. The side facing O has length PQ=1; the side facing P has length OQ=√29. The angles are unequal. Numerically, ∠POQ≈10.49° and ∠OPQ≈101.31°.",
+      "hint": "Identify the sides facing the angles at O and P. What would follow if those angles were equal?"
+    },
+    "figure": "The two position vectors start at O. The short arrow PQ joins their tips. At vertex P use PO, not OP, when measuring the angle.",
+    "note": "Keeping the unrounded cosines gives angles of approximately 10.49° and 101.31° respectively.",
+    "source": "Chattogram Board"
+  },
+  "7": {
+    "stem": "Given $\\vec P=(2,2,-1)$ and $\\vec Q=(2,2,a)$.",
+    "a": "zero",
+    "b": "flux",
+    "c": {
+      "question": "Find the angle between P and the positive x-axis.",
+      "math": "\\cos\\theta_x=\\frac{2}{\\sqrt{4+4+1}}",
+      "solution": "The direction cosine is $P_x/\\lVert P\\rVert=2/3$, so the angle is about 48.19°.",
+      "hint": "Use the x component divided by the full length; avoid rounding before taking arccos."
+    },
+    "d": {
+      "question": "Can the scalar product equal the magnitude of the cross product? Find the possible values of a.",
+      "math": "\\vec P\\times\\vec Q=(2a+2,-2a-2,0),\\quad \\vec P\\cdot\\vec Q=8-a",
+      "solution": "Solve $8-a=2\\sqrt2\\,\\lvert a+1\\rvert$. The two branches give $a=(8-2\\sqrt2)/(1+2\\sqrt2)$ or $a=(8+2\\sqrt2)/(1-2\\sqrt2)$. Both satisfy the original equation. Numerically the two values are approximately 1.35 and −5.92.",
+      "hint": "Equate the signed dot product to the magnitude of the cross product. Check both branches of the absolute value."
+    },
+    "note": "Rounding 2/3 to 0.67 before taking arccos changes the angle. Keep the absolute value of a+1 in the cross-product magnitude or the negative branch of the solution is lost.",
+    "source": "Chattogram Board"
+  },
+  "8": {
+    "stem": "Given @eq.",
+    "a": "pos",
+    "b": "fixed",
+    "c": {
+      "question": "Evaluate the divergence of V at (1,−1,1).",
+      "math": "\\nabla\\cdot\\vec V=3yz^2+4xy-x^3y^2",
+      "solution": "Differentiate matching components: $3yz^2+4xy-x^3y^2=-8$ at the given point.",
+      "hint": "Differentiate the x, y and z components with respect to their matching coordinates before substituting the point."
+    },
+    "d": {
+      "question": "If A represents a diameter, can B represent a tangent at its endpoint?",
+      "math": "\\vec A\\cdot\\vec B=9(4)+1(-6)+(-6)(5)=0",
+      "solution": "A·B=36−6−30=0. Their directions are perpendicular, so B has the required tangent direction at an endpoint of that diameter in the plane of the circle.",
+      "hint": "What angle should the radius make with a tangent at its endpoint? Test the angle using A and B."
+    },
+    "note": "Perpendicularity determines the tangent direction. A tangent line must also pass through the appropriate point of contact.",
+    "source": "Sylhet Board"
+  },
+  "9": {
+    "stem": "Consider the fields @eq.",
+    "a": "pos",
+    "b": "bucket",
+    "c": {
+      "question": "Find the curl of A.",
+      "math": "\\nabla\\times\\vec A=(4x^2y^3-6xz^3,\\ 6yz^3,\\ -8xy^3z-8x^3y)",
+      "solution": "Taking the cyclic differences of component derivatives gives $(4x^2y^3-6xz^3,6yz^3,-8xy^3z-8x^3y)$.",
+      "hint": "Write the components in their original order and take the cyclic differences of partial derivatives."
+    },
+    "d": {
+      "question": "Use the given fields to convert a scalar field into a vector field and a vector field into a scalar field.",
+      "math": "\\nabla\\phi=(3y^2z+3yz^2,\\ 6xyz+3xz^2+6yz^3,\\ 3xy^2+6xyz+9y^2z^2)",
+      "solution": "Taking the gradient of φ gives the vector field shown in the equation. Taking the divergence of A gives the scalar field $12x^2y^2-12x^2y^2z-18xyz^2$. The two operations change the type of the output in opposite ways.",
+      "hint": "Start with φ for one transformation and A for the other. What should the output type be in each case?"
+    },
+    "note": "In an inertial frame gravity still acts at the top of the bucket’s path. The limiting condition for maintaining contact there is v²/r ≥ g.",
+    "source": "Jashore Board"
+  },
+  "10": {
+    "stem": "Given @eq. The first diagram compares A with B, the second A+B with A−B.",
+    "a": "curl",
+    "b": "bisect",
+    "c": {
+      "question": "Find the scalar projection of A along B.",
+      "math": "\\mathrm{comp}_B A=\\frac{20}{\\sqrt{46}}",
+      "solution": "A·B=20 and B has length √46, so the projection is 20/√46.",
+      "hint": "Which vector’s magnitude belongs in the denominator when B is the reference?"
+    },
+    "d": {
+      "question": "Can the two angles shown be equal for these vectors?",
+      "math": "(\\vec A+\\vec B)\\cdot(\\vec A-\\vec B)=|\\vec A|^2-|\\vec B|^2=-34",
+      "solution": "A·B is positive, so the first angle is acute. (A+B)·(A−B)=12−46<0, so the second angle is obtuse. They cannot be equal.",
+      "hint": "Check the signs of the two dot products before attempting to calculate either angle."
+    },
+    "figure": "In the first sketch θ₁ lies between A and B. In the second, θ₂ lies between their sum and their difference. Compare the dot products rather than judging the angles by eye.",
+    "source": "Jashore Board"
+  },
+  "11": {
+    "stem": "Given @eq.",
+    "a": "line",
+    "b": "sumdiff",
+    "c": {
+      "question": "Find a vector normal to the plane of A and B.",
+      "math": "\\vec A\\times\\vec B=(24-1,-1-18,-3-4)",
+      "solution": "A×B=(23,−19,−7), perpendicular to both vectors.",
+      "hint": "Use the right-hand rule to choose the order of A and B."
+    },
+    "d": {
+      "question": "Does the field C act as a fluid source at (2,−1,2)?",
+      "math": "\\nabla\\cdot\\vec C\\big|_{(2,-1,2)}=-16-4+16=-4",
+      "solution": "The divergence is $4xyz+2yz+2x^2y^2z$. Substitution gives −4, so the point is a sink rather than a source.",
+      "hint": "First calculate divergence symbolically, then substitute the coordinates and inspect the sign."
+    },
+    "note": "The printed expansion should read 24−1, not 24×1. Equality of vector magnitudes is different from equality of the vectors themselves.",
+    "source": "Barishal Board"
+  },
+  "12": {
+    "stem": "Given @eq.",
+    "a": "pos",
+    "b": "idot",
+    "c": {
+      "question": "Project B onto the direction of A.",
+      "math": "\\mathrm{comp}_A B=\\frac{-2+6+35}{\\sqrt{38}}",
+      "solution": "A·B=39 and A has length √38. The scalar projection is 39/√38 ≈ 6.33.",
+      "hint": "Make A into a unit vector before projecting B."
+    },
+    "d": {
+      "question": "Do all three vectors lie in one plane?",
+      "math": "\\vec A\\cdot(\\vec B\\times\\vec C)=-129",
+      "solution": "The scalar triple product A·(B×C)=−129 is nonzero. Hence the vectors are not coplanar.",
+      "hint": "Use a normal to the plane of two vectors. Does the third have a component along that normal?"
+    },
+    "source": "Dhaka Board"
+  },
+  "13": {
+    "stem": "Tamal heads from P along PS at 5 km/h, at 100° to a current of 3 km/h. He lands at M; Q is directly opposite P across a 2 km wide river.",
+    "a": "op",
+    "b": "centrip",
+    "c": {
+      "question": "Find QM.",
+      "math": "QM=(3+5\\cos100^\\circ)\\frac{2}{5\\sin100^\\circ}\\,\\mathrm{km}",
+      "solution": "Crossing time is $2/(5\\sin100^\\circ)$ h. Multiply by the downstream speed $3+5\\cos100^\\circ$ to get about 0.87 km.",
+      "hint": "Find the crossing time from the perpendicular component. Multiply that time by the net downstream speed."
+    },
+    "d": {
+      "question": "Compare the time to reach M with the time to go directly from P to Q in still water.",
+      "math": "\\Delta t=3600\\left(\\frac{2}{5\\sin100^\\circ}-\\frac25\\right)\\mathrm s",
+      "solution": "Without current and aiming at Q, the time is 24 min. At 100° the crossing takes about 24.37 min, roughly 22 s longer (about 21 s with the book’s rounding).",
+      "hint": "Use the same width twice but different perpendicular speeds. Subtract before rounding to seconds."
+    },
+    "figure": "Across the parallel banks PQ is perpendicular to the current; M is downstream of Q. PS shows where Tamal points the bow, while PM is the ground track.",
+    "note": "Before rounding, QM is approximately 865.9 m and the difference in crossing time is about 22.2 s.",
+    "source": "Dhaka Board"
+  },
+  "14": {
+    "stem": "The perpendicular vectors v=(2,3,−x) and u=(3,2,2) have magnitudes equal to the boat and current speeds respectively. Crossing by the shortest path takes 4 min.",
+    "a": "pos",
+    "b": "closed",
+    "c": {
+      "question": "Determine x.",
+      "math": "\\vec v\\cdot\\vec u=12-2x=0",
+      "solution": "Their dot product is 6+6−2x=0; hence x=6.",
+      "hint": "The two vectors are perpendicular. Which product gives an equation in x?"
+    },
+    "d": {
+      "question": "For a minimum-time crossing must the boat cover more than the river width? Verify.",
+      "math": "S=D\\frac{\\sqrt{49+17}}{7}>D",
+      "solution": "The speeds are 7 and √17. On the shortest path the crossing component is √(49−17). On the fastest crossing it is 7, but the ground speed is √66. The path-to-width ratio √66/7 exceeds one.",
+      "hint": "Draw the minimum-path and minimum-time headings separately; the current affects their ground tracks differently."
+    },
+    "note": "Only the magnitudes of the given perpendicular vectors are subsequently used as speeds. Distances in metres require the additional assumption that those speeds are in m/s.",
+    "source": "Mymensingh Board"
+  },
+  "15": {
+    "stem": "The three vectors @eq are stated to represent the sides of a triangle.",
+    "a": "abs",
+    "b": "ijk",
+    "c": {
+      "question": "Find the area of the parallelogram with adjacent sides A and B.",
+      "math": "\\Delta=|\\vec A\\times\\vec B|=\\sqrt{196+49+49}",
+      "solution": "A×B=(−14,−7,7), so the area is $7\\sqrt6$ square units.",
+      "hint": "Two adjacent sides span a parallelogram. Which product combines base and perpendicular height?"
+    },
+    "d": {
+      "question": "Can the stated triangle be right-angled?",
+      "math": "\\vec A\\cdot\\vec B=14,\\quad\\vec A\\cdot\\vec C=-4,\\quad\\vec B\\cdot\\vec C=-13",
+      "solution": "The three pairwise dot products are 14, −4 and −13. No pair is perpendicular. Moreover, the given components do not close a triangle; the premise is inconsistent.",
+      "hint": "At a right angle the adjacent sides have zero dot product. Test all three pairs."
+    },
+    "note": "The side vectors as printed do not close. None of the three pairwise dot products vanishes either.",
+    "source": "Mymensingh Board"
+  },
+  "16": {
+    "stem": "In a 4 km/h current, Sohel steers along AB at 8 km/h and reaches D directly opposite A in 10 min. Rohan steers along AD at 10 km/h but lands downstream at C.",
+    "a": "pos",
+    "b": "commute",
+    "c": {
+      "question": "Find Sohel’s resultant speed.",
+      "math": "R=\\sqrt{8^2-4^2}\\,\\mathrm{km/h}",
+      "solution": "Sohel cancels the current. His crossing speed is √(8²−4²)=4√3 km/h.",
+      "hint": "Sohel’s upstream component cancels the whole current. Use his remaining component."
+    },
+    "d": {
+      "question": "Is Rohan’s downstream distance DC equal to the width AD?",
+      "math": "AD=\\frac{10}{60}R,\\quad DC=4\\frac{AD}{10}",
+      "solution": "AD=(10/60)4√3 km. Rohan crosses in AD/10 hours and drifts DC=4AD/10. Thus DC is only 40% of the width.",
+      "hint": "Find AD using Sohel’s time. Rohan’s crossing time uses his own across-bank speed; apply the drift only for that time."
+    },
+    "figure": "From A, AB points upstream of AD, the perpendicular across the river. AC is the diagonal path downstream. DC measures drift along the far bank, not distance travelled by the boat.",
+    "note": "DC is the downstream component of Rohan’s displacement, not the length of his diagonal route AC.",
+    "source": "Rajshahi Board"
+  },
+  "17": {
+    "stem": "Three forces act at O on a particle initially at rest: 11 N towards +x, 22 N at 60° above −x, and 33 N at 30° to the left of −y.",
+    "a": "elastic",
+    "b": "anti",
+    "c": {
+      "question": "Find the resultant force component along OX.",
+      "math": "F_x=11+22\\cos120^\\circ+33\\cos240^\\circ=-16.5\\,\\mathrm N",
+      "solution": "The x component is 11−22 cos60°−33 sin30°=−16.5 N, i.e. 16.5 N west.",
+      "hint": "Take east as positive. Express all directions relative to +x before summing horizontal components."
+    },
+    "d": {
+      "question": "In which direction will the particle start moving?",
+      "math": "F_y=(22-33)\\sin60^\\circ,\\quad\\theta=180^\\circ+\\tan^{-1}|F_y/F_x|",
+      "solution": "The y component is 22 sin60°−33 cos30°≈−9.53 N. Both components are negative; the angle is 30° south of west, or 210° from +x.",
+      "hint": "Find the vertical component as well. The signs of both components determine the correct quadrant."
+    },
+    "figure": "Use O as the origin: F₁ lies on +x, F₂ in quadrant II, F₃ in quadrant III. The angles of the last two are measured from different axes.",
+    "note": "Use Fy/Fx for the slope and both component signs for the quadrant. The x component is −16.5 N and its absolute magnitude is 16.5 N.",
+    "source": "Rajshahi Board"
+  },
+  "18": {
+    "stem": "A boat travels at 20 km/h downstream and 10 km/h upstream. The river is 2 km wide.",
+    "a": "curl",
+    "b": "fixed18",
+    "c": {
+      "question": "In which direction should the boat head from A to reach B directly opposite?",
+      "math": "u=(20+10)/2,\\quad c=(20-10)/2,\\quad\\cos\\alpha=-c/u",
+      "solution": "Still-water speed is 15 and current speed 5 km/h. Solve 15 cos α+5=0: α≈109.47° from downstream.",
+      "hint": "Separate the still-water speed from the current using the two measured speeds."
+    },
+    "d": {
+      "question": "Would aiming straight across take more or less time?",
+      "math": "t_1=\\frac{2}{\\sqrt{15^2-5^2}},\\quad t_2=\\frac{2}{15}\\quad(\\mathrm h)",
+      "solution": "Direct landing takes 2/√200 h≈8.49 min. Aiming across takes 2/15 h=8 min and allows drift. It takes less time.",
+      "hint": "Distinguish a direct ground track from an initial heading perpendicular to the bank."
+    },
+    "figure": "The double-ended line AB spans the 2 km width. The speed needed for a crossing time is the velocity component parallel to AB.",
+    "note": "Part (b) treats r as a position vector; listing components alone does not specify a fixed tail. The unrounded direct crossing time is about 8.485 min.",
+    "source": "Dinajpur Board"
+  },
+  "19": {
+    "stem": "Given @eq.",
+    "a": "pos",
+    "b": "jcross",
+    "c": {
+      "question": "Find a so the field r is solenoidal.",
+      "math": "\\partial_x(ax)+\\partial_y y+\\partial_z2=a+1",
+      "solution": "Divergence is a+1. Set it to zero: a=−1.",
+      "hint": "Set the sum of matching component derivatives to the solenoidal condition."
+    },
+    "d": {
+      "question": "Is the field P×Q rotational or irrotational?",
+      "math": "\\vec P\\times\\vec Q=(-19,18,-4),\\quad\\nabla\\times(\\vec P\\times\\vec Q)=\\vec0",
+      "solution": "P and Q are constant, so every component of their cross product is constant. Its curl vanishes everywhere.",
+      "hint": "Check whether any component of P×Q actually depends on position."
+    },
+    "note": "A curl-free field need not be globally conservative on an arbitrary domain. Here the cross product is constant and is conservative as well.",
+    "source": "Dinajpur Board"
+  },
+  "20": {
+    "stem": "In triangle MNL let A=OL=(−1,−3,2), B=ON=(2,−2,−2) and C=OM perpendicular to both. P=NL, Q=LM and R=NM are directed sides.",
+    "a": "bound",
+    "b": "work",
+    "c": {
+      "question": "Find a unit vector along C.",
+      "math": "\\hat C=\\pm\\frac{\\vec A\\times\\vec B}{|\\vec A\\times\\vec B|}",
+      "solution": "A×B=(10,2,8). The two possible unit normals are ±(5,1,4)/√42; the book selects the negative sense for C.",
+      "hint": "Find both possible unit normals using A×B. Perpendicularity alone does not fix the sign."
+    },
+    "d": {
+      "question": "Use the diagram to verify P+Q=R.",
+      "math": "(\\vec A-\\vec B)+(\\vec C-\\vec A)=\\vec C-\\vec B",
+      "solution": "P=A−B and Q=C−A. Adding cancels A, giving C−B=R, the displacement from N to M.",
+      "hint": "Express each triangle side as the difference of two position vectors from O."
+    },
+    "figure": "Around the triangle, NL=P, LM=Q and NM=R. From the interior point O, the three arrows OL, ON and OM represent A, B and C respectively.",
+    "note": "Perpendicularity fixes the normal line but not the length or sign of C. The head-to-tail proof of (d) does not need the book’s extra assumption about that magnitude.",
+    "source": "Cumilla Board"
+  },
+  "21": {
+    "stem": "A bus travels at 4 m/s along the bank of a 1 km wide river. A person starting directly opposite it steers a boat at 6 m/s at 70° to the 2 m/s current to catch it.",
+    "a": "pos",
+    "b": "dotcross",
+    "c": {
+      "question": "Find the boat’s resultant speed.",
+      "math": "R=\\sqrt{(2+6\\cos70^\\circ)^2+(6\\sin70^\\circ)^2}",
+      "solution": "The components are (2+6 cos70°, 6 sin70°) m/s; their resultant is about 6.94 m/s.",
+      "hint": "Resolve the boat’s speed along and across the current, then add the current to only one component."
+    },
+    "d": {
+      "question": "Can the person catch the bus? Justify.",
+      "math": "t=\\frac{1000}{6\\sin70^\\circ},\\quad x_{\\rm boat}-x_{\\rm bus}=(2+6\\cos70^\\circ-4)t",
+      "solution": "Crossing takes about 177.36 s. The boat lands roughly 719 m downstream while the bus travels roughly 709 m. If the bus continues along that bank, the person can wait for it just ahead.",
+      "hint": "Compare how far the bus and the boat move downstream during the crossing."
+    },
+    "note": "The angle between nonzero vectors lies in [0°,180°]; 225° is not another solution to (b). Catching the bus assumes it continues along the bank towards the boat’s landing point.",
+    "source": "Cumilla Board"
+  },
+  "22": {
+    "stem": "Sujan heads along AB at 6 m/s. Kuber heads along AC at 5.5 m/s, making 120° with the current of 1.2 m/s along CB. AB spans the 400 m river.",
+    "a": "pos",
+    "b": "trolley",
+    "c": {
+      "question": "Find Kuber’s actual speed across the river relative to land.",
+      "math": "R=\\sqrt{5.5^2+1.2^2+2(5.5)(1.2)\\cos120^\\circ}",
+      "solution": "Adding the velocities gives $\\sqrt{5.5^2+1.2^2+2(5.5)(1.2)\\cos120^\\circ}\\approx5.01$ m/s.",
+      "hint": "The angle between the boat’s heading and the current is obtuse. Check the sign of the cross term in the squared speed."
+    },
+    "d": {
+      "question": "Who reaches the opposite bank first?",
+      "math": "\\frac{400}{6}<\\frac{400}{5.5\\sin120^\\circ}",
+      "solution": "Sujan takes 400/6≈66.7 s. Kuber takes 400/(5.5 sin120°)≈84 s. Sujan arrives first.",
+      "hint": "Both boats cross the same width; compare their perpendicular speed components."
+    },
+    "figure": "B is directly opposite A; C is upstream of B. Sujan aims along AB, Kuber along AC. The current runs from C towards B, at 120° to AC.",
+    "source": "Chattogram Board"
+  },
+  "23": {
+    "stem": "The points are P(2,−1,3), Q(3,−1,2) and R(1,−3,5).",
+    "a": "period",
+    "b": "fixed",
+    "c": {
+      "question": "Find the angle between PQ and PR.",
+      "math": "\\cos\\theta=\\frac{(1,0,-1)\\cdot(-1,-2,2)}{\\sqrt2\\cdot3}",
+      "solution": "PQ=(1,0,−1) and PR=(−1,−2,2). Their dot product is −3, so cos θ=−1/√2 and θ=135°.",
+      "hint": "Build both displacement vectors from the common vertex P."
+    },
+    "d": {
+      "question": "Are the position vectors of the three points coplanar?",
+      "math": "\\vec r_P\\cdot(\\vec r_Q\\times\\vec r_R)=-9",
+      "solution": "Their scalar triple product is −9, not zero. The three position vectors from the origin are not coplanar.",
+      "hint": "Use the triple product of OP, OQ and OR, not simply the fact that three endpoints define a triangle."
+    },
+    "note": "Three points always lie in a plane. The question instead tests three position vectors based at the common origin.",
+    "source": "Chattogram Board"
+  },
+  "24": {
+    "stem": "Given @eq.",
+    "a": "pos",
+    "b": "perpdot",
+    "c": {
+      "question": "Find div P at (−1,1,1).",
+      "math": "\\nabla\\cdot\\vec P=9y^2+8y",
+      "solution": "The divergence is $9y^2+8y$, which equals 17.",
+      "hint": "When differentiating a component, hold the other coordinates fixed."
+    },
+    "d": {
+      "question": "Is P irrotational? Verify.",
+      "math": "\\nabla\\times\\vec P=(2-2x,5-9x^2,2z-18xy)",
+      "solution": "The curl has components $(2-2x,5-9x^2,2z-18xy)$. It does not vanish identically, so the field is not irrotational.",
+      "hint": "Try the three curl components before deciding whether the whole field is irrotational."
+    },
+    "source": "Sylhet Board"
+  },
+  "25": {
+    "stem": "Two forces act at O. F₁ is 15 N at 30° above the negative x-axis; F₂ is 10 N at 30° above the positive x-axis.",
+    "a": "axes",
+    "b": "vecscalar",
+    "c": {
+      "question": "Express F₁ as a vector.",
+      "math": "\\vec F_1=15(\\cos150^\\circ\\hat i+\\sin150^\\circ\\hat j)\\,\\mathrm N",
+      "solution": "From +x the angle is 150°. The components are $(−15\\sqrt3/2,15/2)$ N.",
+      "hint": "F₁ is in quadrant II. Which component must be negative?"
+    },
+    "d": {
+      "question": "Are F₁+F₂ and F₁−F₂ perpendicular?",
+      "math": "(\\vec F_1+\\vec F_2)\\cdot(\\vec F_1-\\vec F_2)=225-100",
+      "solution": "The dot product of the sum and difference is 15²−10²=125 N², not zero.",
+      "hint": "Expand the dot product of the sum and difference; the mixed products cancel."
+    },
+    "figure": "Both forces start at O. The 10 N force is 30° above +x; the 15 N force is 30° above −x. Their horizontal components have opposite signs.",
+    "note": "The force components have units of N. The dot product in (d) has units of N².",
+    "source": "Jashore Board"
+  },
+  "26": {
+    "stem": "Two swimmers cross a 20 km wide river with an 8 km/h current. Both swim at 16 km/h. The first aims 10° upstream of AB (the width); the second aims 60° to the current.",
+    "a": "axes",
+    "b": "roller",
+    "c": {
+      "question": "The first swimmer aims along AC but lands at D. Find BD.",
+      "math": "BD=(8-16\\sin10^\\circ)\\frac{20}{16\\cos10^\\circ}\\,\\mathrm{km}",
+      "solution": "Time is 20/(16 cos10°) h. Downstream speed is 8−16 sin10°; multiplying gives about 6.63 km.",
+      "hint": "The 10° angle is measured from the width. Decide which component uses sine and which uses cosine."
+    },
+    "d": {
+      "question": "Which swimmer crosses first?",
+      "math": "t_1=\\frac{20}{16\\cos10^\\circ}<t_2=\\frac{20}{16\\sin60^\\circ}",
+      "solution": "The times are 1.27 h and 20/(16 sin60°)≈1.44 h respectively. The first swimmer arrives earlier.",
+      "hint": "The second swimmer’s 60° is measured from downstream, not from the width."
+    },
+    "figure": "AB spans the 20 km width. The first swimmer points 10° upstream of AB and drifts to D; the second points 60° to the downstream bank. Take care which axis defines each angle.",
+    "source": "Barishal Board"
+  },
+  "27": {
+    "stem": "Two swimmers race across a 1 km wide river in a 3 km/h current. Both swim at 6 km/h. The first makes 60° with the upstream direction; the second heads perpendicular to the current.",
+    "a": "spin",
+    "b": "zerowork",
+    "c": {
+      "question": "Find the first swimmer’s resultant velocity.",
+      "math": "(v_x,v_y)=(3-6\\cos60^\\circ,6\\sin60^\\circ)",
+      "solution": "The horizontal component is 3−6 cos60°=0. The resultant is 6 sin60°=3√3 km/h straight across.",
+      "hint": "Measure the first heading from downstream before adding the current."
+    },
+    "d": {
+      "question": "Which swimmer crosses first?",
+      "math": "t_1=\\frac{1}{3\\sqrt3}>\\frac16=t_2",
+      "solution": "Times are 1/(3√3) and 1/6 h. The second swimmer arrives earlier, though not directly opposite.",
+      "hint": "Use crossing components, not resultant speeds, to compare the times."
+    },
+    "note": "A zero downstream component means a resultant perpendicular to the current. There is no need to divide by zero to find its angle.",
+    "source": "Dhaka Board"
+  },
+  "28": {
+    "stem": "A car’s rear window slopes at 30° to its roof. Its velocity is (18,0); rain begins to fall at (0,−12).",
+    "a": "dew",
+    "b": "door",
+    "c": {
+      "question": "At what speed does rain strike the front glass relative to the car?",
+      "math": "\\vec v_{rc}=\\vec u-\\vec v=-18\\hat i-12\\hat j",
+      "solution": "Subtract the car velocity: relative velocity is (−18,−12), of magnitude 6√13≈21.63 in the given speed units.",
+      "hint": "Work in the car frame: subtract the entire car velocity vector from the rain velocity."
+    },
+    "d": {
+      "question": "Will the rear glass get wet? Analyse the geometry.",
+      "math": "\\tan^{-1}(12/18)>30^\\circ",
+      "solution": "The drops move backwards at 33.69° below horizontal, steeper than the 30° rear slope. An exposed rear surface can therefore receive drops.",
+      "hint": "Compare the downward slope of the relative rain path with the slope of the rear window."
+    },
+    "note": "The stem does not specify a speed unit. Front and rear glass have the same rain velocity relative to the car; incidence depends on the surface slope and shielding.",
+    "source": "Dhaka Board"
+  },
+  "29": {
+    "stem": "P=(5,3,−m) and Q=(1,1,4) are perpendicular. Their magnitudes represent the boat and current speeds respectively. The shortest crossing takes 2 min.",
+    "a": "plane",
+    "b": "rightcross",
+    "c": {
+      "question": "Find m.",
+      "math": "8-4m=0",
+      "solution": "P·Q=8−4m=0, hence m=2.",
+      "hint": "Multiply matching components and use the stated perpendicularity."
+    },
+    "d": {
+      "question": "Does a minimum-time crossing cover more distance than the width? Verify numerically.",
+      "math": "\\frac{S}{D}=\\frac{\\sqrt{38+18}}{\\sqrt{38}}",
+      "solution": "The speeds are √38 and √18. The direct crossing speed is √20; the minimum-time path-to-width ratio is √56/√38≈1.214. The route is longer.",
+      "hint": "Find the width from the direct-crossing time. Compare the diagonal path on the fastest crossing with that width."
+    },
+    "note": "The two-minute crossing time must be converted to units consistent with the chosen speed units. The path-to-width ratio is independent of those units.",
+    "source": "Mymensingh Board"
+  },
+  "30": {
+    "stem": "P=(5,3,−m) and Q=(1,1,4) are perpendicular. Their magnitudes represent the boat and current speeds respectively. The shortest crossing takes 2 min.",
+    "a": "plane",
+    "b": "volumechange",
+    "c": {
+      "question": "Find m.",
+      "math": "8-4m=0",
+      "solution": "P·Q=8−4m=0, hence m=2.",
+      "hint": "Take the dot product of P and Q and use the angular condition."
+    },
+    "d": {
+      "question": "Does a minimum-time crossing cover more distance than the width? Verify numerically.",
+      "math": "\\frac{S}{D}=\\frac{\\sqrt{38+18}}{\\sqrt{38}}",
+      "solution": "The speeds are √38 and √18. The direct crossing speed is √20; the minimum-time path-to-width ratio is √56/√38≈1.214. The route is longer.",
+      "hint": "Compare the ratios of ground speed to perpendicular speed for the two crossings."
+    },
+    "note": "The volume interpretation concerns the divergence of a fluid’s velocity field. Use consistent units when combining speeds and the two-minute time.",
+    "source": "Rajshahi Board"
+  },
+  "31": {
+    "stem": "Two boatmen start at A, each at 16 km/h relative to water. They aim 30° and 60° upstream of the perpendicular AB respectively. Width is 2 km; the current is 8 km/h.",
+    "a": "scalar",
+    "b": "recipline",
+    "c": {
+      "question": "Find the first boatman’s resultant velocity.",
+      "math": "(v_x,v_y)=(8-16\\sin30^\\circ,16\\cos30^\\circ)",
+      "solution": "The downstream component is 8−16 sin30°=0. The crossing speed is 16 cos30°=8√3 km/h.",
+      "hint": "Express the upstream component using the angle measured from AB."
+    },
+    "d": {
+      "question": "Which boatman travels the shorter distance?",
+      "math": "8-16\\sin60^\\circ\\ne0",
+      "solution": "The first travels exactly 2 km. The second has nonzero drift 8−16 sin60°, so his diagonal path is longer.",
+      "hint": "Calculate the net along-bank component of each boat; does either track have no drift?"
+    },
+    "figure": "AB runs straight across; the two headings lie 30° and 60° upstream of AB. Both boatmen’s horizontal components therefore oppose the current.",
+    "note": "The first resultant is 8√3 km/h (about 3.85 m/s), not 8 m/s.",
+    "source": "Dinajpur Board"
+  },
+  "32": {
+    "stem": "Given @eq.",
+    "a": "recip",
+    "b": "rollerpush",
+    "c": {
+      "question": "Project A along B.",
+      "math": "\\frac{3+4+3}{\\sqrt{1+4+9}}=\\frac{10}{\\sqrt{14}}",
+      "solution": "A·B=10 and the length of B is √14. The projection is 10/√14≈2.673.",
+      "hint": "The reference direction is B; which length should divide the dot product?"
+    },
+    "d": {
+      "question": "Are A, B and C coplanar?",
+      "math": "(3,2,1)\\cdot(-2,1,0)=-4",
+      "solution": "B×C=(−2,1,0); dotting this with A gives −4. Nonzero triple product rules out coplanarity.",
+      "hint": "Compute B×C and test whether A has a component along it."
+    },
+    "note": "Keeping the exact denominator √14 gives 2.673 for the projection, not 2.573.",
+    "source": "Cumilla Board"
+  },
+  "33": {
+    "stem": "A vehicle travels along riverside road AB (1.2 km) at 15 m/s and stops for 40 s at B. C is directly opposite B, 0.5 km away. Boat speed is 4 m/s and current speed is 2 m/s.",
+    "a": "tri",
+    "b": "trolley",
+    "c": {
+      "question": "What is the minimum crossing time?",
+      "math": "t_{\\min}=500/4=125\\,\\mathrm s",
+      "solution": "Aim perpendicular to the bank. The maximum crossing component is 4 m/s, so the minimum time is 500/4=125 s.",
+      "hint": "What heading gives the greatest possible component across BC?"
+    },
+    "d": {
+      "question": "If the boat starts from C when the vehicle is at A, can the passengers board it at B?",
+      "math": "t_{\\rm boat}=\\frac{500}{\\sqrt{16-4}}>\\frac{1200}{15}+40",
+      "solution": "The vehicle leaves after 1200/15+40=120 s. To land directly at B takes 500/√12≈144.3 s; even the minimum crossing time exceeds the deadline.",
+      "hint": "Add the stop time to the vehicle travel time. Compare with the time to reach B rather than just any point on the bank."
+    },
+    "figure": "AB is the road along one bank. B and C lie across the 0.5 km width from each other. The drawing describes two journeys with separate times.",
+    "note": "The departure time includes the 40 s stop. Compare it with the time to reach B itself, not merely the earliest time to reach the bank.",
+    "source": "Chattogram Board"
+  },
+  "34": {
+    "stem": "O is the origin. Position vectors point from O to P(2,−1,3) and Q(−2,2,1).",
+    "a": "grad",
+    "b": "worktorque",
+    "c": {
+      "question": "Find a unit vector parallel to PQ.",
+      "math": "\\hat u_{PQ}=\\frac{-4\\hat i+3\\hat j-2\\hat k}{\\sqrt{29}}",
+      "solution": "Q−P=(−4,3,−2); divide by √29 to obtain the required unit vector.",
+      "hint": "Subtract P from Q and normalize the resulting displacement."
+    },
+    "d": {
+      "question": "Is OPQ a right triangle?",
+      "math": "OP^2+OQ^2=23\\ne29",
+      "solution": "OP²=14, OQ²=9, PQ²=29. The sum 14+9 does not equal 29.",
+      "hint": "Check all three squared lengths, including the side that does not start at O."
+    },
+    "figure": "O is the origin. OP and OQ end at the given coordinates; subtract their components to obtain the displacement from P to Q.",
+    "note": "A gradient gives both the direction and the maximum rate of increase. For the triangle the squared side lengths are 14, 9 and 29.",
+    "source": "Sylhet Board"
+  },
+  "35": {
+    "stem": "Given @eq.",
+    "a": "pos",
+    "b": "sumdiff",
+    "c": {
+      "question": "Find the area of the quadrilateral formed by A and B as adjacent sides.",
+      "math": "|\\vec A\\times\\vec B|=\\sqrt{25+1+16}",
+      "solution": "The parallelogram area is the length of A×B=(−5,1,−4), namely √42 square units.",
+      "hint": "Treat the vectors as adjacent sides, not diagonals."
+    },
+    "d": {
+      "question": "Are the vectors perpendicular?",
+      "math": "\\vec A\\cdot\\vec B=2-2+3",
+      "solution": "A·B=2−2+3=3, so they are not perpendicular.",
+      "hint": "Test the sign and magnitude of their dot product."
+    },
+    "note": "The quadrilateral is the parallelogram spanned by the two given adjacent sides. Equal sum and difference as vectors is a stronger condition than equal lengths.",
+    "source": "Jashore Board"
+  },
+  "36": {
+    "stem": "Nahin and Jahin pull a stationary truck with two ropes at angle α. The truck moves towards Nahin, who asks Jahin to pull harder.",
+    "a": "curl",
+    "b": "closed",
+    "c": {
+      "question": "Show that equal pulls bisect the angle between the ropes.",
+      "math": "\\tan\\beta=\\frac{F\\sin\\alpha}{F+F\\cos\\alpha}=\\tan(\\alpha/2)",
+      "solution": "The equal pulls form adjacent sides of a rhombus. Its diagonal, the resultant, bisects the angle.",
+      "hint": "Construct the parallelogram of the equal pulls and compare the triangles on either side of the diagonal."
+    },
+    "d": {
+      "question": "How should they pull to maximize the resultant for a given effort?",
+      "math": "R^2=P^2+Q^2+2PQ\\cos\\alpha\\le(P+Q)^2",
+      "solution": "$R^2=P^2+Q^2+2PQ\\cos\\alpha$. For fixed forces cos α must be maximal: pull parallel in the same direction.",
+      "hint": "In the expression for R² only the angular term changes if the force magnitudes are fixed."
+    },
+    "note": "Exclude the degenerate case of equal and exactly opposite pulls when assigning a bisector direction: a zero resultant has none.",
+    "source": "Barishal Board"
+  },
+  "37": {
+    "stem": "O=(0,0,0), P=(2,4,2) and Q=(2,−4,−4).",
+    "a": "equal",
+    "b": "fieldgrad",
+    "c": {
+      "question": "Find the length of PQ.",
+      "math": "|\\overrightarrow{PQ}|=\\sqrt{0^2+(-8)^2+(-6)^2}",
+      "solution": "PQ=(0,−8,−6); its length is √100=10.",
+      "hint": "Compute the change in all three coordinates before taking the length."
+    },
+    "d": {
+      "question": "Are the position vectors OP and OQ perpendicular?",
+      "math": "(2,4,2)\\cdot(2,-4,-4)=-20",
+      "solution": "OP·OQ=4−16−8=−20. A nonzero dot product means the vectors are not perpendicular.",
+      "hint": "Keep both position vectors based at O when taking their dot product."
+    },
+    "source": "Dhaka Board"
+  },
+  "38": {
+    "stem": "Given the scalar and vector fields @eq.",
+    "a": "cg",
+    "b": "potential",
+    "c": {
+      "question": "Find grad p at (2,−1,−2).",
+      "math": "\\nabla p=(2y^4-2xz,8xy^3,-x^2)",
+      "solution": "The gradient is $(2y^4-2xz,8xy^3,-x^2)$; substitution gives (10,−16,−4).",
+      "hint": "Differentiate p before substituting numerical coordinates."
+    },
+    "d": {
+      "question": "Which field is solenoidal and which is irrotational?",
+      "math": "\\nabla\\cdot\\vec A=2+3-5,\\quad\\nabla\\times\\vec B=(0,3z^2-3z^2,6x-6x)",
+      "solution": "div A=2+3−5=0 throughout. The cyclic component differences for curl B cancel identically. A is solenoidal and B irrotational.",
+      "hint": "A divergence tests one condition; a curl tests the other. Decide which operation produces a scalar."
+    },
+    "note": "The statement that gravitational potential is negative assumes an isolated attractive field with zero at infinity. The sign changes with the reference choice.",
+    "source": "Sylhet Board"
+  },
+  "39": {
+    "stem": "A 1.5 km wide river flows at 4 m/s; a boat moves at 6 m/s relative to water. In diagram A it aims upstream and lands directly opposite. In B it aims across and drifts downstream.",
+    "a": "zero",
+    "b": "negvsrecip",
+    "c": {
+      "question": "Calculate the resultant speed in diagram A.",
+      "math": "R=\\sqrt{6^2-4^2}\\,\\mathrm{m/s}",
+      "solution": "The upstream component cancels 4 m/s. The crossing component is √(6²−4²)=√20≈4.47 m/s.",
+      "hint": "In sketch A the boat must spend part of its speed cancelling the current."
+    },
+    "d": {
+      "question": "Which crossing takes less time?",
+      "math": "t_a=1500/\\sqrt{20},\\quad t_b=1500/6",
+      "solution": "A takes 1500/√20≈335.4 s and B takes 1500/6=250 s. B is quicker.",
+      "hint": "Use the across-river component from each sketch and the same width of 1500 m."
+    },
+    "figure": "In the first sketch v points upstream and R points across; in the second v points across and R downstream of the perpendicular. Both sketches have the same current and width.",
+    "note": "The negative vector is opposite the original while the reciprocal has the original direction. Do not confuse their angles relative to the original with their angle to one another.",
+    "source": "Rajshahi Board"
+  },
+  "40": {
+    "stem": "Shanto’s college is directly across a 1 km wide river. Five minutes before class he aims his boat at 120° to the current, moving at 12 km/h relative to the water.",
+    "a": "spring",
+    "b": "sand",
+    "c": {
+      "question": "Determine the current speed for direct arrival.",
+      "math": "c=-12\\cos120^\\circ",
+      "solution": "To eliminate drift, current speed must be −12 cos120°=6 km/h.",
+      "hint": "A direct landing requires the horizontal component of the ground velocity to vanish."
+    },
+    "d": {
+      "question": "Can Shanto reach class on time?",
+      "math": "t=\\frac{60}{12\\sin120^\\circ}\\,\\mathrm{min}",
+      "solution": "Crossing takes 60/(12 sin120°)≈5.77 min. He misses the start.",
+      "hint": "The current cannot increase the perpendicular component. Convert the resulting time to minutes."
+    },
+    "note": "Finding the current speed assumes that the resultant is directed exactly towards the college. The definition of a spring constant applies within the linear elastic range.",
+    "source": "Chattogram Board"
+  },
+  "41": {
+    "stem": "A boat starts at A at 12 km/h on a river 4 km wide, with a 6 km/h current. A person at B directly opposite waits for 20 min from departure.",
+    "a": "surface",
+    "b": "nulldir",
+    "c": {
+      "question": "Find the resultant speed when the boat heads along AB.",
+      "math": "R=\\sqrt{12^2+6^2}",
+      "solution": "The perpendicular velocities give √(12²+6²)=6√5 km/h.",
+      "hint": "Treat aiming squarely across as the initial condition for this calculation."
+    },
+    "d": {
+      "question": "Can the boatman meet the waiting person at B?",
+      "math": "t_B=\\frac{60(4)}{\\sqrt{12^2-6^2}}\\,\\mathrm{min}",
+      "solution": "To land at B the effective crossing speed is √108 km/h. The time is about 23.1 min, so the person has left.",
+      "hint": "For a meeting at B, first change the heading to cancel drift. Then compare the arrival time with the deadline."
+    },
+    "figure": "AB is the width. The 12 km/h boat arrow points along AB, and the 6 km/h current along the bank. The meeting point B is fixed on land.",
+    "note": "Horizontal velocity cancellation determines the heading without assigning a numerical value to tan 90°.",
+    "source": "Sylhet Board"
+  },
+  "42": {
+    "stem": "From a car moving east at 40 km/h a driver sees a truck moving north at twice that speed. Take east as positive x and north as positive y.",
+    "a": "axiom",
+    "b": "worktorque",
+    "c": {
+      "question": "In what direction is the truck actually moving?",
+      "math": "\\vec v_T=\\vec v_{TC}+\\vec v_C=80\\hat j+40\\hat i",
+      "solution": "Add the car velocity to the relative truck velocity: (40,80) km/h. The direction is 63.43° north of east.",
+      "hint": "The truck’s apparent velocity is measured relative to the driver. Add back the driver’s ground velocity."
+    },
+    "d": {
+      "question": "Find a vector perpendicular to the plane of the two true velocities.",
+      "math": "\\vec v_C\\times\\vec v_T=3200\\hat k\\;(\\mathrm{km/h})^2",
+      "solution": "The car and truck velocities are in the xy-plane. Their cross product is (0,0,3200); the positive z unit vector is normal to the plane.",
+      "hint": "Apply a cross product to the ground velocities, not to the speed magnitudes."
+    },
+    "note": "The cross product of two velocities has squared-speed units. A unit normal gives a direction and is dimensionless.",
+    "source": "Dhaka Board"
+  },
+  "43": {
+    "stem": "Rahmat’s boat moves at 3 km/h in a 4 km/h current across a river 1.5 km wide. Aiming along AB leads to C. The diagram marks AC and AD at 30° to the bank on opposite sides.",
+    "a": "elastic",
+    "b": "inertia",
+    "c": {
+      "question": "Find the distance travelled along AC.",
+      "math": "AC=\\sqrt{1.5^2+(4\\cdot0.5)^2}",
+      "solution": "From the speeds, crossing time is 1.5/3=0.5 h and drift is 2 km, so AC=2.5 km. From the marked angle AC=1.5/sin30°=3 km. The data disagree.",
+      "hint": "Compute AC once using the given angle and once using the speeds. Do the source data agree?"
+    },
+    "d": {
+      "question": "If he aims along AD, can he reach B directly opposite?",
+      "math": "R_x=4+3\\cos150^\\circ\\ne0",
+      "solution": "Along AD the net downstream speed is 4+3 cos150°≈1.40 km/h, not zero. He cannot land at B.",
+      "hint": "For AD the upstream component must exactly cancel the river current."
+    },
+    "figure": "AB is perpendicular to the banks. AD slopes upstream and AC downstream, each marked at 30° to the bank. The printed angle and speed data do not all agree.",
+    "note": "The 30° marking predicts a different length from the given velocities. The discrepancy is in the source data, not simply rounding.",
+    "source": "Dhaka Board"
+  },
+  "44": {
+    "stem": "OACB is a parallelogram: OA=P, OB=Q, angle AOB=30°, with side lengths 5 and 3.",
+    "a": "line",
+    "b": "flux",
+    "c": {
+      "question": "Find the magnitude of P−Q.",
+      "math": "|\\vec P-\\vec Q|=\\sqrt{25+9-30\\cos30^\\circ}",
+      "solution": "The magnitude is √(25+9−30 cos30°)≈2.83.",
+      "hint": "Use the angle between P and Q in the cosine rule for their difference."
+    },
+    "d": {
+      "question": "Verify that the areas of triangles AOC and BOC sum to the parallelogram’s area.",
+      "math": "[AOC]=[BOC]=\\tfrac12(5)(3)\\sin30^\\circ",
+      "solution": "Area=5×3×sin30°=7.5. Diagonal OC divides it into equal triangles of 3.75 square units each.",
+      "hint": "What does a diagonal do to the area of a parallelogram? Verify using base and height."
+    },
+    "figure": "OA and OB are the adjacent sides. OC is their resultant and divides the parallelogram into triangles AOC and BOC.",
+    "note": "The squared magnitude contains 25+9, not 25−9. Area uses a cross product, not a vector sum.",
+    "source": "Mirzapur Cadet College, Tangail"
+  },
+  "45": {
+    "stem": "A boat heads perpendicular to the banks at 10 m/s relative to water. The river is 400 m wide and flows at 2 m/s.",
+    "a": "zero",
+    "b": "pole",
+    "c": {
+      "question": "Find the time to cross.",
+      "math": "t=400/10=40\\,\\mathrm s",
+      "solution": "Only the 10 m/s component covers the width. Time=400/10=40 s.",
+      "hint": "The perpendicular component is already known; the current acts along the shore."
+    },
+    "d": {
+      "question": "How far and in what direction from A will the boat land?",
+      "math": "AC=\\sqrt{400^2+80^2},\\quad\\tan\\theta=400/80",
+      "solution": "Drift is 2×40=80 m. AC=√(400²+80²)≈408 m at arctan(400/80)≈78.69° to the downstream bank.",
+      "hint": "Calculate drift over the time found in (c). Combine drift and width as perpendicular displacements."
+    },
+    "figure": "A is the starting point, B directly opposite it, C downstream. The angle θ is measured between AC and the bank, not between AC and AB.",
+    "note": "The angle follows from arctan(5). A balancing pole need not lower the centre of gravity; increasing rotational inertia is an independent benefit.",
+    "source": "Mymensingh Girls’ Cadet College"
+  },
+  "46": {
+    "stem": "Let $\\vec r=(x,y,z)$, $r=\\lVert\\vec r\\rVert$ and let $\\nabla$ be the Cartesian differential operator.",
+    "a": "flow",
+    "b": "anti",
+    "c": {
+      "question": "Find $\\nabla(1/r)$.",
+      "math": "\\nabla(1/r)=-\\vec r/r^3",
+      "solution": "Differentiate $(x^2+y^2+z^2)^{-1/2}$ componentwise to obtain $-\\vec r/r^3$ for r≠0.",
+      "hint": "Write 1/r as a power of x²+y²+z² before differentiating."
+    },
+    "d": {
+      "question": "Find the curl of $\\vec r/r^2$ and classify the field.",
+      "math": "\\nabla\\times(\\vec r/r^2)=\\nabla\\times\\nabla\\ln r=\\vec0\\quad(r>0)",
+      "solution": "The field is the gradient of ln r away from the origin; its curl is therefore zero and it is irrotational there.",
+      "hint": "Can the field be expressed as a gradient away from the origin?"
+    },
+    "source": "Rajshahi Cadet College"
+  },
+  "47": {
+    "stem": "The position vectors of A, B and C are (1,2,−1), (3,−1,2) and (2,5,−4).",
+    "a": "pos",
+    "b": "flux",
+    "c": {
+      "question": "Find the angle between AB and AC.",
+      "math": "\\cos\\theta=\\frac{-16}{\\sqrt{22}\\sqrt{19}}",
+      "solution": "AB=(2,−3,3), AC=(1,3,−3). Their dot product is −16. Divide by √22 times √19 and take arccos: about 141.5°.",
+      "hint": "Both arrows must begin at A. Find their dot product and their two lengths."
+    },
+    "d": {
+      "question": "Are the points collinear or merely coplanar?",
+      "math": "(2,-3,3)\\times(1,3,-3)=(0,9,9)\\ne\\vec0",
+      "solution": "The two displacement vectors are not proportional, so the points are not collinear. Three noncollinear points determine a plane.",
+      "hint": "Check if one displacement is a scalar multiple of the other."
+    },
+    "note": "AB and AC start at the same vertex. The nonzero cross product excludes collinearity; the three points still determine a plane.",
+    "source": "Joypurhat Girls’ Cadet College"
+  },
+  "48": {
+    "stem": "Consider the scalar field φ and vector field A: @eq.",
+    "a": "cg",
+    "b": "terminal",
+    "c": {
+      "question": "Find curl A at (1,−1,1).",
+      "math": "\\nabla\\times\\vec A=(5xz^2+3x^2y,4xy^2-5yz^2,-14xyz)",
+      "solution": "Take the cyclic differences of component derivatives before substituting. The three components at the point are (2,9,14).",
+      "hint": "Write the three cyclic differences of derivatives; substitute the point only afterwards."
+    },
+    "d": {
+      "question": "Use these fields to illustrate conversion between scalar and vector fields.",
+      "math": "\\nabla\\cdot\\vec A=4y^2z-3x^2z+10xyz",
+      "solution": "The vector grad φ is $(6xyz+4yz,3x^2z+4xz+2z^2,3x^2y+4xy+4yz)$. The scalar div A is $4y^2z-3x^2z+10xyz$.",
+      "hint": "Choose one operator for φ and a different operator for A, paying attention to the output type."
+    },
+    "note": "φ and A are fields, not differential operators. A centre of gravity can lie outside the material of a body, as for a ring.",
+    "source": "Rangpur Cadet College"
+  },
+  "49": {
+    "stem": "Soumik sees rain fall vertically at 6 km/h. A pedestrian walks at 4 km/h and a cyclist travels at 8 km/h, holding their umbrellas at different angles.",
+    "a": "humidity",
+    "b": "centraltime",
+    "c": {
+      "question": "At what angle should the pedestrian hold the umbrella?",
+      "math": "\\tan\\theta_w=4/6",
+      "solution": "Relative rain has a backward component of 4 and a downward component of 6 km/h. Tilt forwards by arctan(4/6)≈33.69° from vertical.",
+      "hint": "In the pedestrian’s frame the horizontal rain component has the opposite sign to walking velocity."
+    },
+    "d": {
+      "question": "Verify that the cyclist needs a different angle.",
+      "math": "\\tan\\theta_c=8/6",
+      "solution": "The cyclist must tilt by arctan(8/6)≈53.13°. The angles differ because the horizontal relative speeds differ.",
+      "hint": "Repeat the component ratio with the cyclist’s speed, keeping the same vertical component."
+    },
+    "note": "Both umbrella angles are measured forwards from the vertical. Relative humidity expressed as a percentage includes a factor of 100.",
+    "source": "Rangpur Cadet College"
+  },
+  "50": {
+    "stem": "A farmer’s parallelogram has adjacent sides P=(4,−4,1) and Q=(2,−2,−1). Someone plans a three-dimensional frame with A=(3,−4,5), B=(2,−1,1), C=(1,2,−3).",
+    "a": "curl",
+    "b": "fieldgrad",
+    "c": {
+      "question": "Find the land area using its diagonals.",
+      "math": "\\Delta=\\tfrac12|(\\vec P+\\vec Q)\\times(\\vec P-\\vec Q)|",
+      "solution": "The diagonals are (6,−6,0) and (2,−2,2). Half the magnitude of their cross product is 6√2 square units.",
+      "hint": "Form the two diagonals P+Q and P−Q. Their cross product gives twice the area."
+    },
+    "d": {
+      "question": "Can the proposed frame span three dimensions?",
+      "math": "(3,-4,5)\\cdot(1,7,5)=0",
+      "solution": "B×C=(1,7,5) and A·(B×C)=3−28+25=0. The volume vanishes; the frame is planar.",
+      "hint": "A frame with volume needs more than three nonzero edge lengths. Test the scalar triple product."
+    },
+    "note": "The exact area is 6√2 square units. A zero scalar triple product gives zero volume for the proposed adjacent edges.",
+    "source": "Cumilla Cadet College"
+  },
+  "51": {
+    "stem": "A delivery drone flies from warehouse A(2,3,1) to customer B(8,7,5), via rooftop checkpoint C(5,5,3).",
+    "a": "cross",
+    "b": "boats",
+    "c": {
+      "question": "Find the angle between AC and CB.",
+      "math": "\\overrightarrow{AC}=\\overrightarrow{CB}=(3,2,2)",
+      "solution": "AC=CB=(3,2,2). The vectors have the same direction: θ=0°.",
+      "hint": "Are the displacements from A to C and from C to B proportional?"
+    },
+    "d": {
+      "question": "At a constant 10 m/s is travelling via C faster than flying directly from A to B?",
+      "math": "t_{ACB}=\\frac{2\\sqrt{17}}{10}=t_{AB}",
+      "solution": "C is the midpoint of AB. Both routes cover 2√17 m in 2√17/10 s; neither is faster.",
+      "hint": "Compare the sum of the segment lengths with the direct distance before dividing by speed."
+    },
+    "note": "C is exactly the midpoint of AB. With these coordinates the alleged detour does not actually bend around the building.",
+    "source": "Barishal Cadet College"
+  },
+  "52": {
+    "stem": "On a 1.5 km wide river with current speed 9 m/s a boat heads at α to the current and travels directly across at a ground speed of 12 m/s.",
+    "a": "torque",
+    "b": "conserve",
+    "c": {
+      "question": "Calculate α.",
+      "math": "u=\\sqrt{9^2+12^2}=15,\\quad\\cos\\alpha=-9/15",
+      "solution": "The boat’s own velocity is (−9,12), with length 15. Thus cos α=−9/15 and α≈126.87°.",
+      "hint": "Draw the known perpendicular ground velocity and subtract the current to recover the boat’s heading."
+    },
+    "d": {
+      "question": "Would heading perpendicular to the bank take more or less time?",
+      "math": "1500/12-1500/15=25\\,\\mathrm s",
+      "solution": "Direct landing takes 1500/12=125 s. Heading perpendicular takes 1500/15=100 s: 25 s less.",
+      "hint": "Use the same width for both crossings but not the same perpendicular component."
+    },
+    "note": "Aiming straight across and travelling straight across are different. In (b), it is the work done by a conservative force that is path independent.",
+    "source": "RAJUK Uttara Model College, Dhaka"
+  },
+  "53": {
+    "stem": "P, Q and R have magnitudes 3, 4 and 5 respectively, and P+Q+R=0.",
+    "a": "hand",
+    "b": "vectorlaw",
+    "c": {
+      "question": "Find Q·R.",
+      "math": "2\\vec Q\\cdot\\vec R=P^2-Q^2-R^2",
+      "solution": "Squaring P=−(Q+R) gives 9=16+25+2Q·R. Hence Q·R=−16.",
+      "hint": "Rearrange the closed-vector equation to isolate P, then square using the dot product."
+    },
+    "d": {
+      "question": "Can the magnitude of R×(P×Q) be determined? Show how.",
+      "math": "|\\vec R\\times(\\vec P\\times\\vec Q)|=5(3)(4)=60",
+      "solution": "Since 3²+4²=5², P and Q are perpendicular; their cross product has length 12. R lies in their plane, so it is perpendicular to P×Q. The required magnitude is 5×12=60.",
+      "hint": "Use the given side lengths to test the angle between P and Q. Where does R lie relative to P×Q?"
+    },
+    "note": "Part (d) asks for magnitude, not components. The triple-product identity would give the vector −16P+9Q.",
+    "source": "Notre Dame College, Dhaka"
+  },
+  "54": {
+    "stem": "A solid cylinder rolls down an incline. Calipers give a main-scale reading of 4.2 cm and Vernier coincidence 8, least count 0.01 cm. Its angular velocity is (2,−3,1) rad/s and radius vector (1,−2,2) m.",
+    "a": "pitch",
+    "b": "anti",
+    "c": {
+      "question": "Find the diameter and relative error in volume, taking the height of 10 cm as exact.",
+      "math": "D=4.2+8(0.01),\\quad\\frac{\\Delta V}{V}\\approx2\\frac{\\Delta D}{D}",
+      "solution": "Diameter=4.2+8×0.01=4.28 cm. Since volume is proportional to diameter squared, relative uncertainty ≈2×0.01/4.28≈0.00467 (0.47%).",
+      "hint": "Combine the two instrument readings. With exact height, how does volume depend on diameter?"
+    },
+    "d": {
+      "question": "Find the linear velocity and show it is perpendicular to the radius vector.",
+      "math": "\\vec v=\\vec\\omega\\times\\vec r=(-4,-3,-1),\\quad\\vec v\\cdot\\vec r=0",
+      "solution": "The cross product ω×r=(−4,−3,−1) m/s. Its dot product with r is −4+6−2=0.",
+      "hint": "Calculate ω×r in that order, then dot the result with r."
+    },
+    "note": "With exact height and diameter uncertainty 0.01 cm, first-order relative volume uncertainty is approximately 0.4673%.",
+    "source": "Holy Cross College, Dhaka"
+  },
+  "55": {
+    "stem": "A boat crosses a 360 m wide river from A and reaches C. Boat speed is 10 m/s, current speed 3 m/s. The diagram marks 37° to the bank; B is directly opposite A.",
+    "a": "curl",
+    "b": "cirvelocity",
+    "c": {
+      "question": "Calculate BC along the far bank.",
+      "math": "BC=\\frac{360(3+10\\cos37^\\circ)}{10\\sin37^\\circ}",
+      "solution": "Interpreting 37° as the heading relative to water, time=360/(10 sin37°) s. Multiply by 3+10 cos37° to get BC≈657.2 m.",
+      "hint": "Use the 37° heading to get crossing time. Does the current contribute to BC or to the width?"
+    },
+    "d": {
+      "question": "How should the boatman steer to reach B?",
+      "math": "3+10\\cos\\alpha=0",
+      "solution": "To cancel the current choose α with 10 cos α=−3: α≈107.46° from downstream.",
+      "hint": "Set the net downstream component to zero, preserving the sign of the upstream term."
+    },
+    "figure": "A and B are directly opposite; BC is the distance along the far bank. The printed solution reads 37° as the heading of the boat relative to water.",
+    "note": "The diagram can also be read as a ground-track angle. The printed numerical result assumes 10 m/s and 37° refer to motion relative to water.",
+    "source": "Dhaka College"
+  },
+  "56": {
+    "stem": "Three students must reach B from O across a 2 km wide river within 25 min. Two boats aim straight across and land at C. The first student walks to B at 1.6 m/s; the second rows upstream from C to B. The third aims upstream along OA to land at B. Downstream and upstream speeds are 15 and 5 km/h.",
+    "a": "disp",
+    "b": "unequal",
+    "c": {
+      "question": "Calculate BC.",
+      "math": "BC=5(2/10)\\,\\mathrm{km}",
+      "solution": "The boat and current speeds are 10 and 5 km/h. Crossing time is 2/10 h, so BC=1 km.",
+      "hint": "Infer both still-water and current speeds from the upstream and downstream values."
+    },
+    "d": {
+      "question": "Can all three students reach class on time?",
+      "math": "(t_1,t_2,t_3)\\approx(22.42,24,13.86)\\,\\mathrm{min}",
+      "solution": "First: 12 min plus 1000/1.6 s≈22.42 min. Second: 12 min plus 1/5 h=24 min. Third: 2/√75 h≈13.86 min. All arrive within 25 min.",
+      "hint": "Separate the crossing time from each student’s extra walking or rowing time."
+    },
+    "figure": "OB runs directly across. Boats aiming along OB drift to C. A boat aiming upstream along OA can instead land at B.",
+    "note": "Ignore time needed to turn the boats or to disembark. In (b), unequal means unequal magnitudes, not merely unequal vectors.",
+    "source": "Adamjee Cantonment College, Dhaka"
+  },
+  "57": {
+    "stem": "A boat sets out at 120° to the 3 km/h current of a river 5 km wide. It lands 722 m from the point directly opposite.",
+    "a": "spin",
+    "b": "friction",
+    "c": {
+      "question": "How long would a direct crossing take?",
+      "math": "t=\\frac{5}{\\sqrt{u^2-3^2}}\\,\\mathrm h",
+      "solution": "Using the speed found in (d), the direct crossing component is √(4.80²−3²)≈3.75 km/h. Time is about 1.33 h.",
+      "hint": "Use the speed from part (d), not the original 120° heading, for a direct landing."
+    },
+    "d": {
+      "question": "Find the boat speed consistent with the stated landing position.",
+      "math": "u=\\frac{15}{2.5+0.722\\sin120^\\circ}\\,\\mathrm{km/h}",
+      "solution": "Taking the displacement to be downstream as in the printed solution, $0.722=(3+u\\cos120^\\circ)5/(u\\sin120^\\circ)$. Thus u≈4.80 km/h.",
+      "hint": "The ratio of downstream offset to width equals the ratio of the two ground velocity components."
+    },
+    "note": "The landing description is ambiguous. The calculation uses a 0.722 km downstream offset. Squaring 4.8 gives 23.04, not 64.",
+    "source": "BAF Shaheen College, Tejgaon, Dhaka"
+  },
+  "58": {
+    "stem": "Kuber sets out along OA at 12 km/h across a 10 km wide river with a 4 km/h current. After 10 min a radio warning gives him 30 min to reach safety. He raises the sail, adding 40% of a 20 km/h wind along OA. Wind effects were negligible before that.",
+    "a": "curl",
+    "b": "fixed",
+    "c": {
+      "question": "Without the sail at what angle would he reach the far bank?",
+      "math": "\\tan\\theta=12/4",
+      "solution": "With across and downstream components 12 and 4, the direction is arctan(12/4)=71.57° to the current.",
+      "hint": "Before raising the sail, combine the current with the perpendicular rowing speed."
+    },
+    "d": {
+      "question": "Can he reach safety by the deadline?",
+      "math": "t_{\\rm after}=\\frac{10-12(10/60)}{12+0.4(20)}\\,\\mathrm h",
+      "solution": "He covers 2 km across in the first 10 min. The remaining 8 km at 12+0.4×20=20 km/h takes 24 min, less than the remaining 30 min. This establishes the time to reach the bank; the exact safe landing must also match the downstream drift.",
+      "hint": "Split the trip at the radio warning. Apply the wind contribution only to the remaining width."
+    },
+    "figure": "OA crosses the 10 km width. The safe landing is marked downstream on the opposite bank. Raising the sail increases the across-bank component in the stated model.",
+    "note": "The timing shows that the boat can reach the far bank. Reaching any particular marked safe landing also requires its position to agree with the downstream drift.",
+    "source": "Milestone College, Dhaka"
+  },
+  "59": {
+    "stem": "Given @eq.",
+    "a": "weight",
+    "b": "orbit",
+    "c": {
+      "question": "Find the angle between A and B.",
+      "math": "\\cos\\theta=\\frac{2+2-3}{\\sqrt{14}\\sqrt6}",
+      "solution": "A·B=1, so cos θ=1/√84 and θ≈83.74°.",
+      "hint": "Compare A·B with the product of their lengths."
+    },
+    "d": {
+      "question": "Can these three vectors serve as the edges of a rectangular solid?",
+      "math": "\\vec A\\cdot\\vec B=1\\ne0",
+      "solution": "Adjacent edges of a rectangular solid must be pairwise perpendicular. A·B is nonzero, which already rules this out.",
+      "hint": "One nonperpendicular pair is enough to exclude a rectangular solid."
+    },
+    "note": "Satellite speed at a given circular orbital radius does not specify velocity direction. The rectangular-solid test assumes the vectors are adjacent edges.",
+    "source": "Government Science College, Dhaka"
+  },
+  "60": {
+    "stem": "A car travels at 4.62 m/s towards v; the wind blows in the opposite direction u. Rain falls vertically downwards towards M at 8 m/s before allowing for wind.",
+    "a": "polar",
+    "b": "fan",
+    "c": {
+      "question": "Explain with a diagram why rain hits the front window but not the rear in this setup.",
+      "math": "\\vec v_{rc}=\\vec v_{\\rm rain}+\\vec v_{\\rm wind}-\\vec v_{\\rm car}",
+      "solution": "Subtract the car velocity from the ground velocity of the rain. The relative horizontal component points backwards and the vertical component down: rain approaches the front.",
+      "hint": "Draw three separate arrows for the falling rain, the wind and the car’s motion."
+    },
+    "d": {
+      "question": "Will holding an umbrella at 40° from vertical protect a person on the roof?",
+      "math": "\\theta=\\tan^{-1}\\frac{4.62+2}{8}",
+      "solution": "The book assumes a headwind of 2 m/s, a value missing from the stem. Then the tilt is arctan((4.62+2)/8)≈39.6°, close to 40°. Without wind speed a unique angle cannot be calculated.",
+      "hint": "Check which wind speed is actually given. The direction alone does not determine the apparent angle."
+    },
+    "figure": "The car moves towards v, the wind towards u and the rain downwards towards m. Resolve velocities in the car’s frame before judging the incident angle.",
+    "note": "The wind speed of 2 m/s used to obtain 39.6° is additional information from the answer, not a stated datum. Correct relative velocity subtracts the car velocity.",
+    "source": "BCIC College, Dhaka"
+  },
+  "61": {
+    "stem": "Black, blue and red marbles on a flat table have velocities (2,1,−1), (3,−2,−4) and (1,−3,5) respectively and collide.",
+    "a": "epoch",
+    "b": "centralwork",
+    "c": {
+      "question": "Explain the impulse if the red marble stops after collision.",
+      "math": "\\vec J_3=m_3(\\vec0-\\vec v_3)",
+      "solution": "If it stops, its change in momentum is zero minus its initial momentum. The net impulse must therefore be equal and opposite to its initial momentum.",
+      "hint": "Write the impulse as the change from initial to final momentum for the red marble."
+    },
+    "d": {
+      "question": "Can the marbles remain on a flat table? Examine the stated velocity data.",
+      "math": "(\\vec v_1\\times\\vec v_2)\\cdot\\vec v_3=-56",
+      "solution": "The scalar triple product of the given velocities is −56, not zero. They cannot even describe three initial velocities confined to one plane. The final velocities cannot be deduced from these inconsistent data alone.",
+      "hint": "Test the flat-table assumption for the initial velocities before predicting the final motion."
+    },
+    "note": "The triple product tests the initial velocities, not the individual final velocities. Momentum conservation alone cannot prove where each marble goes after the collision.",
+    "source": "BCIC College, Dhaka"
+  },
+  "62": {
+    "stem": "P=(5,3,−m) and Q=(1,1,4) are perpendicular. Their magnitudes represent the boat and current speeds respectively. The shortest crossing takes 2 min.",
+    "a": "torque",
+    "b": "momentumreading",
+    "c": {
+      "question": "Find m.",
+      "math": "8-4m=0",
+      "solution": "P·Q=8−4m=0, hence m=2.",
+      "hint": "Take the dot product using the unknown z component."
+    },
+    "d": {
+      "question": "Does a minimum-time crossing cover more distance than the width? Verify numerically.",
+      "math": "D=120\\sqrt{20}\\,\\mathrm m,\\quad S=D\\sqrt{56/38}\\quad (v\\text{ in m/s})",
+      "solution": "The speeds are √38 and √18. The direct crossing speed is √20; the minimum-time path-to-width ratio is √56/√38≈1.214. The route is longer.",
+      "hint": "Convert two minutes to seconds if using m/s. Distinguish minimum-time heading from minimum-path heading."
+    },
+    "note": "Angular momentum has units kg m²/s, not kg m²/s². If the speed components are in m/s, the two-minute direct crossing gives a width of about 536.66 m.",
+    "source": "Dhaka Imperial College"
+  },
+  "63": {
+    "stem": "Boat speeds downstream and upstream are 18 and 8 km/h. The river is 3 km wide. One boat heads for the opposite point. A second boat of equal speed is described as heading at 100° to the upstream direction.",
+    "a": "torque",
+    "b": "gravitywork",
+    "c": {
+      "question": "Which direction gives a direct landing?",
+      "math": "u=(18+8)/2,\\quad c=(18-8)/2",
+      "solution": "Boat speed is (18+8)/2=13 km/h; current speed is 5 km/h. Hence α=arccos(−5/13)≈112.62° to downstream.",
+      "hint": "Add and subtract the measured velocities, then find the heading that cancels the current."
+    },
+    "d": {
+      "question": "Calculate the downstream displacement for the minimum-time crossing.",
+      "math": "x=5(3/13)\\,\\mathrm{km}",
+      "solution": "Minimum time requires aiming perpendicular to the bank, regardless of the separately stated 100° heading. Time=3/13 h and drift=5×3/13≈1.15 km.",
+      "hint": "For minimum time use the entire boat speed across the width; calculate downstream drift over that interval."
+    },
+    "note": "The still-water speed is 13 km/h. The heading for a direct landing is measured from downstream; a fixed heading 100° to upstream is not the minimum-time heading.",
+    "source": "Safiuddin Sarker Academy and College, Gazipur"
+  },
+  "64": {
+    "stem": "A=(2,2,−1) and B=(6,−3,2) represent two sides of a parallelogram. In OPQR, OP=A, OR=B and OQ=C is the diagonal.",
+    "a": "dof",
+    "b": "gas",
+    "c": {
+      "question": "Find the scalar projection of B onto A.",
+      "math": "\\mathrm{comp}_A B=\\frac{12-6-2}{3}",
+      "solution": "A·B=12−6−2=4 and A has length 3. The projection is 4/3.",
+      "hint": "A is the reference direction. Normalize it before taking its dot product with B."
+    },
+    "d": {
+      "question": "Can A and B be adjacent sides of a parallelogram?",
+      "math": "\\vec A\\times\\vec B=(1,-10,-18)\\ne\\vec0",
+      "solution": "Yes: both are nonzero and neither is a scalar multiple of the other. Their cross product is nonzero, so they enclose a nonzero area.",
+      "hint": "Adjacent sides need not be perpendicular, but they must span a nonzero area."
+    },
+    "figure": "OP and OR are adjacent sides; OQ is the diagonal. The marked angles α and β separate the diagonal from those two sides.",
+    "note": "Per molecule the mean translational energy is 3kT/2. The corresponding total for one mole is 3RT/2, not the mean energy of a single molecule.",
+    "source": "Abdul Kadir Mollah City College, Narsingdi"
+  },
+  "65": {
+    "stem": "Given $\\vec P=(2,2,-1)$ and $\\vec Q=(2,2,a)$.",
+    "a": "zero",
+    "b": "flux",
+    "c": {
+      "question": "Find the angle between P and the positive x-axis.",
+      "math": "\\cos\\theta_x=2/3",
+      "solution": "The direction cosine is $P_x/\\lVert P\\rVert=2/3$, so the angle is about 48.19°.",
+      "hint": "Compare the x component with the full magnitude of P."
+    },
+    "d": {
+      "question": "Can the scalar product equal the magnitude of the cross product? Find the possible values of a.",
+      "math": "8-a=2\\sqrt2\\,|a+1|",
+      "solution": "Solve $8-a=2\\sqrt2\\,\\lvert a+1\\rvert$. The two branches give $a=(8-2\\sqrt2)/(1+2\\sqrt2)$ or $a=(8+2\\sqrt2)/(1-2\\sqrt2)$. Both satisfy the original equation.",
+      "hint": "Take the magnitude of the cross product before equating it to the scalar product."
+    },
+    "source": "Ghatail Cantonment Public School and College, Tangail"
+  },
+  "66": {
+    "stem": "Jamal lives at A and works at D. B is directly opposite A, and BD is 150 m downstream. He sets out at 10 m/s at 60° to upstream; the river flows at 6 m/s. His deadline is 5 min.",
+    "a": "osc",
+    "b": "shm",
+    "c": {
+      "question": "How far does Jamal’s boat travel across the river?",
+      "math": "v_x=6+10\\cos120^\\circ,\\quad v_y=10\\sin120^\\circ",
+      "solution": "Net downstream speed is 6−10 cos60°=1 m/s; across speed is 10 sin60°. Time=150/1=150 s, so the path is 150√76≈1308 m.",
+      "hint": "BD is the downstream drift, not the width. Use the along-bank component to obtain the time."
+    },
+    "d": {
+      "question": "Does he reach his office within five minutes?",
+      "math": "t=150/v_x=150\\,\\mathrm s",
+      "solution": "150 s=2.5 min, less than the five-minute allowance.",
+      "hint": "Compare the time corresponding to that drift with five minutes in the same units."
+    },
+    "figure": "A is Jamal’s home. B is directly opposite A and D is his office, 150 m downstream of B. The horizontal component determines the time needed to cover BD.",
+    "note": "The downstream component is 1 m/s, the across component 5√3 m/s. The resultant is inclined about 6.59° from the perpendicular to the bank.",
+    "source": "Notre Dame College, Mymensingh"
+  },
+  "67": {
+    "stem": "A river flows at 3 km/h. A boat moving at 5 km/h relative to water takes 6 min to land directly opposite. Another boat aims along AB at 6 km/h and reaches C.",
+    "a": "unlike",
+    "b": "jicross",
+    "c": {
+      "question": "Find the river width.",
+      "math": "AB=\\sqrt{5^2-3^2}(6/60)",
+      "solution": "The direct crossing speed is √(25−9)=4 km/h; width=4×6/60=0.4 km.",
+      "hint": "For the first direct crossing the upstream component cancels the current. Use the remaining component to recover width."
+    },
+    "d": {
+      "question": "Determine the distance AC.",
+      "math": "AC=\\sqrt{0.4^2+(3\\cdot0.4/6)^2}",
+      "solution": "Time=0.4/6 h and drift=0.2 km. AC=√(0.4²+0.2²)≈0.447 km.",
+      "hint": "On the second trip AB is the heading, not the ground track. Add drift geometrically to AB."
+    },
+    "figure": "AB shows the width; AC is the diagonal ground path, and BC is the drift. The boat’s heading and its actual direction need not coincide.",
+    "note": "Clockwise and counterclockwise depend on the viewing side. In right-handed Cartesian axes the order of the cross product fixes its sign unambiguously.",
+    "source": "Cantonment Public School and College Momenshahi, Mymensingh"
+  },
+  "68": {
+    "stem": "A boat sets off across a river at 12 m/s; the current is 5 m/s. Wind-driven rain falls at 8 m/s at 60° to the resultant velocity of the boat and current.",
+    "a": "ineffective",
+    "b": "birdturn",
+    "c": {
+      "question": "Find the rain velocity relative to the boatman.",
+      "math": "\\vec v_{rb}=(8\\cos60^\\circ-13,-8\\sin60^\\circ)",
+      "solution": "The boat’s ground speed is 13 m/s. In its vertical plane of motion the relative rain components are 8 cos60°−13=−9 and −8 sin60°≈−6.93 m/s. Relative speed is about 11.36 m/s.",
+      "hint": "Compute the boat’s ground speed before subtracting it from the rain velocity."
+    },
+    "d": {
+      "question": "Will an umbrella tilted at 45° to vertical align with the apparent rain?",
+      "math": "\\theta=\\tan^{-1}\\frac{9}{8\\sin60^\\circ}",
+      "solution": "The required forward tilt is arctan(9/6.93)≈52.4°. A 45° tilt does not point directly into the rain.",
+      "hint": "Compare the ratio of apparent horizontal to downward rain speed with tan 45°."
+    },
+    "note": "In this problem “ineffective vector” means the null vector. The numerical rain-angle solution assumes the rain lies in the vertical plane of the boat’s ground track.",
+    "source": "Rajshahi College"
+  },
+  "69": {
+    "stem": "Anil crosses a 2 km wide river in still water in 5 min 20 s. With a 3 m/s current he aims directly towards his friend Dhruba standing opposite.",
+    "a": "proj",
+    "b": "bird",
+    "c": {
+      "question": "Find Anil’s actual speed.",
+      "math": "u=2000/320,\\quad R=\\sqrt{u^2+3^2}",
+      "solution": "Still-water speed is 2000/320=6.25 m/s. Combining it at right angles with the current gives √(6.25²+3²)≈6.93 m/s.",
+      "hint": "The still-water trial gives Anil’s own speed; add the new current as a perpendicular vector."
+    },
+    "d": {
+      "question": "How could he land at his friend’s position?",
+      "math": "\\sin\\theta=3/u",
+      "solution": "Aim upstream so the downstream component vanishes. The tilt upstream from straight across must satisfy 6.25 sin θ=3, giving θ≈28.69°.",
+      "hint": "Choose a swimming direction with an upstream component equal to the current."
+    },
+    "note": "The total ground speed is not just the downstream component. A heading 28.69° upstream of the perpendicular is 118.69° from the current.",
+    "source": "Government Azizul Haque College, Bogura"
+  },
+  "70": {
+    "stem": "Three forces act simultaneously on a 5 kg mass: 8 N north, 4 N south and 3 N east. The second figure shows acceleration at 53.13° north of east.",
+    "a": "pos",
+    "b": "rope",
+    "c": {
+      "question": "Find the net force magnitude in figure 1.",
+      "math": "F=\\sqrt{3^2+(8-4)^2}\\,\\mathrm N",
+      "solution": "Net force is 4 N north and 3 N east; magnitude √(4²+3²)=5 N.",
+      "hint": "Add northward and southward forces algebraically before combining with the eastward force."
+    },
+    "d": {
+      "question": "Is the acceleration shown in figure 2 correct?",
+      "math": "a=5/5,\\quad\\theta=\\tan^{-1}(4/3)",
+      "solution": "Acceleration is 5/5=1 m/s², at arctan(4/3)=53.13° north of east, agreeing with the figure.",
+      "hint": "Use both the magnitude and the direction of the acceleration, not just F/m."
+    },
+    "figure": "At m the north and south forces oppose each other; the third force points east. Compare the net force direction in figure 1 with the acceleration in figure 2.",
+    "note": "North is upwards on the drawing, not vertically upwards in the gravitational sense. The force magnitude uses both squared components.",
+    "source": "Rashidazzoha Government Women’s College, Sirajganj"
+  },
+  "71": {
+    "stem": "A river is 5 km wide and flows at 8 km/h. Two boats travel at 12 km/h relative to water: the first along AE at 45° to downstream, the second along AC at 65° to upstream.",
+    "a": "disp",
+    "b": "blades",
+    "c": {
+      "question": "Find the horizontal distance travelled by the first boat.",
+      "math": "x=\\frac{5(8+12\\cos45^\\circ)}{12\\sin45^\\circ}",
+      "solution": "Time=5/(12 sin45°) h. Downstream displacement=(8+12 cos45°) times that time, about 9.71 km.",
+      "hint": "The along-bank drift accumulates throughout the time needed to cover the width."
+    },
+    "d": {
+      "question": "Does the second boat cross by the shortest path?",
+      "math": "v_x=8+12\\cos115^\\circ\\ne0",
+      "solution": "Net downstream speed is 8−12 cos65°≈2.93 km/h. It is not zero, so the path is not the shortest.",
+      "hint": "Measure the second heading from downstream before testing horizontal cancellation."
+    },
+    "figure": "AE is 45° to downstream and AC is 65° to upstream. Use one common downstream axis before adding the current to each boat velocity.",
+    "note": "Conservation of angular momentum for the fan assumes negligible external torque during the change. For the second boat the heading is 115° to downstream.",
+    "source": "Dinajpur Government College"
+  },
+  "72": {
+    "stem": "Two swimmers race across a 4.5 km wide river flowing at 2.5 km/h. The first swims at 5 km/h at 60° to upstream; the second at 4.4 km/h at 79.8° to downstream.",
+    "a": "grad",
+    "b": "rh",
+    "c": {
+      "question": "Find the first swimmer’s resultant velocity.",
+      "math": "R=5\\sin120^\\circ",
+      "solution": "Downstream component is 2.5−5 cos60°=0. Across speed is 5 sin60°≈4.33 km/h.",
+      "hint": "Find the across-bank component of the first swimmer and check the net downstream component."
+    },
+    "d": {
+      "question": "Compare the swimmers’ crossing times and decide the result.",
+      "math": "\\Delta t=3600\\left(\\frac{4.5}{5\\sin120^\\circ}-\\frac{4.5}{4.4\\sin79.8^\\circ}\\right)\\,\\mathrm s",
+      "solution": "Times are 4.5/(5 sin60°)≈1.03923 h and 4.5/(4.4 sin79.8°)≈1.03915 h. Nearly tied; at the stated precision the second is about 0.29 s earlier.",
+      "hint": "Retain full precision until both crossing times are expressed in the same units."
+    },
+    "note": "Do not round the times before comparing them: the difference from the given values is only about 0.29 s, smaller than the precision suggested by the inputs.",
+    "source": "City Residential Model College, Dinajpur"
+  },
+  "73": {
+    "stem": "A river 15 km wide flows at 5 km/h. Two boats travel at 10 km/h. The first heads at α to the current; the second heads at 90° to it.",
+    "a": "disp",
+    "b": "lineequal",
+    "c": {
+      "question": "Find α for the first boat to land directly opposite.",
+      "math": "\\cos\\alpha=-5/10",
+      "solution": "10 cos α+5=0 gives 120° from downstream, or 30° upstream from the perpendicular.",
+      "hint": "Be clear whether α is measured from the bank or from the perpendicular before using cosine."
+    },
+    "d": {
+      "question": "Which boat reaches the far bank first?",
+      "math": "t_1=15/(10\\sin120^\\circ),\\quad t_2=15/10",
+      "solution": "The first takes 15/(10 sin120°)≈1.73 h; the second takes 15/10=1.5 h and arrives first.",
+      "hint": "Compare only the components normal to the banks for the same 15 km width."
+    },
+    "figure": "The second boat points across. For the first, the text measures α from the current but the sketch marks an angle from the perpendicular. State your reference line.",
+    "note": "The required heading is 120° to the current or 30° upstream of the perpendicular; these are different reference directions.",
+    "source": "Cumilla Government Women’s College"
+  },
+  "74": {
+    "stem": "A=(3,−2,1), B=(1,−3,5) and C=(2,1,−3) are stated to be triangle sides with A=B+C.",
+    "a": "axes",
+    "b": "fixed",
+    "c": {
+      "question": "Find the angle between B and C.",
+      "math": "\\cos\\theta=\\frac{-16}{\\sqrt{35}\\sqrt{14}}",
+      "solution": "B·C=−16; cos θ=−16/√490. Thus θ≈136.3°.",
+      "hint": "Divide B·C by the product of their magnitudes and check the sign before taking arccos."
+    },
+    "d": {
+      "question": "Test the claim that the triangle is right-angled.",
+      "math": "14+14\\ne35,\\quad\\vec B+\\vec C=(3,-2,2)",
+      "solution": "Squared lengths are 14,35,14. They fail the Pythagorean test. Moreover B+C=(3,−2,2), not the printed A; the claim is inconsistent.",
+      "hint": "Check the printed vector-sum condition as well as the squared side lengths."
+    },
+    "note": "The printed assertion A=B+C conflicts with the printed components, and the stated side lengths do not satisfy the right-triangle condition.",
+    "source": "Cumilla Government Women’s College"
+  },
+  "75": {
+    "stem": "Kamal steers at 40° to the current in a river 40 m wide. Boat and current speeds are 10 and 4 m/s respectively.",
+    "a": "tri",
+    "b": "windshield",
+    "c": {
+      "question": "Find the distance travelled when crossing diagonally.",
+      "math": "s=\\frac{40\\sqrt{10^2+4^2+80\\cos40^\\circ}}{10\\sin40^\\circ}",
+      "solution": "Crossing time=40/(10 sin40°). Ground speed is √((4+10 cos40°)²+(10 sin40°)²); multiplying gives about 82.85 m.",
+      "hint": "Find the crossing time using the perpendicular component. Multiply by the actual ground speed."
+    },
+    "d": {
+      "question": "What should Kamal do to cross directly opposite?",
+      "math": "\\cos\\alpha=-4/10",
+      "solution": "Choose an upstream component to cancel 4 m/s: 10 cos α+4=0 gives α≈113.58° to downstream.",
+      "hint": "The upstream component must cancel the entire 4 m/s current for a direct landing."
+    },
+    "note": "Avoid rounding the angle and intermediate velocity components before calculating the path length; small differences from the printed 82.84 m are rounding differences.",
+    "source": "Ispahani Cantonment Public School and College, Cumilla"
+  },
+  "76": {
+    "stem": "Dipu steers along OB at 7.2 km/h at 120° to the current and lands directly at his college at A across a 2.5 km wide river.",
+    "a": "curl",
+    "b": "unequal",
+    "c": {
+      "question": "Find the current speed.",
+      "math": "c=-7.2\\cos120^\\circ",
+      "solution": "Zero drift requires current speed −7.2 cos120°=3.6 km/h.",
+      "hint": "Direct arrival at the college fixes the net along-bank velocity."
+    },
+    "d": {
+      "question": "Will he reach class if he starts 25 min before it begins?",
+      "math": "t=\\frac{2.5}{7.2\\sin120^\\circ}\\cdot60\\,\\mathrm{min}",
+      "solution": "Time=60×2.5/(7.2 sin120°)≈24.06 min. Yes, he arrives before class.",
+      "hint": "Use the perpendicular component and express the arrival time in minutes."
+    },
+    "figure": "A is the college directly across from O. The boat points upstream along OB at 120° to the current; its actual path is OA.",
+    "note": "Opposite vectors can cancel only if their magnitudes agree. The unrounded crossing time is approximately 24.056 min.",
+    "source": "Chattogram College"
+  },
+  "77": {
+    "stem": "A=(2,3,−5) and B=(m,2,−10) make an angle α.",
+    "a": "quantity",
+    "b": "trolley",
+    "c": {
+      "question": "Find m if α=90°.",
+      "math": "2m+56=0",
+      "solution": "Perpendicular vectors have zero dot product: 2m+6+50=0, hence m=−28.",
+      "hint": "For a 90° angle, which algebraic product must vanish?"
+    },
+    "d": {
+      "question": "Do these vectors obey commutation for their cross product?",
+      "math": "\\vec B\\times\\vec A=-(\\vec A\\times\\vec B)\\ne\\vec A\\times\\vec B",
+      "solution": "Both vectors are nonzero and perpendicular. Their cross product is nonzero, and reversing the order reverses its direction rather than leaving it unchanged.",
+      "hint": "Compare the two products by reversing the order, and rule out a zero cross product."
+    },
+    "note": "For a longer trolley handle, angle comparisons assume a fixed hand height. The vertical component also changes and can affect friction.",
+    "source": "Chattogram Government Women’s College"
+  },
+  "78": {
+    "stem": "V=(2,3,−x) and B=(3,2,2) are perpendicular. Their magnitudes are boat and stream speeds, respectively. The shortest crossing takes 4 min.",
+    "a": "vectorfield",
+    "b": "recipline",
+    "c": {
+      "question": "Calculate x.",
+      "math": "12-2x=0",
+      "solution": "Their dot product is 6+6−2x=0; hence x=6.",
+      "hint": "Use the perpendicularity of V and B to set up an equation in x."
+    },
+    "d": {
+      "question": "Verify that the shortest-time route exceeds the river width.",
+      "math": "S/D=\\sqrt{66}/7>1",
+      "solution": "The speeds are 7 and √17. On the shortest path the crossing component is √(49−17). On the fastest crossing it is 7, but the ground speed is √66. The path-to-width ratio √66/7 exceeds one.",
+      "hint": "In the minimum-time case the ground track includes a nonzero downstream displacement."
+    },
+    "source": "Ispahani Public School and College, Chattogram"
+  },
+  "79": {
+    "stem": "From a car moving east at 40 km/h a driver sees a truck moving north at twice that speed. Take east as positive x and north as positive y.",
+    "a": "curl",
+    "b": "banked",
+    "c": {
+      "question": "In what direction is the truck actually moving?",
+      "math": "\\vec v_T=40\\hat i+80\\hat j",
+      "solution": "Add the car velocity to the relative truck velocity: (40,80) km/h. The direction is 63.43° north of east.",
+      "hint": "Reverse the relative-velocity subtraction to recover the truck’s true heading."
+    },
+    "d": {
+      "question": "Find a vector perpendicular to the plane of the two true velocities.",
+      "math": "\\hat n=\\frac{\\vec v_C\\times\\vec v_T}{|\\vec v_C\\times\\vec v_T|}=\\hat k",
+      "solution": "The car and truck velocities are in the xy-plane. Their cross product is (0,0,3200); the positive z unit vector is normal to the plane.",
+      "hint": "Find a normal to the plane spanned by the car and truck velocities in one ground frame."
+    },
+    "note": "Without the necessary inward force a vehicle would continue tangentially. The relative and ground velocities of the truck must not be interchanged.",
+    "source": "Government City College, Chattogram"
+  },
+  "80": {
+    "stem": "Riyan swims at 4 km/h from the south bank towards a point directly north. The current flows west to east at 2 km/h.",
+    "a": "unit",
+    "b": "flux",
+    "c": {
+      "question": "In which direction should Riyan swim?",
+      "math": "4\\sin\\theta=2",
+      "solution": "To cancel eastward drift he needs a 2 km/h westward component. Thus aim arcsin(2/4)=30° west of north.",
+      "hint": "Treat north and east as separate axes. Which component of swimming velocity should point west?"
+    },
+    "d": {
+      "question": "Are the shortest-path and minimum-time crossing times equal? Verify.",
+      "math": "t_{\\rm direct}=d/\\sqrt{12}>d/4=t_{\\min}",
+      "solution": "For width d the direct-landing time is d/√12. The minimum time is d/4, achieved by heading due north and drifting east. The times differ.",
+      "hint": "For a symbolic width d write times for maximum across-bank speed and for zero drift separately."
+    },
+    "note": "The specified heading is unique only if the swimmer must land directly opposite the start. Simply reaching the other bank does not fix one heading.",
+    "source": "Halishahar Cantonment Public School and College, Chattogram"
+  },
+  "81": {
+    "stem": "A bus, jeep and truck have velocities (2,1,−1), (3,−2,4) and (1,−3,5) respectively. They collide at one instant.",
+    "a": "law",
+    "b": "butterfly",
+    "c": {
+      "question": "Determine the curl of the truck velocity.",
+      "math": "\\nabla\\times(1,-3,5)=\\vec0",
+      "solution": "The truck velocity has constant components, so all spatial derivatives and its curl are zero.",
+      "hint": "The given velocity components are constants. Consider their derivatives with respect to position."
+    },
+    "d": {
+      "question": "Verify that the velocities at collision are coplanar.",
+      "math": "(2,-11,-7)\\cdot(1,-3,5)=0",
+      "solution": "The cross product of the first two velocities is (2,−11,−7). Dotting with the third gives 2+33−35=0, proving coplanarity.",
+      "hint": "Compute the scalar triple product; a vanishing value tests coplanarity."
+    },
+    "note": "Curl is computed by interpreting the given constant truck velocity as a field constant throughout space.",
+    "source": "Sylhet Cantonment Public School and College"
+  },
+  "82": {
+    "stem": "Given the fields @eq.",
+    "a": "curl",
+    "b": "recipline",
+    "c": {
+      "question": "Calculate the divergence of the curl of A.",
+      "math": "\\nabla\\cdot(\\nabla\\times\\vec A)=0",
+      "solution": "Divergence of a curl vanishes for these smooth polynomial components because mixed derivatives cancel.",
+      "hint": "Take the divergence of the curl, not the curl alone."
+    },
+    "d": {
+      "question": "Which of B and C are solenoidal or irrotational? Test both fields.",
+      "math": "\\nabla\\times\\vec B=(-2z,1,-1),\\quad\\nabla\\times\\vec C=(0,2z-3z^2,0)",
+      "solution": "div B=10 and div C=6y+6xz; neither vanishes identically. Curl B=(−2z,1,−1), curl C=(0,2z−3z²,0). Neither field is everywhere irrotational.",
+      "hint": "Do not substitute the similar fields from question 38. Check each sign and power before differentiating."
+    },
+    "note": "Do not copy the result from question 38: the signs and powers in the given fields differ. Curl zero at isolated points does not make a field irrotational throughout space.",
+    "source": "Murari Chand College, Sylhet"
+  },
+  "83": {
+    "stem": "A boat heads along OP at 2.3 m/s on a 1.4 km wide river flowing at 1.1 m/s and reaches Q. Rain begins falling vertically at 4.2 m/s.",
+    "a": "div",
+    "b": "trolley",
+    "c": {
+      "question": "At what angle from vertical should the boatman hold his umbrella?",
+      "math": "\\tan\\theta=\\frac{\\sqrt{1.1^2+2.3^2}}{4.2}",
+      "solution": "Boat ground speed is √(2.3²+1.1²)≈2.55 m/s. Tilt forward from vertical by arctan(2.55/4.2)≈31.3°.",
+      "hint": "Combine the two horizontal boat components before comparing them with vertical rain speed."
+    },
+    "d": {
+      "question": "Would heading along OQ at the same speed shorten the crossing time?",
+      "math": "\\frac{1400}{2.3\\cos25.56^\\circ}>\\frac{1400}{2.3}",
+      "solution": "OP is perpendicular to the banks, already maximizing crossing speed. Aiming along OQ at angle θ to OP reduces the across component to 2.3 cos θ, so it takes longer.",
+      "hint": "The starting heading is already normal to the shore. Compare the new heading’s perpendicular component."
+    },
+    "figure": "OP is the width and OQ the ground track. In the rain problem both of those directions are horizontal in space; the falling rain is vertical.",
+    "note": "Treat both boat velocity components as horizontal and the rain velocity as vertical. In three axes the relative velocity is (−1.1,−2.3,−4.2) m/s.",
+    "source": "Cantonment College, Jashore"
+  },
+  "84": {
+    "stem": "A boat starts at A at 16 km/h relative to water on a 5 km wide river flowing at 8 km/h. A person waits 25 min at B directly opposite.",
+    "a": "axes",
+    "b": "fanspeed",
+    "c": {
+      "question": "Find the resultant boat speed.",
+      "math": "R=\\sqrt{16^2+8^2},\\quad\\tan\\theta=16/8",
+      "solution": "Assuming an initial heading squarely across, ground speed is √(16²+8²)≈17.9 km/h at 63.4° to downstream.",
+      "hint": "For the initial square crossing add current and boat velocities at right angles."
+    },
+    "d": {
+      "question": "How should the boatman steer directly to B, and will he meet the person?",
+      "math": "\\cos\\alpha=-8/16,\\quad t=\\frac{5}{16\\sin120^\\circ}\\,\\mathrm h",
+      "solution": "Steer at arccos(−8/16)=120° to the current. Crossing time=60×5/(16 sin120°)≈21.65 min, within the waiting period.",
+      "hint": "Landing directly opposite imposes zero drift; use the remaining component to test the 25 min limit."
+    },
+    "figure": "A is on the near bank and B on the opposite bank. The current arrow points downstream. Distinguish aiming directly across from landing directly opposite.",
+    "source": "Government Prafulla Chandra College, Bagerhat"
+  },
+  "85": {
+    "stem": "While stationary Shanta sees rain arriving from the south at 8 m/s, 40° from vertical. She then walks north and holds her umbrella backwards at 20° from vertical.",
+    "a": "base",
+    "b": "fan",
+    "c": {
+      "question": "What is the true rain speed?",
+      "math": "v_{\\rm ground}=8\\,\\mathrm{m/s}",
+      "solution": "She initially observes from rest, so the observed 8 m/s is the ground-frame speed.",
+      "hint": "Which reference frame does a stationary observer share?"
+    },
+    "d": {
+      "question": "Test the claim that Shanta walks more slowly than the true rain speed.",
+      "math": "v_S=8\\sin40^\\circ-8\\cos40^\\circ\\tan20^\\circ",
+      "solution": "Northward rain speed is 8 sin40°, downward speed 8 cos40°. The remaining northward component equals 8 cos40° tan20°. Her speed is their difference, about 2.91 m/s, below 8 m/s.",
+      "hint": "The backward tilt determines the sign of the relative horizontal component. Use that sign when recovering the walking speed."
+    },
+    "note": "The backwards umbrella tilt specifies which side the apparent rain comes from. An unsigned 20° angle alone would leave another algebraic branch.",
+    "source": "Barishal Government Women’s College"
+  }
+}
