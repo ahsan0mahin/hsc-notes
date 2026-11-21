@@ -139,4 +139,4 @@ Made for HSC students · Static, fast, editable by humans and agents alike.
 
 ### Vector board practice
 
-Open **ভেক্টর → বোর্ড প্রশ্ন** for Batch 1. `board/batch-1.md` is the supplied source. `npm run board:build` regenerates the static practice pages, typesetting LaTeX as native MathML; no CDN, font download or runtime Markdown parser is needed. The teaching diagrams are in `scripts/board-scenes.mjs`. Run `node scripts/test-board.mjs` to check the question index, solutions and diagram controls.
+Open **ভেক্টর → বোর্ড প্রশ্ন** for all 85 source questions (43 board, 42 college). `board/questions.json` is the supplied dataset; the original `board/batch-1.md` preserves page continuations for the first 15. Each subquestion has separate illustrated hint and answer disclosures. `npm run board:build` regenerates the static practice pages, typesetting LaTeX as native MathML; no CDN, font download or runtime Markdown parser is needed. The teaching diagrams are in `scripts/board-scenes.mjs`. Run `node scripts/test-board.mjs` to check the question index, solutions and diagram controls.
