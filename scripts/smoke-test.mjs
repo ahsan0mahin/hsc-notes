@@ -193,6 +193,15 @@ try {
   assert(document.querySelectorAll('.board-reader .part').length === 4, 'question renders in shared reading pane');
   assert(document.querySelector('.board-branch.active') && document.querySelector('.vector-book .topic-link'), 'board and main-book branches stay accessible');
   assert(document.querySelector('.board-reader .answer summary').textContent.includes('Full solution'), 'English reading controls follow site language');
+  const boardHash=window.location.hash;
+  document.querySelector('.board-reader .answer').open=true;
+  assert(document.querySelector('.board-reader .paper').textContent.includes('motorboat'), 'English includes the translated stimulus');
+  click(document.querySelector('[data-lang="bn"]'), 'switch the same question to Bengali');
+  await settle();
+  assert(document.querySelector('.board-reader').lang==='bn' && document.querySelector('.board-reader .paper').textContent.includes('নৌকা'), 'original Bengali content restored');
+  click(document.querySelector('[data-lang="en"]'), 'switch the same question back to English');
+  await settle();
+  assert(window.location.hash===boardHash && document.querySelector('.board-reader .answer').open && document.querySelector('.board-reader').lang==='en','language switch preserves question and open solution');
   click(document.querySelector('.board-reader [data-step="2"]'), 'board diagram step');
   assert(document.querySelector('.board-reader [data-step="2"]').getAttribute('aria-pressed') === 'true', 'mounted board diagram responds');
   go('#/notes');

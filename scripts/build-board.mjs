@@ -1,3 +1,4 @@
+import {buildEnglish} from "./board-english.mjs";
 import fs from 'node:fs';
 import MarkdownIt from 'markdown-it';
 import katex from 'katex';
@@ -35,3 +36,4 @@ for(const q of questions){const n=q.id;const board=q.source_title;const group=n<
  fs.writeFileSync(`board/q${n}.html`,shell(board,`<header><small>VECTOR　/　${group?'COLLEGE':'BOARD'} PRACTICE</small><h1>${esc(q.board)}</h1><p>${esc(board)}　·　সংকলনের প্রশ্ন ${q.id_bn}</p></header><section class="paper"><h2>প্রশ্ন ও উদ্দীপক</h2>${q.stem_type==='figure_only'?'চিত্র ও তার নিচের তথ্য অনুসরণ করো।':render(q.stem)}<ol class="asks">${list}</ol>${figure}</section><h2>নিজে সমাধান করো</h2>${answers}${notes.length?`<details><summary>উৎস যাচাই ও সংশোধনী</summary><article>${notes.map(render).join('')}</article></details>`:''}<nav>${n>1?`<a href="q${n-1}.html">← আগের প্রশ্ন</a>`:''}${n<questions.length?`<a href="q${n+1}.html">পরের প্রশ্ন →</a>`:'<a href="index.html">প্রশ্নসূচি →</a>'}</nav>`));
 }
 fs.writeFileSync('board/index.html',shell('ভেক্টর বোর্ড প্রশ্ন',`<header><small>PHYSICS 01　/　অধ্যায় ০২</small><h1>ভেক্টর বোর্ড প্রশ্ন</h1><p>৮৫টি সৃজনশীল প্রশ্ন · ৩৪০টি উপপ্রশ্ন</p></header><p>উৎস বেছে প্রশ্ন খোলো। আটকে গেলে হিন্ট দেখো; হিসাব শেষ করে পূর্ণ উত্তরের সঙ্গে মেলাও।</p><nav><a href="#board">বোর্ড প্রশ্ন (৪৩)</a><a href="#college">কলেজের প্রশ্ন (৪২)</a></nav>${cards.map((group,i)=>`<h2 id="${i?'college':'board'}">${i?'কলেজের প্রশ্ন':'বোর্ড প্রশ্ন'}</h2><div class="grid">${group.join('')}</div>`).join('')}<details><summary>২০১৫–২০২৫: বোর্ড প্রশ্নের সংখ্যাভিত্তিক বিশ্লেষণ</summary><article>${render(firstBatch[0].slice(firstBatch[0].indexOf('| সাল'),firstBatch[0].indexOf('#### ■ অধ্যায়ভিত্তিক')))}</article></details>`));
+buildEnglish(questions,render,firstBatch[0]);

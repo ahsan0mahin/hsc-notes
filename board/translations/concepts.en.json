@@ -1,0 +1,527 @@
+{
+  "div": {
+    "question": "What is divergence?",
+    "hint": "Consider the flux through the faces of a tiny closed box.",
+    "solution": "Divergence is the net outward flux per unit volume in the limit of a vanishing volume: $\\nabla\\cdot\\vec V$."
+  },
+  "pos": {
+    "question": "Define the position (radius) vector.",
+    "hint": "Choose an origin first.",
+    "solution": "It is the directed displacement from the chosen origin O to the point P, $\\vec r=\\overrightarrow{OP}$."
+  },
+  "unit": {
+    "question": "Define a unit vector.",
+    "hint": "Think about direction separately from length.",
+    "solution": "A unit vector has magnitude one. Along a nonzero vector A it is $\\vec A/|\\vec A|$."
+  },
+  "zero": {
+    "question": "What is a null vector?",
+    "hint": "Imagine coincident start and end points.",
+    "solution": "Its magnitude is zero and it has no uniquely defined direction."
+  },
+  "curl": {
+    "question": "Define curl.",
+    "hint": "Imagine a tiny paddle wheel in the field.",
+    "solution": "Curl, $\\nabla\\times\\vec V$, measures local circulation per unit area. Its direction is the local axis of rotation given by the right-hand rule."
+  },
+  "lap": {
+    "question": "What is Laplace’s equation?",
+    "hint": "Recall the sum of second spatial derivatives.",
+    "solution": "In a source-free region the scalar potential satisfies $\\nabla^2\\phi=0$."
+  },
+  "line": {
+    "question": "Define collinear vectors.",
+    "hint": "Compare lines of action, not lengths.",
+    "solution": "They lie along the same line or parallel lines; their senses may agree or oppose each other."
+  },
+  "plane": {
+    "question": "Define coplanar vectors.",
+    "hint": "Think of translating free arrows to a common origin.",
+    "solution": "Their directions can all lie in one plane; the scalar triple product of any three is zero."
+  },
+  "bound": {
+    "question": "Define a localized vector.",
+    "hint": "Can you move its tail freely?",
+    "solution": "Its point of application is specified; moving it can change its physical meaning."
+  },
+  "axes": {
+    "question": "What are Cartesian unit vectors?",
+    "hint": "Look along the positive coordinate axes.",
+    "solution": "They are three mutually perpendicular vectors of unit magnitude pointing along positive x, y and z."
+  },
+  "op": {
+    "question": "What is a vector differential operator?",
+    "hint": "Pair each partial derivative with its coordinate direction.",
+    "solution": "The del operator is $\\nabla=\\hat i\\partial_x+\\hat j\\partial_y+\\hat k\\partial_z$. It acts on fields rather than representing a displacement."
+  },
+  "abs": {
+    "question": "What is absolute humidity?",
+    "hint": "Identify the mass in a sample of moist air.",
+    "solution": "Absolute humidity is the mass of water vapour per unit volume of air."
+  },
+  "elastic": {
+    "question": "Define an elastic collision.",
+    "hint": "Which two quantities are conserved?",
+    "solution": "Total momentum and total kinetic energy of the isolated system are both conserved."
+  },
+  "period": {
+    "question": "Define temporal periodicity.",
+    "hint": "Follow the state at one fixed position.",
+    "solution": "A quantity is periodic in time if it repeats after a fixed interval T: $f(t+T)=f(t)$."
+  },
+  "spin": {
+    "question": "What is angular momentum?",
+    "hint": "Measure position from the point about which rotation is considered.",
+    "solution": "Angular momentum is the moment of linear momentum, $\\vec L=\\vec r\\times\\vec p$."
+  },
+  "dew": {
+    "question": "What is the dew point?",
+    "hint": "Cool an air sample without changing its vapour content.",
+    "solution": "It is the temperature at which the air becomes saturated and condensation can begin."
+  },
+  "scalar": {
+    "question": "What is a scalar field?",
+    "hint": "What information is needed at each position?",
+    "solution": "A scalar field assigns a single scalar value to each point, as in a temperature distribution."
+  },
+  "recip": {
+    "question": "What is a reciprocal vector?",
+    "hint": "Compare direction and the product of magnitudes.",
+    "solution": "For a nonzero vector A its reciprocal has the same direction and reciprocal magnitude: $\\vec A/|\\vec A|^2$."
+  },
+  "tri": {
+    "question": "State the triangle law of vector addition.",
+    "hint": "Arrange two arrows head to tail.",
+    "solution": "If two sides taken in order represent the addends, the arrow from the first tail to the last head represents their sum."
+  },
+  "grad": {
+    "question": "Define the gradient of a scalar field.",
+    "hint": "Compare rates of change in different directions.",
+    "solution": "Its components are the three spatial partial derivatives. It points in the direction of steepest increase; its magnitude is that maximum rate."
+  },
+  "equal": {
+    "question": "What are equal vectors?",
+    "hint": "Check direction as well as length.",
+    "solution": "Vectors of the same kind are equal when their magnitudes and directions agree."
+  },
+  "cg": {
+    "question": "What is the centre of gravity?",
+    "hint": "Replace distributed weights by one resultant.",
+    "solution": "It is the point through which the resultant weight acts."
+  },
+  "spring": {
+    "question": "What is a spring constant?",
+    "hint": "Compare extension with restoring force.",
+    "solution": "Within the linear elastic range, $F=-kx$; k is the restoring force magnitude per unit extension."
+  },
+  "surface": {
+    "question": "What is an area vector?",
+    "hint": "A plane admits a normal direction.",
+    "solution": "Its magnitude is the surface area and its direction is the chosen unit normal."
+  },
+  "axiom": {
+    "question": "What is a postulate?",
+    "hint": "Distinguish an assumption from a deduction.",
+    "solution": "It is a starting proposition accepted without proof within a theory."
+  },
+  "flow": {
+    "question": "What is turbulent flow?",
+    "hint": "Follow neighbouring fluid particles.",
+    "solution": "Velocity fluctuates irregularly in space and time, with eddies and mixing rather than smooth layers."
+  },
+  "humidity": {
+    "question": "Define relative humidity.",
+    "hint": "Compare actual vapour pressure with saturation at the same temperature.",
+    "solution": "It is the actual water-vapour pressure divided by the saturation vapour pressure at that temperature, expressed as a percentage."
+  },
+  "cross": {
+    "question": "Define vector multiplication (the cross product).",
+    "hint": "Think about an oriented area.",
+    "solution": "$\\vec A\\times\\vec B$ has magnitude $AB\\sin\\theta$ and points normal to the two vectors by the right-hand rule."
+  },
+  "torque": {
+    "question": "Define torque.",
+    "hint": "What distance matters about a pivot?",
+    "solution": "Torque is the moment of force about a point: $\\vec\\tau=\\vec r\\times\\vec F$."
+  },
+  "hand": {
+    "question": "State the right-hand screw rule.",
+    "hint": "Imagine turning a right-handed screw.",
+    "solution": "Turn it from the first vector towards the second through the smaller angle. Its advance gives the direction of their cross product."
+  },
+  "pitch": {
+    "question": "What is pitch?",
+    "hint": "Follow one complete turn of a screw.",
+    "solution": "Pitch is the axial advance of the screw in one complete revolution."
+  },
+  "disp": {
+    "question": "Define displacement vector.",
+    "hint": "Compare endpoints rather than the route between them.",
+    "solution": "It is final position minus initial position: $\\Delta\\vec r=\\vec r_f-\\vec r_i$."
+  },
+  "weight": {
+    "question": "What is weightlessness?",
+    "hint": "Consider the reading on a weighing scale.",
+    "solution": "It is zero apparent weight: there is no supporting reaction, even though gravity may still act."
+  },
+  "polar": {
+    "question": "What is a polar vector?",
+    "hint": "Consider inversion of spatial coordinates.",
+    "solution": "A polar vector transforms like displacement, reversing under inversion. Force and velocity are examples."
+  },
+  "epoch": {
+    "question": "What is epoch in simple harmonic motion?",
+    "hint": "Write the phase as a function of time.",
+    "solution": "It is the initial phase, the phase angle at time zero."
+  },
+  "dof": {
+    "question": "Define degrees of freedom.",
+    "hint": "Count independent coordinates, not particles.",
+    "solution": "The number of independent coordinates required to specify a system’s configuration is its number of degrees of freedom."
+  },
+  "osc": {
+    "question": "What is oscillatory motion?",
+    "hint": "Watch the motion relative to equilibrium.",
+    "solution": "It is repeated to-and-fro motion about an equilibrium position."
+  },
+  "unlike": {
+    "question": "Define unlike vectors.",
+    "hint": "Compare the senses of parallel arrows.",
+    "solution": "They are vectors of the same kind directed in opposite senses along parallel lines."
+  },
+  "ineffective": {
+    "question": "What is an ineffective vector?",
+    "hint": "Consider a displacement that returns to its starting point.",
+    "solution": "Here the term denotes the null vector: its magnitude is zero, so adding it has no effect on another vector."
+  },
+  "proj": {
+    "question": "Define scalar projection.",
+    "hint": "Drop a perpendicular onto the reference line.",
+    "solution": "The signed component of A along B is $\\vec A\\cdot\\vec B/|\\vec B|=A\\cos\\theta$."
+  },
+  "quantity": {
+    "question": "What is a physical quantity?",
+    "hint": "How would you report a measurement?",
+    "solution": "It is a measurable property expressed by a numerical value and a unit."
+  },
+  "vectorfield": {
+    "question": "Define a vector field.",
+    "hint": "What must be given at each point?",
+    "solution": "It assigns a vector, with magnitude and direction, to each point of a region."
+  },
+  "law": {
+    "question": "What is a physical law?",
+    "hint": "Distinguish a repeatable relationship from one observation.",
+    "solution": "A law expresses a consistent relationship between physical quantities under specified conditions."
+  },
+  "base": {
+    "question": "What is a fundamental unit?",
+    "hint": "Is the unit derived from other units in the system?",
+    "solution": "It is an independently chosen unit for a base quantity, such as the metre for length."
+  },
+  "sand": {
+    "question": "Why is walking on sand difficult?",
+    "hint": "Resolve the ground reaction.",
+    "solution": "The foot pushes backwards. Loose sand gives way, reducing the forward frictional reaction and making each step less effective."
+  },
+  "windshield": {
+    "question": "Why does vertical rain wet the front of a moving vehicle rather than its rear vertical window?",
+    "hint": "Subtract the vehicle’s velocity.",
+    "solution": "In the vehicle frame the drops have a backward horizontal component as well as a downward one. They approach the front; the rear is sheltered in this geometry."
+  },
+  "divscalar": {
+    "question": "Why is divergence a scalar?",
+    "hint": "Look at how del combines with the field.",
+    "solution": "The dot product adds the three component derivatives into one signed number. It gives net outward flow, not a direction."
+  },
+  "jsign": {
+    "question": "Explain why $\\hat k\\times\\hat j$ is a unit vector.",
+    "hint": "Consider the order of the axes.",
+    "solution": "The factors are perpendicular unit vectors, so the magnitude is one; reversing cyclic order gives $-\\hat i$."
+  },
+  "trolley": {
+    "question": "Why is a trolley handle long?",
+    "hint": "At a fixed hand height compare the angle to the ground.",
+    "solution": "A longer handle can make a smaller angle to the horizontal. The same pull then has a greater forward component $F\\cos\\theta$."
+  },
+  "flux": {
+    "question": "Explain the physical significance of divergence.",
+    "hint": "Compare flow into and out of a small volume.",
+    "solution": "For a velocity field positive divergence indicates net local outflow, negative divergence net inflow, and zero divergence no net volume flux per unit volume."
+  },
+  "fixed": {
+    "question": "Why is a position vector localized?",
+    "hint": "Change the tail without changing the arrow.",
+    "solution": "It begins at a specified origin. Moving its tail would no longer locate the same point relative to that origin."
+  },
+  "bucket": {
+    "question": "Why can water stay in a bucket swinging in a vertical circle?",
+    "hint": "Consider the top of the path.",
+    "solution": "There the required acceleration is downward. Gravity and any bucket force supply it; with sufficient speed, $v^2/r\\ge g$, the water maintains contact."
+  },
+  "bisect": {
+    "question": "Why does the resultant of two equal vectors bisect their angle?",
+    "hint": "Draw the parallelogram and its diagonal.",
+    "solution": "The parallelogram is a rhombus. Its diagonal separates two congruent triangles, so the angles between the resultant and the two addends are equal."
+  },
+  "sumdiff": {
+    "question": "Can two vectors have equal sum and difference?",
+    "hint": "Distinguish vector equality from equal magnitudes.",
+    "solution": "Vector equality A+B=A−B requires B=0. Equal magnitudes instead require A·B=0, as follows by squaring both magnitudes."
+  },
+  "idot": {
+    "question": "Why is $\\hat i\\cdot\\hat i$ not zero?",
+    "hint": "What is the angle of a vector with itself?",
+    "solution": "Both lengths are one and the angle is zero, so the dot product is one."
+  },
+  "centrip": {
+    "question": "On what does centripetal force depend?",
+    "hint": "Relate inward acceleration to the radius.",
+    "solution": "Its magnitude is $mv^2/r$: proportional to mass and speed squared, inversely proportional to radius."
+  },
+  "closed": {
+    "question": "When is the resultant of three vectors zero?",
+    "hint": "Trace all three in order.",
+    "solution": "They sum to zero when placed head to tail in a closed triangle, so the final head returns to the starting point."
+  },
+  "ijk": {
+    "question": "Show that $\\hat i\\times\\hat j=\\hat k$.",
+    "hint": "Use the right hand in a right-handed coordinate system.",
+    "solution": "The magnitude is sin 90° = 1; curling from positive x towards positive y makes the thumb point along positive z."
+  },
+  "commute": {
+    "question": "Explain why the parallelogram law obeys commutation.",
+    "hint": "Exchange the adjacent sides.",
+    "solution": "The same diagonal joins the common tail to the opposite corner in either order: A+B=B+A."
+  },
+  "anti": {
+    "question": "Does vector multiplication commute? Explain.",
+    "hint": "Reverse the order of the two arrows.",
+    "solution": "The magnitude remains AB sin θ but the right-hand direction reverses. Thus A×B=−B×A, unequal unless the product is zero."
+  },
+  "work": {
+    "question": "Why is work scalar although force and displacement are vectors?",
+    "hint": "Consider the component of force parallel to displacement.",
+    "solution": "Work is their dot product $Fs\\cos\\theta$. It is signed but has no spatial direction."
+  },
+  "roller": {
+    "question": "Why is pulling a lawn roller easier than pushing it?",
+    "hint": "Compare the vertical components of the applied forces.",
+    "solution": "An upward pull reduces the normal reaction; a downward push increases it. With resistance increasing with the load, pushing is harder."
+  },
+  "zerowork": {
+    "question": "When can work be zero?",
+    "hint": "Examine the factors in the scalar product.",
+    "solution": "For constant force, W=Fs cos θ vanishes for zero force, zero displacement or mutually perpendicular force and displacement."
+  },
+  "door": {
+    "question": "Why is a door handle near its outer edge?",
+    "hint": "Compare the moment arms.",
+    "solution": "For the same force the torque increases with perpendicular distance from the hinge, so less force is needed farther out."
+  },
+  "rightcross": {
+    "question": "How should a boat be steered to land directly opposite?",
+    "hint": "Consider the component parallel to the banks.",
+    "solution": "Aim upstream so that the upstream component of the boat’s velocity relative to water cancels the current."
+  },
+  "recipline": {
+    "question": "Is a reciprocal vector collinear with its original?",
+    "hint": "Compare directions rather than magnitudes.",
+    "solution": "Yes. The reciprocal is a positive scalar multiple of the nonzero original, so their lines are parallel."
+  },
+  "worktorque": {
+    "question": "Compare the units and physical meanings of work and torque.",
+    "hint": "Compare a dot product with a cross product.",
+    "solution": "Both have dimensions force times length. Work is a scalar in joules; torque is an axial vector in newton metres."
+  },
+  "fieldgrad": {
+    "question": "Can a vector differential operator turn a scalar into a vector?",
+    "hint": "Consider the spatial derivatives.",
+    "solution": "Yes. The gradient of a scalar field combines its partial derivatives along each axis into a vector pointing towards the steepest increase."
+  },
+  "perpdot": {
+    "question": "Can two nonzero vectors have zero dot product?",
+    "hint": "Look at the angular factor.",
+    "solution": "Yes: for perpendicular nonzero vectors, cos 90° = 0."
+  },
+  "centraltime": {
+    "question": "Can an object moving at constant speed around a circle accelerate?",
+    "hint": "Compare successive velocity arrows.",
+    "solution": "Yes. Even at fixed speed the direction changes continuously, giving inward acceleration $v^2/r$."
+  },
+  "conserve": {
+    "question": "In what sense is a conservative force path independent?",
+    "hint": "Compare two paths between the same endpoints.",
+    "solution": "It is the work of the force that is path independent: W=U(initial)−U(final). Its integral around a closed path is zero."
+  },
+  "unequal": {
+    "question": "Can two unequal vectors of the same kind have zero resultant?",
+    "hint": "Place them head to tail.",
+    "solution": "No. Complete cancellation requires equal magnitudes and opposite directions."
+  },
+  "fan": {
+    "question": "Why does a rotating ceiling fan move air downward?",
+    "hint": "Distinguish blade velocity from the force on the air.",
+    "solution": "Pitched blades deflect air and create a pressure difference. The downward airflow is not the tangential velocity of a blade tip."
+  },
+  "fixed18": {
+    "question": "Explain why $\\vec r=5\\hat i+3\\hat j$ is a localized position vector.",
+    "hint": "Distinguish a position from a free displacement.",
+    "solution": "Its tail is at the chosen origin and its head is at (5,3). Moving its tail would no longer specify that position."
+  },
+  "jcross": {
+    "question": "Explain why $\\hat j\\times\\hat k$ is a unit vector.",
+    "hint": "Consider the angle between the axes.",
+    "solution": "The magnitude is 1×1×sin90°=1 and the cyclic order gives the +x direction."
+  },
+  "dotcross": {
+    "question": "Can the magnitude of A×B equal A·B?",
+    "hint": "Compare sine with cosine.",
+    "solution": "Yes. For nonzero vectors making 45°, AB sin45° and AB cos45° are equal."
+  },
+  "vecscalar": {
+    "question": "How can a vector quantity be converted to a scalar?",
+    "hint": "Think of measuring its component along a reference direction.",
+    "solution": "Dotting it with a unit vector gives a signed scalar projection. For a vector field its divergence is also a scalar field."
+  },
+  "volumechange": {
+    "question": "Does divergence help determine a change in a fluid element’s volume?",
+    "hint": "Compare neighbouring flow velocities.",
+    "solution": "For a small material element of volume V, the fractional rate of expansion is (1/V)dV/dt=div u, where u is the velocity field."
+  },
+  "rollerpush": {
+    "question": "Why does a lawn roller feel heavier when pushed?",
+    "hint": "Draw the vertical component of the push.",
+    "solution": "A sloping push adds a downward component, increasing the normal reaction and rolling resistance without changing the roller’s actual weight."
+  },
+  "potential": {
+    "question": "What does a gravitational potential of 12 J/kg mean?",
+    "hint": "Consider energy per unit test mass.",
+    "solution": "Relative to the chosen reference, each kilogram at the point has 12 J of gravitational potential energy. The numerical sign depends on the reference convention."
+  },
+  "negvsrecip": {
+    "question": "Explain why the angle between the negative and reciprocal of a nonzero vector is fixed.",
+    "hint": "Draw both relative to the original arrow.",
+    "solution": "The negative points opposite the original; the reciprocal points along it. The angle between them is always 180°."
+  },
+  "nulldir": {
+    "question": "Does a zero vector have a definite direction?",
+    "hint": "Imagine its tail and head coinciding.",
+    "solution": "No. Its projection is zero on every axis and it cannot be normalized to a direction vector."
+  },
+  "inertia": {
+    "question": "Distinguish mass from moment of inertia.",
+    "hint": "Which quantity depends on the rotation axis?",
+    "solution": "Mass measures inertia in translation. Moment of inertia measures rotational inertia and depends on how mass is distributed relative to the axis: $I=\\sum mr^2$."
+  },
+  "pole": {
+    "question": "Why does a tightrope walker carry a pole?",
+    "hint": "Consider the response to a disturbing torque.",
+    "solution": "The pole spreads mass farther from the rotation axis and increases the moment of inertia. A given torque then produces less angular acceleration, allowing more time to correct the tilt."
+  },
+  "terminal": {
+    "question": "Why can a sphere falling through liquid acquire constant speed?",
+    "hint": "Compare weight, buoyancy and drag.",
+    "solution": "As speed increases drag rises. When buoyancy plus drag balances weight, acceleration becomes zero and the sphere continues at terminal speed."
+  },
+  "boats": {
+    "question": "How are boat and current velocities represented as vectors?",
+    "hint": "Name the frame for each velocity.",
+    "solution": "Draw the boat’s speed and heading relative to water and the water velocity relative to the bank. Their vector sum gives boat velocity relative to the bank."
+  },
+  "vectorlaw": {
+    "question": "Is magnitude plus direction sufficient to make a quantity a vector?",
+    "hint": "Consider how two such quantities combine.",
+    "solution": "No. It must also transform and add according to the vector rules; finite rotations are a familiar counterexample."
+  },
+  "cirvelocity": {
+    "question": "Can an object have constant velocity on a circular path?",
+    "hint": "Compare velocity at two different points.",
+    "solution": "No. Speed may be constant, but the tangent direction continually changes, so the velocity changes."
+  },
+  "friction": {
+    "question": "Which is larger: limiting static or kinetic friction?",
+    "hint": "Compare the force immediately before sliding with that during sliding.",
+    "solution": "For typical dry surfaces the limiting static coefficient exceeds the kinetic coefficient. At the same normal load the limiting friction is larger."
+  },
+  "orbit": {
+    "question": "Compare the speeds of satellites of different masses in the same circular orbit.",
+    "hint": "Balance gravitational and centripetal force.",
+    "solution": "$GMm/r^2=mv^2/r$ gives $v=\\sqrt{GM/r}$. At the same orbital radius the speeds are equal, independent of satellite mass."
+  },
+  "centralwork": {
+    "question": "Why does a centripetal force do no work?",
+    "hint": "Draw the instantaneous displacement tangent to the circle.",
+    "solution": "The force is radial and perpendicular to the displacement, so its dot product with the displacement is zero."
+  },
+  "momentumreading": {
+    "question": "What does an angular momentum of 2400 kg m²/s mean?",
+    "hint": "Relate angular momentum to moment of inertia and angular speed.",
+    "solution": "About the stated axis the rotational momentum has magnitude 2400 kg m²/s; for fixed-axis rigid rotation Iω=2400. This does not by itself determine torque."
+  },
+  "gas": {
+    "question": "At equal temperature do different one-mole ideal gas samples have the same mean translational kinetic energy?",
+    "hint": "Separate particle mass from temperature.",
+    "solution": "Yes. Each molecule has mean translational energy 3kT/2; one mole has 3RT/2, independent of molecular species."
+  },
+  "shm": {
+    "question": "Describe the acceleration–displacement graph for simple harmonic motion.",
+    "hint": "Use the restoring acceleration.",
+    "solution": "$a=-\\omega^2x$: the graph is a straight line through the origin with slope −ω². Acceleration always points towards equilibrium."
+  },
+  "jicross": {
+    "question": "Why is $\\hat j\\times\\hat i=-\\hat k$?",
+    "hint": "Reverse the order of the usual cyclic product.",
+    "solution": "Interchanging two factors reverses the cross product. Since i×j=k, j×i=−k."
+  },
+  "birdturn": {
+    "question": "How can a bird change direction in flight?",
+    "hint": "Consider the direction of the resultant aerodynamic force.",
+    "solution": "By tilting its wings or using unequal wing forces, it creates a lateral component of the aerodynamic force. That acceleration changes the direction of flight."
+  },
+  "bird": {
+    "question": "Explain bird flight using vector addition.",
+    "hint": "Resolve aerodynamic forces parallel and perpendicular to the ground.",
+    "solution": "The forces from the wings add vectorially. Their upward resultant component can balance weight, while a forward component supplies thrust against drag."
+  },
+  "rope": {
+    "question": "Why use a long rope to tow a boat from the bank?",
+    "hint": "Compare the rope angle at a fixed lateral separation.",
+    "solution": "A longer rope can make a smaller angle to the desired direction. More of the tension then acts along the river rather than pulling towards the bank."
+  },
+  "blades": {
+    "question": "If rotating fan blades suddenly shorten, what happens to the rpm?",
+    "hint": "Consider angular momentum during the short change.",
+    "solution": "If mass moves inward and external torque is negligible, the moment of inertia falls. With Iω conserved the angular speed and rpm rise."
+  },
+  "rh": {
+    "question": "What does 50% relative humidity mean?",
+    "hint": "Compare actual and saturation vapour pressures at the same temperature.",
+    "solution": "The actual water-vapour pressure is half the saturation pressure at the air temperature."
+  },
+  "lineequal": {
+    "question": "Why are not all collinear vectors equal?",
+    "hint": "Test magnitude and direction separately.",
+    "solution": "Collinear vectors may differ in length or point in opposite directions. Equality requires both magnitude and direction to agree."
+  },
+  "banked": {
+    "question": "Why is the outer edge of a curved road raised?",
+    "hint": "Resolve the normal reaction on the vehicle.",
+    "solution": "Banking gives the normal reaction an inward horizontal component that supplies part or all of the centripetal force, reducing reliance on friction."
+  },
+  "butterfly": {
+    "question": "Which coordinate system can describe a butterfly moving around your room?",
+    "hint": "Count the independent directions of motion.",
+    "solution": "Use three Cartesian coordinates relative to a fixed corner or other origin. Two coordinates cannot describe changes in height as well as horizontal motion."
+  },
+  "fanspeed": {
+    "question": "Why do all points on a rigid fan have the same angular velocity about its axis?",
+    "hint": "Distinguish angular and linear displacement.",
+    "solution": "In a given time every point turns through the same angle as the rigid fan. Angular speed is therefore common although tangential speed ωr varies with radius."
+  },
+  "gravitywork": {
+    "question": "Explain why gravity is a conservative force.",
+    "hint": "Compare the work along two routes joining the same heights.",
+    "solution": "The work equals the loss of gravitational potential energy and depends only on the endpoints. Around a closed path the net work by gravity is zero."
+  }
+}
